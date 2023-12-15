@@ -1,0 +1,78 @@
+\section{Related works}
+
+\subsection{Quadratic Voting: Theoretical Background and Empirical Studies}
+- **Overview and Development of Quadratic Voting (QV)**: 
+  - Introduction to QV as a collective decision-making mechanism where the cost of multiple votes is quadratic.
+  - Developed by Posner and Lalley as a solution to the limitations of one-person-one-vote mechanisms.
+- **Formal Definition and Mechanics of QV**: 
+  - Allocation of a fixed quantity of voice credits to participants.
+  - Voting system incorporates quadratic costs, balancing the need for expression against resource limitations.
+  - Aggregate voice credit cost must not exceed the participant's budget, emphasizing rational allocation based on preference strength.
+- **Empirical Applications and Findings**: 
+  - Quarfoot et al.: Survey of 4500 participants on public policy opinions, comparing QV with Likert scales.
+  - Cheng: Application of QV in HCI, examining participant monetary decisions.
+  - Naylor: QV in educational research to gauge student opinions.
+  - Cavaillé: Focus on polarized choices and their implications in QV.
+- **Transition to Interface Design**: 
+  - Linking empirical findings to the necessity of exploring user experience and interface design in the context of QV.
+
+\subsection{Survey, Voting, and QV Design: Bridging Theory and Application}
+- **Influence of Ballot Design on Decision Making**: 
+  - Exploration of how ballot design, such as straight line voting and butterfly ballots, influences voter behavior and election outcomes.
+- **Accessibility and Digital Challenges in Voting Systems**: 
+  - Review of various ballot systems focusing on accessibility (EZ Ballot, Quick Ballot, Anywhere Ballot) and digital interfaces (Prime III, Bederson's Electronic Voting Interface Challenges).
+- **Survey Design and Response Formats**: 
+  - Detailed analysis of response formats' impact on survey outcomes, including the effectiveness of horizontal vs. vertical options and the comparison of sliders, visual analogue scales, and buttons.
+- **Linking Interface Design to QV**: 
+  - Discussing the insights from ballot and survey design and their applicability in designing QV interfaces, setting the stage for detailed exploration in the methods section.
+
+\subsection{Choice and Cognitive Load: Implications for QV Interface Design}
+- **Cognitive Load in Ranking and Rating**: 
+  - Discussion on the cognitive demands of ranking techniques in surveys, referencing work by Alwin and Krosnick.
+  - Examination of why rating-based surveys are typically easier and more popular.
+- **Influence of Option Number on Cognitive Load**: 
+  - Analysis of how the number of options in a QV setting influences cognitive load and decision-making processes.
+- **Choice Overload and Decision-Making**: 
+  - Definition and implications of choice overload in the context of QV.
+  - Exploration of cognitive overload, its effects on decision-making, and the reliance on simplifying cognitive strategies.
+  - Discussion on the susceptibility of individuals to nudges in complex decision-making scenarios.
+
+\subsection{Concluding Remarks}
+- **Summary of Key Takeaways**: 
+  - Recapitulation of the insights from discussions on QV, interface design, and cognitive load.
+- **Research Justification and Goals**: 
+  - Emphasizing the research goal to bridge the gap in understanding interface design's role in QS.
+  - Setting the objective to explore in-depth how people respond to QS and the first exploration of cognitive and choice overload in this context.
+
+
+
+% \section{Related works}
+% \subsection{Quadratic Voting}
+% Quadratic Survey is a surveying technique developed based on the quadratic voting mechanism. Quadratic voting (QV) is a voting mechanism for collective decision making where individuals are able to express their degree of preferences by voting multiple number of votes by paying a quadratic cost. This method was developed by \textcite{posner2018radical, lalley2018quadratic} that seeks to address the tyranny of the majority in traditional one-person-one-vote mechanisms. Since QV does not involve individuals at aggregating rankings of individual preferences, it is not subject to the Arrow's impossibility theorem. Quadratic surveys applies the mechanism in the context of surveying. It also offers a slight modification to the mechanism by allowing participants to vote for or against an option, which can be seen as having two distinct option on the same survey. This modification was also used by \textcite{quarfoot2019quadratic} in their study and deployed as an open source platform by \textcite{bassettiCivicbaseOpensourcePlatform2023}. While both reserach did not explicitly coined this as quadratic survey, in order to distinguish the two, we will refer to the surveying technique as quadratic survey and the voting mechanism as quadratic voting.
+
+% Here we again formally define QV. In a scenario where $S$ participants are involved, each participant is allocated a fixed quantity of voice credits, denoted as $B$. These credits can be distributed among various options. Importantly, each individual has the ability to cast multiple votes, either in favor or against each option. However, this voting system incorporates a quadratic cost for voting: casting $n_k$ votes for a particular option $k$ incurs a cost $c(n_k)$, which is proportional to $n_k^2$. Consequently, the aggregate cost in voice credits for all options chosen by a participant must not exceed their allocated budget $B$. This necessitates that the sum of the squares of votes cast for each option ($\sum_k n_k^2$) remains within the limit of $B$, where $n_k$ represents the number of votes allocated to option $k$. Finally, the survey administrators compile and analyze the results by summing up the total votes cast by all participants for each option. This design allos the marginal cost to cast $1$ additional vote to linearly increase with the number of votes already cast on that option, inducing rational participants to vote proportionally to how much they care about an issue~\cite{posner2018radical}. This design is why, unlike many traditional voting methods, each QV vote comes with a quadratic cost.
+
+% While there are growing numbers of emperical work on studying the application of QS, most emperical studies focused on comparing Quadratic Surveys with alternative methods or applied in different context. \textcite{quarfoot2017quadratic} surveyed 4500 participants on their opinions for ten public policies; each participant completed either a Likert scale survey, a QV survey, or both. The study found that, for the same group of participants, responses on any option from the QV survey followed a normal distribution while those from the Likert scale survey were heavily skewed or polarized into ``W-shaped'' distributions. \textcite{cheng} investigated how quadratic surveys can be applied to the context of HCI and compared resutls from Likert surveys and QV with participant monetary decisions. \textcite{naylor2017first} utilized QV for an educational research to understand students' opinions towards a list of factors that impacted their success at universities and \textcite{cavailleWhoCaresMeasuring} focused on situations that involved polarized choices. As \textcite{quarfoot2017quadratic} pointed out in their initial survey experience feedback, further investiation is required to improve user experience in QV and uncover the affordance of QV.
+
+% \subsection{Survey, Voting, and QV Design}
+% The study of design and user experience of surveys and voting are not new, however, the blend of both makes operting QS its unique challenge. We will discuss the related works that relates to the final product in the methods section, but here, we stress different related works that explores different aspects of survey and voting design.
+
+% Given that the mechanism was originally designed as a voting mechanism, we begin from the design of ballots. The design of the ballots nudges ones decision making. Staight line voting (SLV) decreases split voting and Australian ballot with offic bloc with no a party box enhaned invumbnency advantages (the politics of ballot design). Another well known example would be the notable butterfly ballots influenced election outcome (Wand 2001). Other works focuses on accessibility challenges(EZ Ballot Voting & Quick Ballot (2012-2015, Lee, Seunghyun et al.); Anywhere Ballot (2014, Summers et al.); Prime III (2007-2009, Dawkins et al.)), digital challenges (Electronic Voting interface Challenges (2003, Benjamin Bederson)) and error reduction (i.e. 2008, Everett et al., GUI on error rediction -- bringing physical voting behviors (i.e. level voting) onto GUI interfaces (2005, Selker et al.) Examined “where” to touch on the voting interface (2012, Gilbert et al.), Zoomable voting interface (2008, Benjamin Bederson et al.))
+
+% User experience of survey design is criticle in gauging high quality user reponses. Specifically for survey designs, people use the term response format to describe how study participants are asked to respond to a survey question. Various studies had shown how differnt designs of these response formats would influence outcomes. For example, \textcite{weijtersExtremityHorizontalVertical2021} showed that horitional distances between options matters more than vertical distances with the latter recommended for less bias.  Slider bars showed lower mean scores and more nonresponses than buttons, indicating that they are more prone to bias and difficult in use. Sider bars, which work with a drag-and-drop principle, perform worse than visual analogue scales working with a point-and-click principle and buttons (toepoelSlidersVisualAnalogue2018).
+
+% To the best of our knowledge, only a recent arxiv paper exaimed the user experience of QV respondents based on the knapsack voting platform developed by \textcite{goelKnapsackVotingVoting} and tested several modifications. However, to make QV more widely accessibile, we aim to bridge the gap to provide recommendations for the interface as well as best practices through in-depth user study and analysis of individual's though process when answering complex qudratic surveys. There are no known work that explores interfaces that scaffolds both ranking and ranking interfaces for survey designs. Thus we aim to bridge this gap.
+
+% \subsection{Choice and cognitive load}
+% Knowing that interface design and user experience is important, we wanted to tackle the most challenging aspect of QS, which is cognitive load. Qudratic voting requires the participants to rank and rate across options. First, rankings are often difficult and taxing for respondents, demanding considerable cognitive sophistication and concentration. This is particularly problematic when the list of concepts to be ranked is lengthy (Rokeach, 1973:28; Feather, 1973:228). Second, the use of ranking techniques is time-consuming and may therefore be more expensive to administer (Munson and Mclntyre, 1979:49). From: Alwin, Duane F., and Jon A. Krosnick. "The measurement of values in surveys: A comparison of ratings and rankings." _Public Opinion Quarterly_ 49, no. 4 (1985): 535-552. This phenomon is why rating based surveys are typically easier to administer and more popular.
+
+% The difficulty of ranking would natually be influenced by the number of options. In prior research, we had not seen the discussion of best practices of number of options in QV other then Cheng et al.'s work that stressed the importance of having enough credits based on the number of options. In this study, we want to make sure we understand what makes QS difficult by deciphering where that comes in from the number of options verses the QV mechanism itself. Thus, we choice overlaod and cognitive overload. These are different but similiar concepts.
+
+% [Define choice overload] Choice overload is the phenomenon that too many choices can be overwhelming and can lead to decision paralysis and dissatisfaction. (The jam study) cognitive overload stress that too many options can lead to satisficing and can lead to poor decision making. (Khaneman et al.) When choices are complex, humans tend to rely on simplyfing cogntive strategies. (Kahneman et al.); Under such circumstances, individuals are more prone to nudges (Thaler and Sunstein 2008).
+
+
+% 4. the closest would be Quarfoot exaimed individual responses from (1) numebr of time spend (2) number of changes people made (3) a short response from sutdy participants but they posed the question of understanding how people use QV
+% 5. Similiar questions were raised by Cheng et al, specifically hypothesising that the number of options on a survey matters. However, they did not examine the interface design of QV nor the cognitive load of QV.
+
+
+% % Q1: Will we use the analytical measures?

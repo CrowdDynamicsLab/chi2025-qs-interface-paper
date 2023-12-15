@@ -6,12 +6,33 @@
     \label{fig:interactiveInterface}
 \end{figure}
 
+\section{Experiment Design}
+To answer our research question, we developed an open-source system with a interface specifcially for quadratic surveys. We then designed a two-by-two, mixed method experiment to examine how number of options and the interface type affect the participants. This section detail each experiment component.
 
-\section{Introduction to the Research Problem}
-Our study focuses on developing an interface to facilitate participant interaction with quadratic surveys, addressing the need for efficient and user-friendly survey methodologies.
+\subsection {System Design}
+We designed an interactive text interface (ITI) and a baseline text interface (BTI) for this study. We begin from describing BTI. In order to better understand the influence of number of options and different interface components to support QS, we identified essental components for QS (detailed deliberation in appendix.). Different from many prior research (cite several paper here), we intentially removed all data visualization elements as inappropriate visualizations might increase mental demand (huangMeasuringEffectivenessGraph2009) rather then reduce the demand. Thus, in the BTI interface (figure X), participants are presented with a list of options with a system prompt on top. Each option has a dropdown that provides all possible voting options and cost given the number of credits. A small summary box is to the right of the interface showing the current cost and the remaining credit.
 
-\section{Solution through System Design}
-\subsection{First Step}
+The ITI interface (figure Y) builds on top of the BTI interface with two additional components. The first acts as a scaffolding process of supporting individuals responds to QS given its complexity. This mainly focuses on breaking QS into two steps -- first organizing thoughts and then vote -- to provide respondents with a structured way to express their preferences. On organizing the options (figure Y-a), respondents are shown 
+
+
+ranking and then voting -- hoping  In the first step, invidiuals are shown all options on the survey one at a time, prompting to `categorize' options into three ordinal categories. Participants are aware that they can choose not to rank the options at all
+
+We utilize a drag-and-drop direct manipulable interface to nudge individuals to sort the options (see Figure \ref{fig:rank}), then we ask individuals to vote based on the sorted list. We hypothesize that the sorting step forces participants to think only about the ranks and not the degree of preference. With an (almost) sorted list, individuals can limit their working memory to only consider the strength of preferences among the options above or below an option. In addition, if the participants do not want to sort the options, the drag-and-drop functionality can also act as a way to organize the options' proximity freely. For example, participants can cluster the options toward the top, middle, or bottom of the list to represent three sets of responses they want to express. Again, such a design aims to reduce the cognitive burden of remembering and keeping track of all options. 
+
+The notion of drag-and-drop has been explored widely in rank-based surveys. For instance, \textcite{krosnick2018measurement} demonstrated that replacing drag-and-drop with traditional number-filling rank-based questions improved participants' satisfaction with a little trade-off in their time. A similar work embedded drag-and-drop as part of its ranking process~\cite{timbrook2013comparison}. Since the rank-then-vote rationale asks participants first to rank and vote, we adopt such a design. Additional justification would be added in later versions.
+
+
+
+In our study, we developed a software interface consisting of a two-step process to facilitate participant interaction with quadratic surveys. Initially, participants are introduced to the first step, where they are invited to organize their thoughts using a three-point Likert scale that includes a no-response option. This feature allows for an initial subjective categorization, empowering participants to define their own criteria for assessment. Following this, the system presents the results by grouping the options, which participants can adjust to their preference at any point, thus offering a tailored review process.
+
+Moving to the second step, the interface seamlessly transitions to the standard Quadratic Survey (QS). Here, the options previously organized are displayed, maintaining the order from the first step to provide continuity. Participants engage with the QS by utilizing a drag and drop feature, which was chosen based on findings from Duncan Rintoul's 2019 study that suggested such an interface is subjectively preferred, despite lower stability. This design decision prioritizes user experience, emphasizing the importance of interface affability and ease of use.
+
+The entire interface is displayed on a vertically oriented 32-inch monitor, the largest available at the time, to eliminate the need for scrolling. This decision was made to minimize cognitive load, a primary goal of our interface design, especially crucial when participants are presented with lengthy options. Our aim is to present all available choices concurrently to reduce the extra cognitive effort that scrolling could impose.
+
+To enhance the usability and understandability of our interface, we conducted multiple iterations of pilot testing. These tests were instrumental in refining the design, leading to a minimalistic approach that strips away non-essential visual elements such as data visualizations, icons, and images. This design philosophy, which is detailed in the Appendix, aligns with our goal of minimizing cognitive load and ensuring that participants can focus solely on the survey content.
+
+Through this meticulously designed interface, we aim to reduce the decision space for participants, encouraging thoughtful engagement and deliberate choice without overwhelming them. By allowing participants to rank before rating, we facilitate a decision-making process that discourages mental shortcuts and promotes a more reflective, System 2 type of thinking. The adjustments made as a result of our pilot studies have been crucial in achieving an interface that supports our research objectives while also being intuitively navigable by our participants.
+
 Participants initially engage with the interface using a three-point Likert scale for subjective categorization. This step allows participants to define their own assessment criteria, empowering them for a tailored review process.
 
 \subsection{Second Step}
@@ -51,15 +72,7 @@ Participant motivations are assessed using SIMS (Situational Motivation Scale), 
 
 
 \section{System Design}
-In our study, we developed a software interface consisting of a two-step process to facilitate participant interaction with quadratic surveys. Initially, participants are introduced to the first step, where they are invited to organize their thoughts using a three-point Likert scale that includes a no-response option. This feature allows for an initial subjective categorization, empowering participants to define their own criteria for assessment. Following this, the system presents the results by grouping the options, which participants can adjust to their preference at any point, thus offering a tailored review process.
 
-Moving to the second step, the interface seamlessly transitions to the standard Quadratic Survey (QS). Here, the options previously organized are displayed, maintaining the order from the first step to provide continuity. Participants engage with the QS by utilizing a drag and drop feature, which was chosen based on findings from Duncan Rintoul's 2019 study that suggested such an interface is subjectively preferred, despite lower stability. This design decision prioritizes user experience, emphasizing the importance of interface affability and ease of use.
-
-The entire interface is displayed on a vertically oriented 32-inch monitor, the largest available at the time, to eliminate the need for scrolling. This decision was made to minimize cognitive load, a primary goal of our interface design, especially crucial when participants are presented with lengthy options. Our aim is to present all available choices concurrently to reduce the extra cognitive effort that scrolling could impose.
-
-To enhance the usability and understandability of our interface, we conducted multiple iterations of pilot testing. These tests were instrumental in refining the design, leading to a minimalistic approach that strips away non-essential visual elements such as data visualizations, icons, and images. This design philosophy, which is detailed in the Appendix, aligns with our goal of minimizing cognitive load and ensuring that participants can focus solely on the survey content.
-
-Through this meticulously designed interface, we aim to reduce the decision space for participants, encouraging thoughtful engagement and deliberate choice without overwhelming them. By allowing participants to rank before rating, we facilitate a decision-making process that discourages mental shortcuts and promotes a more reflective, System 2 type of thinking. The adjustments made as a result of our pilot studies have been crucial in achieving an interface that supports our research objectives while also being intuitively navigable by our participants.
 
 
 \section{Experiment and Interface Design}

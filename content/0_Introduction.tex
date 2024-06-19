@@ -7,90 +7,21 @@ The Quadratic Mechanism is a decision mechanism where individuals express the de
 
 However, the Quadratic Mechanism is undeniably more complex than other voting and surveying mechanisms, such as the Likert scale~\cite{likertTechniqueMeasurementAttitudes1932}, where individuals select from a few responses, and Approval Voting~\cite{bramsApprovalVoting1978}, where participants mark as many options as they approve without constraints. Responding to a QS involves expressing a numerical representation of a full set of constructed preferences. As Lichtenstein and Slovic~\cite{lichtensteinConstructionPreference2006} pointed out, when individuals do not have clear known preferences, they construct preferences in situ. This can be particularly challenging in unfamiliar contexts, when choices might conflict, and when opinions need to be translated into quantified values. Survey respondents often face these challenges, exacerbated by common constraints and budget allocation, requiring them to make difficult decisions.
 
-This challenge means that designing and developing a suitable interface for Quadratic Surveys is critical should a researcher or decision maker decided to use such tool to elecit truthful and in-depth preference information from survey respondents. Yet, since the advocation of Quadratic Voting by~\textcite{posner2018radical}, no peer reviewed research had been devoted in studying the design perspective of such mechanism, despite it being experimented in state government of Colorado and the Democratic Caucus of the House of Representatives~\cite{QuadraticVotingColorado}, used in state-sponsered hackathon~\cite{teamTaiwanDigitalMinister} and recently git4gov~\cite{Gov4gitDecentralizedPlatform2023}, a GitHub based policy to apply Quadratic Voting to Pull Requests and Issues in the Open Source Community. In addition, prior research in behavioral economics and marketing pointed out the challenge of choice overload~\cite{iyengarWhenChoiceDemotivating2000} and overchoice~\cite{gourvilleOverchoiceAssortmentType2005}. While QV allows individuals to allot resources across options given by the decision maker, we suspect similiar overload challenges occur influencing participants decision making. These reasons provided us a strong motivation to answer our main research question: \textit{How can we design interactive interfaces to support participants to complete Quadratic Surveys?}
+This challenge emphasizes the critical importance of designing and developing suitable interfaces for Quadratic Surveys to elicit truthful and in-depth preference information from respondents. Good design is essential; without it, the quality of collected data can suffer significantly. Despite the advocacy of Quadratic Voting by Posner and Weyl~\cite{posner2018radical}, and its experimentation in various contexts such as the Colorado state government, the Democratic Caucus of the House of Representatives~\cite{QuadraticVotingColorado}, government-sponsored hackathons~\cite{teamTaiwanDigitalMinister}, and the recent Gov4git~\cite{Gov4gitDecentralizedPlatform2023}, no peer-reviewed research has focused on the design perspective of such mechanisms. This increasing attention highlights the relevance and potential impact of QS. Additionally, prior research in behavioral economics and marketing has pointed out the challenge of choice overload~\cite{iyengarWhenChoiceDemotivating2000} and overchoice~\cite{gourvilleOverchoiceAssortmentType2005}. While Quadratic Voting allows individuals to allocate resources across multiple options, the presence of many options can overwhelm participants, potentially compromising decision-making quality. It can be difficult for decision-makers to reduce the number of options present in a survey. Effective design may mitigate these overload challenges, ensuring that the Quadratic Survey mechanism fulfills its potential to capture detailed and accurate preferences. These reasons strongly motivate our main research question: \textit{How can we design interactive interfaces to support participants in completing Quadratic Surveys?} Addressing this question fills a important gap in the literature and enhances the practical utility of QS in capturing high-quality data across various applications.
 
-This challenge emphasizes the critical importance of designing and developing suitable interfaces for Quadratic Surveys to elicit truthful and in-depth preference information from respondents. Good design is essential; without it, the quality of collected data can suffer significantly. Despite the advocacy of Quadratic Voting by Posner and Weyl~\cite{posner2018radical}, and its experimentation in various contexts such as the Colorado state government, the Democratic Caucus of the House of Representatives~\cite{QuadraticVotingColorado}, state-sponsored hackathons~\cite{teamTaiwanDigitalMinister}, and the recent Gov4git~\cite{Gov4gitDecentralizedPlatform2023}, no peer-reviewed research has focused on the design perspective of such mechanisms. This increasing attention highlights the relevance and potential impact of QS. Additionally, prior research in behavioral economics and marketing has pointed out the challenge of choice overload~\cite{iyengarWhenChoiceDemotivating2000} and overchoice~\cite{gourvilleOverchoiceAssortmentType2005}. While Quadratic Voting allows individuals to allocate resources across multiple options, the presence of many options can overwhelm participants, potentially compromising decision-making quality. Effective design may mitigate these overload challenges, ensuring that the Quadratic Survey mechanism fulfills its potential to capture detailed and accurate preferences. These reasons strongly motivate our main research question: \textit{How can we design interactive interfaces to support participants in completing Quadratic Surveys?} Addressing this question not only fills a critical gap in the literature but also enhances the practical utility of QS in capturing high-quality data across various applications.
+In this study, we aim to reach our goal by answering three research questions:
+\begin{itemize}
+\item RQ1a. How does the number of options on QS impact respondents' cognitive load?
+\item RQ1b. Across the different number of options on QS, what are the sources of cognitive load from?
+\item RQ2a. How does the interactive interface involving grouping and direct manipulation interface influence QS respondents' cognitive load compared to text-based interface?
+\item RQ2b. Across the two interfaces, what are the sources of cognitive load from?
+\item RQ3. What are differences in QS respondents' behaviors when coping with long lists of options?
+\end{itemize}
 
-% ## 1. Lack of Focus on Designing Interfaces for QV
+To answer these research questions, we constructed an interactive interface informed by prior literature in questionnaire and survey response format. We iterated the interface after several rounds of pretests and pilots. Then we designed a two-by-two between-subject study where each group of participants would experience a QS with a short or long list of options, using a text-based or interactive-based interface. Study participants' cognitive load was collected using NASA-TLX, a widely used measure, followed by an interview. We recruited 41 participants from a Midwestern local community, asking members to support a wide range of societal issues in an in-lab study.
 
-% - Despite its potential, no one has focused on designing interfaces to support the QV mechanism.
-%     - QV currently does not limit the number of options in a survey, which increases decision-making complexity.
-%     - More options require distributing resources and constructing preferences across all options simultaneously.
-% - Prior surveys have treated scaling and ranking separately, while QS integrates both aspects.
-%     - This integration poses unique challenges not addressed by existing research.
+In the remainder of this paper, we focus on the related works in section~\ref{sec:relatedWorks}. Then we detailed related works that informed the interactive QS interface and the design process in section~\ref{sec:interfaceDesign}. Experiment design follows in section~\ref{sec:experiment}. Study findings and discussion are present in section~\ref{sec:result} and section{sec:discussion}.
 
-% # Objectives of the Current Study
+\paragraph*{Contributions}
+In this study, we highlighted the importance of using a two-step "organize then vote" interactive interface for QS surveys with long lists of options, despite not revealing statistically significant differences in the weighted NASA-TLX scores between the groups. All four groups of participants experienced medium-to-high weighted cognitive load. Our recommendation is based on identified differences in the sources of cognitive load between participants using text-based interfaces and those using interactive interfaces when responding to QS with long lists. Supporting evidence from participants' operating behaviors showed that those using the interactive interface made more rapid and repeated updates when responding to the survey. Conversely, we observed fewer qualitative differences between the groups of participants responding to the short list. This study also provides design recommendations for deploying QS and suggests directions for future research.
 
-% ## 1. Understanding the Influence of Number of Options
-
-% - This research aims to understand how the number of options influences the cognitive load for participants.
-%     - Cognitive load refers to the mental effort required to complete a task, which can affect decision quality and user experience.
-% - Prior findings indicate that increasing the number of options can significantly increase cognitive load.
-
-% ## 2. Impact of Interactive Interfaces on Cognitive Load
-
-% - The study also seeks to understand how interactive interfaces influence participants' cognitive load.
-%     - Design elements such as user interface layout and interaction mechanisms can impact how easily participants can complete tasks.
-% - We hypothesize that well-designed interfaces can mitigate cognitive load and improve user experience.
-
-% ## 3. Challenges and Strategies in QV Mechanism
-
-% - We aim to identify the challenges participants face when using the QV mechanism.
-%     - These challenges may include difficulties in allocating votes and managing resource constraints.
-% - Additionally, we will analyze the strategies participants use to overcome these challenges.
-%     - Understanding these strategies can inform the design of more effective interfaces.
-
-% # Study Design and Methodology
-
-% ## 1. Description of the Designed Interface
-
-% - We designed an interface that simplifies the process of allocating votes and managing options in QS.
-%     - Key features include an intuitive layout, easy navigation, and real-time feedback.
-
-% ## 2. Experimental Design (2x2 Design)
-
-% - This study employed a 2x2 experimental design to evaluate the impact of these variables.
-%     - The variables manipulated in the experiment include the number of options and the type of interface.
-%     - We measured outcomes such as cognitive load, user satisfaction, and decision accuracy.
-
-% ## 3. Participant Recruitment and Brief Results
-
-% - We recruited a diverse group of participants through [recruitment process].
-%     - The participants represented a range of demographics to ensure generalizability.
-% - Our brief results indicate that [summary of key findings].
-
-% # Results and Contributions
-
-% ## 1. Summary of Key Results
-
-% - Our results showed that the number of options significantly influenced participants' cognitive load.
-%     - More options led to higher cognitive load and increased decision-making complexity.
-% - The type of interface also had a notable impact on cognitive load and user experience.
-%     - Interactive interfaces reduced cognitive load and improved participant satisfaction.
-% - Participants used various strategies to manage the challenges posed by the QV mechanism.
-%     - These strategies included prioritizing certain options and using heuristics to allocate votes.
-
-% ## 2. Contributions of the Study
-
-% - This paper contributes to the field by examining how the number of options influences participants.
-%     - Our findings provide insights into the cognitive demands of complex decision-making tasks.
-% - We also design, evaluate, and propose interfaces for QS and QV mechanisms.
-%     - Our proposed interfaces offer practical solutions for improving user experience and data quality.
-% - Finally, we analyze participant behaviors when completing QS.
-%     - This analysis highlights the challenges and strategies involved in using QV, informing future research and design.
-
-
-
-
-
-% Capturing individual attitudes and preferences effectively is a cornerstone of decision-making in fields such as public policy, marketing, and social research. The effectiveness of tools used to capture these attitudes hinges significantly on their design. In domains such as decision-making, user feedback, and public opinion polling, the interface through which individuals interact with survey mechanisms can profoundly influence the accuracy and reliability of the data collected.
-
-% This is particularly true for systems that blend elements of traditional surveys and voting mechanisms, where the design must account for both clarity and user engagement. An intuitive and well-designed interface can significantly enhance user engagement and the reliability of the collected data.
-
-% Quadratic Constraint Surveys (QCS) represent a novel approach that leverages the principles of Quadratic Voting, allowing users to express the intensity of their preferences. While the benefits of this mechanism have been recognized, the challenge of creating an effective and user-friendly interface for QCS has not been fully addressed. This paper focuses on addressing this design challenge.
-
-% The primary objective of this research is to develop and implement a user-centered interface for Quadratic Constraint Surveys. By enhancing the user experience, we aim to improve the quality of data collected through a more precise representation of individual preferences. The interface is not merely a supporting tool but a critical component that can determine the success of the survey mechanism.
-
-% Our research underscores the importance of viewing interface design as a key factor in the efficacy of survey systems. By integrating robust mechanism design with thoughtful user-centered interface solutions, we propose an innovative interface that optimizes user interaction and facilitates the expression of preferences in a clear and engaging manner.
-
-% This work contributes to a deeper understanding of how the interplay between survey mechanisms and interface design can enhance the overall effectiveness of data collection systems. By addressing the practical challenges of interface design for QCS, we aim to advance the field of survey and voting systems, providing valuable insights for future developments.

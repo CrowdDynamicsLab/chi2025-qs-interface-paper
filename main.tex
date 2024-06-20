@@ -1,11 +1,9 @@
 % \documentclass[format=acmsmall, natbib=false, review=false, authordraft=false, anonymous=true, screen=true]{acmart}
+% \documentclass[format=acmsmall, natbib=false, anonymous=true, review=true]{acmart}
 \documentclass[format=acmsmall, natbib=false, anonymous=true, review=true]{acmart}
 
 \usepackage{enumitem}
 \usepackage{graphicx}  % another package that works for figures
-\usepackage{epstopdf}
-\usepackage{lscape}
-\usepackage{wrapfig}
 \usepackage{booktabs} % For formal tables
 \usepackage{cleveref} % for better references
 \usepackage{caption,subcaption}
@@ -14,7 +12,10 @@
 \usepackage{siunitx}
 \usepackage{tabularx}
 \usepackage{xcolor}
-\usepackage{csquotes}
+% \usepackage{rerunfilecheck}
+% \usepackage{epstopdf}
+% \usepackage{lscape}
+% \usepackage{wrapfig}
 
 %references
 \usepackage[backend=biber, style=acmnumeric]{biblatex}
@@ -33,6 +34,10 @@
 \SetAlCapNameFnt{\small}
 \SetAlCapHSkip{0pt}
 \IncMargin{-\parindent}
+
+\renewenvironment{displayquote}
+  {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\itshape\color{darkgray}}
+  {\endlist}
 
 %% author color
 %% color: http://latexcolor.com/
@@ -143,7 +148,7 @@
 \input{content/1_related_works.tex}
 \input{content/2_experiment.tex}
 \input{content/3_results.tex}
-\input{content/4_discussion.tex}
+% \input{content/4_discussion.tex}
 \input{content/5_conclusion.tex}
 % \input{content/98_acks.tex}
 \input{content/99_appendix}

@@ -59,14 +59,15 @@ First, we surveyed the current implementation of QV interfaces to understand the
 
 We constructed a text-based interface that included all five components but removed the use of emojis (i.e., thumbs up and thumbs down present in Figure~\ref{fig:wedesignInterface}), progress bars, and other visualizations in the summary section (i.e., progress bars in Figure~\ref{fig:wedesignInterface} and~\ref{fig:chengInterface} or blocks presented in Figure~\ref{fig:rxcvotingInterface}), and the visual cues for individual vote counts (i.e., the colored counts and icons present in Figure~\ref{fig:gov4gitInterface} and~\ref{fig:chengInterface}). Prior literature suggests that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. We also removed all visualization elements such as blocks, progress bars, and percentage indicators, as prior literature shows that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Last, we decided to present all the options on the same screen. Prior research emphasizes the importance of placing all the options on the same digital ballot screen to avoid losing votes (missing citations). This echoes the proverb ``out of sight, out of mind,'' where individuals might be biased toward options that are shown to them and additional effort is required for individuals to retrieve specific information if options are hidden (citation needed).
 
-
-
 These design decisions led to the interface shown in Figure~\ref{fig:textInterface}. The interface contains the question prompt at the top of the screen. The options are presented as a list of options below. Survey respondents can update the votes, showing the cost and the number of votes, by selecting from a dropdown that provides all possible voting options and cost given the number of credits. A small summary box to the right of the interface shows the current total cost and the remaining credit for the respondent. To avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}, options are always randomly presented on the interface.
 
 \subsection{Interactive Interface (Interactive Condition)}
 The interactive interface, shown in Figure~\ref{fig:interactiveInterface}, builds additional interactive elements on top of the text interface to maintain consistency that allows comparison of the direct manipulation of the designed interactive elements. We designed two additional components: An additional organization step prior to voting and a drag-and-drop interface throughout the QS responding session informed through prior literature.
 
 \paragraph{Organization Phase}
+
+% mention construction of preference here again, 
+% This can be particularly challenging in unfamiliar contexts when choices might conflict, and when opinions need to be translated into quantified values. Survey respondents often face these challenges, exacerbated by common constraints and budget allocation, requiring them to make difficult decisions.
 
 The design of the organization phase in this interactive interface began from understanding~\textcite{strackThinkingJudgingCommunicating1987}'s research on how survey respondents process and respond to attitude surveys. They propose that individuals, after comprehending a question, would either recall a previous judgment or construct a new one. This organization phase is designed to guide respondents through the process of forming opinions on individual options incrementally and methodically.
 
@@ -93,6 +94,7 @@ While there are various interaction mechanisms to adjust the ordering of options
 Together, these design decisions lead to our belief that a two-step interactive interface with direct interface manipulation can reduce the cognitive load for survey respondents to form preference decisions when completing QS.
 
 \section{Experiment Design}
+\label{sec:experiment}
 Based on the design decisions, we developed a QS interface using a React.js frontend and a Next.js backend powered on MongoDB. Both systems are open-sourced~\footnote{link-to-github}.
 
 We recruited participants from a midwestern college town using online ads, digital bulletins, social media posts, physical flyers, and online newsletters. The study's researcher prioritized the non-student population to maximize participant diversity. This study is reviewed and approved by the college Institutional Review Board.

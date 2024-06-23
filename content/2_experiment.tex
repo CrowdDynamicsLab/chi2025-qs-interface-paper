@@ -41,13 +41,6 @@
 \label{sec:interfaceDesign}
 In this study, we developed an interactive interface for QS based on prior literature for the experiment condition. As there no standardlized QV interface, we constructed a text based QS interface that includes most of what existing interfaces offers and make it comparable with the interactive interface. In the following subsections, we describe these interface design decisions and supporting literature.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{content/image/text_interface.png}
-    \caption{The text-based interface}
-    \label{fig:textInterface}
-\end{figure}
-
 \subsection{Text-based Interface (Text Condition)}
 First, we surveyed the current implementation of QV interfaces to understand the development of such tools. We present a selection in Figure~\ref{fig:qv_interface_external}. All five interfaces retain and present the following components:
 \begin{itemize}
@@ -60,6 +53,13 @@ First, we surveyed the current implementation of QV interfaces to understand the
 We constructed a text-based interface that included all five components but removed the use of emojis (i.e., thumbs up and thumbs down present in Figure~\ref{fig:wedesignInterface}), progress bars, and other visualizations in the summary section (i.e., progress bars in Figure~\ref{fig:wedesignInterface} and~\ref{fig:chengInterface} or blocks presented in Figure~\ref{fig:rxcvotingInterface}), and the visual cues for individual vote counts (i.e., the colored counts and icons present in Figure~\ref{fig:gov4gitInterface} and~\ref{fig:chengInterface}). Prior literature suggests that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. We also removed all visualization elements such as blocks, progress bars, and percentage indicators, as prior literature shows that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Last, we decided to present all the options on the same screen. Prior research emphasizes the importance of placing all the options on the same digital ballot screen to avoid losing votes (missing citations). This echoes the proverb ``out of sight, out of mind,'' where individuals might be biased toward options that are shown to them and additional effort is required for individuals to retrieve specific information if options are hidden (citation needed).
 
 These design decisions led to the interface shown in Figure~\ref{fig:textInterface}. The interface contains the question prompt at the top of the screen. The options are presented as a list of options below. Survey respondents can update the votes, showing the cost and the number of votes, by selecting from a dropdown that provides all possible voting options and cost given the number of credits. A small summary box to the right of the interface shows the current total cost and the remaining credit for the respondent. To avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}, options are always randomly presented on the interface.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{content/image/text_interface.png}
+    \caption{The text-based interface}
+    \label{fig:textInterface}
+\end{figure}
 
 \subsection{Interactive Interface (Interactive Condition)}
 The interactive interface, shown in Figure~\ref{fig:interactiveInterface}, builds additional interactive elements on top of the text interface to maintain consistency that allows comparison of the direct manipulation of the designed interactive elements. We designed two additional components: An additional organization step prior to voting and a drag-and-drop interface throughout the QS responding session informed through prior literature.

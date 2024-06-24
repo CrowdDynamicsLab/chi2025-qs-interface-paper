@@ -2,7 +2,7 @@
 \label{sec:result}
 In this section, we present the results from our study, beginning with a description of the participants' demographics. This is followed by quantitative and qualitative results regarding cognitive load, and concluded with observations of participants' behaviors. The quantitative measures are directly copied from pen-and-paper surveys and captured through system logs during participant interactions. The interview results are transcribed and coded by the first author, with the codes then grouped into themes. The behavioral data is cleaned and processed, available as open data~\footnote{link-to-github}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.65\textwidth}
         \centering
@@ -30,7 +30,7 @@ In terms of ethnicity, $51.2\%$ of the respondents self-identify as White, follo
 
 \subsection{Cognitive Load Results}
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{content/image/results/nasatlx_final_value.pdf}
     \caption{NASA-TLX Results}
@@ -39,7 +39,7 @@ In terms of ethnicity, $51.2\%$ of the respondents self-identify as White, follo
 
 We show the NASA-TLX weighted results in Figure~\ref{fig:nasatlx-final}. Qualitatively, there is a decrease in cognitive load when comparing short surveys between the text-based interface and interactive interfaces. Conversely, there is an increase in cognitive load when comparing the long survey between the text-based interface and interactive interfaces. However, we are not able to demonstrate statistical significance between the four groups using the Mann-Whitney U test. Reviewing the overall cognitive load, QS participants experienced a `Somewhat High' and `High' cognitive load regardless of length and interface~\cite{hart1988development}. (Need to get the exact percentage).
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/image/results/nasatlx_final_value_with_CI.pdf}
     \caption{NASA-TLX Results}
@@ -340,7 +340,7 @@ This result echos the quantitative responses from the NASA-TLX breakdown where l
 \subsection{Interaction Behavior Analysis}
 To further investigate the cognitive load results, we focused on participants' behaviors during the survey. Specifically, we aim to understand the time participants spent on the options as well as when a participant makes changes to the survey. When a study participant clicks their mouse on the interface to complete some action, whether it is a drag-and-drop, updating votes, or placing options into a specific group, a timestamp and the payload of the update are stored in the log. The time difference between two actions is attributed to the time the participant took to decide and enact upon a behavior. While participants can be thinking about other things, this is the best proxy we have to study participant behaviors.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.32\textwidth}
         \centering
@@ -375,7 +375,7 @@ In Figure~\ref{fig:total_time}, we observe that participants spent more time on 
 
 Once we separate the organization time (Figure~\ref{fig:org_time}) and identify the voting time (Figure~\ref{fig:vote_time}), while there are no statistically significant differences between the text interface and the interactive interface in the short survey, we see a statistically significant reduction ($p<0.01$) in voting time between the text interface and the interactive interface. In other words, our original hypothesis holds in which the two-step design process did facilitate participants in making their decisions.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/image/results/diff_con.png}
     \caption{voting actions across all options (needs to update chart text, remove normalization, and change the dot colors.)}
@@ -389,7 +389,7 @@ Figure~\ref{fig:voting_all} plots the time of voting actions over the remainder 
 
 In this plot, we see two distinct patterns between the short survey and the long survey in terms of participant behaviors. Only in the long surveys did participants exhibit more actions when the budget was abundant and when it began to run out, with the long interactive interface being more significant.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/image/results/temp_cut4.png}
     \caption{Breakdown of voting actions (needs to update chart text)}

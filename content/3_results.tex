@@ -1,6 +1,6 @@
 \section{Results}
 \label{sec:result}
-In this section, we present the results from our study, beginning with a description of the participants' demographics. This is followed by quantitative and qualitative results regarding cognitive load, and concluded with observations of participants' behaviors. The quantitative measures are directly copied from pen-and-paper surveys and captured through system logs during participant interactions. The interview results are transcribed and coded by the first author, with the codes then grouped into themes. The behavioral data is cleaned and processed, available as open data~\footnote{link-to-github}.
+In this section, we present the results of our study, which are organized as follows: We begin with a description of participant demographics, followed by quantitative and qualitative assessments of cognitive load. We then provide a detailed analysis of participant behaviors. The section concludes with qualitative insights derived from participants' comments on their experiences and the interfaces used. Quantitative data were derived from pen-and-paper surveys and system logs captured during the study. Qualitative insights were generated from interviews, which were transcribed and thematically analyzed by the first author. All processed behavioral data are publicly available\footnote{link-to-github} to support transparency and facilitating further research.
 
 \begin{figure}[ht]
     \centering
@@ -24,20 +24,37 @@ In this section, we present the results from our study, beginning with a descrip
 % maybe more the figure to the appendix?
 
 \subsection{Demographics}
-We recruited a total of $41$ participants, $10$ for each experiment condition. One participant was removed due to data quality concerns. The age of the participants has a mean centered at $34.63$ years old with the full distribution of the participant age distribution to the right of Figure~\ref{fig:demoAge}. The population of the county is presented to the left in the figure. We see that the recruited participants follow closely with the population only missing a few percentages in the $35$-$45$ range making the recruited sample size slightly younger. Recruited participants were more female than male as shown in Figure~\ref{fig:demoGender}.
+We recruited a total of $41$ participants, allocating ten to each experiment condition. Due to data quality concerns, we excluded one participant's data. The mean age of the participants was $34.63$ years old, with a detailed age distribution presented alingside the county population distribution in Figure~\ref{fig:demoAge}. This comparison reveals that our sample closely matches the county's demographic profile, albeit with a slightly higher representation of younger adults, particularly in the 35-45 age range. As shown in Figure~\ref{fig:demoGender}, the majority of participants skewed toward female.
 
-In terms of ethnicity, $51.2\%$ of the respondents self-identify as White, followed by $26.8\%$ as Asian, $4.9\%$ as Hispanic, and $7.3\%$ as African American. Additionally, $9.8\%$ of participants identify as having mixed ethnicity.
+Regarding ethnicity, $51.2\%$ of the participants identified as White, $26.8\%$ as Asian, $7.3\%$ as African American and $4.9\%$ as Hispanic. Additionally, $9.8\%$ of participants reported mixed ethnicity.
 
 \subsection{Cognitive Load Results}
+In this subsection, we present results in the order of the research questions. We first illustrate the NASA-TLX across four experiment conditions, providing interpretation of the results to answer RQ1 and RQ2a. Next, we report detailed findings across the six dimensions of NASA-TLX to answer RQ2b. Then, we present qualitative and quantitative findings on user behavior for RQ3. Finally, we present additional comments from participants regarding the interfaces.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{content/image/results/nasatlx_final_value.pdf}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/results/nasatlx_final_value.pdf}
+        \caption{NASA-TLX Weight Score Distribution}
+        \label{fig:nasatlx-final1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/results/Cognitive_load_distribution.pdf}
+        \caption{NASA-TLX Cognitive Interpretation (needs recoloring)}
+        \label{fig:nasatlx-final2}
+    \end{subfigure}
     \caption{NASA-TLX Results}
     \label{fig:nasatlx-final}
 \end{figure}
 
-We show the NASA-TLX weighted results in Figure~\ref{fig:nasatlx-final}. Qualitatively, there is a decrease in cognitive load when comparing short surveys between the text-based interface and interactive interfaces. Conversely, there is an increase in cognitive load when comparing the long survey between the text-based interface and interactive interfaces. However, we are not able to demonstrate statistical significance between the four groups using the Mann-Whitney U test. Reviewing the overall cognitive load, QS participants experienced a `Somewhat High' and `High' cognitive load regardless of length and interface~\cite{hart1988development}. (Need to get the exact percentage).
+We show the NASA-TLX weighted results in Figure~\ref{fig:nasatlx-final1}. Qualitatively, there is a decrease in cognitive load when comparing short surveys between the text-based interface and interactive interfaces. Conversely, there is an increase in cognitive load when comparing the long survey between the text-based interface and interactive interfaces. However, we are not able to demonstrate statistical significance between the four groups using the Mann-Whitney U test. We follow predefined mappings of NASA-TLX values to cognitive levels: low, medium, somewhat high, high, and very high, as listed by ~\textcite{hart1988development}. We show value interpretations in Figure~\ref{fig:nasatlx-final2}. The short text interface had the most participants ($N=8$) rating their cognitive experience as somewhat high or above. The other three experiment groups showed similar cognitive load with about half of the participants experiencing medium cognitive laod and the other have somewhat high and high. No participants across all conditions expressed very high cognitive load.
+
+These results partially answer our first two research questions. To our surprise, the longer survey did not introduce extraneous cognitive load despite the budget of the long QS increasing by 8 times and the options increasing fourfold. We deduct through a list of possible explainations. First, the interactive interface increases participants' cognitive load. However, we do not think this is the case. If it were, we would expect to see even more significant cognitive overload in the long interactive interface, resulting in lower cognitive load scores. Second, participants in the long text interface are cognitively overloaded, leading to satisficing behaviors due to the numerous decisions required to complete the task. We investigate if this is true in the following subsection. Third, we cannot rule out that the interface, contrary to our expectations, did not reduce cognitive load but rather shifts participants' cognitive load throughout the process of completing QS.
+
+% TODO: MERGE INTO ABOVE PARAGRAPH :: Based on these results, given the small sample size for each group of participants, we were not surprised that most results do not provide statistical significance in changes in cognitive load values. However, there are some trends that we capture via descriptive statistics. First, comparing the overall cognitive load and the breakdown of the sub-components between text interface and interactive interface across the short survey, we see a general trend in a reduction of cognitive load. Next, we are surprised by the upward trend between the text and interactive interface for the longer list. This is against our original hypothesis that under even complex situations, we should see a clearer portrait of how interactive interactions can reduce cognitive load. While it is possible that interactive interfaces can increase study participants' cognitive load, our qualitative results do not hint at this possibility. In addition, comparing the long and short survey in the text-based interface, it is counter intuitive to see a downward trend across cognitive load. Logically, choosing among more options would demonstrate a higher cognitive load.
 
 \begin{figure}[ht]
     \centering
@@ -46,20 +63,16 @@ We show the NASA-TLX weighted results in Figure~\ref{fig:nasatlx-final}. Qualita
     \label{fig:nasatlx-with-ci}
 \end{figure}
 
-Next, we present the raw scores from the six measurements of NASA-TLX: Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, and Frustration in Figure~\ref{fig:nasatlx-with-ci}. We also show the 95\% confidence interval around the mean for each boxplot.
 
-Mental Demand remains high across all four conditions with a wide variance of responses. The short interactive interface has the lowest median score across all conditions. We see no statistical significance between conditions. For Physical Demand, all conditions except Long Interactive showed minimal scores, with the Long Interactive condition having a noticeably higher median score. There is statistical significance between short and long interactive interfaces ($p<0.01$) as well as text and interactive interfaces in long surveys ($p<0.05$).
+\subsection{Sources of Cognitive load}
+NASA-TLX consists of six weighted dimensions: mental demand, physical demand, temporal demand, performance, effort, and frustration. To better understand the sources of cognitive demand and answer RQ2b, we highlight qualitative similarities and differences across four experiment conditions. This is followed by descriptive statistics and participant survey findings.
 
-Temporal Demand showed more variation across groups. It is interesting to see that the median across the short text interface is among the highest compared to the rest of the groups, while the long-text interface showed the least Temporal Demand. Our statistical tests showed a significant difference between the long text interface and the long interactive interface ($p<0.05$). Performance scores are relatively low across all conditions, indicating that participants experienced less cognitive load from performance. Effort scores echo the mental demand, showing a wide distribution with a high median across the four groups. Lastly, regarding Frustration, we observe qualitatively that the short text interface has a higher median value than the short interactive interface. The opposite is observed in longer surveys, where respondents in the long survey with a text interface experienced less frustration than the interactive version based on median values. We cannot establish statistical significance in the latter three aspects of NASA-TLX.
-
-Based on these results, given the small sample size for each group of participants, we were not surprised that most results do not provide statistical significance in changes in cognitive load values. However, there are some trends that we capture via descriptive statistics. First, comparing the overall cognitive load and the breakdown of the sub-components between text interface and interactive interface across the short survey, we see a general trend in a reduction of cognitive load. Next, we are surprised by the upward trend between the text and interactive interface for the longer list. This is against our original hypothesis that under even complex situations, we should see a clearer portrait of how interactive interactions can reduce cognitive load. While it is possible that interactive interfaces can increase study participants' cognitive load, our qualitative results do not hint at this possibility. In addition, comparing the long and short survey in the text-based interface, it is counter intuitive to see a downward trend across cognitive load. Logically, choosing among more options would demonstrate a higher cognitive load.
-
-These results lead us to further investigate the source of cognitive demands and participants' behaviors.
+We present the raw NASA-TLX scale results in Figure~\ref{fig:nasatlx-with-ci}. Next to each box plot, a line is present to denote the 95\% confidence interval around the mean for each boxplot.
 
 \subsubsection{Mental Demand}
-Participants highlighted various sources that contributed towards their mental demand. In this section, we first highlight similarly across the groups, then we highlight the differences. The two main sources of mental demand is expected. Participants exacerbated higher mental demand due to two major source:~\textit{Budget management} and~\textit{Preference construction}.
+Mental demand refers to the extent of mental and perceptual activity required. From the interview results, we identified two major sources contributing to mental demand:~\textit{Budget management} and~\textit{Preference construction}. Despite all experiment groups sharing these themes, we notice a distinct difference in the scope of~\textit{Preference construction}, especially when comparing long text and interactive interfaces.
 
-\paragraph{Budget management} Participants aimed to consume the given credit to complete QS. $17$ participants experienced increase in mental demand due to budgeting within the limited credit (N=4), tracking remaining credit (N=10), and trying to maximize spend (N=8). When asked about where participants experienced mental demand:
+\paragraph{Budget management} $17$ participants expressed demand from trying to budget within limited credit ($N=4$), track remaining credits ($N=10$), and maximize the use of credits ($N=8$). For example:
 
 \begin{displayquote}
 How many I got left that~\ldots\ that I haven't voted on yet, and seeing if I and looking at the remaining credits, I'm trying to mentally divide that up before I start allocating upvotes and downvotes.
@@ -67,14 +80,15 @@ How many I got left that~\ldots\ that I haven't voted on yet, and seeing if I an
 \small{\noindent \hfill -- S006, long interactive interface}
 \end{displayquote}
 
-
 \begin{displayquote}
 And then I just wanted to make sure that I used all the credit that I had available to me, and also knowing that in order to like show your support for certain societal issues you had to like that was giving a tangential take away from other societal issues that you could support as well.
     
 \noindent \hfill -- S032, short text interface.
 \end{displayquote}
 
-\paragraph{Preference construction} Participants (N=36) experience increase in mental demand due to preference construction. We can break it down into determining relative preference (N=16) where participants focuses on internal evaluation and comparison among different options; option prioritization (N=17) where participants need to make trade-offs to elicit high priority options and translate internal preferences to a subselection of options; and precice resource allocation (N=30) where a value or adjustment need to represent their preferences.
+In the first quote, the participant struggles with not running out of credit while allocating credits to options they haven't yet attributed. The second quote highlights the challenge of maximizing spend while ensuring sufficient differentiation. All these factors relate to effective budget management.
+
+\paragraph{Preference construction} Almost all participants ($N=36$) experienced an increase in mental demand due to preference construction. This can be broken down into three sources: determining relative preference ($N=16$), where participants focus on internal evaluation and comparison among different options; option prioritization ($N=17$),  where participants make trade-offs to elicit high-priority options and translate internal preferences to a subselection of options; and precise resource allocation ($N=30$), where participants allocate a specific value or adjustment to represent their preferences. For each of these sources, we show an example:
 
 \begin{displayquote}
 Figuring out my priorities, and how much I prioritize option 1 over option 2. What is the difference between those 2 on my priority list?
@@ -98,29 +112,26 @@ I'm not sure how to put into words~\ldots like having to pick how many upvotes w
     
 \noindent \hfill -- S023, long text interface, precice resource allocation
 \end{displayquote}
-% so the interest in mental difficulty was determining how much of my credits I would distribute among the top 3. (S014, III)
-% my relative preference like, should 6 support good enough? Or should I give several upvotes (S007, III)
 
-While preference construction is the main source of mental demand across all experiment groups, we noticed a distinct difference in the scope, especially when we compare long text and interactive interfaces. Participants using a long text interface experience higher mental demand on preference construction and preference, where they tend to \textit{think about issues more narrowly, focusing on personal relevance}. If we consider all nine participants experiencing mental demand from preference construction, $8$ of them experessed a narrower view and only $4$ discussed about hollistic consideration.
+While these sources are common across all experiment groups, when we focus on participants in the long QS condition, the sources of preference construction showed different scopes between participants using text and interactive interfaces. More specifically, participants ($N=8$) in the long text interface tend to experience mental demand from preference construction by thinking about issues more narrowly and focusing on personal relevance. Conversely, participants ($N=9$) in the long interactive interface experience higher mental demand from considering the broader societal impact and evaluating options more holistically. Only four participants in the long text interface expressed a holistic view, and three participants in the long interactive interface expressed a narrow and personal view.
 
-\begin{displayquote}
-\bracketellipsis also seeing the long list and obviously having to pick between quite a few things that I do feel very strongly about and having to figure out which ones do, I feel more strongly about than others.
+% \begin{displayquote}
+% \bracketellipsis also seeing the long list and obviously having to pick between quite a few things that I do feel very strongly about and having to figure out which ones do, I feel more strongly about than others.
     
-\noindent \hfill -- S023, long text interface
-\end{displayquote}
+% \noindent \hfill -- S023, long text interface
+% \end{displayquote}
 
 \begin{displayquote}
-Trying to figure out what upvotes I should give it you know~\ldots compared to~\ldots I even kind of went back compared to the other topics: education compared to medical research, and even with like adult education, I kind of went back and forth between those two. \bracketellipsis So it was very mental tasking for me.
+Trying to figure out what upvotes I should give it you know~\ldots compared to~\ldots I even kind of went back compared to the other topics: <topic one> compared to <topic two>, and even with like <topic three>, I kind of went back and forth between those two. \bracketellipsis So it was very mental tasking for me.
 
 \noindent \hfill -- S015, long text interface
 \end{displayquote}
-In both quotes, both participants are making tradeoffs within a narrow focus or decising a specific value among a handful of options. In contrast, participants using a long interactive interface's high mental demand on preference construction and preference is primarily sourced from \textit{considering the broader societal impact and evaluating options more holistically}. Among all 10 participants, $9$ of them expressed a hollistic view compared to only $3$ expressed a narrower view.
 
-\begin{displayquote}
-\bracketellipsis really having to think, especially with so many different societal issues. How do I personally prioritize them? And to what extent do I prioritize them?
+% \begin{displayquote}
+% \bracketellipsis really having to think, especially with so many different societal issues. How do I personally prioritize them? And to what extent do I prioritize them?
     
-\noindent \hfill -- S009, long interactive interface
-\end{displayquote}
+% \noindent \hfill -- S009, long interactive interface
+% \end{displayquote}
 
 \begin{displayquote}
 \bracketellipsis really going through the rest of the categories and deciding okay, which are the pressing issues of our time and which are the pressing issues for this particular society that that I live in. \bracketellipsis You know these causes need a lot more funding, and and others can probably still have some sort of an impact, even with less resources.
@@ -128,7 +139,9 @@ In both quotes, both participants are making tradeoffs within a narrow focus or 
 \noindent \hfill -- S019, long interactive interface
 \end{displayquote}
 
-While this is subtle, the exposure to all the options through the organization phase seems to force participants to think through these options created such responses. This further translated to the operational aspect of the two groups mental demand. Participants that mentioned a narrower view will describe more demand from developing operational strategies in credit allocation, for example:
+In the first quote, participants expressed mental demand narrowly focused on three options, trying to recall specific characteristics to differentiate among the options. In the second quote, participants consider how options play a role in society and the bigger picture, aiming to maximize impact. While these differences seem subtle, they indicate a shift in cognitive load. It is possible that exposing participants to all options during the organizing phase forced them to think through all options.
+
+Circling back to mental demand related to budget management across these two experiment conditions, we find that long text interface participants focused on more operational behaviors such as:
 
 \begin{displayquote}
 So I wanted to be fair.~\bracketellipsis I actually took my calculator out and said~\bracketellipsis  how much would it be if I equally distributed it and then how do I do that? Do I wanna do it all equally or not?
@@ -136,7 +149,7 @@ So I wanted to be fair.~\bracketellipsis I actually took my calculator out and s
 \noindent \hfill -- S020, long text interface
 \end{displayquote}
 
-On the other hand, the hollistic view lead to mental demand coming from statigic planning and forming processes to operate upon. This ability might also came from the interactive interface to support a more complex decision making process.
+compared to more procedures involving more strategic planning such as:
 
 \begin{displayquote}
 I wanted to make sure I wanted to give some credit to everything~\bracketellipsis I'm trying to make sure that I had without doing a lot of~\ldots I guess redos is trying to kind of get it right the first time on how I weight things.
@@ -144,35 +157,48 @@ I wanted to make sure I wanted to give some credit to everything~\bracketellipsi
 \noindent \hfill -- S032, long interactive interface
 \end{displayquote}
 
+Strategic planning does not refer to gaming out others or 'winning' a game but rather to high-level thinking processes that consider strategies and plans to tackle a challenge, compared to operational tasks such as adjusting a specific vote value. While we did not notice significant differences in mental demand raw values (Figure~\ref{fig:nasatlx-with-ci}, top left figure) across the four experiment groups, the different actions regarding budget management and preference construction show a shift in mental demand across experiment conditions.
+
 % IN_T4: Wanting more information on the options (N=6/40)
 % 5. While the numbers seem small, non of this request came from v3. This could explain that participants are already overloaded from the existing the task.
 
-\subsubsection{Physical Demand}
-Regarding physical demand, most participants reported minimal or no physical demand. Participants primarily attributed physical demand to reading text on the screen ($N=4$), using the mouse ($N=16$), or moving their head to navigate the vertical screen ($N=5$). However, they emphasized that these demands were minimal. Notably, slightly more participants in the interactive interface group ($N=11$) mentioned physical demand from using the mouse, reflecting their increased interaction with the interface.
+% ============================================= %
+\subsubsection{Physical Demand} Physical demand refers to the physical effort required to complete a task, such as physical exertion or movement. Since this study involves participants sitting in front of a computer screen completing a survey, most participants reported minimal physical demand. We nonetheless report the sources of this minimal demand, which include reading text on the screen ($N=4$), using the mouse ($N=16$), and moving their head to navigate the vertical screen ($N=5$). Participants emphasized that these demands were minimal, which is reflected in the low values reported in the NASA-TLX physical demand scores (Figure~\ref{fig:nasatlx-with-ci} middle top image.)
+Notably, $11$ out of $20$ participants that used the interactive interface mentioned physical demand from using the mouse, reflecting their increased interaction with the interface. This is further supported by the raw NASA-TLX physical demand scores, which show statistical significance between short and long interactive interfaces ($p<0.01$) as well as between text and interactive interfaces in long surveys ($p<0.05$) after running a Mann-Whitney U test.
 
+% ============================================= %
 \subsubsection{Temporal Demand}
-We derived four major sources of causes for temporal demand across groups:~\textit{Decision Complexity},~\textit{Budget management},~\textit{Operational Efficicenty}, and~\textit{Strategic Decision Making}.
+Temporal demand refers to the time pressure felt by the participant while performing a task. A lower temporal demand suggests participants experience a slow and leisurely pace.
 
-\paragraph{Decision Complexity}
-Decision complexity involves participants experiencing temporal demand because there are many decisions to make (i.e., deciding votes for each option) or them feeling concerned about the time and effort already invested (i.e., their sunk cost) representing the complexity of the tasks. While each experiment group all has participants expressing sources of temporal demand from either types, participants in the long interactive interface group (N=4) express their challenge with making multiple decisions. $1$ participant from the rest of the other three groups expressed similiar experiences. It is reasonable since short surveys has much less options to consider. Also, this reflects our observation in the other demands , where this group of participants constantly considers options holistically. We see participants mention about the time spent on pairwise comparisons:
+The themes we uncovered from the interviews consist of three main sources that lead to participants' increase in temporal demand. These include:~\textit{Budget}, ~\textit{Decision Complexity}, and ~\textit{Operational Efficiency}. 
+
+\paragraph{Budget}
+Budget is a lightly discussed theme that emerged across experiment conditions. Four participants mentioned budget increasing their temporal demand. Although budget can only decrease through spending, it is interesting that some participants expressed that the reduction in credit value created a sense of time pressure. Participants translated the increasing marginal cost of votes into higher temporal demand. As one participant said,
+
 \begin{displayquote}
-~\bracketellipsis but when you are being presenting the ideas that they're that they are being put together, and you need to allocate the resources. Say, you know, this one is more important than that one. That's the part when it gets tricky, so that you spend more time here.
-    
-\noindent \hfill -- S037, long interactive interface
+When the money was decreasing, as I was casting more upvotes or downvotes so as the money decreases I felt kind of rushed.
+            
+\noindent \hfill -- S034, long interactive interface
 \end{displayquote}
 
-What is more surprising to find is that almost half of the participants (N=4) in the short text interface influenced more by the concerned about the time and effort already invested. The other group had at most $2$ participants express such concern. Participants would mention:
+\paragraph{Decision Complexity} Decision Complexity refers to when participants felt that there are many decisions to make. These causes are expressed in two forms—affirmative and negative. Affirmative perception refers to participants explicitly expressing that there are many decisions to make, while negative perception refers to participants describing concerns regarding the time and effort already invested in the survey.
 
 \begin{displayquote}
-I didn't see any time anywhere. So at first, so at first it was like, Okay, this is fine. But then on the end, I was like, maybe I should just hurry up and make a decision. So it's like at first it would been here, but then I kinda moved up near the end when I was hanging a waffling between my upvotes.
-        
+So it didn't take too much time but obviously there was a lot of things to consider. So there was some temporal demand.
+    
+\noindent \hfill -- S022, short interactive interface
+\end{displayquote}
+
+\begin{displayquote}
+\bracketellipsis so at first it was like, `Okay, this is fine.' But then on the end, I was like, maybe I should just hurry up and make a decision. So it's like at first it would been here, but then I kinda moved up near the end when I was hanging a waffling between my upvotes.
 \noindent \hfill -- S024, short text interface
 \end{displayquote}
 
-We try to explain this after also examing the operational efficiency.
+The former quote pointed out participants making many decisions , while the latter highlighted the increase in temporal demand due to an expected devoted time. What we found important was that each experiment group had participants expressing both perspectives on decision complexity as a source of temporal demand. However, half of the participants ($N=5$) in the short text interface and half of the participants ($N=5$) in long interactive interface expressed concerns due to decision complexity. The long interactive interface involved all five participants registering an affirmative perspective. This is not surprising because participants in the long interactive interface had the most actions needed for organizing and voting. On the other hand, it is interesting to observe that four of these five participants in the short text interface expressed a negative perspective. This indicates that participants in this group are highly sensitive to their sunk cost effect.
+% v2 -- 2 and v3 -- 3
 
-\paragraph{Operational Efficicenty}
-Next, we turn to Operational Efficiency, which represents the sources where participants describe them wanting to finish the survey, execute operations (i.e., reading), or making a decision via a specific operation (i.e., update vote values) efficicenty. Over half of the short survey participants (5 for text interface and 6 for interactive interface) highlighted this as source of temporal demand verses half from the long (N=5, 3 from text and 2 from interactive interfaces) group. Participants would say:
+\paragraph{Operational Efficiency}
+Unlike decision complexity, which refers to the abundance of decisions to be made, operational efficiency refers to specific and concrete operations or goals. For example, completing the survey, executing an operation, or accomplishing a specific task like updating vote values.
 
 \begin{displayquote}
 I wanna get through things in an efficient manner which doesn't necessarily mean I rush it. But it does mean that I do things expeditiously. Especially. I'd like to think I'm somewhat computer-savvy. And so to be able to move through this quickly and efficiently. I do take pride in, but it's all personal stuff. It's not nothing outwardly influencing me. 
@@ -186,27 +212,11 @@ I want the credit done but I don't want to be overthinking.
 \noindent \hfill -- S013, short text interface
 \end{displayquote}
 
-Taking~\textit{Decision Complexity} and~\textit{Operational Efficicenty} altogether, we interperate that the participants in the short survey created a misperception that this is a simple task (seeing just $6$ options on the screen). The participants in the interactive interface was forced to slow down through the organization phase which also assisted in constructing some preferences, preparing them to decide values for the votes.
+The former quote refers to the participant aims to operate swiftly on the interface, not specifically related to decision making. Similarly, the latter focuses on using the credit to complete a specific goal. When asked about temporal demand, 11 participants (five from interactive and six from text interface) out of 20 who responded to the short survey expressed operational efficiency resulting in temporal demand, compared to just five (three from text and two from interactive interface) out of 20 in the long interface group.
 
-\paragraph{Budget Management}
-A few participants (N=4) mentioned that temporal demand came from budget management. For instance:
-\begin{displayquote}
-When the money was decreasing, as I was casting more upvotes or downvotes so as the money decreases I felt kind of rushed.
-            
-\noindent \hfill -- S034, long interactive interface
-\end{displayquote}
-Participants translated the growing marginal cost of votes into their temporal demand.
+Taking~\textit{Decision Complexity} and~\textit{Operational Efficiency} altogether, we interpret that the participants in the short survey misperceived the task as simple, seeing just six options on the screen, and thus anticipated the task to be simple and easily completed. We observe similar patterns from the NASA-TLX temporal demand raw values (Figure~\ref{fig:nasatlx-with-ci}). The short text interface shows a relatively higher demand across the four groups, reflecting the demand from both decision complexity and operational efficiency. This is followed by the short interactive interface, affected by operational efficiency, and the long interactive interface, affected by decision complexity. The long text interface showed the least amount of temporal demand. Our statistical tests showed a significant difference between the long text interface and the long interactive interface ($p<0.05$) after a Mann-Whitney U test.
 
-\paragraph{Strategic Decision Making}
-Five of all participants attributed temporal demand to thinking about strategic approaches in completing the task. 
-
-\begin{displayquote}
-I actually went through the whole thing again just to see like, just to compare my votes and see how that was doing so I know that was taking up some lot of time, and I know that there wasn't an expected kind of like participate participation time limit, and I feel like for any of these topics just looking at how kind of important they are.
-            
-\noindent \hfill -- S001, long text interface
-\end{displayquote}
-
-In addition, three participants from the long survey pointed out that the vertical screen and its the ability to see all the options facilitated direct comparisons, and being transparent about the entirety of the task reduced temporal demand. 
+It is also worth noting that three participants from the 20 who responded to the long survey mentioned that the vertical screen's ability to see all options facilitated direct comparisons and transparency about the entirety of the task, which reduced the temporal demand.
 
 \begin{displayquote}
 (Seeing) all at once I can see how many there are, so it's kind of like I can kind of tell when I will be done.
@@ -214,28 +224,14 @@ In addition, three participants from the long survey pointed out that the vertic
 \noindent \hfill -- S041, long text interface
 \end{displayquote}
 
-\subsubsection{Performance Demand} 
-From the quantiative data, participants across four groups express less performance demand compared to aspects such as mental demand and effort. In this section, we again first report sources of this demand shared across groups and then highlight the differences observed. Two principal themes emerged: The first source comes from~\textit{social responsibility} and the latter on~\textit{operational actions}.
+% ============================================= %
+\subsubsection{Performance}
+Performance refers to how the person perceived if they successfully completed the task. A lower value refers to a good performance and vice versa. We find less differences between experiment groups qualitatively and quantitatively. However, there are notable takeaways that we can derive from the data.
 
-\paragraph{Social Responsibility}
-Several participants expressed the source of performance demand from accounting~\textit{decision-maker responsibility} (N=8) and from considering~\textit{uncertainity of the outcome} (N=3). Participants would express their guilt that they weren't able to avoid because of specific tradeoffs or that they want to be fair.
-
-\begin{displayquote}
-    I don't want people to think that I just like don't care about <ethnicity> people at all. I also don't think like government funding should go towards like religious organizations. You know what I mean. So I don't want somebody to think that like, I just don't care about <ethnicity> people.
-    
-\noindent \hfill -- S041, long text interface, decision-maker responsibility
-\end{displayquote}
-
-In this quote, the participant placeed themselves inside the shoes of a member of the government, rather than a citizen expressing their own attitudes, this shift in project of roles introduced the perforamce demand. This extends further to the participants trying to forsee an outcome:
-
-\begin{displayquote}
-If I was actually running a government funding~\bracketellipsis I don't know how this (the survey results) might actually affect people. Some of these things might be unpopular or bad, or have outcomes that I didn't forsee.
-    
-\noindent \hfill -- S027, short interactive interface, uncertainity of the outcome
-\end{displayquote}
+First, we identified two sources of performance demand:~\textit{Operational Actions} and~\textit{Social Responsibility} from the interviews. 
 
 \paragraph{Operational Actions}
-On the other hand, operational actions involves two specific perspectives. Participants (N=6) highlighted the demand for their performance came from using up all their credits or avoiding overspending their credits. In other words, gaining control in credit management. The other aspect regards assuring that the expressed relative preference is accurate and justified. Participants (N=5) are concerned that they made incorrect interpretation and as reflective of their 'true' preferences. $6$ other participants discussed that they experience performance demand from the bounded time, energy and resources they have in this study, which is an association with the other cognitive demands.
+Similar to previous demands, operational actions refer to specific and executable procedures participants can perform in the survey. These sources are shared across experiment groups. Six participants reported feeling pressured to spend all their credits or ensure they stayed within budget. Five participants were concerned that their choices did not accurately reflect their true preferences. Additionally, six participants mentioned experiencing performance demand due to the limited time, energy, and resources available, which ties into other cognitive demands. Here we show two examples:
 
 \begin{displayquote}
 I don't think I did it perfectly, because I didn't have 0 remaining credits.
@@ -249,13 +245,47 @@ I'm concerned that it's not as reflective of my views as I wanted to be like, or
 \noindent \hfill -- S041, long text interface, preference reflectiveness
 \end{displayquote}
 
-While participants experienced performance demand, most participants feel positive about their final submission. However, there are nuance differences across the the degree. We coded participants resposnes into three categories of satisfactory:~\textit{Did their best},~\textit{Feel good}, and~\textit{Good enough}.~\textit{Did their best} refers to when the participants stated that they had exhaused their maximum effort to complete the task.~\textit{Feel good} refers to when the participants expressed positive emotions or satisfaction about their performance or the outcome of their actions.~\textit{Good enough} refers to when the participants acknowledged that their performance or the outcome was acceptable or satisfactory, but not necessarily perfect or the best possible.
+\paragraph{Social Responsibility}
+Social Responsibility is a noteworthy source of perforamce demand, categorized into accounting~\textit{decision-maker responsibility} (N=8) and from considering~\textit{uncertainity of the outcome} (N=3). The former refers to individuals feeling guilty because they weren't able to avoid because of specific tradeoffs or that they want to be fair. For example, 
 
-Participants that used the interactive interface across short and long groups has almost double the amount of participants (N=11) who expressed~\textit{Feel good} compared to the text interface (N=6). On the other hand, participant using the text interface has more participants (N=5) who expressed~\textit{Did their best} compared to the interactive interface (N=3). This highlighted insights where participants using the interactive interface are more likely to feel good about their performance, while some participants using the text interface are pressed by some challenges.
+\begin{displayquote}
+I don't want people to think that I just like don't care about <ethnicity> people at all. I also don't think like government funding should go towards like religious organizations. You know what I mean. So I don't want somebody to think that like, I just don't care about <ethnicity> people.
+    
+\noindent \hfill -- S041, long text interface, decision-maker responsibility
+\end{displayquote}
+
+In this quote, the participant placed themselves inside the shoes of a member of the government, rather than a citizen expressing their own attitudes. This shift in roles introduced the perforamce demand, however, it demonstrated that QS shared decision maker's dilemma to individual survey respondents. This characteristic extends to the latter which further to the participants trying to forsee an outcome:
+
+\begin{displayquote}
+If I was actually running a government funding~\bracketellipsis I don't know how this (the survey results) might actually affect people. Some of these things might be unpopular or bad, or have outcomes that I didn't forsee.
+    
+\noindent \hfill -- S027, short interactive interface, uncertainity of the outcome
+\end{displayquote}
+
+Similar to the previous source, social responsibility is also shared across experiment groups. Considering the raw NASA-TLX scores(Figure~\ref{fig:nasatlx-with-ci}), participants expressed similar levels of perforamce score. This aligns with the interview results where most participants felt positive about their final submission. This result is expected because the task is designed to reflect their preferences, not to measure performance. We further analyzed the types of satisfactory statements regarding performance.
+
+
+We identified three types of satisfactory statements regarding self reported performance:
+\begin{itemize}
+    \item \textit{Did their best} refers to statements where a participant stated they exhausted their maximum effort to complete the task.
+    \item \textit{Feel good} efers to statements where a participant who expressed positive emotions or satisfaction about their performance or the outcome.
+    \item \textit{Good enough} refers to statements where a participant acknowledged that their performance or the outcome was acceptable or satisfactory, but not necessarily perfect or the best possible.
+\end{itemize}
+
+We found approximately the same number of participants in each of the four experiment groups expressed \textit{Good enough}. Meanwhile, participants using the interactive interface across short and long groups had almost double the number of participants ($N=11$) who expressed \textit{Feel good} compared to the text interface ($N=6$). On the other hand, the text interface had slightly more participants ($N=5$) who expressed \textit{Did their best} compared to the interactive interface ($N=3$).
+
+This result highlights a few important takeaways. First, participants from all experiment groups expressed satisficing behaviors (\textit{Good enough}) with no particular group reporting a higher frequency of this behavior. Second, participants using the text interface are experiencing challenges that make them feel they have to do their best to complete the task. Last, participants using the interactive interface are generally positive about their experience and the outcome.
 
 % TODO: Need to check the reflective thinking part a bit. I **think** there are differences but it is unclear, need to go back to raw code.
 
+
+% ============================================= %
+
 \subsubsection{Effort}
+Captures the amount of work required to achieve the level of performance. It includes the intensity of both mental and physical resources expended during the task.
+
+Effort scores echo the mental demand, showing a wide distribution with a high median across the four groups. 
+
 Next, we examine the sources of effort that participants experienced. We observed that the source of effort covers the entire operation to complete QS, from constructing preferences, to managing credits, and making tradeoffs. However, in this subsection, we grouped the code into two major categories:~\textit{Operational Effort} and~\textit{Strategic Effort}. We see some differences among the groups regarding these two types of effort.
 
 \paragraph{Operational Effort} This type of effort include individual efforts that focuses on specific behaviors on operating the response within the survey. More specifically, these include navigating the interface, managing the budget at an operational scale (i.e., making sure not to run out of budget, making specific updates between two options), or translating an opinion to a quantifiable adjustment on the survey. We consider these efforts from lower-level operations that directly invole making updates or actions realted to the interface itself. Participants using the text interface (N=14) expressed overwhelminly mentioned sources related to such sources, compared to less than half of the participants from the interactive interface (N=7), with the lowest mention by the long interactive interface group (N=2). We show two examples here where both considered different aspects of operational effort:
@@ -304,9 +334,13 @@ And really the bulk of the effort was how to rank order these (options) and allo
 \end{displayquote}
 
 Together, we see that more participants using the interactive interface (N=17) reported sources of strategic effort compared to those using text-based interfaces (N=11). This finding echoes discussions on the sources of mental demand, where participants using the interactive interface tend to think about options holistically. Participants using the text interface have a narrower view when it comes to completing QS.
-    
+
+% ============================================= %
 
 \subsubsection{Frustration}
+Measures the participant's feelings of insecurity, discouragement, stress, and annoyance during task performance. This dimension reflects the emotional response to task challenges and difficulties.
+Lastly, regarding Frustration, we observe qualitatively that the short text interface has a higher median value than the short interactive interface. The opposite is observed in longer surveys, where respondents in the long survey with a text interface experienced less frustration than the interactive version based on median values. We cannot establish statistical significance in the latter three aspects of NASA-TLX.
+
 The source of frustration is categorized into three major themes. These themes are mostly distributed across all experiment groups. These sources can either be~\textit{operational frustration},~\textit{lower level strategic planning}, and~\textit{higher level strategic planning}.
 
 \paragraph{Operational Frustration} Similar to the previous analysis, we define operational frustration as frustration experienced because participants (N=15) wanted to complete an action on the interface. Six participants expressed frustration regarding credit management (i.e., overspending budget); four participants mentioned had trouble deciding the final value for the options; three participants are frustrated because they need to make multiple decisions; five participants were frustrated with the quadratic Mechanism; four participants are frustrated trying to understand the content of the option or how the option connects to them. All experiment groups other than the long text interface (N=2) had almost half of the participants express operational frustration.
@@ -336,6 +370,9 @@ I think the frustration is~\ldots I wish that we could help all of these causes,
 \noindent \hfill -- S026, long interactive interface
 \end{displayquote}
 This result echos the quantitative responses from the NASA-TLX breakdown where long text interface trends slightly lower compared to the other groups. From this analysis, we interpret that frustration comes more from individual's ability to discern and make decisions and not necessarily tied to specific methods in the construction of preference.
+
+% ============================================= %
+
 
 \subsection{Interaction Behavior Analysis}
 To further investigate the cognitive load results, we focused on participants' behaviors during the survey. Specifically, we aim to understand the time participants spent on the options as well as when a participant makes changes to the survey. When a study participant clicks their mouse on the interface to complete some action, whether it is a drag-and-drop, updating votes, or placing options into a specific group, a timestamp and the payload of the update are stored in the log. The time difference between two actions is attributed to the time the participant took to decide and enact upon a behavior. While participants can be thinking about other things, this is the best proxy we have to study participant behaviors.

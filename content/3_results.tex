@@ -4,20 +4,32 @@ In this section, we present the results of our study, which are organized as fol
 
 \begin{figure}[ht]
     \centering
-    \begin{subfigure}[b]{0.65\textwidth}
+    % Top figure
+    \begin{subfigure}[b]{0.8\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{content/image/demo/demo_age_group.pdf}
+        \includegraphics[width=\textwidth]{content/image/demo/demo_age_group_vertical.pdf}
         \caption{Age distribution}
         \label{fig:demoAge}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.3\textwidth}
+    
+    \vspace{0.5cm} % Add some vertical space between the rows
+
+    % Bottom figures
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/demo/demo_gender.pdf}
         \caption{Gender distribution}
         \label{fig:demoGender}
     \end{subfigure}
-    \caption{Two figures side by side}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_ethnicity.pdf}
+        \caption{Ethnicity distribution}
+        \label{fig:demoEthnicity}
+    \end{subfigure}
+    
+    \caption{Demographic distributions: Age, Gender, and Ethnicity}
     \label{fig:Demographics}
 \end{figure}
 
@@ -40,10 +52,10 @@ In this subsection, we present results in the order of the research questions. W
         \label{fig:nasatlx-final1}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.47\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{content/image/results/Cognitive_load_distribution.pdf}
-        \caption{NASA-TLX Cognitive Interpretation (needs recoloring)}
+        \includegraphics[width=\textwidth]{content/image/results/nasatlx_cog_value_interpreted.pdf}
+        \caption{NASA-TLX Cognitive Interpretation}
         \label{fig:nasatlx-final2}
     \end{subfigure}
     \caption{NASA-TLX Results}
@@ -429,7 +441,7 @@ Once we separate the organization time (Figure~\ref{fig:org_time}) and identify 
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{content/image/results/diff_con.png}
+    \includegraphics[width=\textwidth]{content/image/results/clickstream_action_distribution.pdf}
     \caption{voting actions across all options (needs to update chart text, remove normalization, and change the dot colors.)}
     \label{fig:voting_all}
 \end{figure}
@@ -443,7 +455,7 @@ In this plot, we see two distinct patterns between the short survey and the long
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\textwidth]{content/image/results/temp_cut4.png}
+    \includegraphics[width=\textwidth]{content/image/results/combined_density_plots.pdf}
     \caption{Breakdown of voting actions (needs to update chart text)}
     \label{fig:voting_v3_v4}
 \end{figure}

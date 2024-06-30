@@ -18,7 +18,16 @@
 % \usepackage{rerunfilecheck}
 % \usepackage{epstopdf}
 % \usepackage{lscape}
-% \usepackage{wrapfig}
+\usepackage{wrapfig}
+\usepackage{sidecap}
+
+\usepackage{mdframed}
+\usepackage{fontawesome} % for the icon
+\usepackage{amsthm}
+\usepackage{tcolorbox}
+
+\newtcolorbox{tldrbox}[1][]{colback=gray!10, colframe=darkgray, left=5pt, right=5pt, top=3pt, bottom=3pt, arc=0pt, outer arc=0pt, toprule=0pt, bottomrule=0pt, leftrule=1.5pt, rightrule=0pt, #1}
+
 
 %references
 \usepackage[backend=biber, style=acmnumeric]{biblatex}
@@ -52,11 +61,11 @@
 %% author color
 %% color: http://latexcolor.com/
 \definecolor{lapislazuli}{rgb}{0.15, 0.38, 0.61}
-\newcommand{\hs}[1]{{\color{red}{#1}}}
-\newcommand{\tc}[1]{{\color{green}{#1}}}
-\newcommand{\lwt}[1]{{\color{olive}{#1}}}
-\newcommand{\kk}[1]{{\color{violet}{#1}}}
-\newcommand{\vk}[1]{{\color{blue}{#1}}}
+\newcommand{\hs}[1]{{\color{red}{HS: #1}}}
+\newcommand{\tc}[1]{{\color{green}{TC: #1}}}
+\newcommand{\lwt}[1]{{\color{olive}{LWT: #1}}}
+\newcommand{\kk}[1]{{\color{violet}{KK: #1}}}
+\newcommand{\vk}[1]{{\color{blue}{VK: #1}}}
 \newcommand{\yhc}[1]{{\color{orange}{YHC: #1}}}
 \newcommand{\change}[1]{{#1}}
 
@@ -159,7 +168,8 @@
 \input{content/1_related_works.tex}
 \input{content/2.1_interface_design.tex}
 \input{content/2.2_experiment.tex}
-\input{content/3_results.tex}
+\input{content/3.1_cognitive_load.tex}
+\input{content/3.2_behavior.tex}
 \input{content/4_discussion.tex}
 \input{content/5_conclusion.tex}
 % \input{content/98_acks.tex}

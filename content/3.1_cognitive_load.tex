@@ -30,19 +30,18 @@
 \end{figure}
 
 % maybe more the figure to the appendix?
-
-\vk{the binning here feels a bit narrow for how I feel like age is usually reported. Also is the 15-19 bin not just 18, and 19? Since 15 year olds weren't included, I probably wouldn't compare our percent to the national average}
-
-\section{Cognitive Load across interface and their sources}
+\section{Cognitive Load and Sources across Experiment Conditions}
 \label{sec:cog_result}
-In this section, we present the cognitive load across experiment groups, followed by the sources contributing to each cognitive load dimension. Given the limited number of participants, we focus on descriptive quantitative statistics and qualitative assessments of cognitive load. Quantitative data includes metrics collected during the survey tasks, while qualitative insights were generated from post-survey interviews, which were transcribed and thematically analyzed by the first author.
+In this section, we present the cognitive load across experiment groups and the sources contributing to each cognitive load dimension. Given the limited number of participants, we focus on descriptive statistics and qualitative assessments of cognitive load. Quantitative data includes metrics from the survey tasks, while qualitative insights come from post-survey interviews transcribed and analyzed by the first author.
 
-The results are organized as follows: We start with a description of participant demographics, followed by an overview of our cognitive load findings. We then examine six dimensions used in the NASA-TLX survey in the following order: mental demand, physical demand, temporal demand, performance, effort, and frustration. 
+The first author conducted an inductive thematic analysis process~\cite{olsonWaysKnowingHCI2014}. They coded snippets from each transcript based on specific research questions and topics of interest for the qualitative analysis. Similar codes were merged within each research question or topic to form relevant themes. When differences were hypothesized, they applied a deductive coding process to text snippets related to a specific research question or topic of interest.
+
+The results for this section are organized as follows: We start with participant demographics and then provide an overview of our cognitive load findings. We then examine the six dimensions used in the NASA-TLX survey: mental demand, physical demand, temporal demand, performance, effort, and frustration.
 
 \subsection{Demographics}
-We recruited a total of $41$ participants, allocating ten to each experiment condition. Due to data quality concerns, we excluded one participant's data\footnote{The participant expressed the experiment as a fake setup that they do not need to complete it seriously.}. The mean age of the participants was $34.63$ years old, with a detailed age distribution presented alongside the county population distribution in Figure~\ref{fig:demoAge}. This comparison reveals that our sample closely matches the county's demographic profile, albeit with a slightly higher representation of younger adults, particularly in the 35-45 age range. As shown in Figure~\ref{fig:demoGender}, the majority of participants skewed toward female.
+We recruited a total of $41$ participants, allocating ten to each experiment condition. Due to data quality concerns, we excluded one participant's data\footnote{The participant expressed the experiment as a fake setup that they do not need to complete it seriously.}. The mean age of the participants was $34.63$ years old, with a detailed age distribution presented alongside the county population distribution in Figure~\ref{fig:demoAge}. This comparison reveals that our sample closely matches the county's demographic profile, albeit with a slightly higher representation of younger adults, particularly in the 35-45 age range. As shown in Figure~\ref{fig:demoGender}, the majority of participants skewed toward females.
 
-Regarding ethnicity, $51.2\%$ of the participants identified as White, $26.8\%$ as Asian, $7.3\%$ as African American and $4.9\%$ as Hispanic. Additionally, $9.8\%$ of participants reported mixed ethnicity.
+Regarding ethnicity, $51.2\%$ of the participants identified as White, $26.8\%$ as Asian, $7.3\%$ as African American, and $4.9\%$ as Hispanic. Additionally, $9.8\%$ of participants reported mixed ethnicity.
 
 \subsection{Overall Cognitive Load}
 \label{sec:cog}
@@ -61,7 +60,7 @@ Regarding ethnicity, $51.2\%$ of the participants identified as White, $26.8\%$ 
         \caption{NASA-TLX Cognitive Interpretation}
         \label{fig:nasatlx-final2}
     \end{subfigure}
-    \caption{NASA-TLX Results}
+    \caption{This figure shows the box plot results for weighted NASA-TLX scores across experiment groups and participant counts based on individual score interpretations. In~\ref{fig:nasatlx-final1}, we observe a downward trend in cognitive load for the short QS, while the long QS shows an upward trend. Interestingly, there is a counterintuitive downward trend between short and long text interfaces. In~\ref{fig:nasatlx-final2}, these trends are clearer when NASA-TLX scores are grouped into five tiers.}
     \label{fig:nasatlx-final}
 \end{figure}
 
@@ -82,28 +81,13 @@ By deduction, if the interactive interface increased cognitive load in the long 
 
 \paragraph{Cognitive Overload Prevention by Interactive Interface} The long survey caused cognitive overload, but the interactive components may have prevented participants from taking mental shortcuts, which would typically reduce measured cognitive load~\cite{daniel2017thinking, simonBehavioralModelRational1955, payneAdaptiveStrategySelection1988, tverskyJudgmentsRepresentativeness}. This prevention could result in a higher cognitive load in the long interactive interface compared to the long text interface. In other words, the interactive interface may have shifted participants' cognitive load from some dimensions to others, maintaining their overall cognitive load at a higher level but not overloaded. If this is true, we expect to see differences among the qualitative explanations of sources, specifically differences in the perceived causes of cognitive load. We will explore this in the next subsections (Subsections~\ref{sec:mental}-\ref{sec:fustration}).
 
-\paragraph{A Pure Increase of Cognitive Load Due to Interactivity} It is also possible that the long survey introduced cognitive overload, and the interactive interface did not influence participants' preference construction but only increased cognitive load due to the added interactivity. In other words, participants are asked to perform additional operations with interactive elements that contributed to a higher cognitive load without providing sufficient cognitive benefits. If this is true, we should expect behavior data to show similar voting patterns across conditions, as the added interactions primarily focused on pre-organization of the options rather than influencing the decision-making process itself. We will explore this in the section~\ref{sec:behave_result}
+\paragraph{A Pure Increase of Cognitive Load Due to Interactivity} It is also possible that the long survey introduced cognitive overload, and the interactive interface did not influence participants' preference construction but only increased cognitive load due to the added interactivity. In other words, participants are asked to perform additional operations with interactive elements that contribute to a higher cognitive load without providing sufficient cognitive benefits. If this is true, we should expect behavior data to show similar voting patterns across conditions, as the added interactions primarily focused on the pre-organization of the options rather than influencing the decision-making process itself. We will explore this in the section~\ref{sec:behave_result}.
 
 We also acknowledge the possibility that the elicited values are pure noise and do not reflect the actual cognitive load. This could be due to the small sample size, the nature of the task, or the participants' understanding of the cognitive load scale. While this might be true for small sample sizes, we believe that the qualitative insights from the interviews provide a more nuanced understanding of the cognitive load sources. We detail these limitations in Section~\ref{sec:limitations}.
 
-/hs{ what was your process to identify themes?}
-/hs{Section 5.3 (snd section 5 overall) is too long. 
-
-Instead, you could break up section 5 into two sections, one on cognitive  load analysis and the other on behavioral analysis. 
-
-You need to explain in some detail, how you identified the codes for each facet; did you follow a well established process (cite). It'll be nice if you can add a table to summarize the statitucs from the qualitative sections (e.g. how many in each of the experimental consitions felt tha budget management was important to mental demand), You have all the data in the text, and a table would be helpful 
-
-In this new section 5, have a subsection for each of the six facets. Then, take each the six subfigures of fig 12, and use either a wrapfig environment or a side caption figure to insert each of the six subfigures into each of the subsections of this new section 5; this way, the figure will be adjacent to the text for enhanced readability.
-
-Each of the subsections corresponding to each of the dimensions of the scale, you should conclude with a takeaway mesaage. There is so much text here, and it will be easy to be lost.
-
-Section 5.5 and 5,6 should be in the behavioral analysis section
-
-Section 5.7 should be in a discussion section}
-
 % ============================================= %
 \begin{table}[h]
-    \caption{Mental Demand Table, needs to be updated with some new terms definitions for some of the columns.}
+    \caption{This table lists all the causes participants mentioned as contributing to their Mental Demand. The shaded cells represent the percentage of participants citing each source of mental demand, allowing for comparison within columns. The abbreviations are: ST (Short Text Interface), SI (Short Interactive Interface), LT (Long Text Interface), and LI (Long Interactive Interface). Short and Long refer to the sum across both interfaces; Text and Inter refer to the sum across both survey lengths. We include Sparklines for comparisons across these experiment groups.}
     \label{tbl:mental}
     \includegraphics[width=\linewidth]{content/image/cog/mental_table.png}
 \end{table}
@@ -112,12 +96,14 @@ Section 5.7 should be in a discussion section}
 
 \vspace{5pt}
 \begin{tldrbox}
-    \faInfoCircle~\xspace\textbf{Takeaway:} Participants across all groups highlighted \textit{Budget management}, \textit{Preference construction}, and \textit{Justification and response reflection} as cause of mental demand. We observed two notable difference: First, slightly more participants using the text interface reported mental demand from precisly determining number of votes for options compared to the interactive interface. Second, when it comes to long QS, participants using the long interactive interface considered broader societal impacts and evaluated options holistically compared to those in the long text interface, who focused on personal relevance and individual issues. 
+    \faInfoCircle~\xspace\textbf{Takeaway:} Participants across all groups highlighted~\textbf{budget management} and~\textbf{preference construction} as their primary sources of mental demand. We observed two key differences: First, slightly more participants using the text interface reported mental demand from precisely determining the number of votes for options compared to the interactive interface. Second, when it comes to long QS, participants using the long interactive interface considered broader societal impacts and evaluated options holistically, while those in the long text interface focused on personal relevance and individual issues. These differences indicate that the interactive interface encouraged deeper thinking, shifting the source of mental demand. % We find evidence that the interactive interface prevented cognitive overload.
 \end{tldrbox}
 
-Mental demand refers to the extent of mental and perceptual activity required. From the interview results, among all sources contributing to the increase of mental demand, we identified two major sources contributing to mental demand:~\textit{Budget management} and~\textit{Preference construction}. A detailed breakdown of participant distribution across different sources that influenced their mental demand is presented in Table~\ref{tbl:mental}. While $24$ participants mentioned experiment setup, most of them attributes it to understanding and recalling their experience related to the option. The other three sources directly associated with completing QS include: \textit{Budget management}, \textit{Preference construction}, and \textit{Justification and response reflection}.
+Mental demand refers to the extent of mental and perceptual activity required. Interview results showed the top two causes that increased participants' mental demand were~\textit{Budget management} and~\textit{Preference construction}. Table~\ref{tbl:mental} listed all causes. We discuss in detail below.
 
-\subsubsection{Mental Demand Source: Budget management} $14$ participants expressed demand from trying to budget within limited credit ($N=4$), track remaining credits ($N=10$), and maximize the use of credits ($N=8$). For example:
+Fourteen participants expressed demand from budgeting within limited credit (N=4), tracking remaining credits (N=10), and maximizing credit use (N=8). For example:
+
+\subsubsection{Mental Demand Source: Budget management} $14$ participants expressed demand from budgeting within limited credit ($N=4$), tracking remaining credits ($N=10$), and maximizing credit use ($N=8$). For example:
 
 \begin{displayquote}
 How many I got left that~\ldots\ that I haven't voted on yet, and seeing if I and looking at the remaining credits, I'm trying to mentally divide that up before I start allocating upvotes and downvotes.
@@ -131,9 +117,12 @@ And then I just wanted to make sure that I used all the credit that I had availa
 \noindent \hfill -- S032, short text interface, track remaining credits.
 \end{displayquote}
 
-In the first quote, the participant struggles with not running out of credit while allocating credits to options they haven't yet attributed. The second quote highlights the challenge of maximizing spend while ensuring sufficient differentiation. All these factors relate to effective budget management.
+In the first quote, the participant struggles with not running out of credit while allocating credits. The second quote highlights the challenge of maximizing spend while ensuring sufficient differentiation. Both relate to effective budget management.
 
-\subsubsection{Mental Demand Source: Preference construction} Almost all participants ($N=39$) experienced an increase in mental demand due to preference construction. This can be broken down into three sources: determining relative preference ($N=16$), where participants focus on internal evaluation and comparison among different options; option prioritization ($N=17$),  where participants make trade-offs to identify high-priority options and translate internal preferences into a subset of options; and precise resource allocation ($N=30$), where participants allocate specific values or adjustments to represent their preferences. For each of these sources, we show an example:
+We further categorized budget management causes as operational (completing an operation, e.g., using the last credit) or strategic (achieving a higher goal, e.g., spreading credits across options). Strategic planning does not refer to gaming out others or 'winning' a game but rather to high-level thinking processes that consider strategies and plans to tackle a challenge, compared to operational tasks such as adjusting a specific vote value. Most long survey participants reported operational causes, indicating they didn't face enough mental demand to consider additional strategies.
+
+\subsubsection{Mental Demand Source: Preference construction}
+Almost all participants ($N=39$) reported increased mental demand from preference construction. We broken it down into three sources: determining relative preference ($N=16$), option prioritization ($N=17$), and precise resource allocation ($N=30$), For example, participants would focus on internal evaluation and construct comparisons among different options:
 
 \begin{displayquote}
 Figuring out my priorities, and how much I prioritize option 1 over option 2. What is the difference between those 2 on my priority list?
@@ -142,6 +131,8 @@ Figuring out my priorities, and how much I prioritize option 1 over option 2. Wh
 \end{displayquote}
 
 % I think the whole time I was trying to balance, I think II think I partly was discovering my what's the word I want to use bias isn't quite right. My priorities (S031, I)
+
+Participants would locate higher priority options through trade-off decision making or map existing internal preferences into a subset of options:
 
 \begin{displayquote}
 I knew which ones that I wanted to dedicate the most to, and I knew which one I wanted to dedicate the least to. But it was that middle area that was kind of a grey area.
@@ -152,30 +143,27 @@ I knew which ones that I wanted to dedicate the most to, and I knew which one I 
 % I knew which ones that I wanted to dedicate the most to, and I knew which one I wanted to dedicate the least to. But it was that middle area that was kind of a grey area.
 % \noindent \hfill -- S024, short text interface, option prioritization
 
+Finally, participants tried to allocate specific values or make specific 
+adjustments to represent their preferences. 
+
 \begin{displayquote}
 I'm not sure how to put into words~\ldots like having to pick how many upvotes would go to each one
     
 \noindent \hfill -- S023, long text interface, precice resource allocation
 \end{displayquote}
 
-Almost all participants mentioned preference construction as a source of mental demand, echoing the theory that preference construction is a difficult and mentally demanding task. In addition, we notice slightly more participants using the text interface cited the cause of mental demand from precise resource allocation compared to the interactive interface ($18$ verses $12$). We conjecture that participants, with the help of the interactive interface, might have been able to make more informed decisions and thus experienced less mental demand in this area.
+Almost all participants mentioned preference construction as a source of mental demand, supporting the theory that preference construction is a difficult and mentally demanding task. Notably, more participants using the text interface reported mental demand from precise resource allocation compared to the interactive interface ($18$ vs. $12$). We conjecture that the interactive interface helped participants make more informed decisions, reducing their mental demands in this area.
 
-\subsubsection{Mental Demand Source: Justification and response reflection} $8$ participants expressed mental demand from justifying their choices and reflecting on their responses ($N=4$). Participants would either reflect whether the votes they allocated reflected their true preferences or whether the among of credit spent is worth it.
 
-\begin{wrapfigure}{r}{0.45\textwidth} % Adjust the width as needed
-    \centering
-    \includegraphics[width=0.45\textwidth, trim=0 13 0 13, clip]{content/image/cog/Mental_scores.pdf}
-    \captionsetup{width=0.40\textwidth, justification=justified} % Adjust the width to match the image width
-    \caption{Mental Demand Raw Score: Across all four experiment groups, participant's reported mental demand is spread across a wide range with many participants experiencing high mental demand.}
-    \label{fig:mental_cog_score}
-\end{wrapfigure}
+\subsubsection{Mental Demand Source: Other Sources}
+We identified four additional sources causing participants' mental demands: \textit{experiment setup}, \textit{number of options}, \textit{QS mechanism}, and \textit{external factors}. 
 
-\subsubsection{Long QS Conditions: A different scope of preference construction and budget management approach}
+$24$ participants mentioned the experiment setup mainly related to understanding and recalling their experience with the options. $6$ participants, all from the long QS, found the number of options added mental demand. $4$ participants cited working with getting familiar with the QS mechanism as a source of mental demand. These are sources related to the study design. $12$ participants mentioned external factors, such as considering the consequences of their results or the challenges decision-makers face. $4$ participants reported an increase and another four a reduction in mental demand due to the interface design. $8$ participants expressed mental demand from justifying their choices and reflecting on their responses, questioning whether their votes truly reflected their preferences or if the amount of credit spent was justified.
 
-While these sources are common across all experiment groups, we highlight a notable difference when we focus on participants across interfaces completing the long QS.~\textbf{They focus on a different scope of preference construction}.More specifically, participants ($N=8$) in the long text interface tend to experience mental demand from preference construction by thinking about issues more narrowly and focusing on personal relevance. Conversely, participants ($N=9$) in the long interactive interface experience higher mental demand from considering the broader societal impact and evaluating options more holistically. Only four participants in the long text interface expressed a holistic view, and three participants in the long interactive interface expressed a narrow and personal view.
+\subsubsection{Takeaway: A different scope of preference construction and budget management approach among long QS groups}
 
-/hs{What is "a holistic view"? why is it about the long text interface that prevents them evaluating options holistically?}
-/tc{Conjecture: choice overload -> heuristics -> so they become narrower}
+While these sources are common across all experiment groups, we highlight a notable difference when we focus on participants across interfaces completing the long QS. \textbf{They focus on a different scope of preference construction}. More specifically, participants ($N=8$) in the long text interface tend to experience mental demand from preference construction by thinking about issues more narrowly and focusing on personal relevance. Conversely, participants ($N=9$) in the long interactive interface experience higher mental demand from considering the broader societal impact and evaluating options more comprehensively. Only four participants in the long text interface expressed a comprehensive view, and three participants in the long interactive interface expressed a narrow and personal view.
+
 % \begin{displayquote}
 % \bracketellipsis also seeing the long list and obviously having to pick between quite a few things that I do feel very strongly about and having to figure out which ones do, I feel more strongly about than others.
     
@@ -200,65 +188,72 @@ Trying to figure out what upvotes I should give it you know~\ldots compared to~\
 \noindent \hfill -- S019, long interactive interface
 \end{displayquote}
 
-In the first quote, participants expressed mental demand narrowly focused on three options, trying to recall specific characteristics to differentiate among the options. In the second quote, participants consider how options play a role in society and the bigger picture, aiming to maximize impact. This difference indicates a shift in cognitive load from personal relevance to societal impact across the two long QS conditions. We conjecture that this represents participants in the long text interface are applying heuristics to narrow down their choices, while participants in the long interactive interface are considering a broader range of factors to make their decisions through the scaffolding provided by the interactive interface. 
+In the first quote, participants felt mental demand focusing on three options, trying to recall specific characteristics to differentiate them. In the second quote, participants considered the societal impact of options, aiming to maximize their effect. This difference highlighted our belief that the organization phase prompted participants to consider a broader range of factors in their decisions. Across both interfaces, participants in the long survey tended towards operational mental demands related to budget management. We argue the interactive interface prevented participants from using heuristics to narrow their choices, which only appeared when final votes were determined, an area with less support from the interface. We conclude the interactive interface scaffolded the decision-making process, preventing cognitive overload, and thus shifted mental demand sources. This shift explains why we did not notice significant differences in mental demand raw values (Figure~\ref{fig:mental_cog_score}) across the four experiment groups.
 
-/hs{put everything related to budget in one place; right now, you have budget, -> pref -> budget }/tc{TODO: Need to get the values of the participant count.}
-In addition, we also find that long text interface participants focused on more operational behaviors such as:
+% In addition, we also find that long text interface participants focused on more operational behaviors such as:
 
-\begin{displayquote}
-So I wanted to be fair.~\bracketellipsis I actually took my calculator out and said~\bracketellipsis  how much would it be if I equally distributed it and then how do I do that? Do I wanna do it all equally or not?
+% \begin{displayquote}
+% So I wanted to be fair.~\bracketellipsis I actually took my calculator out and said~\bracketellipsis  how much would it be if I equally distributed it and then how do I do that? Do I wanna do it all equally or not?
 
-\noindent \hfill -- S020, long text interface
-\end{displayquote}
+% \noindent \hfill -- S020, long text interface
+% \end{displayquote}
 
-compared to more procedures involving more strategic planning such as:
+% compared to more procedures involving more strategic planning such as:
 
-\begin{displayquote}
-I wanted to make sure I wanted to give some credit to everything~\bracketellipsis I'm trying to make sure that I had without doing a lot of~\ldots I guess redos is trying to kind of get it right the first time on how I weight things.
+% \begin{displayquote}
+% I wanted to make sure I wanted to give some credit to everything~\bracketellipsis I'm trying to make sure that I had without doing a lot of~\ldots I guess redos is trying to kind of get it right the first time on how I weight things.
 
-\noindent \hfill -- S032, long interactive interface
-\end{displayquote}
+% \noindent \hfill -- S032, long interactive interface
+% \end{displayquote}
 
-Strategic planning does not refer to gaming out others or 'winning' a game but rather to high-level thinking processes that consider strategies and plans to tackle a challenge, compared to operational tasks such as adjusting a specific vote value. While we did not notice significant differences in mental demand raw values (Figure~\ref{fig:mental_cog_score}) across the four experiment groups, the different actions regarding budget management and preference construction show a shift in mental demand across experiment conditions.
+
 
 % IN_T4: Wanting more information on the options (N=6/40)
 % 5. While the numbers seem small, non of this request came from v3. This could explain that participants are already overloaded from the existing the task.
 
+\begin{figure}[h]
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Mental_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified}
+        \caption{Mental Demand Raw Score: Across all four experiment groups, participants' reported mental demand is spread across a wide range with many participants experiencing high mental demand.}
+        \label{fig:mental_cog_score}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Physical_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified}
+        \caption{Physical Demand Raw Score: Participants other than the long interactive interface reported minimal physical demand. The long interactive interface had the highest physical demand, likely due to increased mouse clicks and extended time spent looking at the vertical screen.}
+        \label{fig:physical_cog_score}
+    \end{minipage}
+\end{figure}
+
 % ============================================= %
 \begin{table}[h]
-    \caption{Mental Demand Table, needs to be updated with some new terms definitions for some of the columns.}
+    \caption{Physical Demand Causes: Most participants expressed little or no physical demand. Results reflected that participants in the long interactive interface required more actions, hence the higher mention of mouse usage as a source.}
     \label{tbl:physical}
     \includegraphics[width=\linewidth]{content/image/cog/physical_table.png}
 \end{table}
+
 \subsection{Source of Physical Demand} 
 \label{sec:physical}
 
 \vspace{5pt}
 \begin{tldrbox}
-    \faInfoCircle~\xspace\textbf{Takeaway:} Participants across all groups highlighted \textit{Reading}, \textit{Using the mouse}, and \textit{navigating a vertical screen} as cause of physical demand. Most participants experienced little or minimal physical demand. Table~\ref{tbl:physical} shows the distribution of participants across different sources of physical demand.
+    \faInfoCircle~\xspace\textbf{Takeaway:} Participants across all groups highlighted \textit{reading}, \textit{using the mouse}, and \textit{navigating a vertical screen} as cause of physical demand. Most participants experienced little or minimal physical demand. Interactive interface users experienced higher physical demand due to increased mouse usage.
 \end{tldrbox}
-
-\begin{wrapfigure}{r}{0.45\textwidth} % Adjust the width as needed
-    \centering
-    \includegraphics[width=0.45\textwidth, trim=0 13 0 13, clip]{content/image/cog/Physical_scores.pdf}
-    \captionsetup{width=0.40\textwidth, justification=justified} % Adjust the width to match the image width
-    \caption{Physical Demand Raw Score: Participants other than the long interactive interface reported minimal physical demand. The long interactive interface had the highest physical demand, likely due to increased mouse clicks and extended time spent looking at the vertical screen.}
-    \label{fig:physical_cog_score}
-\end{wrapfigure}
 
 Physical demand refers to the physical effort required to complete a task, such as physical exertion or movement. Since this study involves participants sitting in front of a computer screen completing a survey, most participants reported minimal physical demand($N=32$). We nonetheless report the sources of this minimal demand, which include reading text on the screen ($N=4$), using the mouse ($N=16$), and moving their head to navigate the vertical screen ($N=5$). Participants emphasized that these demands were minimal, which is reflected in the low values reported in the NASA-TLX physical demand scores (Figure~\ref{fig:physical_cog_score})
 
-Notably, $11$ out of $20$ participants that used the interactive interface mentioned physical demand from using the mouse, reflecting their increased interaction with the interface. This is further supported by the raw NASA-TLX physical demand scores, which show a significance difference visually between short and long interactive interfaces as well as between text and interactive interfaces in long surveys. \hs{Would it be possible to not use NHST? It's difficult to convince a reviewer that you have statistical significance with a small subject pool ; the study is underpowered}
+Notably, $11$ out of $20$ participants who used the interactive interface mentioned physical demand from using the mouse, reflecting their increased interaction with the interface. Table~\ref{tbl:physical} shows the distribution of participants across different sources of physical demand. This is further supported by the raw NASA-TLX physical demand scores, which show a significant visual difference between short and long interactive interfaces as well as between text and interactive interfaces in long surveys.
 
 % ============================================= %
-\newpage % TODO: this is a temp solution, need to fix toward the end
 \begin{table}[h]
     \caption{Temporal Demand Table, needs to be updated with some new terms definitions for some of the columns.}
     \label{tbl:temporal}
     \includegraphics[width=\linewidth]{content/image/cog/temporal_table.png}
 \end{table}
-
-[I am some text before I can fix the layout.]
 
 \subsection{Source of Temporal Demand} 
 \label{sec:temporal}

@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{none/global//global/global}
     \entry{posner2018radical}{book}{}
       \name{author}{2}{}{%
         {{hash=aede6e96185da8c77b290567ceebdc0f}{%
@@ -41,8 +41,8 @@
       \strng{authorbibnamehash}{abc6984eefbd95b68640618ec82bfbbb}
       \strng{authornamehash}{abc6984eefbd95b68640618ec82bfbbb}
       \strng{authorfullhash}{abc6984eefbd95b68640618ec82bfbbb}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Radical Markets: {{Uprooting}} Capitalism and Democracy for a Just Society}

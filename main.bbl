@@ -16,39 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{posner2018radical}{book}{}
-      \name{author}{2}{}{%
-        {{hash=aede6e96185da8c77b290567ceebdc0f}{%
-           family={Posner},
-           familyi={P\bibinitperiod},
-           given={Eric\bibnamedelima A},
-           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=4fc18f7132ef6aab4fd165fe14a73448}{%
-           family={Weyl},
-           familyi={W\bibinitperiod},
-           given={E\bibnamedelima Glen},
-           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Princeton University Press}%
-      }
-      \strng{namehash}{abc6984eefbd95b68640618ec82bfbbb}
-      \strng{fullhash}{abc6984eefbd95b68640618ec82bfbbb}
-      \strng{bibnamehash}{abc6984eefbd95b68640618ec82bfbbb}
-      \strng{authorbibnamehash}{abc6984eefbd95b68640618ec82bfbbb}
-      \strng{authornamehash}{abc6984eefbd95b68640618ec82bfbbb}
-      \strng{authorfullhash}{abc6984eefbd95b68640618ec82bfbbb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Radical Markets: {{Uprooting}} Capitalism and Democracy for a Just Society}
-      \field{year}{2018}
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

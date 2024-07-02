@@ -55,7 +55,7 @@ Since there are no prior studies and standard interfaces for tools using the qua
 The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections. Alternative design considerations are presented in Appendix~\ref{sec:appendix_interface_alternative}
 
 \subsubsection{Paper prototype: visualizing trade-offs}
-To design the interface effectively, we first needed to understand what made QS more complex. We began by surveying existing interfaces (Figure~\ref{fig:qv_interface_external}, with the exception of Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces shared these key components:
+To design the interface effectively, we first needed to understand what made QS more complex. Building on existing literature, the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. We also survey existing interfaces (Figure~\ref{fig:qv_interface_external}, with the exception of Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces shared these key components:
 \begin{itemize}
     \item Option list: A list of options contesting for votes.
     \item Vote controls: Buttons to increase and decrease votes associated with each option.
@@ -63,22 +63,7 @@ To design the interface effectively, we first needed to understand what made QS 
     \item Summary: An auto-generated summary of costs and remaining budget.
 \end{itemize}
 
-Most components were focused on the voting process, only the summary addressed the constraints imposed by credit limits. Building on existing literature, 
-
-
-% The original paper prototype aimed to help visualize survey respondents' tradeoffs among options. 
-% The original paper prototype aimed to utilize visual representations to highlight the constrained availability of credit and to explain the costs and trade-offs associated with selecting each available option.
-% Early on, we did not know which components made QS more difficult than other survey techniques. We began by surveying existing interfaces (Figure~\ref{fig:qv_interface_external} other than Figure~\ref{fig:gov4gitInterface} which did not exist near the writing of this paper). All four interfaces consist of these common components:
-As we were unsure what made QS more complex than other survey techniques, our investigation began with the existing interface (Figure~\ref{fig:qv_interface_external}, except Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces consist of these common components:
-\begin{itemize}
-    \item Option list: A list of options contesting for votes.
-    \item Vote Controls: Buttons to increase and decrease votes associated with each option.
-    \item Individual vote tally: A representation of votes associated with an option.
-    % \item Summary: A summary that automatically calculates the cost across options and the remaining budget.
-    \item Summary: An auto-generated summary of costs and remaining budget.
-\end{itemize}
-
-To brainstorm ways to help survey respondents manage trade-offs across options, we decomposed these options and explored several innovative layouts. Initially, we thought trade-offs were the core cause of cognitive load. In this paper, we show two versions of the paper prototypes in Figure~\ref{fig:qv_paper}. In both figures, costs are represented by blocks, similar to Figure~\ref{fig:rxcvotingInterface}. We imagine the survey respondents to drag and position options in the space provided unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}). Similar to the seminal debate on direct manipulation vs. interface agents~\cite{shneidermanDirectManipulationVs1997}, the research team was unsure how much control survey respondents should have over the positioning of the options to aid the decision-making process that considers trade-offs. Different from prior interfaces, we used placements of the interface to denote positive or negative number of votes. After several pretests, we learned that the main process participants aim to do throughout the survey is establishing~\textit{relative} preferences across the options, rather than thinking so much about trade-offs. (previous only targeting the voting, no preference, trade-off )
+While most components were focused on the voting process, only the summary addressed the constraints imposed by credit limits. To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative votes counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishing of relative preferences.
 
 \begin{figure}[H]
     \centering
@@ -241,3 +226,16 @@ Both experiment interfaces are developed with a React.js frontend and a Next.js 
 % These design decisions led to the interface shown in Figure~\ref{fig:textInterface}. 
 
 
+% The original paper prototype aimed to help visualize survey respondents' tradeoffs among options. 
+% The original paper prototype aimed to utilize visual representations to highlight the constrained availability of credit and to explain the costs and trade-offs associated with selecting each available option.
+% Early on, we did not know which components made QS more difficult than other survey techniques. We began by surveying existing interfaces (Figure~\ref{fig:qv_interface_external} other than Figure~\ref{fig:gov4gitInterface} which did not exist near the writing of this paper). All four interfaces consist of these common components:
+% As we were unsure what made QS more complex than other survey techniques, our investigation began with the existing interface (Figure~\ref{fig:qv_interface_external}, except Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces consist of these common components:
+% \begin{itemize}
+%     \item Option list: A list of options contesting for votes.
+%     \item Vote Controls: Buttons to increase and decrease votes associated with each option.
+%     \item Individual vote tally: A representation of votes associated with an option.
+%     % \item Summary: A summary that automatically calculates the cost across options and the remaining budget.
+%     \item Summary: An auto-generated summary of costs and remaining budget.
+% \end{itemize}
+
+% To brainstorm ways to help survey respondents manage trade-offs across options, we decomposed these options and explored several innovative layouts. Initially, we thought trade-offs were the core cause of cognitive load. In this paper, we show two versions of the paper prototypes in Figure~\ref{fig:qv_paper}. In both figures, costs are represented by blocks, similar to Figure~\ref{fig:rxcvotingInterface}. We imagine the survey respondents to drag and position options in the space provided unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}). Similar to the seminal debate on direct manipulation vs. interface agents~\cite{shneidermanDirectManipulationVs1997}, the research team was unsure how much control survey respondents should have over the positioning of the options to aid the decision-making process that considers trade-offs. Different from prior interfaces, we used placements of the interface to denote positive or negative number of votes. After several pretests, we learned that the main process participants aim to do throughout the survey is establishing~\textit{relative} preferences across the options, rather than thinking so much about trade-offs. 

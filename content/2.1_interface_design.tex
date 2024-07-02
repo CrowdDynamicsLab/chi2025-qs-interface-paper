@@ -64,10 +64,6 @@ Existing interfaces consists standardlized componenets shown in Figure~\ref{fig:
 
 Most components were focused on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping interations (Figure~\ref{fig:qv_paper}), we tested different presentations of these compoenents with added features to assist information organization. Pretest respondents felt QS challenging due to idenfitying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
 
-% To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative vote counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishment of relative preferences.
-% the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. 
-% The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections.
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.54\textwidth}
@@ -88,7 +84,7 @@ Most components were focused on presenting information and obtaining votes, only
 \end{figure}
 
 \subsubsection{Prototype 1: Ranking-Vote}
-Considering the relative preference is presented by ranking and voting, our prototype 1 aimed to tested whether ranking options before voting would help establish the relative preference. This prototype allowed respondents to reposition options before finalizing votes. However, pretests revealed that respondents rarely moved the options, and some questioned the necessity of full ranking, as it did not influence their QS submission. Furthermore, many were unaware that options were draggable until shown. This insight indicates that a full ranking is not essential for establishing relative preferences, leading us to consider selecting a subset of options instead of requiring a full rank among all options.
+Considering that relative preference is often through ranking items, we tested whether ranking options before voting would help establish individual's relative preference in our prototype 1. This prototype allowed respondents to reposition options before voting. Pretests revealed that respondents rarely moved the options and questioned the necessity of full ranking, as it did not influence their QS submission. Additionally, many were unaware that options were draggable until shown. This insight indicates that full ranking is unnecessary for establishing relative preferences. Therefore, we decided to ask respondents select a subset of options instead of requiring a full rank among all options.
 
 \begin{figure}[h]
     \centering
@@ -117,9 +113,7 @@ Considering the relative preference is presented by ranking and voting, our prot
 \end{figure}
 
 \subsubsection{Prototype 2: Select-then-Vote}
-Based on feedback from Prototype 1, we shifted from~\textit{allowing} option ranking to a two-phase process where individuals~\textit{intentionally} select options to express opinions before voting. As shown in Figure~\ref{fig:qv_select}, survey respondents select options they cared about (Figure~\ref{fig:qv_select_selection}), and the interface positioned these options at the top of the list for voting (Figure~\ref{fig:qv_select_vote}). 
-We noticed several issues through this process: many respondents marked most options as 'option you care about' which defeats the design's purpose, and there was no clear distinction between selected and unselected options which make respondents confused about the necessity of Step 1. This highlighted the need for a clearer distinction and connection between the two phases to effectively construct relative preferences.
-% During this process, we noticed several issues. First, many survey respondents placed most options into the 'option you care about' category, defeating the design's purpose. Second, there were no indicators distinguishing between the selected and remaining options. Respondents did not notice their selections were kept at the top in the voting stage and were unsure why Step 1 was necessary if all options were shown again. This informed two takeaways: selecting options to vote on is too coarse to construct relative preferences, and there needs to be a clearer distinction and connection between the two phases.
+Based on feedback from Prototype 1, instead of~\textit{allowing} individuals to rank options, prototype 2 implemented a two-phase process that~\textit{intentionally} select options to express opinions before voting. As shown in Figure~\ref{fig:qv_select}, survey respondents selected their preferred options (Figure~\ref{fig:qv_select_selection}), and the interface positioned these options at the top of the list for voting (Figure~\ref{fig:qv_select_vote}). We identified several issues during prototype 2 pretest: many respondents marked most options as 'options they care about,' which undermined the design's purpose. Additionally, the lack of clear distinction between selected and unselected options confused respondents about the necessity of Step 1. Thus, we need a clearer distinction and connection between the two phases to effectively construct relative preferences.
 
 \begin{figure}[h]
     \centering
@@ -136,14 +130,12 @@ We noticed several issues through this process: many respondents marked most opt
         \caption{The Voting Interface: Voting controls appear on the left side of each option, showing the current votes and associated costs on the right. A budget summary is stuck at the bottom of the screen.}
         \label{fig:qv_org_p2}
     \end{subfigure}
-    \caption{Organize-then-Vote Prototype: Participants first organize their thoughts into categories, then vote on the options.}
+    \caption{Organize-then-Vote Prototype: Survey respondents first organize their thoughts into categories, then vote on the options.}
     \label{fig:qv_org}
 \end{figure}
 
 \subsubsection{Prototype 3: Organize-then-Vote}
 Figure~\ref{fig:qv_org} shows the last prototype where we built on the previous takeaway by providing finer-grain groupings and creating a clear connection between option organization and voting position. Specifically, we provided three categories: Positive, Negative, and Neutral. Initially, respondents see all options under the section labeled 'I don't know,' which includes only the option descriptions. We ask respondents to move these options into the categories below. Voting controls and information appear on each option once respondents move to the subsequent page, forming a clear connection between option groups, positions, and voting controls.
-
-% Feedback indicated that survey respondents are comfortable with this two-phase organize-then-vote design. Several user experience issues emerged, but they were addressable without significantly modifying this interaction structure. These issues include: First, dragging and dropping all options into different categories is cumbersome and can mislead respondents into thinking this is a ranking process, which is not the goal. Second, the position of unorganized options at the top of the voting list is counterintuitive. Third, the voting controls are disconnected from the option summaries, dividing attention between the left and right sides of the screen.
 
 Feedback indicated that survey respondents are comfortable with the two-phase organize-then-vote design, demonstrating it as a central strategy for our interface development. However, several areas for enhancement were identified: First, the dragging and dropping mechanism in the organization phase is cumbersome and may inadvertently suggest a ranking process, contrary to our intentions. Second, placing unorganized options at the top of the voting list is counterintuitive. Third, the voting controls are disconnected from the option summaries, dividing attention between the left and right sides of the screen. These insights guided refinements in the final interactive interface, adhering to the two-phase organize-then-vote design framework.
 % ============================= % 
@@ -158,7 +150,6 @@ Feedback indicated that survey respondents are comfortable with the two-phase or
 \subsection{Finalizing the Interactive Interface}
 \label{sec:finalInterfaceDesign}
 In the previous subsection, we highlighted critical prototype iterations that informed the final two-phase interactive process that defines the user journey. 
-% Now we present the final interactive interface and describe how it operates. In this subsection, we provide supporting evidence from prior literature that we previously omitted. These pieces of literature were omitted for clarity and focus in the previous subsection but will be reintroduced here. 
 We now present the final interactive interface, its operations, and the supporting literature for comprehensive understanding.
 Then, We also discuss the aesthetic design choices that emerged throughout the iterations.
 
@@ -218,6 +209,10 @@ Last, we decided to use a dropdown positioned to the right of the option such th
 
 Both experiment interfaces are developed with a React.js frontend and a Next.js backend powered on MongoDB. Both services were open-sourced~\footnote{link-to-github}.
 
+
+
+% In our first prototyped tool, we aim to help survey respondents rank options to establish relative preferences before voting. As shown in Figure~\ref{fig:qv_rank}, our prototype allows respondents to move options before finalizing their votes. During our pretest, we found that respondents rarely moved the options and some questioned the need for a full ranking since it did not affect the QS submission. Many did not realize the options were draggable until we pointed it out. The main insight from this prototype is that creating a full rank is~\textit{not} essential for establishing~\textit{relative} preferences, leading us to consider selecting a subset of options instead of requiring a full rank among all options.
+
 % First, we surveyed the current implementation of QV interfaces to understand the development of such tools. We presented a selection in Figure~\ref{fig:qv_interface_external}. All five interfaces retained and presented the following components:
 % \begin{itemize}
 %     \item Option list: A list of options contesting for votes.
@@ -225,10 +220,12 @@ Both experiment interfaces are developed with a React.js frontend and a Next.js 
 %     \item Individual vote tally: A representation of votes associated with an option.
 %     \item Summary: A summary that automatically calculated the cost across options and the remaining budget.
 % \end{itemize}
-
+% Now we present the final interactive interface and describe how it operates. In this subsection, we provide supporting evidence from prior literature that we previously omitted. These pieces of literature were omitted for clarity and focus in the previous subsection but will be reintroduced here. 
 % We constructed a text-based interface that included all five components but removed the use of emojis (i.e., thumbs up and thumbs down present in Figure~\ref{fig:wedesignInterface}), progress bars, and other visualizations in the summary section (i.e., progress bars in Figure~\ref{fig:wedesignInterface} and~\ref{fig:chengInterface} or blocks presented in Figure~\ref{fig:rxcvotingInterface}), and the visual cues for individual vote counts (i.e., the colored counts and icons present in Figure~\ref{fig:gov4gitInterface} and~\ref{fig:chengInterface}).
 
+% During this process, we noticed several issues. First, many survey respondents placed most options into the 'option you care about' category, defeating the design's purpose. Second, there were no indicators distinguishing between the selected and remaining options. Respondents did not notice their selections were kept at the top in the voting stage and were unsure why Step 1 was necessary if all options were shown again. This informed two takeaways: selecting options to vote on is too coarse to construct relative preferences, and there needs to be a clearer distinction and connection between the two phases.
 
+% Feedback indicated that survey respondents are comfortable with this two-phase organize-then-vote design. Several user experience issues emerged, but they were addressable without significantly modifying this interaction structure. These issues include: First, dragging and dropping all options into different categories is cumbersome and can mislead respondents into thinking this is a ranking process, which is not the goal. Second, the position of unorganized options at the top of the voting list is counterintuitive. Third, the voting controls are disconnected from the option summaries, dividing attention between the left and right sides of the screen.
 
 % These design decisions led to the interface shown in Figure~\ref{fig:textInterface}. 
 
@@ -247,6 +244,6 @@ Both experiment interfaces are developed with a React.js frontend and a Next.js 
 % \end{itemize}
 
 % To brainstorm ways to help survey respondents manage trade-offs across options, we decomposed these options and explored several innovative layouts. Initially, we thought trade-offs were the core cause of cognitive load. In this paper, we show two versions of the paper prototypes in Figure~\ref{fig:qv_paper}. In both figures, costs are represented by blocks, similar to Figure~\ref{fig:rxcvotingInterface}. We imagine the survey respondents to drag and position options in the space provided unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}). Similar to the seminal debate on direct manipulation vs. interface agents~\cite{shneidermanDirectManipulationVs1997}, the research team was unsure how much control survey respondents should have over the positioning of the options to aid the decision-making process that considers trade-offs. Different from prior interfaces, we used placements of the interface to denote positive or negative number of votes. After several pretests, we learned that the main process participants aim to do throughout the survey is establishing~\textit{relative} preferences across the options, rather than thinking so much about trade-offs. 
-
-
-In our first prototyped tool, we aim to help survey respondents rank options to establish relative preferences before voting. As shown in Figure~\ref{fig:qv_rank}, our prototype allows respondents to move options before finalizing their votes. During our pretest, we found that respondents rarely moved the options and some questioned the need for a full ranking since it did not affect the QS submission. Many did not realize the options were draggable until we pointed it out. The main insight from this prototype is that creating a full rank is~\textit{not} essential for establishing~\textit{relative} preferences, leading us to consider selecting a subset of options instead of requiring a full rank among all options.
+% To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative vote counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishment of relative preferences.
+% the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. 
+% The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections.

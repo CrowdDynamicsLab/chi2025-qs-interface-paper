@@ -1,35 +1,35 @@
 \section{Discussion and Future Works}
 \label{sec:discussion}
-This study aims to propose an interactive interface for QS and understand how the number of survey options and interface influences individuals' cognitive load and behaviors. Our results, presented in section~\ref{res:cog}, revealed that longer surveys did not increase cognitive load among participants. We further analyzed the sources of cognitive load and identified different causes across several dimensions. Participants using the interactive interface demonstrated more strategic planning and holistic thinking compared to those using the text-based interface, who focused more on operational tasks. Additionally, the behavioral analysis presented in section~\ref{res:act} showed that participants using the long interactive interface made more frequent, small, iterative updates, indicating a shift in their cognitive load focus.
+This study proposes an interactive interface for QS and designed experiments to understand how the number of survey options and interface influences individuals' cognitive load and behaviors. Our results, presented in section~\ref{sec:cog_result} and~\ref{sec:behave_result}, revealed surprising results that longer surveys did not increase cognitive load. We drew the conclusion that the interactive itnerface prevented statisficing bahviors when participants experienced cogntive overlad. In addition, participants using the interactive interface demonstrated more strategic planning and holistic thinking compared to those using the text-based interface, who focused more on operational tasks. Additionally, the behavioral analysis showed that participants using the long interactive interface made more frequent, small, iterative updates, indicating a shift in their cognitive load focus.
 
-In the discussion section, we address three key topics: first, we explore where participants experienced bounded rationality and how the current interface design supported decision-making. Next, we examine how participants constructed their preferences and how direct manipulation within the interface supported this process. Finally, we discuss how the interface design mitigated some challenges of quadratic mechanisms and identify remaining issues. Following these discussions, we provide recommendations for using this tool and propose design improvements for future development.
+In the discussion section, we explore three key topics: first, we explore specific interactive interface elements that influenced participant behaviors and their relation to bounded rationality. Next, we examine how participants built their preferences and how direct manipulation within the interface supported them. Finally, we discuss how the interface design mitigated challenges of quadratic mechanisms and identifies remaining issues. We provide recommendations for using this tool and propose design improvements for future development.
 
 % ================================= %
-\hs{hese are long subsections; please summarize the key points after each subsection}
 \subsection{Bounded rationality and interface design}
-One core repeated theme that emerged throughout participants' responses during the interview relates to bounded rationality. Bounded rationality defined by~\textcite{simonBehavioralModelRational1955} refers to the idea that individuals' cognitive limitations limited one's ability to use and process all available information, leading to a suboptimal resolution when decision making. When participants respond to a QS, they are faced with multiple options presented on the quadratic survey as well as the abundance of budget. Since the remaining budget translates to possible votes one can select to apply to an option, this adds additional numbers of decisions to make.
+One core repeated theme that emerged throughout participants' responses during the interview relates to bounded rationality. Bounded rationality defined by~\textcite{simonBehavioralModelRational1955} refers to the idea that individuals' cognitive limitations limited one's ability to use and process all available information, leading to a suboptimal resolution when decision making. When participants respond to a QS, they are faced with multiple options presented on the quadratic survey as well as the abundance of budget. Since the remaining budget translates to possible votes one can select to apply to an option, this adds additional numbers of decisions to make. Even though the drop-down menu showing all possible pre-calculated vote-credit values was a relief for a few participants so they do not need to search for the bounds, this sea of decision-making requires participants to recall and scramble information at once, which is extremely difficult. The byproduct of bounded rationality often translates to individuals~\underline{\smash{satisficing}} behaviors~\cite{gigerenzerReasoningFastFrugal1996}.
 
 \begin{displayquote}
-So I did say, Okay, you know, you thought of enough things, you know, and so it wasn't the most effort I could put in because again, that would have been diminishing returns. I tried to think of enough things that I could make, make a meaningful decision and then move on.
+So I did say, Okay, you know, you thought of enough things, you know, and so it wasn't the most effort I could put in because again, that would have been diminishing returns. I tried to think of enough things that I could make, make a meaningful decision and then move on.~\bracketellipsis I think that that's just not a realistic expectation (to be perfect), but I felt satisfied.~\bracketellipsis I felt like that (the response) was satisfied, but not perfect. Cause perfect is not a reality.
 
 \noindent \hfill -- S036, short text interface.
 \end{displayquote}
 
-This quote exemplifies participants expressing their bounded rationality, trying to limit their effort to derive to their decision. Even though the drop-down menu showing all possible pre-calculated vote-credit values was a relief for a few participants so they do not need to search for the bounds, this sea of decision-making requires participants to recall and scramble information at once, which is extremely difficult. The byproduct of bounded rationality often translates to individuals satisficing behaviors~\cite{gigerenzerReasoningFastFrugal1996}, creating heuristics~\cite{tverskyJudgmentUncertaintyHeuristics1974}, over reliance on defaults~\cite{thalerNudgeImprovingDecisions2008a}, and problem decomposition~\cite{simonSciencesArtificial1996}.
+Participant expressed their bounded rationality and their decision to satisfice, making~\textit{good enough} and not~\textit{optimal} decisions.
 
-Satisficing is the most common behavior observed among the participants, which refers to survey respondents making decisions that are not optimal but rather complete a 'good enough' decision. The same participant~\texttt{036} when asked about demand from performance then continues to describe:
+Cognitive overload also encouraged individuals to create~\underline{\smash{heuristics}}~\cite{tverskyJudgmentUncertaintyHeuristics1974} and over reliance on~\underline{\smash{defaults}}~\cite{thalerNudgeImprovingDecisions2008a}. Thus, the design of showing one option at a time in the interactive interface lowers the possibility of participants being influenced by the default positions of options or apply heruisitcs to a narrowing set of options and allowed thoughtful reflection to think about their attitude toward that option.
 
 \begin{displayquote}
-I think that that's just not a realistic expectation (to be perfect), but I felt satisfied.~\bracketellipsis I felt like that (the response) was satisfied, but not perfect. Cause perfect is not a reality
-
-\noindent \hfill -- S036, short text interface.
-\end{displayquote}
-
-Problem decomposition and dimension reduction are other common behaviors we observed. Several participants would create duo-dimension groupings, despite the experiment group they are in. Participants would have categories that cluster similar topics (i.e., all topics related to health vs. humanitarian) and categories that depict the positivity of their preference (i.e., positive vs. negative). Highlighting bounded rationality aims not to critique or exploit possible biases but to emphasize the importance of designing interface interventions to prevent survey respondents from making decisions that differ from their true preferences. For example, the design of showing one option at a time in the interactive interface lowers the possibility of participants being influenced by the default positions of options. One participant from the short text interface said:
-\begin{displayquote}
-Honestly, if medical research~\bracketellipsis I think if it was the first option, the first thing I saw, I probably would have given it more~\bracketellipsis because medical research~\bracketellipsis to me this seems like the most important, but I think if~\ldots if it was the first one I saw, I think it would automatically gave it a lot more.
+Like, at the moment (during organization), when it gives you, like, rank it if it's positive or neutral or negative~\bracketellipsis it gives you time to just focus on that single thing and rank it based on how you feel at that moment.
     
-\noindent \hfill -- S003, short text interface.
+    \noindent \hfill -- S013, short interactive interface.
+\end{displayquote}
+
+It is important to note that bounded rationality aims not to critique or exploit possible biases but to emphasize the importance of designing interface interventions to prevent survey respondents from making decisions that differ from their true preferences. For example,~\underline{\smash{problem decomposition}}~\cite{simonSciencesArtificial1996} and~\underline{\smash{dimension reduction}} is a strategic approach when individuals face cognitive overload. Several participants would create a two axis groupings, despite the experiment group they are in. Participants would have categories that cluster similar topics (i.e., all topics related to health vs. humanitarian) and categories that depict the positivity of their preference (i.e., positive vs. negative). The different between experiment condition only lies in whether these groupings are possible to represent on the interface.
+
+\begin{displayquote}
+    Honestly, if medical research~\bracketellipsis I think if it was the first option, the first thing I saw, I probably would have given it more~\bracketellipsis because medical research~\bracketellipsis to me this seems like the most important, but I think if~\ldots if it was the first one I saw, I think it would automatically gave it a lot more.
+        
+    \noindent \hfill -- S003, short text interface.
 \end{displayquote}
 
 % Another example comes from another participant from the long text interface. Recall that the options presented on the survey are randomly generated; even though there are some options related to the environment and education at the relevant location, participants were inferring the options to these topics. 
@@ -61,15 +61,7 @@ I think \ldots\ ranking at the beginning one's impression towards these issues h
 \noindent \hfill -- S002, short interactive interface.
 \end{displayquote}
 
-Last, one participants highlighted the one-at-a-time approach during the organization phase allowed thoughtful reflection to think about their attitude toward that option.
-
-\begin{displayquote}
-Like, at the moment (during organization), when it gives you, like, rank it if it's positive or neutral or negative~\bracketellipsis it gives you time to just focus on that single thing and rank it based on how you feel at that moment.
-    
-    \noindent \hfill -- S013, short interactive interface.
-\end{displayquote}
-
-We also see a call for organizational features from participants using the text-based interface. Almost half of the participants (N=4) using the long text interface expressed a desire for features that can help reduce the decision space when responding to the QS.
+Conversly, participants using the text-based interface requested for organizational features. Almost half of the participants (N=4) using the long text interface expressed a desire for features that can help reduce the decision space when responding to the QS.
 
 \begin{displayquote}
 If anything, I think I would like to be able to like, click and drag the categories themselves so I could maybe reorder them to like my priorities.
@@ -83,101 +75,96 @@ Because with this many (options), especially when I'm thinking \ldots\ Ok, where
 \noindent \hfill -- S028, long interactive interface.
 \end{displayquote}
 
-Active management of the options forced participants to think about their rough preference for each option at minimal cognitive requirements. The repositioning of options allowed participants to focus on subsets of the options during their decision-making process.
+~\textbf{In summary}, individual's bounded rationality encouraged participants to exhibit~\underline{\smash{satisficing}} behaviors,~\underline{\smash{heuristics}}, and~\underline{\smash{defaults}} when responding to QS. By showing all options upfront, one-at-a-time, and repositioning options based on participant's rough preferences prevented participants from using defaults and heuristics. The two-phase organization actively scaffolds participant's decision making process supporting efficience\underline{\smash{problem decomposition}} and~\underline{\smash{dimension reduction}}. Together, these elements in the interactive interface design prevented~\underline{\smash{satisficing}} behaviors and supported participants in making more informed decisions through a more strategic planning and holistic thinking process.
 
 % ============================== %
 
 
 \subsection{Construction of Preference on QS}
-Since the interface supported some participants in managing their limited cognitive ability to make decisions, as shown in the previous subsection, we argue that the interactive interface \textit{shifted} the cognitive focus onto contributing to more in-depth preference construction and fine-tuning, even if it did not significantly reduce the cognitive load. Here we provide more evidence.
 
-Literature from~\textcite{lichtensteinConstructionPreference2006} identifies three types of difficult decision-making scenarios: when one's preferences are not clearly defined, necessitating trade-offs, or quantifying opinions. We first show that participants constructed their preferences in situ. While some participants had existing preferences (e.g., environmental issues are important), they needed to reconsider aspects of the options or map them to their beliefs.
+When completing QS, deciding the number of votes for one QS option fits squarely into~\textcite{lichtensteinConstructionPreference2006}'s characteristic of difficult decisions.~\textcite{svensonDifferentiationConsolidationTheory1992}'s differentiation and consolidation theory explains how participants behave and quote. Recall that the theory states that decision making contains a differentiation stage involving identifying differences and eliminating less favorable alternatives, while the consolidation stage strengthens commitment to the chosen option. Hence, participants decompose options into categories, effectively reducing the decision dimension to mitigate difficulties.
 
+Participants started by constructing preferences in situ, especially regarding options they had not thought about:
 \begin{displayquote}
 
-~\bracketellipsis the other part of the mental demanding was probably trying to associate with (what) I'm concerned in soci(ety)~\bracketellipsis is that question able to deal with my social concerns like, for example, climate change~\bracketellipsis How does that fit in?
-
-\noindent \hfill -- S006, long interactive interface
+    I mean, it's not necessarily a challenge, but it's interesting to see: `Oh, there are other aspects that I never care about.' And actually~\ldots some people care <an option>. Sure. Why? Why (should) I spend money on that? That's the first thought that comes to mind.
+    
+    \noindent \hfill -- S037, long interactive interface
 \end{displayquote}
 
+During this process, participants try to identify differences between options and differentiate. Hence, we observe the two axis groupings. The two-phase interactive interface effectively facilitated the expression of at least one dimension. Participants without such support expressed difficulty:
+
 \begin{displayquote}
-
-I mean, it's not necessarily a challenge, but it's interesting to see: `Oh, there are other aspects that I never care about.' And actually~\ldots some people care <an option>. Sure. Why? Why (should) I spend money on that? That's the first thought that comes to mind.
-
-\noindent \hfill -- S037, long interactive interface
+    If anything, I think I would like to be able to like, click and drag the categories themselves so I could maybe reorder them to like my priorities. And so I could maybe make that like a descending or ascending like list of like importance. \bracketellipsis if I could pull that up to the top, say myself like click and drag it up there, I think then I would stack the things I think it would affect under it. So like, I would put then, like youth, pro-education programs and adult education and early childhood programs and kinda stack those altogether.~\bracketellipsis I would kind of make myself categories and subcategories out of this list~\ldots If I could organize it.
+    \noindent \hfill -- S025, long text interface.
 \end{displayquote}
 
-Both quotes, one with a prior preference and the other without, illustrate how participants identified where the options on QS fall on their preference spectrum. Additionally, QS requires participants to utilize a common budget across options, necessitating trade-offs, as noted in prior works~\cite{chengCanShowWhat2021, naylor2017first}. Finally, selecting the final value involves quantifying opinions. Participants are thus engaged in a difficult~\textit{preference construction} decision-making process.
-
-Behavior analysis in section~\ref{res:act} of participants using the long text and interactive interfaces revealed that they made small adjustments on the votes, clustered toward budget depiction with lesser time spent. These fine-grain adjustments indicated that participants are making less ad-hoc decisions; rather, they are deciding how to better utilize the remainder of the budget when the budget runs low. We identified a bi-modal interaction pattern.
-
-We argue that the bimodal behavior observed in the voting actions across groups aligns with the Differentiation and Consolidation Theory presented by~\textcite{svensonDifferentiationConsolidationTheory1992} as we previously invisioned. Recall that the theory states that decision making contains a differentiation stage involving identifying differences and eliminating less favorable alternatives, while the consolidation stage strengthens commitment to the chosen option. In the interactive interface, we see a stronger bimodal indicating the two stages, compared to the text interface. As one participant mentioned:
+The ability to drag-and-drop options in the interactive interface blends this differentiation process into the consolidation phase. For example, placing options next to one another facilitated fine-grain differentiation:
 
 \begin{displayquote}
-I only start from the positive one~\bracketellipsis I finish everything~\ldots and then I move to the second part (the netural box).~\bracketellipsis I want to focus on these and make sure that resources are at least they get the attention they want. And if there's surplus and they can move to the second part
-
-\noindent \hfill -- S037, long interactive interface
+    I think the system was actually really helpful because I could just drag them. \bracketellipsis Because when I was unsure, because if I couldn't drag them then I couldn't compare 2 options very well like side to side, because this is a pretty long list \ldots\ so if I couldn't drag it, then I would have a harder time organizing my thoughts, whereas with the dragging feature I can really compare them, I can drag this one up here, and then compare it to the top one versus not being able to track it at all.
+    \noindent \hfill -- S039, long interactive interface.
 \end{displayquote}
 
-These findings show the role of the two-phase interactive design in scaffolding the preference construction process. Additionally, several participants mentioned how the direct manipulation functionality, allowing individuals to drag and drop options for repositioning, supports their reflective thinking during preference construction. One participant noted:
+We also observe participants differentiating and consolidating through their behavior. Recall the bi-modal behavior in Figure~\ref{fig:voting_v3_v4}, since participants in the interactive interface had completed initial differentiation early in the voting process, they assign votes to highlight these differences. Conversely, participants in the text interface made larger updates of the votes slightly later. As participants began consolidating their preferences, participants in the long interactive interface maintain their mental capacity to make fine-grain adjustments given faster iterations and small vote updates. Hence, we see a stronger bimodal pattern indicating the two stages in the long interactive interface, compared to the long text interface. This is less significant in the short QS likely due to the reduced complexity~\footnote{We show in Appendix~\ref{sec:appendix_short_breakdown} that short interfaces exhibits the same bimodal behaviors but less obvious.}. One participant explicitly expressed their strategy:
+
 \begin{displayquote}
-So I tried to make a ranking \bracketellipsis and by creating this ranking, by dragging the related issues \ldots\ I don’t know \ldots\ that helped me organize my ideas.
-\noindent \hfill -- S021, long interactive interface.
+    I only start from the positive one~\bracketellipsis I finish everything~\ldots and then I move to the second part (the netural box).~\bracketellipsis I want to focus on these and make sure that resources are at least they get the attention they want. And if there's surplus and they can move to the second part
+    
+    \noindent \hfill -- S037, long interactive interface
 \end{displayquote}
 
+As participants begin consolidating their preferences using votes, drag-and-drop are occasionally used to reflect on their expressed preferences. In other words, reflecting and reassuring their decisions. When asking \texttt{S021} why they would drag-and-drop an option after voting, the participant responded:
+
 \begin{displayquote}
-I think the system was actually really helpful because I could just drag them. \bracketellipsis Because when I was unsure, because if I couldn't drag them then I couldn't compare 2 options very well like side to side, because this is a pretty long list \ldots\ so if I couldn't drag it, then I would have a harder time organizing my thoughts, whereas with the dragging feature I can really compare them, I can drag this one up here, and then compare it to the top one versus not being able to track it at all.
-\noindent \hfill -- S039, long interactive interface.
+    So I guess to see what my ranking look like~\ldots and see if I could give more money or not.
+
+    \noindent \hfill -- S021, long interactive interface.
 \end{displayquote}
 
-More importantly, it acts as a process for reflective verification and iterative decision-making. These can include post-reflection after expressing the intensity of preferences or preparation to decide on the number of votes for the next option.
+One participant confirmed this mapping by describing their approach to QS on the long interactive interface, highlighting the differentiation, the consolidation, and reflection:
 
 \begin{displayquote}
-So I would give the votes, and then I would drag and drop \bracketellipsis So I guess to see what my ranking looks like. And see if I could give more money or not.
-\noindent \hfill -- S021, long interactive interface.
-\end{displayquote}
+\bracketellipsis this (option) is something that's really important to me \ldots\ So I had the flexibility to move it to positive. So just having the kind of like shift in perception. \bracketellipsis especially because when I was doing categorization in the first step, \bracketellipsis what I thought about it in the moment. \bracketellipsis In the second step there was a shift in my perception of the issue just reflecting. So being able to change. That was really nice as well.
 
-\begin{displayquote}
-\bracketellipsis this is something that's really important to me \ldots\ So I had the flexibility to move it to positive. So just having the kind of like shift in perception. \bracketellipsis especially because when I was doing categorization in the first step, \bracketellipsis what I thought about it in the moment. \bracketellipsis In the second step there was a shift in my perception of the issue just reflecting. So being able to change. That was really nice as well.
 \noindent \hfill -- S009, long interactive interface.
 \end{displayquote}
 
-Conversely, in the text interface, one participant proactively mentioned a request to add click-and-drag functionalities to the interface. The participant described such function to group by topic categorization and also priority placement through direct manipulation.
-
-\begin{displayquote}
-If anything, I think I would like to be able to like, click and drag the categories themselves so I could maybe reorder them to like my priorities. And so I could maybe make that like a descending or ascending like list of like importance. \bracketellipsis if I could pull that up to the top, say myself like click and drag it up there, I think then I would stack the things I think it would affect under it. So like, I would put then, like youth, pro-education programs and adult education and early childhood programs and kinda stack those altogether. \bracketellipsis I would hope that money would trickle down and also increase all the rest of those things. So I would put less upvotes in there because I would hope to dribble out effect would kick in. \bracketellipsis I would kind of make myself categories and subcategories out of this list. If I could organize it.
-\noindent \hfill -- S025, long text interface.
-\end{displayquote}
-
-Throughout the preference construction journey, we confirm that the two-stage interactive interface and the direct manipulation through drag-and-drop facilitated participants in constructing and reflecting on their preferences, adhering to preference construction theory.
+\textbf{In summary}, participants construct their preferences as they complete QS. We observed behaviors and qualitative insights that align to the differentiation and consolidation process in decision making. Our interface scaffolded many of the differentiation stages through pre-voting organization and some consolidation phases through drag-and-drop. Thus, this explains how the two-phase approach supports preference construction to yield effective QS responses.
 
 % ========================= %
+\subsection{Opportunities for better budget management}
+Budget management is a recurring theme in participant interviews. While they appreciated the automatic calculation feature in modern QV interfaces, we identified three challenges for future QS interfaces: ~\textit{cognitive load},~\textit{the cold-start problem}, and~\textit{navigating between budget, votes, and outcome}.
 
-\subsection{Quadratic mechanism is challenging}
-From the qualitatie interview, we found that many participants found automatic calculation critical. More than one-third of participants (N=14) from all four experiment conditions highlighted the importance of automated calculation from two perspectives: \textit{deriving cost} and \textit{keeping track of spent}. Two participants highlighted the importance of automated calculation regarding the cost for each vote.
+\subsubsection{Automatic calculation is critical}
+Over one-third of participants ($N=14$) from all four experiment conditions emphasized the importance of automated calculation for deriving costs and tracking expenditures. For example:
 
 \begin{displayquote}
 I really like having the costs of all the votes displayed. When you select the dropdown menu and ranked in order.
-\noindent \hfill -- S002, short interactive interface.
-\end{displayquote}
 
-Twelve participants highlighted the summarization box and the automated summation of the current credit spent, allowing them to focus on managing their next voting decision and expressing their preferences.
+\noindent \hfill -- S002, short interactive interface, deriving cost
+\end{displayquote}
 
 \begin{displayquote}
 I thought I have \bracketellipsis (to) do all the numbers or calculation myself as a part of checking my ability of doing mathematics. But I guess you have taken care of that really well, so I could really really see that how much credit has left, and \bracketellipsis how well I should allocate \bracketellipsis I said that credit summary to be very specific. The credit summary section was really wonderful in doing all the calculation on that end.
-\noindent \hfill -- S005, long text interface.
+
+\noindent \hfill -- S005, long text interface, keeping track of spent
 \end{displayquote}
 
-\begin{displayquote}
-I like that I don't have to make the calculation of the dollars that it does it automatically. So if I had to do it myself it would be more tedious. And so I think that that effort and frustration and mental demand would be much higher. So I appreciate that that calculation occurs automatically and very easily.
-\noindent \hfill -- S017, short interactive interface.
-\end{displayquote}
+These quotes marked the importance that QS must be facilitated by computer-supported interfaces.
 
-However, the interface did not include elements that helped participants kick off their voting process. One of the most difficult challenges for participants when completing to QS is deciding 'how many votes' to begin with. This challenge does not refer to the relative vote, but the starting vote. Some participants began by equally distributing their credits to all options and then made adjustments, some established 1, 2, and 3 votes as three 'tiers' of votes as starting points, and a small handful of participants, surprisingly, used the number of votes in the tutorial (which showed an example with 4 upvotes as the highest value) as their anchor.
+\subsubsection{Cognitive load from budget management}
+Section~\ref{sec:cog_result} reveals that participants experienced cognitive load due to budget management. Behavioral economists like~\textcite{Shah2015a} believe that values and careful decision-making are derived from limited resources, which introduce higher cognitive load. Prospect theory~\cite{kahnemanProspectTheoryAnalysis1979} highlights the higher negative value of \textit{perceived} utility when cuts must be made. This evidence underscores the heightened cognitive load participants experience when managing their budget. Our interface lacks tools to mitigate this, making it a crucial area for future work.
 
-This seemingly arbitrary voting decision echoes prior literature's discussion on whether an absolute value exists for an individual. Coherent arbitrariness~\cite{arielyCoherentArbitrarinessStable2003}, similar to the anchoring effect in marketing, refers to participants' willingness to pay, which can be influenced by an arbitrary value. However, the ordinal utility remains intact among the set of preferences. We also made similiar observations in the prototyping stage of the interactive interface.
+\subsubsection{The coldstart problem}
+We notice from the study that one of the biggest challenges for participants is deciding 'how many votes' to start with. This challenge pertains to the initial vote, not the relative vote. Some participants began by equally distributing their credits to all options and then made adjustments. Others established $1$, $2$, and $3$ votes as starting points. A small handful surprisingly used the tutorial's example of 4 upvotes as their anchor.
 
-Participants are also required to navigate between three elements: budget, credit, votes, and thinking about how the results would impact the 'shared resource.' This is not straightforward. 
+This arbitrary voting decision echoes discussions in prior literature about the existence of an absolute value for individuals. Coherent arbitrariness~\cite{arielyCoherentArbitrarinessStable2003}, similar to the anchoring effect in marketing, refers to participants' willingness to allocate votes, which can be influenced by an arbitrary value. However, the ordinal utility remains intact among the set of preferences.
+
+This challenge remains an open question, and future research can explore possibilities to scale ordinal utility to map it to individual preferences without biasing participants.
+
+\subsubsection{Navigating Between Budget, Votes, and Actual Impact}
+The third challenge refers to participants' confusion between budget, votes, and actual outcomes. While participants are clear with the definitions of these elements, it is not clear for them to make effective decisions. One participant stated:
 
 \begin{displayquote}
 
@@ -189,13 +176,9 @@ Yeah.
        
 \noindent \hfill -- S003, short text interface.
 \end{displayquote}
-Recall that this survey aims to assist community organizers in distributing resources to a societal cause. This participant decided to 'skip' over the quadratic formulation and the concept that their votes are governed by the quadratic formulation, drawing a direct translation between votes and the resources to which community organizers ought to contribute. While this does not invalidate the power of the quadratic mechanism, it builds frustration and friction for participants to construct a clear picture of how to make voting decisions.
+Recall that this survey aims to assist community organizers in distributing resources to a societal cause. This participant decided to `skip' over the quadratic formulation and the concept that their votes are governed by the quadratic formulation, drawing a direct translation between votes and the resources to which community organizers ought to contribute. While this does not invalidate the power of the quadratic mechanism, it causes frustration and friction for participants to construct a clear picture of how to make voting decisions. Thus, future interface development should consider how to communicate the relationships to highlight trade-offs survey respondents are making.
 
-\hs{This para has me confused. What are you trying to say?}
-Budget-related sources draw across mental demand, temporal demand, preference demand, and frustration. These span from making sure to keep within budget to recovering from overbudgeting. While prior scarcity literature~\cite{Shah2015a} believes that values and careful decisions are derived from limited resources, prospect theory~\cite{kahnemanProspectTheoryAnalysis1979} also highlights a higher negative value of \textit{perceived} utility for individuals when cuts ought to be made.
-
-These three major challenges do not threaten the integrity of the Quadratic Survey and relevant tools using this mechanism, but as we demonstrated in the results section, across all experiment conditions, the NASA-TLX scales show medium to high cognitive load even for the short, interactive interface. In other words, we believe that the improvement of the Quadratic Survey's ability to elicit more accurate preferences comes at the cost of higher cognitive load.
-
+\textbf{In summary}, while the interface supports budget management through automated cost calculation, participants still face cognitive load from managing the budget. The cold-start problem and the confusion between budget, votes, and actual impact are open questions for future research. These challenges highlight the need for better budget management support to complete the QS interface.
 
 \subsection{QS Usage and Design Recommendations and Future Work}
 With a deeper understanding of how survey respondents interact with QS and the sources of cognitive load, we recognize that while this interface may not significantly reduce cognitive load, it represents a crucial step toward constructing better interfaces to support individuals responding to QS. In this subsection, we outline usage and design recommendations applicable to all applications using the quadratic mechanism and highlight directions for future work.
@@ -273,3 +256,46 @@ By implementing these recommendations and pursuing future research directions, w
 
 % \subsection{Limitations and Future Work}
 % % Your content for the subsection on limitations and future work goes here
+
+
+% We first show that participants constructed their preferences in situ. While some participants had existing preferences (e.g., environmental issues are important), they needed to reconsider aspects of the options or map them to their beliefs.
+
+% \begin{displayquote}
+
+% ~\bracketellipsis the other part of the mental demanding was probably trying to associate with (what) I'm concerned in soci(ety)~\bracketellipsis is that question able to deal with my social concerns like, for example, climate change~\bracketellipsis How does that fit in?
+
+% \noindent \hfill -- S006, long interactive interface
+% \end{displayquote}
+
+
+% Behavior analysis in section~\ref{res:act} of participants using the long text and interactive interfaces revealed that they made small adjustments on the votes, clustered toward budget depiction with lesser time spent. These fine-grain adjustments indicated that participants are making less ad-hoc decisions; rather, they are deciding how to better utilize the remainder of the budget when the budget runs low. We identified a bi-modal interaction pattern.
+
+% indicated that participants are making less ad-hoc decisions; rather, they are deciding how to better utilize the remainder of the budget when the budget runs low. We identified a bi-modal interaction pattern.
+
+% \
+
+% Conversely, in the text interface, one participant proactively mentioned a request to add click-and-drag functionalities to the interface. The participant described such function to group by topic categorization and also priority placement through direct manipulation.
+
+
+% Throughout the preference construction journey, we confirm that the two-stage interactive interface and the direct manipulation through drag-and-drop facilitated participants in constructing and reflecting on their preferences, adhering to preference construction theory.
+
+% Additionally, several participants mentioned how the direct manipulation functionality, allowing individuals to drag and drop options for repositioning, supports their reflective thinking during preference construction. One participant noted:
+% \begin{displayquote}
+% So I tried to make a ranking \bracketellipsis and by creating this ranking, by dragging the related issues \ldots\ I don’t know \ldots\ that helped me organize my ideas.
+% \noindent \hfill -- S021, long interactive interface.
+% \end{displayquote}
+
+% into these categories, making completing the entire QS a series of difficult decisions.
+% Literature from~\textcite{lichtensteinConstructionPreference2006} identifies three types of difficult decision-making scenarios: when one's preferences are not clearly defined, necessitating trade-offs, or quantifying opinions.  
+% Since the interface supported some participants in managing their limited cognitive ability to make decisions, as shown in the previous subsection, we argue that the interactive interface \textit{shifted} the cognitive focus onto contributing to more in-depth preference construction and fine-tuning, even if it did not significantly reduce the cognitive load. Here we provide more evidence.
+
+% Literature from~\textcite{lichtensteinConstructionPreference2006} identifies three types of difficult decision-making scenarios: when one's preferences are not clearly defined, necessitating trade-offs, or quantifying opinions. 
+
+
+% Two participants highlighted the importance of automated calculation regarding the cost for each vote.
+% Twelve participants highlighted the summarization box and the automated summation of the current credit spent, allowing them to focus on managing their next voting decision and expressing their preferences.
+
+% \begin{displayquote}
+% I like that I don't have to make the calculation of the dollars that it does it automatically. So if I had to do it myself it would be more tedious. And so I think that that effort and frustration and mental demand would be much higher. So I appreciate that that calculation occurs automatically and very easily.
+% \noindent \hfill -- S017, short interactive interface.
+% \end{displayquote}

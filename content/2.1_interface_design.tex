@@ -51,11 +51,10 @@
 \label{sec:interfaceDesign}
 Since there are no prior studies and standard interfaces for tools using the quadratic mechanism, we designed, iterated, and developed an interactive interface for QS based on the prior literature and multiple iterations. In this section, we first describe the iterative prototyping process, detail the final design of the interactive interface, and finally, present the text-based interface designed for comparison in this study.
 
-\subsection{Initial Prototypes}
-The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections. Alternative design considerations are presented in Appendix~\ref{sec:appendix_interface_alternative}
+\subsection{QV applications interfaces in the wild and early paper prototypes}
+Since QS builds upon the QV mechanism, we being our design iteration based on existing QV applications in the wild. For coherence and brevity, we chose not to describe the paper prototype iteration in depth given it's exploratory nature and provide it in the Appendix with other alternative design considerations in Appendix~\ref{sec:appendix_interface_alternative}. 
 
-\subsubsection{Paper prototype: trade-offs vs relative preference}
-To design the interface effectively, we first needed to understand what made QS more complex. Building on existing literature, the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. We also survey existing interfaces (Figure~\ref{fig:qv_interface_external}, with the exception of Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces shared these key components:
+Existing interfaces consists standardlized componenets shown in Figure~\ref{fig:qv_interface_external}~\footnote{Figure~\ref{fig:gov4gitInterface} did not exist until the writing of this paper.}. All interfaces shared these key components:
 \begin{itemize}
     \item Option list: A list of options contesting for votes.
     \item Vote controls: Buttons to increase and decrease votes associated with each option.
@@ -63,7 +62,11 @@ To design the interface effectively, we first needed to understand what made QS 
     \item Summary: An auto-generated summary of costs and remaining budget.
 \end{itemize}
 
-While most components were focused on the voting process, only the summary addressed the constraints imposed by credit limits. To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative vote counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishment of relative preferences.
+Most components were focused on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping interations (Figure~\ref{fig:qv_paper}), we tested different presentations of these compoenents with added features to assist information organization. Pretest respondents felt QS challenging due to idenfitying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
+
+% To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative vote counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishment of relative preferences.
+% the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. 
+% The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections.
 
 \begin{figure}[H]
     \centering
@@ -85,7 +88,7 @@ While most components were focused on the voting process, only the summary addre
 \end{figure}
 
 \subsubsection{Prototype 1: Ranking-Vote}
-Considering the relative preference is presented by ranking and voting, Our prototype 1 aimed to tested whether ranking options before voting would help establish the relative preference. This prototype allowed respondents to reposition options before finalizing votes. However, pretests revealed that respondents rarely moved the options, and some questioned the necessity of full ranking, as it did not influence their QS submission. Furthermore, many were unaware that options were draggable until shown. This insight indicates that a full ranking is not essential for establishing relative preferences, leading us to consider selecting a subset of options instead of requiring a full rank among all options.
+Considering the relative preference is presented by ranking and voting, our prototype 1 aimed to tested whether ranking options before voting would help establish the relative preference. This prototype allowed respondents to reposition options before finalizing votes. However, pretests revealed that respondents rarely moved the options, and some questioned the necessity of full ranking, as it did not influence their QS submission. Furthermore, many were unaware that options were draggable until shown. This insight indicates that a full ranking is not essential for establishing relative preferences, leading us to consider selecting a subset of options instead of requiring a full rank among all options.
 
 \begin{figure}[h]
     \centering

@@ -54,7 +54,7 @@ Since there are no prior studies and standard interfaces for tools using the qua
 \subsection{Initial Prototypes}
 The initial prototyping involves collecting the interface designs for existing quadratic mechanism-based software. Iterative pretests informed each subsequent design. We present these iterations, which aim to enhance user experience in the preference construction process in the following sections. Alternative design considerations are presented in Appendix~\ref{sec:appendix_interface_alternative}
 
-\subsubsection{Paper prototype: visualizing trade-offs}
+\subsubsection{Paper prototype: trade-offs vs relative preference}
 To design the interface effectively, we first needed to understand what made QS more complex. Building on existing literature, the two main features of QS we identified are the relative preference through a combined presentation of rankings and ratings, and the option selection trade-offs due to total credit limits. We also survey existing interfaces (Figure~\ref{fig:qv_interface_external}, with the exception of Figure~\ref{fig:gov4gitInterface} which did not exist at that time. All four interfaces shared these key components:
 \begin{itemize}
     \item Option list: A list of options contesting for votes.
@@ -63,7 +63,7 @@ To design the interface effectively, we first needed to understand what made QS 
     \item Summary: An auto-generated summary of costs and remaining budget.
 \end{itemize}
 
-While most components were focused on the voting process, only the summary addressed the constraints imposed by credit limits. To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative votes counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishing of relative preferences.
+While most components were focused on the voting process, only the summary addressed the constraints imposed by credit limits. To further explore the features that contribute most to the complexity of QS, we developed two prototypes shown in Figure~\ref{fig:qv_paper}. Similar to Figure~\ref{fig:rxcvotingInterface}, these prototypes use blocks to represent costs, arranged either unstructurally (Figure~\ref{fig:horizontal_paper}) or structurally (Fig~\ref{fig:vertical_paper}), facilitating the visualization of the trade-offs. Unlike previous interfaces, we utilized the placement of the interface to denote positive or negative vote counts. Several protests indicated that participants primarily focus on establishing relative preferences among options rather than trade-offs. Therefore, in this study, we focused on enhancing designs that facilitate the establishment of relative preferences.
 
 \begin{figure}[H]
     \centering
@@ -226,6 +226,7 @@ Both experiment interfaces are developed with a React.js frontend and a Next.js 
 % These design decisions led to the interface shown in Figure~\ref{fig:textInterface}. 
 
 
+% \subsubsection{Paper prototype: visualizing trade-offs}
 % The original paper prototype aimed to help visualize survey respondents' tradeoffs among options. 
 % The original paper prototype aimed to utilize visual representations to highlight the constrained availability of credit and to explain the costs and trade-offs associated with selecting each available option.
 % Early on, we did not know which components made QS more difficult than other survey techniques. We began by surveying existing interfaces (Figure~\ref{fig:qv_interface_external} other than Figure~\ref{fig:gov4gitInterface} which did not exist near the writing of this paper). All four interfaces consist of these common components:

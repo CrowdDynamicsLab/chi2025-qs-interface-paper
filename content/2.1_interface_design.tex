@@ -144,11 +144,11 @@ Feedback indicated that survey respondents are comfortable with the two-phase or
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{content/image/detailed.pdf}
-    \caption{The Interactive Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, respondents will be presented with one option at a time where they can choose among four choices: Lean Positive, Lean Neutral, Lean Negative, or Skip. Skipped options are hidden and can be evaluated later. Options that are chosen will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
+    \caption{The Two-Phase Interactive Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, respondents will be presented with one option at a time where they can choose among four choices: Lean Positive, Lean Neutral, Lean Negative, or Skip. Skipped options are hidden and can be evaluated later. Options that are chosen will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
     \label{fig:interactiveInterface}
 \end{figure}
 
-\subsection{Finalizing the Interactive Interface}
+\subsection{Finalizing the Two-Phase Interactive Interface}
 \label{sec:finalInterfaceDesign}
 In the previous subsection, we highlighted critical prototype iterations that informed the final two-phase interactive process that defines the user journey. 
 We now present the final interactive interface, its operations, and the supporting literature for comprehensive understanding.
@@ -206,7 +206,7 @@ Last, we decided to use a dropdown positioned to the right of the option such th
     \label{fig:textInterface}
 \end{figure}
 
-\subsection{Text-based Interface} To study how the interactive components influenced participants' cognitive load and behavior, we removed the two-phase interactive design and the drag-and-drop features for the text-based interface. The text-based interface shares the other functionalities of the interactive interface, as shown in Figure~\ref{fig:textInterface}. The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
+\subsection{Text-based Interface} To study how the interactive components influenced participants' cognitive load and behavior, we removed the two-phase interactive design and the drag-and-drop features for the text-based interface. The text-based interface shares the other functionalities of the two-phase interactive interface, as shown in Figure~\ref{fig:textInterface}. The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
 
 Both experiment interfaces are developed with a React.js frontend and a Next.js backend powered on MongoDB. Both services were open-sourced~\footnote{link-to-github}.
 

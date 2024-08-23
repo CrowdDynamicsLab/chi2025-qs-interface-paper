@@ -8,7 +8,7 @@
         \caption{Software by WeDesign, used in the first empirical QV research~\cite{quarfoot2017quadratic}. Little information is available about the software, except for an image from~\cite{posner2018radical}. In the image, each prompt has thumbs up and down icons to update the vote in the center. The remaining budget appears as a progress bar at the top.}
         \label{fig:wedesignInterface}
     \end{subfigure}
-    \hspace{0.5cm}
+    \hspace{0.4cm}
     \begin{subfigure}[b]{0.47\textwidth}
         \centering
         \includegraphics[width=0.72\textwidth]{content/image/curr_interface/rxc_interface.png}
@@ -16,7 +16,7 @@
         \label{fig:rxcvotingInterface}
     \end{subfigure}
     
-    \vspace{0.15cm}
+    \vspace{0.12cm}
     
     \begin{subfigure}[b]{0.47\textwidth}
         \centering
@@ -24,7 +24,7 @@
         \caption{An open-source QV interface~\cite{yehjxraymondYehjxraymondQvapp2024} offers a publicly available service. Options show only the current number of votes, with credits displayed in the top right corner. This interface does not show the costs of votes but supports sorting options.}
         \label{fig:yehInterface}
     \end{subfigure}
-    \hspace{0.5cm}
+    \hspace{0.4cm}
     \begin{subfigure}[b]{0.47\textwidth}
         \centering
         \includegraphics[width=0.72\textwidth]{content/image/curr_interface/appvote.png}
@@ -32,7 +32,7 @@
         \label{fig:gov4gitInterface}
     \end{subfigure}
     
-    \vspace{0.2cm}
+    \vspace{0.15cm}
     
     \begin{subfigure}[b]{0.7\textwidth}
         \centering
@@ -49,7 +49,7 @@
 
 \section{QS Interface Design}
 \label{sec:interfaceDesign}
-In this section, we present the QS interface based on the prior literature and after multiple iterations. We began by identifying key interface components from existing QV applications given that it share the same mechanism with QS. Using these components as a foundation, we iterated over paper prototypes and three design iterations based on each pre-test result. For coherence and brevity, detailed descriptions of these iterations and additional design considerations are provided in Appendix~\ref{apdx:design}.
+In this section, we present the QS interface based on the prior literature and after multiple iterations. We began by identifying key interface components from existing QV applications, given that they share the same mechanism with QS. Using these components as a foundation, we iterated over paper prototypes and three design iterations based on each pre-test result. For coherence and brevity, detailed descriptions of these iterations and additional design considerations are provided in Appendix~\ref{apdx:design}.
 
 \subsection{QV interfaces in the wild}
 Existing interfaces consist of standardized components shown in Figure~\ref{fig:qv_interface_external}~\footnote{Figure~\ref{fig:gov4gitInterface} did not exist until the writing of this paper.}. All interfaces shared these key components:
@@ -60,14 +60,7 @@ Existing interfaces consist of standardized components shown in Figure~\ref{fig:
     \item Summary: An auto-generated summary of costs and remaining budget.
 \end{itemize}
 
-Most components were focused on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1\textwidth]{content/image/detailed.pdf}
-    \caption{The Two-Phase Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, respondents will be presented with one option at a time where they can choose among four choices: Lean Positive, Lean Neutral, Lean Negative, or Skip. Skipped options are hidden and can be evaluated later. Options that are chosen will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
-    \label{fig:interactiveInterface}
-\end{figure}
+Most components focused on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
 
 \subsection{The Two-Phase Interface}
 \label{sec:finalInterfaceDesign}
@@ -82,6 +75,13 @@ Recall the ultimate objective of the two-phase interface is to facilitate prefer
 If preferences are constructed, by nature, they consist of a series of constructed decision-making processes~\cite{lichtensteinConstructionPreference2006}. Two major decision-making theories informed the design decision of a two-step interaction interface design:~\textcite{montgomeryDecisionRulesSearch1983}'s Search for a Dominance Structure Theory (Dominance Theory) and~\textcite{svensonDifferentiationConsolidationTheory1992}'s Differentiation and Consolidation Theory (Diff-Con Theory). The former suggested that decision-makers prioritize creating dominant choices to minimize cognitive effort by focusing on evidently superior options~\cite{montgomeryDecisionRulesSearch1983}. The latter described a two-phase process where decisions are formed by initially ~\textit{differentiating} among alternatives and then~\textit{consolidating} these distinctions to form a stable preference~\cite{svensonDifferentiationConsolidationTheory1992}. Both theories echoed the design decision in building the interactive experience to reduce initial decision dimensions and the mental procedures involved in emphasizing relatively important options and forming decisions.
 
 Hence, the two-phase design -- organize then vote -- aimed to facilitate this cognitive journey explicitly. The first phase focused on differentiating and identifying dominant options, enabling survey respondents to preliminarily categorize and prioritize their choices. The second phase presented these categorized options in a comparable manner, with drag-and-drop functionality, enhancing one's ability to consolidate preferences. This structured approach aimed to construct a clear decision-making procedure that reduced cognitive load and enhanced clarity and confidence in the decisions made.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{content/image/detailed.pdf}
+    \caption{The Two-Phase Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, respondents will be presented with one option at a time, and they can choose among four choices: Lean Positive, Lean Neutral, Lean Negative, or Skip. Skipped options are hidden and can be evaluated later. The chosen options will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
+    \label{fig:interactiveInterface}
+\end{figure}
 
 \paragraph{Phase 1: Organization Phase}
 The goal of the organization phase was to support participants in identifying dominating options or partitioning options into differentiable groups. In this section, we first describe how the interaction worked, then we detail reasons for the different design decisions implemented.
@@ -107,11 +107,11 @@ While multiple interaction mechanisms exist, drag-and-drop has been extensively 
 Together, these design decisions led to our belief that a two-phase interface with direct interface manipulation could reduce the cognitive load for survey respondents to form preference decisions when completing QS.
 
 \subsubsection{Aesthetic Design Decisions}
-There are three aesthetic design decisions that made it to the final interface. First, we decided to remove all visual elements. Prior literature suggested that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. Prior literature also noted that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Even though effective visualization can aid decision-making, it remains an open question that this study does not aim to address, thus we also removed all visualization elements such as blocks, progress bars, and percentage indicators.
+There are three aesthetic design decisions that made it to the final interface. First, we decided to remove all visual elements. Prior literature suggested that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. Prior literature also noted that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Even though effective visualization can aid decision-making, it remains an open question that this study does not aim to address. Thus, we also removed all visualization elements, such as blocks, progress bars, and percentage indicators.
 
 Second, the final interface has all options presented on the screen at the same time, intentionally. Unlike all the prototypes and existing interfaces, prior literature emphasized the importance of placing all the options on the same digital ballot screen to avoid losing votes. This echoes the proverb "out of sight, out of mind," where individuals might be biased toward options that are shown to them, and additional effort is required for individuals to retrieve specific information if options are hidden.
 
-Last, we decided to use a dropdown positioned to the right of the option such that control of votes and the budget summary are placed near one another. The layout of the votes and cost was inspired by online shopping cart checkout interfaces where quantities are supplied next to the itemized costs followed by the total checkout amount. We chose a dropdown after iterating with two alternative input methods (Figure~\ref{fig:btn_design}): the original click-based buttons and a wheel-based implementation. The former design requires survey respondents to click multiple times to reach their desired vote values. Thus, we wanted to look for a solution to aid respondents in reaching their intended value faster. A wheel-based approach allows intuitive control of the votes by using the wheel on the mouse and clicking to fine-tune the values. However, in our early pilot studies, not all participants were familiar with wheel control, thus we opted for a dropdown menu for vote selection.
+Last, we decided to use a dropdown positioned to the right of the option such that control of votes and the budget summary are placed near one another. The layout of the votes and cost was inspired by online shopping cart checkout interfaces where quantities are supplied next to the itemized costs followed by the total checkout amount. We chose a dropdown after iterating with two alternative input methods (Figure~\ref{fig:btn_design}): the original click-based buttons and a wheel-based implementation. The former design requires survey respondents to click multiple times to reach their desired vote values. Thus, we wanted to look for a solution to aid respondents in reaching their intended value faster. A wheel-based approach allows intuitive control of the votes by using the wheel on the mouse and clicking to fine-tune the values. However, in our early pilot studies, not all participants were familiar with wheel control. Thus, we opted for a dropdown menu for vote selection.
 
 \begin{figure}[h]
     \centering

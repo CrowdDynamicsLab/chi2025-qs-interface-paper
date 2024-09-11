@@ -5,7 +5,7 @@
     \begin{subfigure}[b]{0.47\textwidth}
         \centering
         \includegraphics[width=0.67\textwidth]{content/image/curr_interface/radical_market_wedesign.png}
-        \caption{Software by WeDesign, used in the first empirical QV research~\cite{quarfoot2017quadratic}. Little information is available about the software, except for an image from~\cite{posner2018radical}. In the image, each prompt has thumbs up and down icons to update the vote in the center. The remaining budget appears as a progress bar at the top.}
+        \caption{Software by WeDesign, used in the first empirical QV research~\cite{quarfoot2017quadratic}. Little information is available about the software, except for an image from~\textcite{posner2018radical}. In the image, each prompt has thumbs up and down icons to update the vote in the center. The remaining budget appears as a progress bar at the top.}
         \label{fig:wedesignInterface}
     \end{subfigure}
     \hspace{0.4cm}
@@ -47,12 +47,12 @@
 \clearpage
 }
 
-\section{QS Interface Design}
+\section{Quadratic Survey Interface Design}
 \label{sec:interfaceDesign}
 In this section, we present the QS interface. We began by identifying key interface components from existing QV applications, given that they share the same mechanism with QS. Using these components as a foundation, together with prior literature, we iterated over paper prototypes and three design iterations based on each pre-test result. For coherence and brevity, we provide detailed descriptions of these iterations and additional design considerations in Appendix~\ref{apdx:design}.
 
-\subsection{QV interfaces in the wild}
-Figure~\ref{fig:qv_interface_external} presents known QV interfaces~\footnote{Figure~\ref{fig:gov4gitInterface} did not exist until the writing of this paper.}. All interfaces shared these key components:
+\subsection{Quadratic Voting interfaces in the wild}
+Figure~\ref{fig:qv_interface_external} presents known QV interfaces~\footnote{Figure~\ref{fig:gov4gitInterface} did not exist until the writing of this paper.}. All interfaces share these key components:
 \begin{itemize}
     \item Option list: A list of options contesting for votes.
     \item Vote controls: Buttons to increase and decrease votes associated with each option.
@@ -60,7 +60,7 @@ Figure~\ref{fig:qv_interface_external} presents known QV interfaces~\footnote{Fi
     \item Summary: An auto-generated summary of costs and remaining budget.
 \end{itemize}
 
-Most components focused on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
+Most components focus on presenting information and obtaining votes, only the summary addressed budget constraints. During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
 
 \subsection{The Two-Phase Interface}
 \label{sec:finalInterfaceDesign}
@@ -75,14 +75,14 @@ help emphasize relatively important options to form decisions. Hence, the two-ph
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{content/image/detailed.pdf}
-    \caption{The Two-Phase Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, the interface presented one option at a time to the respondent where they choose among four choices: Lean Positive, Lean Neutral, Lean Negative, or Skip. Skipped options are hidden and can be evaluated later. The chosen options will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
+    \caption{The Two-Phase Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, the interface presented one option at a time to the respondents where they choose among four choices: ``Lean Positive'', ``Lean Neutral'', ``Lean Negative'', or ``Skip''. Skipped options are hidden and can be evaluated later. The chosen options will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
     \label{fig:interactiveInterface}
 \end{figure}
 
 \paragraph{Phase 1: Organization Phase}
-The goal of the organization phase was to support participants in identifying dominating options or partitioning options into differentiable groups. In this section, we first describe how the interaction worked, then we detail reasons for the different design decisions implemented.
+The goal of the organization phase was to support participants in identifying dominating options or partitioning options into differentiable groups. In this section, we first describe how the interaction worked, then we detail the reasons for the implemented design decisions.
 
-The organizing interface, depicted on the top half of Figure~\ref{fig:interactiveInterface}, sequentially presented each survey option. Participants selected a response among three ordinal categories -- lean positive, lean negative, or lean neutral. Once selected, the system moved that option to the respective category. Participants could skip the option if they did not want to indicate a preference. Options within the groups were draggable and rearrangeable to other groups should the participants wish.
+The organizing interface, depicted on the top half of Figure~\ref{fig:interactiveInterface}, sequentially presented each survey option. Participants selected a response among three ordinal categories -- ``lean positive'', ``lean negative'', or ``lean neutral''. Once selected, the system moved that option to the respective category. Participants could skip the option if they did not want to indicate a preference. Options within the groups were draggable and rearrangeable to other groups should the participants wish.
 
 \textcite{strackThinkingJudgingCommunicating1987}'s research showed that upon understanding a survey question, respondents either recalled a prior judgment or constructed a new one when completing an attitude survey. In addition, revealing one option at a time gated the amount of information presented to the survey respondent and thereby reduced the extraneous load~\cite{swellerCognitiveLoadTheory2011}. This process allowed participants to form or express opinions on individual options incrementally. This design also mitigated the original concern from early prototypes where participants accidentally treated the organizing task as a ranking task.
 
@@ -103,13 +103,13 @@ While multiple interaction mechanisms exist, drag-and-drop has been extensively 
 Together, these design decisions led to our belief that a two-phase interface with direct interface manipulation could reduce the cognitive load for survey respondents to form preference decisions when completing QS.
 
 \subsubsection{Aesthetic Design Decisions}
-There are three aesthetic design decisions that made it to the final interface. First, we decided to remove all visual elements. Prior literature suggested that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. Prior literature also noted that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Even though effective visualization can aid decision-making, it remains an open question that this study does not aim to address. Thus, we also removed all visualization elements, such as blocks, progress bars, and percentage indicators.
+We made three aesthetic design decisions. First, we decided to remove all visual elements. Prior literature suggested that the use of emojis might influence the interpretations of surveys~\cite{herringGenderAgeInfluences2020} and decrease user satisfaction~\cite{toepoelSmileysStarsHearts2019}. Prior literature also noted that not all data visualization elements reduce cognitive demand~\cite{huangMeasuringEffectivenessGraph2009a}. Even though effective visualization can aid decision-making, it remains an open question that this study does not aim to address. Thus, we also removed all visualization elements, such as blocks, progress bars, and percentage indicators.
 
 Second, the final interface has all options presented on the screen at the same time, intentionally. Unlike all the prototypes and existing interfaces, prior literature emphasized the importance of placing all the options on the same digital ballot screen to avoid losing votes. This echoes the proverb ``out of sight, out of mind,'' where individuals might be biased toward options that are shown to them, and additional effort is required for individuals to retrieve specific information if options are hidden.
 
 Last, we decided to use a dropdown positioned to the right of the option such that control of votes and the budget summary are placed near one another. The layout of the votes and cost was inspired by online shopping cart checkout interfaces where quantities are supplied next to the itemized costs followed by the total checkout amount. We chose a dropdown after iterating with two alternative input methods (Figure~\ref{fig:btn_design}): the original click-based buttons and a wheel-based implementation. The former design requires survey respondents to click multiple times to reach their desired vote values. Thus, we wanted to look for a solution to aid respondents in reaching their intended value faster. A wheel-based approach allows intuitive control of the votes by using the wheel on the mouse and clicking to fine-tune the values. However, in our early pilot studies, not all participants were familiar with wheel control. Thus, we opted for a dropdown menu for vote selection.
 
-\begin{figure}[h]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/prototypes/btn_design.png}
     \caption{Alternative vote control. The click-based design (upper) mirrors traditional vote control used in other QV interfaces, where each click controls one vote. The wheel-based design (the latter two) allows control through both clicks and mouse wheel rotation.}
@@ -123,9 +123,9 @@ Last, we decided to use a dropdown positioned to the right of the option such th
     \label{fig:textInterface}
 \end{figure}
 
-\subsection{Text-based Interface} To study how the interactive components influenced participants' cognitive load and behavior, we removed the two-phase interactive design and the drag-and-drop features for the text-based interface. The text-based interface shares the other functionalities of the two-phase interface, as shown in Figure~\ref{fig:textInterface}. The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
+\subsection{Text-based Interface} To compare how the designed interactive components influenced participants' cognitive load and behavior, we designed the text-based interface as our control condition. The text-based interface shares the other functionalities of the two-phase interface without the two-phase interactive design and the drag-and-drop (Figure~\ref{fig:textInterface}.) The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
 
-Both experiment interfaces are developed with a React.js frontend and a Next.js backend powered on MongoDB. We open-sourced both interfaces~\footnote{link-to-github}.
+Both experiment interfaces are developed with a React.js frontend and a Next.js backend powered on MongoDB. We open-sourced both interfaces.\footnote{link-to-github}
 
 
 

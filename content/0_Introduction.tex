@@ -1,22 +1,13 @@
 \section{Introduction}
-% ================================ %
-% Removed text
-% Surveys are a ubiquitous tool for collective decision-making, providing decision-makers with aggregated opinions that directly shape the outcomes for those surveyed. For example, states utilize referendums to form policy decisions, organizations like the Pew Research Center survey public perspectives on societal challenges in the United States, and city councils hold forums to gather community concerns.
-% and private sectors~\cite{Gov4gitDecentralizedPlatform2023}.
-% xiaoTellMeYourself2020, 
-
-% ================================ %
 % par 1: Introduction to the Problem
 % Purpose: Define the problem and explain its significance.
 
 %  What is the problem, what is the challenge, and why is it important
-%  Interface are important because it effects data collection, there is no QS interface and QS is hard, so the problem is how do we design interfaces for QS?
+% Interfaces are important because they affect data collection. There is no QS interface, and QS is hard, so the problem is how do we design interfaces for QS?
+Designing effective survey interfaces is crucial for accurately capturing respondents' preferences, which directly impact the quality and reliability of the data collected. For instance, voice assistants have been used to gather user feedback~\cite{xiaoLetMeAsk2021}, and a recent Human-Computer Interaction (HCI) study highlights that certain survey response formats can increase errors~\cite{pielotDidYouMisclick2024}. In this paper, we introduce~\textbf{Quadratic Surveys (QS)}, a survey tool designed to elicit preferences more accurately than traditional methods~\cite{chengCanShowWhat2021}. Despite the promise of QS, there has been no research on designing interfaces to support its unique quadratic mechanisms~\cite{grovesOptimalAllocationPublic1977}, where participants must rank and rate items --- a task that poses significant cognitive challenges. To popularize QS and ensure high-quality data, this paper addresses the question: \textit{How can we design interfaces to support participants in completing Quadratic Surveys (QS) more effectively?}
 
-\section{Introduction}
-Designing effective survey interfaces is crucial for accurately capturing respondents' preferences, which directly impact the quality and reliability of the data collected. In Human-Computer Interaction (HCI), researchers have shown that interfaces significantly influence the quality of participant responses. For instance, voice assistants have been used to gather user feedback~\cite{xiaoLetMeAsk2021}, and recent studies highlight that certain survey response formats can increase errors~\cite{pielotDidYouMisclick2024}. In this paper, we introduce~\textbf{Quadratic Surveys (QS)}, a survey tool designed to elicit preferences more accurately than traditional methods~\cite{chengCanShowWhat2021}. Despite the promise of QS, there has been no research on designing interfaces to support its unique quadratic mechanisms~\cite{grovesOptimalAllocationPublic1977}, where participants must rank and rate items --- a task that pose significant cognitive challenges. To popularize QS and ensure high-quality data, this paper addresses the question: \textit{How can we design interfaces to support participants in completing Quadratic Surveys (QS) more effectively?}
-
-% Zoom into two challenges this paper tackles -- zooming in mental demand and conitive challenges due to QS mechanism
-We envision an effective interface that navigates participants through the complex mechanism and preference construction process, tailored to the unique challenges of QS. QS improves accuracy in individual preference elicitation compared to traditional methods like Likert scales by requiring participants to make trade-offs using a fixed budget of credits, where purchasing $k$ votes for an option in QS costs $k^2$ credits~\cite{quarfoot2017quadratic,chengCanShowWhat2021}. This quadratic cost structure forces respondents to carefully evaluate their preferences, balancing the strength of their support or opposition against the limited budget. However, this complexity also increases cognitive load, making it mentally taxing to weigh costs, evaluate options, and construct rankings~\cite{lichtensteinConstructionPreference2006}. Moreover, QS, often referred to as Quadratic Voting (QV) in voting scenarios, can involve hundreds of options~\cite{rogersColoradoTriedNew2019, teamTaiwanDigitalMinister}, increasing the risk of cognitive overload and satisficing~\cite{simonBehavioralModelRational1955, payneAdaptiveStrategySelection1988, tverskyJudgmentsRepresentativeness}. We propose that an effective interface, combined with usage guidelines, can help mitigate these two challenges.
+% Zoom into two challenges this paper tackles -- zooming in mental demand and cognitive challenges due to the QS mechanism
+We envision an effective interface that navigates participants through the complex mechanism and preference construction process, tailored to the unique challenges of QS. QS improves accuracy in individual preference elicitation compared to traditional methods like Likert scales by requiring participants to make trade-offs using a fixed budget of credits, where purchasing $k$ votes for an option in QS costs $k^2$ credits~\cite{quarfoot2017quadratic,chengCanShowWhat2021}. This quadratic cost structure forces respondents to carefully evaluate their preferences, balancing the strength of their support or opposition against the limited budget. While this cost structure forces them to make thoughtful trade-offs, this complexity also increases cognitive load, making it mentally taxing to weigh costs, evaluate options, and construct rankings~\cite{lichtensteinConstructionPreference2006}. Moreover, QS, often referred to as Quadratic Voting (QV) in voting scenarios, can involve hundreds of options~\cite{rogersColoradoTriedNew2019, teamTaiwanDigitalMinister}, increasing the risk of cognitive overload and satisficing~\cite{simonBehavioralModelRational1955, payneAdaptiveStrategySelection1988, tverskyJudgmentsRepresentativeness}. We propose that an effective interface tailored to support users through these complex trade-offs can reduce cognitive load and facilitate better preference construction.
 % add and possible breakdown interfaces for mental and interfaces to scaffold complex mechanisms
 
 % ================================ %
@@ -25,15 +16,10 @@ We envision an effective interface that navigates participants through the compl
 % Key Questions:
 %  - What are some broad approaches to addressing these challenges? -- there are none.
 %  - Do not go into detail about related work but give an idea of the major themes in related work.
-%       - No prior research on QS, but there are exisiting interfaces -> auto calculation as commonality
+%       - No prior research on QS, but there are existing interfaces -> auto calculation as commonality
 %       - prior work on interface for reducing cognitive load, preference construction, and voting
 
-While no prior research studied interface for QS, exisiting QV applications simply present options, allow vote adjustments, and automatically calculate the votes, costs and budget usage. These designs focus on basic functionality, with little attention to supporting the cognitive demands or decision-making processes inherent in QS. Many research highlighted suitable uses of user interface design offloading cognitive burden across context~\cite{paula2023, norman2013design, toepoelSmileysStarsHearts2019, softwareBrad2021}. Others showed how user interfaces guide software users through challenging tasks~\cite{task2014, moderate2021,amyChatSensing2018}. 
-Interface literature discussing interface design for surveys on the other hand while touches upon decision making, they do not address the option-to-option trade-off tension that QS has~\cite{engstrom2020politics, weijtersEffectRatingScale2010, kierujVariationsResponseStyle2010, toepoelSmileysStarsHearts2019, farzandAestheticsEvaluatingResponse2024, pielotDidYouMisclick2024}. Thus, it is unclear how different interfaces design would support QS, specifically in reducing mental demand and support preference construction.
-
-% Prior research supports the idea that interface design can guide complex decision-making processes, helping users manage the intricacies of QS and reduce cognitive load~\cite{}.
-
-Interfaces were designed to scaffold 
+To date, existing quadratic mechanism-powered applications simply present options, allow vote adjustments and automatically calculate votes, costs, and budget usage. These designs focused heavily on the mechanism, rather than supporting possible challenges these application users faced. Survey interface literature, while addressing decision-making and usability, most focus on traditional surveys that do not share the unique option-to-option trade-offs that QS introduces~\cite{engstrom2020politics, weijtersEffectRatingScale2010, kierujVariationsResponseStyle2010, toepoelSmileysStarsHearts2019, farzandAestheticsEvaluatingResponse2024, pielotDidYouMisclick2024}. The challenges, in particular, cognitive load~\cite{paula2023, norman2013design, toepoelSmileysStarsHearts2019, softwareBrad2021} and scaffolding challenging tasks~\cite{task2014, moderate2021, amyChatSensing2018} like preference construction, are opportunities where user interfaces have shown their promises. As a result, it remains unclear how different interface designs might support QS in reducing cognitive load and aiding preference construction.
 
 % ================================ %
 % par 3: Your Proposal
@@ -41,32 +27,29 @@ Interfaces were designed to scaffold
 % Key Question:
 %  - What are you proposing? Provide a sketch of the major ideas.
 
-In this work, we ask:~\textit{How can we design interfaces to support participants in completing Quadratic Surveys?}
-We proposed a novel interactive QS interface (Figure~\ref{fig:interactiveInterface}) where respondents take a two-step `organize-then-vote' approach to express their preferences. 
-Participants categorize the survey options into “Positive”, “Neutral”, or “Negative.” 
-These categories display the options on the QS voting page in order, and participants can refine their positions using drag-and-drop. 
-This approach serves as a cognitive warm-up, easing participants into the QS task by starting with a lower-effort Likert rating exercise.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=1\textwidth]{content/image/detailed.pdf}
+    \caption{The Two-Phase Interface: The interface consists of two phases. Survey respondents can navigate between phases using the top right button. In the organization phase, the interface presented one option at a time to the respondents where they choose among four choices: ``Lean Positive'', ``Lean Neutral'', ``Lean Negative'', or ``Skip''. Skipped options are hidden and can be evaluated later. The chosen options will be listed below. Items can be dragged and dropped across categories or returned to the stack. In the voting phase, options are listed in the order of the four categories. When hovering over each option, respondents can select a vote for that option using the dropdown. Each dropdown contains the cost associated with the vote. A sort button allows ascending sorting within each category. A summary box tracks the remaining credit balance.}
+    \label{fig:interactiveInterface}
+\end{figure}
 
-<things missing:
-- How does your approach address the challenges posed by the complexity of QS?
->
-% ================================ %
+After multiple design iterations, we propose a novel interactive two-phase ``organize-then-vote'' QS interface (two-phase interface, Figure~\ref{fig:interactiveInterface}) that integrates three key elements. First, the interface scaffolds the preference construction process by having participants initially categorize the survey options into ``Positive,'' ``Neutral,'' or ``Negative'' This serves as a cognitive warm-up, easing participants into the more complex QS voting task. Second, the interface arranges the options according to these categorizations, providing a structured visual layout. Third, participants can refine the positions of these options using drag-and-drop functionality, giving them greater control and agency in the preference-construction process. These design features are aligned with preference construction theory and build upon prior research in interface design to reduce cognitive load and enhance user engagement.
+
+To explore how these interface elements mitigate the cognitive load and support preference construction in Quadratic Surveys, we pose the following research questions:
+\begin{itemize}
+    \item RQ1. How does the number of options in Quadratic Surveys impact respondents' cognitive load?
+    \item RQ2a. How does the two-phase interface impact respondents' cognitive load compared to a text interface?
+    \item RQ2b. What are the similarities and differences in sources of cognitive load across the two interfaces?
+    \item RQ3. What are the differences in Quadratic Survey respondents' behaviors when coping with long lists of options across the two-phase interface and the text interface?
+\end{itemize}
 
 % ================================ %
 % par 4: Main Findings
 % Purpose: Summarize the key findings from your work.
 % Key Question:
 %  - What are the main findings?
-
-We evaluated this new interface in a controlled in-lab study with $41$ participants, following the societal issue QS survey described by~\textcite{chengCanShowWhat2021}. 
-Participants responded to a QS with either $6$ or $24$ options~\cite{lenznerCognitiveBurdenSurvey2010, blessAskingDifficultQuestions1992}, using different interfaces, allowing us to examine how option length and interface design affects cognitive load. 
-We measured cognitive load using the NASA Task Load Index~(NASA-TLX) and collected clickstream data to study how participants approached the task. 
-Interviews explored how different interface components affected participants' cognitive load.
-
-<things missing: 
-- What were the most significant findings from this evaluation? 
->
-% ================================ %
+We invited 41 participants to a lab study comparing our two-phase interface with a baseline to understand how different interface designs and option lengths impact cognitive load. Qualitative findings, measured using the NASA Task Load Index~(NASA-TLX) and semi-structured interviews, revealed that participants using the two-phase interface experienced cognitive demand more from strategic, holistic thinking compared to personal relevance and operational tasks, particularly in longer surveys. Quantitative results showed that, although participants spent more time per option, they made faster decisions during the voting phase, suggesting a more efficient distribution of cognitive effort. We concluded that the two-phase interface prevented cognitive overload in long QS surveys and shifted mental load toward more strategic thinking, reducing reliance on mental shortcuts like satisficing~\cite{simonBehavioralModelRational1955}.
 
 % ================================ %
 % par 5: Main Contributions
@@ -77,31 +60,13 @@ Interviews explored how different interface components affected participants' co
 %  3. Line 3: Explain how you accomplished your contribution.
 %  4. Line 4: Emphasize the impact of the contribution—why should anyone care?
 
-We contribute to the HCI community by proposing the first interface specifically designed for QS and QV-like applications to help promote their adoption as a tool for public opinion collection. 
-No prior research had investigated interfaces for QS, especially long ones that lead to cognitive overload. 
-Our two-stage organize-then-vote interface facilitated critical decision-making and limited satisficing behaviors. 
-This design promoted incremental updates and deeper engagement with survey items, enhancing decision quality. 
-Second, we conducted the first in-depth qualitative analysis identifying key factors contributing to cognitive load among respondents to surveying tools that use the Quadratic Mechanism. 
-Our qualitative findings identified design challenges for QS, driving further research directions.
-
-<things missing: 
-- How is your approach different from existing interfaces or tools for surveys? 
-- What is the broader impact of this work?
->
-% ================================ %
+\paragraph{Contributions}
+We contribute to the HCI community by proposing the first interface specifically designed for QS and QV-like applications, aimed at reducing cognitive challenges and scaffolding preference construction through a two-phase interface with direct manipulation. Before our work, no research had explored QS interfaces, particularly for long surveys prone to cognitive overload. Few studies in HCI address interfaces for surveys and questionnaires. Our study demonstrated how user interfaces can facilitate preference construction in situ and reduce satisficing behaviors by promoting incremental updates and deeper engagement with survey items through interface elements. Additionally, our interview is also the first in-depth qualitative analysis of user experiences with Quadratic Mechanism applications, identifying key factors contributing to cognitive load. The impact of our contribution extends beyond QS, offering design implications for other preference-elicitation tools in complex scenarios. By making QS easier to use and more accurate, our design also encourages wider adoption among researchers and practitioners. Finally, our work lays the groundwork for future studies on qualitative insights and future interface designs of quadratic mechanisms, supporting decision-makers in eliciting accurate respondents' preferences.
 
 % ================================ %
-% Cut Section: 
+% Removed text
+% Surveys are a ubiquitous tool for collective decision-making, providing decision-makers with aggregated opinions that directly shape the outcomes for those surveyed. For example, states utilize referendums to form policy decisions, organizations like the Pew Research Center survey public perspectives on societal challenges in the United States, and city councils hold forums to gather community concerns.
+% and private sectors~\cite{Gov4gitDecentralizedPlatform2023}.
+% xiaoTellMeYourself2020, 
 
-During the study, our goal aims to address the following research questions:
-\begin{itemize}
-    \item RQ1. How does the number of options in Quadratic Surveys impact respondents' cognitive load?
-    \item RQ2a. How does the two-phase interface impact respondents' cognitive load compared to a text interface?
-    \item RQ2b. What are the similarities and differences in sources of cognitive load across the two interfaces?
-    \item RQ3. What are the differences in Quadratic Survey respondents' behaviors when coping with long lists of options across the two-phase interface and the text interface?
-\end{itemize}
-(Reason: These research questions are important but can be moved to the methodology or research design section for better flow.)
-
-The practical use of QS has been limited by its complexity, likely due to the difficulties of reasoning around the quadratic vote cost and trade-off thinking.
-(Reason: This could be better integrated into the problem introduction, rather than being a standalone statement.)
 % ================================ %

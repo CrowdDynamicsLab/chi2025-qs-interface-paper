@@ -1,10 +1,39 @@
 \section{Experiment Design}
 \label{sec:experiment}
-In this section, we detail the experiment design and rationale for these decisions.
-
-\subsection{Experiment Protocol}
-We recruited participants from a United States college town using online ads, digital bulletins, social media posts, online newsletters, and physical flyers in public spaces beyond campus. To ensure participant diversity, we prioritized non-students by selectively accepting them as we monitored demographics. The study was framed as focusing on societal attitudes to avoid response bias. The university's Institutional Review Board reviewed and approved this study.
+We recruited $41$ participants, with one excluded\footnote{The participant reported not completing the survey seriously because they believed the experiment was fake.} due to data quality concerns, from a United States college town using online ads, digital bulletins, social media posts, online newsletters, and physical flyers in public spaces beyond campus. To ensure participant diversity, we prioritized non-students by selectively accepting them as we monitored demographics. Study participants' mean age was~$34.63$ years old, with an age distribution similar to the county's demographic profile~(Figure~\ref{fig:demoAge}) albeit a slightly higher representation of younger adults. Gender and race demographics are aggregated in Figure~\ref{fig:demoGender} and~\ref{fig:demoEthnicity}. The study was framed as focusing on societal attitudes to avoid response bias. The university's Institutional Review Board reviewed and approved this study. 
+% In the following section we detail the experiment design and rationale.
 % If a respondent self-identified as a student, we thanked them and informed them of our current priority for non-students, though some self-identified students were still accepted.
+
+\begin{figure}[h]
+    \centering
+    % Top figure
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_age_group_vertical.pdf}
+        \caption{Age distribution of the participants skewed slightly younger despite following similar trends as the county population.}
+        \label{fig:demoAge}
+    \end{subfigure}
+    
+    \vspace{0.5cm} % Add some vertical space between the rows
+
+    % Bottom figures
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_gender.pdf}
+        \caption{Gender distribution of our participants skewed towards female participants.}
+        \label{fig:demoGender}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_ethnicity.pdf}
+        \caption{Ethnicity distribution remains diverse with less Hispanic and African American participants.}
+        \label{fig:demoEthnicity}
+    \end{subfigure}
+    
+    \caption{Demographic distributions: Age, Gender, and Ethnicity}
+    \label{fig:Demographics}
+\end{figure}
 
 \begin{figure}[ht!]
     \centering
@@ -13,13 +42,15 @@ We recruited participants from a United States college town using online ads, di
     \label{fig:studyProtocol}
 \end{figure}
 
+% \subsection{Experiment Protocol}
+
 Figure~\ref{fig:studyProtocol} visually represents the study protocol. Participants completed the study in the lab to control for external influences. Participants used a 32-inch vertical monitor displaying all options on the survey to prevent hidden information during decision-making. After consenting, participants watched a video explaining the quadratic mechanism without hints of interface operation followed by a quiz to ensure understanding. Participants rewatched the video or consulted the researcher until they could select the correct answers. The participant's screen was captured throughout the study. The researcher primed the participant that the study aimed to help local community organizers understand preferences on societal issues to better allocate resources. Participants were randomly assigned to one of four groups:
 
 \begin{itemize}
-    \item Short Text (ST): A text interface with $6$ options.
-    \item Short Interactive (SI): A two-phase interface $6$ options.
-    \item Long Text (LT): A text-based interface $24$ options.
-    \item Long Interactive (LI): A two-phase interface with $24$ options.
+    \item Short Text (ST): A text interface with $6$ options. ($N=10$)
+    \item Short Interactive (SI): A two-phase interface $6$ options. ($N=10$)
+    \item Long Text (LT): A text-based interface $24$ options. ($N=10$)
+    \item Long Interactive (LI): A two-phase interface with $24$ options. ($N=10$)
 \end{itemize}
 
 Participants completed the survey independently, without the researcher's presence. They then contacted the researcher for the NASA-TLX survey, followed by a short audio-recorded semi-structured interview. The session concluded with a debriefing and a \$15 cash compensation, during which participants were informed of the study goal on cognitive load and interface design.

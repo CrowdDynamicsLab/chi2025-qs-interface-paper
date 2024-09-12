@@ -57,37 +57,42 @@ Participants spent slightly more time per option on the two-phase interface than
 
 We observed minimal difference in organization time per option (Figure~\ref{fig:org_time}) between short and long surveys, as options are shown one at a time for drag-and-drop. In terms of the voting time (Figure~\ref{fig:vote_time}), participants spent significantly less time voting on the two-phase interface than on the text interface with a small effect size in the long QS ($U=24053$, $p<0.005$, Rank-biserial: $0.167$, Cohen's d: $0.017$), but not in the short survey ($p>0.4$, Power=$0.051$). This supports our hypothesis that the two-step design in the two-phase interface facilitates more efficient decision-making, especially in longer surveys.
 
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/results/new_clickstream_action_distribution_lower_row.pdf}
+        \caption{This plot counts the number of voting actions when there are $x$ percentages of credits remaining. A KDE plot is provided to help better understand the action distribution.}
+        \label{fig:all_clicks}
+    \end{subfigure}
+    
+    \vspace{1em} % Adjusts the space between the subplots
+    
+    \begin{subfigure}[b]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/results/small_adjustments_plot.pdf}
+        \caption{This plot further separates participants' interaction behavior based on the number of votes participants adjusted. We observed a bimodal interaction pattern across long QS when small vote adjustments are made.}
+        \label{fig:small_clicks}
+    \end{subfigure}
+    
+    \caption{Comparison of voting actions and participant behavior in different survey interfaces. Subplot (a) shows the overall distribution of actions based on the remaining credit, while subplot (b) further differentiates the interaction based on the size of vote adjustments.}
+    \label{fig:combined_voting_behavior}
+\end{figure}
+
+
 \subsection{Budget and Voting Behaviors}
-To further analyze participant behaviors, we break down the aggregated time from the previous analysis and examine fine-grain interactions. Specifically, we examine if there are differences among behavior across interfaces. As we outlined, credit scarcity might influence decision making.  Figure~\ref{fig:voting_all} plots the time of voting actions over the remainder of the participant's budget across the text and two-phase interface across all four groups. Each bar shows the number of actions accumulated across participants at specific percentages of remaining credits. A kernel density estimate (KDE) plot is provided to visualize the trends. We did not follow ~\textcite{quarfoot2017quadratic} in counting accumulated votes over time due to varying total times across individuals.
+We further breakdown and highlight key differences of how long QS participant's voting behaviors when credits changed their voting behaviors with detailed analysis in Appendix~\ref{apdx:additional_results_behavior}. Figure~\ref{fig:all_clicks} first shows the number of vote adjustments at a given remaining budget across the two interface. We then plotted the vote adjustments of two or fewer votes, which is $10\%$ of the possible values one can choose among the maximum of 21 votes in Figure~\ref{fig:small_clicks}. A kernel density estimate (KDE) plot is provided to visualize the trends and compared how it changed when we plotted only small vote adjustments.
 
-Comparing experiment groups, we see fewer differences in the short QS but different interaction distributions between the two interfaces in the long QS. Given the significant differences in voting time between the text and two-phase interface for the long QS, we focus on deciphering the voting action changes between these two conditions in this subsection.
+In long surveys, participants exhibited more actions both when the budget was abundant and when it began to run out This pattern was more pronounced with the long two-phase interface. In fact, the bimodal distribution is more pronounced in the two-phase interface. This suggests that participants make small adjustments both at the beginning and toward the end of the QS. However, the two-phase interface shows more frequent and faster edits towards the end. Visually, dots are more clustered in the long two-phase interface for small vote adjustments compared to the long text interface. The Mann-Whitney U Test on the time spent on small vote adjustments showed significant differences ($U=13037$, $p<0.001$), with a small effect size (Rank-biserial: $0.227$, Cohen's d: $0.195$) and a power of $0.381$. This indicates that participants had a clearer idea of how to distribute their credits across the options.
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{content/image/results/clickstream_action_distribution.pdf}
-    \caption{This plot counts the number of voting actions when there are $x$ percentages of credits remaining. A KDE plot is provided to help better understand the action distribution.}
-    \label{fig:voting_all}
-\end{figure}
-
-In Figure~\ref{fig:voting_all}, we see two distinct patterns between the short survey and the long survey in terms of participant behaviors. In long surveys, participants exhibited more actions both when the budget was abundant and when it began to run out. This pattern was more pronounced with the long two-phase interface. We further separated the behaviors where participants made large or small changes to the options, specifically for the long version. In Figure~\ref{fig:voting_v3_v4}, we define an adjustment of four or more votes as large, which we plotted in the first row of the figure. Adjustments of two or fewer votes are considered small, which is $10\%$ of the possible values one can choose among the maximum of 21 votes.
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{content/image/results/combined_density_plots.pdf}
-    \caption{This plot further separates participants' interaction behavior based on the number of votes participants adjusted. We observed a bimodal interaction pattern across long QS when small vote adjustments are made.}
-    \label{fig:voting_v3_v4}
-\end{figure}
-
-We plotted all actions against the time to complete them. Revisiting the KDE curve in the second row in Figure~\ref{fig:voting_all} and the curve of the second row in Figure~\ref{fig:voting_v3_v4} show a stronger bimodal distribution for small vote adjustments across interfaces. In fact, the bimodal distribution is more pronounced in the two-phase interface. This suggests that participants make small adjustments both at the beginning and toward the end of the QS. However, the two-phase interface shows more frequent and faster edits towards the end. Visually, dots are more clustered in the long two-phase interface for small vote adjustments compared to the long text interface. The Mann-Whitney U Test on the time spent on small vote adjustments showed significant differences ($U=13037$, $p<0.001$), with a small effect size (Rank-biserial: $0.227$, Cohen's d: $0.195$) and a power of $0.381$. Based on the KDE plots in the first row of Figure~\ref{fig:voting_v3_v4}, participants also made more large vote adjustments early on that spread more equally compared to the text interface. This indicates that participants had a clearer idea of how to distribute their credits across the options.
-
-In interviews, five participants highlighted the importance of the interface's flexibility and their use of an incremental, iterative approach. All these participants used the two-phase interface. While this doesn't mean participants using the text interface didn't take an iterative approach, it highlights that the two-phase interface encouraged iterative and incremental updates. As one participant pointed out:
+Five participants highlighted how the interface supported their incremental iterative approach during the interview whom all used the two-phase interface. As one participant pointed out:
 
 \begin{displayquote}
 I like the fact that it remembers everything that you know.~\bracketellipsis that's very important is that it's an iterative process.\hfill\quoteby{S019 (LI)}
 \end{displayquote}
-% If you make a mistake, that you don't lose all the work that you've already done. so I think 
 
-To summarize, participants spent more time on the two-phase interface compared to the text interface in both short and long surveys. Across the two-phase interfaces, organization time remained consistent. While voting time did not differ between interfaces for the short survey, participants voted more quickly on the two-phase interface in the long survey, confirming the hypothesis that the two-step design enhances decision-making efficiency. Voting behaviors indicated more frequent actions when the budget was abundant and nearly exhausted, particularly in the long two-phase interface. Additionally, the analysis revealed more frequent and faster small vote adjustments towards the end of the QS in the two-phase interface, demonstrating an iterative and incremental approach. 
+\textbf{In summary}, participants spent more time on the two-phase interface compared to the text interface in both short and long surveys. Across the two-phase interfaces, organization time remained consistent. While voting time did not differ between interfaces for the short survey, participants voted more quickly on the two-phase interface in the long survey, confirming the hypothesis that the two-step design enhances decision-making efficiency. Voting behaviors indicated more frequent actions when the budget was abundant and nearly exhausted, particularly in the long two-phase interface. Additionally, the analysis revealed more frequent and faster small vote adjustments towards the end of the QS in the two-phase interface, demonstrating an iterative and incremental approach. 
 
 % content removed in discussion should make sure are in this section
 %  , as reflected in slightly faster voting times

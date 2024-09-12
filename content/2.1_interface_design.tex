@@ -1,9 +1,6 @@
 \section{Quadratic Survey Interface Design}
 \label{sec:interfaceDesign}
-In this section, we present the QS interface. Using components identified in current QV interfaces, together with prior literature, we iterated over paper prototypes and three design iterations based on each pre-test result. For coherence and brevity, we provide detailed descriptions of these iterations and additional design considerations in Appendix~\ref{apdx:design}.
-
-\subsection{Quadratic Voting interfaces in the wild}
-During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations.
+In this section, we present the QS interface. Using components identified in current QV interfaces, together with prior literature, we iterated over paper prototypes and three design iterations based on each pre-test result. During our initial paper prototyping iterations, two challenges emerged: identifying relative preferences among options and deciding the degree of trade-offs between options. In this study, we focus on the first challenge to inform our interface design iterations. For coherence and brevity, we provide detailed descriptions of these iterations and additional design considerations in Appendix~\ref{apdx:design}.
 
 \subsection{The Two-Phase Interface}
 \label{sec:finalInterfaceDesign}
@@ -66,7 +63,7 @@ Last, we decided to use a dropdown positioned to the right of the option such th
     \label{fig:textInterface}
 \end{figure}
 
-\subsection{Text-based Interface} To compare how the designed interactive components influenced participants' cognitive load and behavior, we designed the text-based interface as our control condition. The text-based interface shares the other functionalities of the two-phase interface without the two-phase interactive design and the drag-and-drop (Figure~\ref{fig:textInterface}.) The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
+\subsection{Baseline Interface: Text-based Interface} To compare how the designed interactive components influenced participants' cognitive load and behavior, we designed the text-based interface as our control condition. The text-based interface shares the other functionalities of the two-phase interface without the two-phase interactive design and the drag-and-drop (Figure~\ref{fig:textInterface}.) The interface contained the question prompt at the top of the screen. The options were presented in a list underneath the prompt. Survey respondents could update the votes by selecting from a dropdown that provided all possible voting options and costs given the number of credits available. A small summary box to the right of the interface showed the current total cost and the remaining credits for the respondent. The interface randomly presented options to avoid ordering bias~\cite{ferberOrderBiasMail1952, couperWebSurveyDesign2001}.
 
 Both experiment interfaces are developed with a React.js frontend and a Next.js backend powered on MongoDB. We open-sourced both interfaces.\footnote{link-to-github}
 

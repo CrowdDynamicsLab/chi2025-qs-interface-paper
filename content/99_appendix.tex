@@ -1,13 +1,14 @@
 \appendix
 
 \section{Voting Interface Breakdown}\label{apdx:relatedVoting}
-Compared to digital survey interfaces, there exist rich literature on voting interfaces, which we argue is a special type of survey interfaces. We categorize these related work into three main categories detaile below:
+Compared to digital survey interfaces, there exists a rich literature on voting interfaces, which we argue is a special type of survey interface. We categorize these related works into three main categories detailed below:
 
 \paragraph{Designs that shifted voter decisions: } For example, states without straight-party ticket voting~(where voters can select all candidates from one party through a single choice) exhibited higher rates of split-ticket voting~\cite{engstrom2020politics}. Another example from the Australian ballot showing incumbency advantages is where candidates are listed by the office they are running for, with no party labels or boxes.
 \paragraph{Designs that influenced errors: } Butterfly ballots increased voter errors because voters could not correctly identify the punch hole on the ballot. Splitting contestants across columns increases the chance for voters to overvote~\cite{quesenberyOpinionGoodDesign2020}. On the other hand, \textcite{everettElectronicVotingMachines2008} showed the use of incorporating physical voting behaviors, like lever voting, into graphical user interfaces.
 
 \paragraph{Designs that incorporated technologies: } Other projects like the Caltech-MIT Voting Technology Project have sparked research to address accessibility challenges, resulting in innovations like EZ Ballot~\cite{leeUniversalDesignBallot2016}, Anywhere Ballot~\cite{summers2014making}, and Prime III~\cite{dawkinsPrimeIIIInnovative2009}. In addition, \textcite{gilbertAnomalyDetectionElectronic2013} investigated optimal touchpoints on voting interfaces, and \textcite{conradElectronicVotingEliminates2009} examined zoomable voting interfaces.
 
+% *********************************************************** %
 \section{Interface design process}\label{apdx:design}
 In this section, we outline the design process leading to our final interface. As mentioned in the paper, our design iteration began from existing QV applications in the wild.
 
@@ -35,7 +36,7 @@ Considering that relative preference is often through ranking items, we tested w
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.5\textwidth]{content/image/prototypes/2_ranking.png}
+    \includegraphics[width=0.4\textwidth]{content/image/prototypes/2_ranking.png}
     \caption{A Ranking-Vote Prototype: The goal of this prototype is to test whether ranking options prior to voting help establish an individual's relative preferences and reduce effort when voting. Each option is draggable to position in a specific location amongst the full list of options. Votes can be updated using the buttons to the right of the interface with vote count and costs to the right of the interface. A summary box is placed sticky to the bottom of the screen.}
     \label{fig:qv_rank}
 \end{figure}
@@ -62,22 +63,22 @@ Considering that relative preference is often through ranking items, we tested w
 \subsection{Prototype 2: Select-then-Vote}
 Based on feedback from Prototype 1, instead of \textit{allowing} individuals to rank options, Prototype 2 implemented a two-phase process that \textit{intentionally} asks respondents to select options to express opinions before voting. As shown in Figure~\ref{fig:qv_select}, survey respondents selected their preferred options (Figure~\ref{fig:qv_select_selection}), and the interface positioned these options at the top of the list for voting (Figure~\ref{fig:qv_select_vote}). We identified several issues during the prototype 2 pretest: many respondents marked most options as 'options they care about,' which undermined the design's purpose. Additionally, the lack of clear distinction between selected and unselected options confused respondents about the necessity of Step 1. Thus, we need a clearer distinction and connection between the two phases to effectively construct relative preferences.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/prototypes/4.1_grouping.png}
         \caption{The Organization Interface: Options are shown initially in the first bin labeled as `I don't know.' Survey respondents can then drag and drop these options into the latter bins: Lean Positive, Lean Neutral, or Lean Negative. Only the details of each option are shown on this interface.}
         \label{fig:qv_org_p1}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/prototypes/4.2_grouping_vote.png}
         \caption{The Voting Interface: Voting controls appear on the left side of each option, showing the current votes and associated costs on the right. A budget summary is stuck at the bottom of the screen.}
         \label{fig:qv_org_p2}
     \end{subfigure}
-    \caption{Organize-then-Vote Prototype: The goal of this prototype is to encourage participants at deriving finer grain categories among options before voting. Survey respondents first organize their thoughts into categories, then vote on the options.}
+    \caption{Organize-then-Vote Prototype: The goal of this prototype is to encourage participants to derive finer grain categories among options before voting. Survey respondents first organize their thoughts into categories and then vote on the options.}
     \label{fig:qv_org}
 \end{figure}
 
@@ -86,178 +87,7 @@ Figure~\ref{fig:qv_org} shows the last prototype where we built on the previous 
 
 Feedback indicated that survey respondents are comfortable with the two-phase organize-then-vote design, demonstrating it as a central strategy for our interface development. However, several areas for enhancement were identified: First, the dragging and dropping mechanism in the organization phase is cumbersome and may inadvertently suggest a ranking process, contrary to our intentions. Second, placing unorganized options at the top of the voting list is counterintuitive. Third, the voting controls are disconnected from the option summaries, dividing attention between the left and right sides of the screen. These insights guided refinements in the final two-phase interface, adhering to the two-phase organize-then-vote design framework.
 
-
-\section{Cognitive Load remaining}
-\label{apdx:cog_qual}
-\subsection{Sources of Physical Demand} 
-\label{sec:physical}
-
-%\vspace{5pt}
-\begin{tldrbox}
-   \faKey~\textbf{Key Differences:} Two-phase interface experienced higher physical demand from increased mouse usage.
-\end{tldrbox}
-
-% Since this study involves participants sitting in front of a computer screen completing a survey, m
-
-Physical demand refers to the physical effort required to complete a task, such as physical exertion or movement. Most participants reported minimal physical demand~($N=32$), reflected in the low NASA-TLX physical demand scores~(Figure~\ref{fig:physical_cog_score}). Notably, $11$ out of $20$ participants who used the two-phase interface mentioned physical demand from using the mouse, reflecting their increased interaction with the interface. This is further supported by the raw NASA-TLX physical demand scores~(Figure~\ref{fig:physical_cog_score}), which show a significant visual difference between short and long two-phase interfaces as well as between text and two-phase interfaces in long surveys.
-
-% We nonetheless report the sources of this minimal demand, which include reading text on the screen~($N=4$), using the mouse~($N=16$), and moving their head to navigate the vertical screen~($N=5$)~\footnote{The full table showing the distribution is in Appendix~\ref{apdx:physical_table}}. Participants emphasized that these demands were minimal, which is 
-
-\begin{figure}[h]
-    \begin{minipage}[t]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Physical_scores.pdf}
-        \captionsetup{width=0.9\textwidth, justification=justified}
-        \caption{Physical Demand Raw Score: Participants other than the long two-phase interface reported minimal physical demand. The long two-phase interface had the highest physical demand, likely due to increased mouse clicks and extended time spent looking at the vertical screen.}
-        \label{fig:physical_cog_score}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.45\textwidth}
-        \centering
-        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
-        \captionsetup{width=0.9\textwidth, justification=justified} % Adjust the width to match the image width
-        \caption{Effort Raw Score: Effort scores shows indifference across groups.}
-        \label{fig:effort_cog_score}
-    \end{minipage}
-\end{figure}
-
-% ============================================= %
-\begin{table}[h]
-    \caption{Effort Sources: Participants using the text interface focused more on operational tasks, while those using the two-phase interface focused more on strategic planning.}
-    \label{tbl:physical}
-    \includegraphics[width=\linewidth]{content/image/cog/effort_table.png}
-\end{table}
-
-
-\subsection{Source of Effort}
-\label{sec:effort}
-
-%\vspace{5pt}
-\begin{tldrbox}
-   \faKey~\textbf{Key Differences:} First, participants in the text interface associated effort with operational tasks more often than participants from the two-phase interface. Conversely, participants in the two-phase interface cited more sources from strategic planning than those in the text interface. We observed that participants experienced effort when considering a comprehensive view while using the two-phase interface.
-   
-   %Effort sources varied between operational~\textit{Operational Tasks} and~\textit{Strategic Planning}. Participants using the text interface focused on operational tasks, while those using the two-phase interface engaged in strategic planning. This shows that the two-phase interface spurs deeper, more critical thinking.
-\end{tldrbox}
-Effort refers to how hard participants felt they worked to achieve the level of performance they did. Since effort includes both mental and physical resource intensity, refer to \Cref{sec:mental} and \Cref{sec:physical} for definitions.
-
-While the raw NASA-TLX effort scores~(Figure~\ref{fig:effort_cog_score}) showed a similar spread across experiment groups, the qualitative analysis showed more distinction that participants using the two-phase interface considered options more comprehensively and felt less effort on completing operational tasks, similar to what we found on mental demands~(Section \ref{sec:mental}). 
-
-%We identified two major sources of effort: \textit{Operational Tasks} and \textit{Strategic Planning}.
-
-\subsubsection{Effort Source \#1: Operational Tasks} $14$ of the $20$ participants using the text interface mentioned Operational Tasks as effort sources, compared to $7$ using the two-phase interface, with the lowest mention by the long two-phase interface group~($N=2$). 
-
-\subsubsection{Effort Source \#2: Strategic Planning} Different from Operational Tasks, $11$ participants in the text interface compared to $17$ participants described strategic planning as sources of effort, with almost all participants~($N=9$) from the long two-phase interface. We further categorize strategic planning into \textit{narrow} and \textit{broad} scopes as we did for mental demand~\cref{sec:mental}. Participants using the two-phase interface~($N=7$) had nearly mentioned double~($N=4$) times regarding global strategies. 
-
-
-% However, qualitative analysis revealed that participants using the text interface experienced more effort focused on operational tasks~(i.e., completing specific tasks). In contrast, participants using the two-phase interface experienced more effort focused on strategic planning~(planning a strategy to complete tasks). Specifically, those using the two-phase interface engaged in global strategic planning, considering options comprehensively and beyond the immediate task. This contrasts with text interface participants, who concentrated more on operational tasks and narrower strategic planning. This finding reinforces that cognitive load sources differ between interfaces, with two-phase interfaces fostering deeper, more critical thinking.
-
-%Both examples show considerations beyond personal experiences, including outcomes or social values. Nearly twice as many participants using the two-phase interface~($N=7$) mentioned global strategic efforts compared to the text interface~($N=4$). Overall, more participants using the two-phase interface~($N=17$) reported sources of strategic effort compared to those using text-based interfaces~($N=11$).
-
-%\subsubsection{Takeaway: Two-phase interface spurs more strategic effort from participants}
-%Effort is a realization of mental demand through physical actions. Since participants experienced little physical demand, the sources of effort reflected how individuals translated their mental demand into efforts. The raw NASA-TLX effort scores~(Figure~\ref{fig:effort_cog_score}) showed a similar spread across experiment groups, akin to mental demand. However, qualitative analysis revealed that participants using the text interface experienced more effort focused on operational tasks~(i.e., completing specific tasks). In contrast, participants using the two-phase interface experienced more effort focused on strategic planning~(planning a strategy to complete tasks). Specifically, those using the two-phase interface engaged in global strategic planning, considering options comprehensively and beyond the immediate task. This contrasts with text interface participants, who concentrated more on operational tasks and narrower strategic planning. This finding reinforces that cognitive load sources differ between interfaces, with two-phase interfaces fostering deeper, more critical thinking.
-
-%\begin{displayquote}
-%And then I wanted to bump up~(an option) maybe to 4 or <option> to 5 and realize I couldn't. My point~(number of votes) had to like back down a little bit~\ldots So that would be effort came in of how do I want to really rearrange this to make it~(the budget spending) maximize?
-
-%\noindent \hfill -- S029, short text interface
-%\end{displayquote}
-
-%\begin{displayquote}
-%So it was like it was very~\ldots I have to put a lot of effort in terms of you know~\ldots think about each dimension that if I give one credit to <option name> whether it will affect my credits on <another option name>.
-
-%dent \hfill -- S005, long text interface
-%\end{displayquote}
-
-%Both quotes illustrated participants putting in effort to manipulate the interface. .
-
-
-%\begin{wrapfigure}{r}{0.45\textwidth} % Adjust the width as needed
-%    \centering
-%    \includegraphics[width=0.45\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
-%    \captionsetup{width=0.40\textwidth, justification=justified} % Adjust the width to match the image width
- %   \caption{Effort Raw Score: Effort scores shows indifference across groups.}
-  %  \label{fig:effort_cog_score}
-%\end{wrapfigure}
-
-
-%\subsubsection{Effort Source: Strategic Planning}
-%Strategic planning is similar to strategic budget management mentioned under mental demand. Unlike operational tasks, strategic planning involves higher-level strategies to complete the survey. We categorize two distinct types of planning: \textit{personal} and \textit{global}. \textit{Personal strategic planning} involves translating preferences onto the survey without considering broader values or beliefs. For example:
-
-%\begin{displayquote}
-%~\bracketellipsis having that prior experience and being able to quickly link it to a tangible thing that I've experienced in my personal life.
-
-%\noindent \hfill -- S032, short text interface
-%\end{displayquote}
-
-%\begin{displayquote}
-%And really the bulk of the effort was how to rank order these~(options) and allocate the resources behind the upvotes so that I can accurately depict what I want~\ldots say, a committee to focus on and allocate actual fungible resources, too. 
-
-%\noindent \hfill -- S019, long two-phase interface
-%\end{displayquote}
-
-%Participants using the two-phase interface~($N=13$) mentioned personal strategic planning slightly more than those using the text interface%\end{displayquote}
-
-%\begin{displayquote}
-%Hey, even though I don't really like this idea. But what if they're important? They sort of kind of deserve some attention~\ldots that's why I think I have the effort here.
-
-%\noindent \hfill -- S037, long two-phase interface
-%\end{displayquote}
-    
-
-
-
-% ============================================= %
-\subsection{Source of Performance}
-\label{sec:performance}
-%\vspace{5pt}
-
-\begin{tldrbox}
-   \faKey~\textbf{Key Differences:} Participants who used a two-phase interface were generally more positive about their final outcome -- they were twice as likely to report "feeling good" about their final results
- % Participants experienced performance demands due to \textit{Operational Actions} and \textit{Social Responsibility}. Despite similar performance scores across groups, more participants using the two-phase interface felt more positive about their performance.
-\end{tldrbox}
-
-Performance refers to a person's perception of their success in completing a task. Lower values mean good perceived performance; higher values mean poor perceived performance. We found minimal qualitative differences between experiment groups regarding factors influencing perceived performance. Two influencing factors emerged: \textit{Operational Actions} and \textit{Social Responsibility}~\footnote{The full performance table is at Appendix~\ref{apdx:perf_table}}. Despite most participants reporting positively on their performance, nuances exist in how different groups interpret their performance.
-
-\subsubsection{Operational Actions}
-Operational actions, like the theme presented in temporal demand, refer to specific, executable procedures participants perform in the survey. This could involve: pressure to spend all credits or stay within budget~($N=6$), fears that final vote choices did not reflect true preferences($N=5$), or concerns that they had finished the task inefficiently~($N=6$).
-
-\begin{wrapfigure}{l}{0.45\textwidth} % Wrap figure on the left
-    \centering
-    \adjustbox{valign=t}{
-        \includegraphics[width=\linewidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
-    }
-    \captionsetup{width=0.9\linewidth, justification=justified}
-    \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
-    \label{fig:performance_cog_score}
-\end{wrapfigure}
-
-\subsubsection{Social Responsibility}
-Social responsibility-based concerns around performance came up when participants reflected on how their final vote counts would be perceived by others~(\smallquote{S041}{I don't want people to think that I just like don't care about <ethnicity> people at all}) or influence real-world decision-making~(\smallquote{S027}{Some of these things might \ldots have outcomes that I didn't foresee}).
-
-All groups cited social responsibility as source to evaluate effort. Raw NASA-TLX scores~(Figure~\ref{fig:performance_cog_score}) show participants had indistinguishable performance scores. This aligns with the interview results where most participants felt positive about their final submission. 
-
-To dig deeper, we also analyzed participants' language when they described their performance. Expressions like ``good enough'' may be indicative of satisficing behaviors -- our results suggest participants are satisfied at similar rates regardless of the interface. 1/4 of the participants in the text interface expressed ``done their best,'' referring to exhausting their effort. Participants who used a two-phase interface were generally more positive about their final outcome -- they were twice as likely to report "feeling good" about their final results~($N=11$ v.s. $N=6$).
-
-% TODO: Need to check the reflective thinking part a bit. I **think** there are differences but it is unclear, need to go back to raw code.
-
-% \begin{figure}[h]
-%     \begin{minipage}[t]{0.45\textwidth}
-%         \centering
-%         \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
-%         \captionsetup{width=\textwidth, justification=justified} % Adjust the width to match the image width
-%         \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
-%         \label{fig:performance_cog_score}
-%     \end{minipage}
-%     \hfill
-%     \begin{minipage}[t]{0.45\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
-%        \captionsetup{width=\textwidth, justification=justified} % Adjust the width to match the image width
-%        \caption{Effort Raw Score: Effort scores show indifference across groups.}
-%        \label{fig:effort_cog_score}
-%     \end{minipage}
-% \end{figure}
-
+% *********************************************************** %
 \section{List of Options}
 \label{sec:charityList}
 We provide the full list of options presented on the survey.
@@ -296,85 +126,217 @@ We provide the full list of options presented on the survey.
     \item \textbf{Social and Public Policy Research:} Support economic and social issues impacting our country today, educate the public, and influence policy regarding healthcare, employment rights, taxation, and other civic ventures.
 \end{itemize}
 
+% *********************************************************** %
+\section{Detailed Qualitative Cognitive Load Breakdown}
+\label{apdx:cog_qual}
 
+In addition to the discussion on cognitive load sources presented in the main text, we provide additional details on the six cognitive dimensions. Among all dimensions, we also provide the codes representing different types of demand in a table form. The shaded cells represent the percentage of participants citing each source of mental demand, allowing for comparison within columns. The abbreviations in the columns: ST (Short Text Interface), SI (Short Two-phase Interface), LT (Long Text Interface), and LI (Long Two-phase Interface). Short and Long refer to the sum across both interfaces; Text and Inter refer to the sum across both survey lengths. We include Sparklines for comparisons across these experiment groups.
 
+\section{Sources of Mental Demand}
+\label{apdx:mental}
+Table~\ref{apdx:mental_table} lists all the mental demand codes.
 
-
-
-
-
-
-\section{Cognitive Demand Tables}
-Here we provide the full qualitative analysis table.
-
-\subsection{Mental Demand Table}
 \label{apdx:mental_table}
-\begin{table}[h]
-   \caption{This table lists all the causes participants mentioned as contributing to their Mental Demand. The shaded cells represent the percentage of participants citing each source of mental demand, allowing for comparison within columns. The abbreviations are: ST (Short Text Interface), SI (Short Two-phase Interface), LT (Long Text Interface), and LI (Long Two-phase Interface). Short and Long refer to the sum across both interfaces; Text and Inter refer to the sum across both survey lengths. We include Sparklines for comparisons across these experiment groups.}
+\begin{table}[ht!]
+   \caption{This table lists all the causes participants mentioned as contributing to their Mental Demand. }
     \label{tbl:mental}
     \includegraphics[width=\linewidth]{content/image/cog/mental_table.png}
 \end{table}
 
-\subsection{Physical Demand Table}
+\subsection{Sources of Physical Demand} 
+\label{apdx:physical}
+Physical demand refers to the physical effort required to complete a task, such as physical exertion or movement. Most participants reported minimal physical demand~($N=32$), reflected in the low NASA-TLX physical demand scores~(Figure~\ref{apdxfig:physical_cog_score}). Notably, $11$ out of $20$ participants who used the two-phase interface mentioned physical demand from using the mouse, reflecting their increased interaction with the interface. This is further supported by the raw NASA-TLX physical demand scores~(Figure~\ref{apdxfig:physical_cog_score}), which show a significant visual difference between short and long two-phase interfaces as well as between text and two-phase interfaces in long surveys. Table~\ref{apdx:physical_table} presents all the relevant codes across experiment groups.
+
 \label{apdx:physical_table}
-\begin{table}[H]
+\begin{table}[h]
     \caption{Physical Demand Causes: Most participants expressed little or no physical demand. Results reflected that participants in the long two-phase interface required more actions, hence the higher mention of mouse usage as a source.}
     \label{tbl:physical}
     \includegraphics[width=\linewidth]{content/image/cog/physical_table.png}
 \end{table}
 
-\subsection{Performance Table}
-\label{apdx:perf_table}
-\begin{table}[H]
-    \caption{Performance Causes: Most causes are shared across experiment conditions. We provided qualitative interpretations of their own perfornace assessments.}
-    \label{tbl:physical}
-    \includegraphics[width=\linewidth]{content/image/cog/perf_table.png}
+\begin{figure}[h]
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Physical_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified}
+        \caption{Physical Demand Raw Score: Participants other than the long two-phase interface reported minimal physical demand. The long two-phase interface had the highest physical demand, likely due to increased mouse clicks and extended time spent looking at the vertical screen.}
+        \label{apdxfig:physical_cog_score}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified} % Adjust the width to match the image width
+        \caption{Effort Raw Score: Effort scores shows indifference across groups.}
+        \label{apdxfig:effort_cog_score}
+    \end{minipage}
+\end{figure}
+
+% ============================================= %
+\begin{table}[h]
+    \caption{Effort Sources: Participants using the text interface focused more on operational tasks, while those using the two-phase interface focused more on strategic planning.}
+    \label{apdx:effort_table}
+    \includegraphics[width=\linewidth]{content/image/cog/effort_table.png}
 \end{table}
 
-\subsection{Temporal Demand Table}
+%\vspace{5pt}
+% \begin{tldrbox}
+%    \faKey~\textbf{Key Differences:} First, participants in the text interface associated effort with operational tasks more often than participants from the two-phase interface. Conversely, participants in the two-phase interface cited more sources from strategic planning than those in the text interface. We observed that participants experienced effort when considering a comprehensive view while using the two-phase interface.
+   
+%    %Effort sources varied between operational~\textit{Operational Tasks} and~\textit{Strategic Planning}. Participants using the text interface focused on operational tasks, while those using the two-phase interface engaged in strategic planning. This shows that the two-phase interface spurs deeper, more critical thinking.
+% \end{tldrbox}
+
+\subsection{Source of Effort}
+\label{apdx:effort}
+Effort refers to how hard participants felt they worked to achieve the level of performance they did. Since effort includes both mental and physical resource intensity, refer to \Cref{sec:mental} and \Cref{apdx:physical} for definitions. Raw NASA-TLX effort scores~(Figure~\ref{apdxfig:effort_cog_score}) showed a similar spread across experiment groups, the qualitative analysis showed more distinction that participants using the two-phase interface considered options more comprehensively and felt less effort on completing operational tasks, similar to what we found on mental demands~(Section \ref{sec:mental}). Table~\ref{apdx:effort_table} contains codes.
+
+\subsubsection{Effort Source \#1: Operational Tasks} $14$ of the $20$ participants using the text interface mentioned Operational Tasks as effort sources, compared to $7$ using the two-phase interface, with the lowest mention by the long two-phase interface group~($N=2$). Quotes below illustrated participants putting in effort to manipulate the interface.
+\begin{displayquote}
+I wanted to bump up~(an option) maybe to 4 or <option> to 5 and realize I couldn't.~\bracketellipsis that would be effort came in of how do I want to really rearrange this to make it~(the budget spending) maximize?
+
+\noindent \hfill -- S029, short text interface
+\end{displayquote}
+\begin{displayquote}
+So it was like it was very~\ldots I have to put a lot of effort in terms of you know~\ldots think about each dimension that if I give one credit to <option name> whether it will affect my credits on <another option name>. \noindent\hfill -- S005, long text interface
+\end{displayquote}
+
+\subsubsection{Effort Source \#2: Strategic Planning} Different from Operational Tasks, $11$ participants in the text interface compared to $17$ participants described strategic planning as sources of effort, with almost all participants~($N=9$) from the long two-phase interface. We further categorize strategic planning into \textit{narrow} and \textit{broad} scopes as we did for mental demand~\cref{sec:mental}. Participants using the two-phase interface~($N=7$) had nearly mentioned double~($N=4$) times regarding global strategies. For example:
+
+\begin{displayquote}
+And really the bulk of the effort was how to rank order these~(options) and allocate the resources behind the upvotes so that I can accurately depict what I want~\ldots say, a committee to focus on and allocate actual fungible resources, too. \noindent \hfill -- S019, long two-phase interface
+\end{displayquote}
+\newpage
+
+
+
+% However, qualitative analysis revealed that participants using the text interface experienced more effort focused on operational tasks~(i.e., completing specific tasks). In contrast, participants using the two-phase interface experienced more effort focused on strategic planning~(planning a strategy to complete tasks). Specifically, those using the two-phase interface engaged in global strategic planning, considering options comprehensively and beyond the immediate task. This contrasts with text interface participants, who concentrated more on operational tasks and narrower strategic planning. This finding reinforces that cognitive load sources differ between interfaces, with two-phase interfaces fostering deeper, more critical thinking.
+
+%Both examples show considerations beyond personal experiences, including outcomes or social values. Nearly twice as many participants using the two-phase interface~($N=7$) mentioned global strategic efforts compared to the text interface~($N=4$). Overall, more participants using the two-phase interface~($N=17$) reported sources of strategic effort compared to those using text-based interfaces~($N=11$).
+
+%\subsubsection{Takeaway: Two-phase interface spurs more strategic effort from participants}
+%Effort is a realization of mental demand through physical actions. Since participants experienced little physical demand, the sources of effort reflected how individuals translated their mental demand into efforts. The raw NASA-TLX effort scores~(Figure~\ref{fig:effort_cog_score}) showed a similar spread across experiment groups, akin to mental demand. However, qualitative analysis revealed that participants using the text interface experienced more effort focused on operational tasks~(i.e., completing specific tasks). In contrast, participants using the two-phase interface experienced more effort focused on strategic planning~(planning a strategy to complete tasks). Specifically, those using the two-phase interface engaged in global strategic planning, considering options comprehensively and beyond the immediate task. This contrasts with text interface participants, who concentrated more on operational tasks and narrower strategic planning. This finding reinforces that cognitive load sources differ between interfaces, with two-phase interfaces fostering deeper, more critical thinking.
+
+%\begin{wrapfigure}{r}{0.45\textwidth} % Adjust the width as needed
+%    \centering
+%    \includegraphics[width=0.45\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
+%    \captionsetup{width=0.40\textwidth, justification=justified} % Adjust the width to match the image width
+ %   \caption{Effort Raw Score: Effort scores shows indifference across groups.}
+  %  \label{fig:effort_cog_score}
+%\end{wrapfigure}
+
+
+%\subsubsection{Effort Source: Strategic Planning}
+%Strategic planning is similar to strategic budget management mentioned under mental demand. Unlike operational tasks, strategic planning involves higher-level strategies to complete the survey. We categorize two distinct types of planning: \textit{personal} and \textit{global}. \textit{Personal strategic planning} involves translating preferences onto the survey without considering broader values or beliefs. For example:
+
+%\begin{displayquote}
+%~\bracketellipsis having that prior experience and being able to quickly link it to a tangible thing that I've experienced in my personal life.
+
+%\noindent \hfill -- S032, short text interface
+%\end{displayquote}
+
+%\begin{displayquote}
+%And really the bulk of the effort was how to rank order these~(options) and allocate the resources behind the upvotes so that I can accurately depict what I want~\ldots say, a committee to focus on and allocate actual fungible resources, too. 
+
+%\noindent \hfill -- S019, long two-phase interface
+%\end{displayquote}
+
+%Participants using the two-phase interface~($N=13$) mentioned personal strategic planning slightly more than those using the text interface%\end{displayquote}
+
+%\begin{displayquote}
+%Hey, even though I don't really like this idea. But what if they're important? They sort of kind of deserve some attention~\ldots that's why I think I have the effort here.
+
+%\noindent \hfill -- S037, long two-phase interface
+%\end{displayquote}
+% ============================================= %
+\begin{table}[ht]
+    \caption{Performance Causes: Most causes are shared across experiment conditions. We provided qualitative interpretations of their own performance assessments.}
+    \label{tbl:physical}
+    \includegraphics[width=0.95\linewidth]{content/image/cog/perf_table.png}
+\end{table}
+
+\subsection{Source from Performance}
+\label{apdx:performance}
+
+\begin{wrapfigure}{r}{0.45\textwidth} % Wrap figure on the right
+    \centering
+    \adjustbox{valign=t}{
+        \includegraphics[width=\linewidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
+    }
+    \captionsetup{width=0.9\linewidth, justification=justified}
+    \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
+    \label{fig:performance_cog_score}
+\end{wrapfigure}
+Performance refers to a person's perception of their success in completing a task. Lower values mean good perceived performance; higher values mean poor perceived performance. We found minimal qualitative differences between experiment groups regarding factors influencing perceived performance. Two influencing factors emerged: \textit{Operational Actions} and \textit{Social Responsibility}. Despite most participants reporting positively on their performance, nuances exist in how different groups interpret their performance.
+
+\subsubsection{Operational Actions}
+Operational actions, like the theme presented in temporal demand, refer to specific, executable procedures participants perform in the survey. This could involve: pressure to spend all credits or stay within budget~($N=6$), fears that final vote choices did not reflect true preferences($N=5$), or concerns that they had finished the task inefficiently~($N=6$).
+
+\subsubsection{Social Responsibility}
+Social responsibility-based concerns around performance came up when participants reflected on how their final vote counts would be perceived by others~(\smallquote{S041}{I don't want people to think that I just like don't care about <ethnicity> people at all}) or influence real-world decision-making~(\smallquote{S027}{Some of these things might \ldots have outcomes that I didn't foresee}).
+
+All groups cited social responsibility as source to evaluate effort. Raw NASA-TLX scores~(Figure~\ref{fig:performance_cog_score}) show participants had indistinguishable performance scores. This aligns with the interview results where most participants felt positive about their final submission. 
+
+To dig deeper, we also analyzed participants' language when they described their performance. Expressions like ``good enough'' may be indicative of satisficing behaviors -- our results suggest participants are satisfied at similar rates regardless of the interface. 1/4 of the participants in the text interface expressed ``done their best,'' referring to exhausting their effort. Participants who used a two-phase interface were generally more positive about their final outcome -- they were twice as likely to report "feeling good" about their final results~($N=11$ v.s. $N=6$).
+
+
+\subsection{Temporal Demand}
+Table~\ref{apdx:temporal_table} lists all the mental demand codes.
 \label{apdx:temporal_table}
-\begin{table}[H]
+\begin{table}[ht]
     \caption{Temporal Demand Sources: Decision-making and Operational Tasks are the main causes. Participants framed their decision-making sources differently.}
     \label{tbl:temporal}
     \includegraphics[width=\linewidth]{content/image/cog/temporal_table.png}
 \end{table}
 
-\subsection{Frustration Table}
+\subsection{Frustration}
+Table~\ref{apdx:frus_table} lists all the mental demand codes.
 \label{apdx:frus_table}
-\begin{table}[H]
-    \caption{Frustration Sources: needs to be updated with some new terms definitions for some of the columns.}
+\begin{table}[ht]
+    \caption{Frustration Sources: Frustration comes from different levels of strategic operations or operational tasks.}
     \label{tbl:fustration}
     \includegraphics[width=\linewidth]{content/image/cog/fustration_table.png}
 \end{table}
 
+% TODO: Need to check the reflective thinking part a bit. I **think** there are differences but it is unclear, need to go back to raw code.
+
+% \begin{figure}[h]
+%     \begin{minipage}[t]{0.45\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
+%         \captionsetup{width=\textwidth, justification=justified} % Adjust the width to match the image width
+%         \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
+%         \label{fig:performance_cog_score}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{0.45\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Effort_scores.pdf}
+%        \captionsetup{width=\textwidth, justification=justified} % Adjust the width to match the image width
+%        \caption{Effort Raw Score: Effort scores show indifference across groups.}
+%        \label{fig:effort_cog_score}
+%     \end{minipage}
+% \end{figure}
 
 
-\section{Additional behavioral results}
+\newpage
+\section{Additional voting behavior data}
 \label{apdx:additional_results_behavior}
-To further analyze participant behaviors, we break down the aggregated time from the previous analysis and examine fine-grain interactions. Specifically, we examine if there are differences among behavior across interfaces. As we outlined, credit scarcity might influence decision-making.  Figure~\ref{fig:voting_all} plots the time of voting actions over the remainder of the participant's budget across the text and two-phase interface across all four groups. Each bar shows the number of actions accumulated across participants at specific percentages of remaining credits. A kernel density estimate (KDE) plot is provided to visualize the trends. We did not follow ~\textcite{quarfoot2017quadratic} in counting accumulated votes over time due to varying total times across individuals.
+The reason why we decided to focus on the percentage of remaining credits comes from prior literature `scarcity frames value'~\cite{Shah2015a}, a driver that makes researchers believe makes quadratic voting more accurate~\cite{chengCanShowWhat2021}. We did not follow ~\textcite{quarfoot2017quadratic} in counting accumulated votes over time due to varying total times across individuals.
 
-Comparing experiment groups, we see fewer differences in the short QS but different interaction distributions between the two interfaces in the long QS. Given the significant differences in voting time between the text and two-phase interface for the long QS, we focus on deciphering the voting action changes between these two conditions in this subsection.
+In this section, we complement the main text, showing a few additional figures. Figure~\ref{apdxfig:voting_all} follows the main text, showing all the voting actions over the remaining credit for the four experiment conditions. Here we see two distinct patterns between the short survey and the long survey in terms of participant behaviors. In long surveys, participants exhibited more actions both when the budget was abundant and when it began to run out. This pattern was more pronounced with the long two-phase interface. This difference is why we further focused on the long QS group.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/image/results/clickstream_action_distribution.pdf}
     \caption{This plot counts the number of voting actions when there are $x$ percentages of credits remaining. A KDE plot is provided to help better understand the action distribution.}
-    \label{fig:voting_all}
+    \label{apdxfig:voting_all}
 \end{figure}
-
-In Figure~\ref{fig:voting_all}, we see two distinct patterns between the short survey and the long survey in terms of participant behaviors. In long surveys, participants exhibited more actions both when the budget was abundant and when it began to run out. This pattern was more pronounced with the long two-phase interface. We further separated the behaviors where participants made large or small changes to the options, specifically for the long version. In Figure~\ref{fig:voting_v3_v4}, we define an adjustment of four or more votes as large, which we plotted in the first row of the figure. Adjustments of two or fewer votes are considered small, which is $10\%$ of the possible values one can choose among the maximum of 21 votes.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{content/image/results/combined_density_plots.pdf}
     \caption{This plot further separates participants' interaction behavior based on the number of votes participants adjusted. We observed a bimodal interaction pattern across long QS when small vote adjustments are made.}
-    \label{fig:voting_v3_v4}
+    \label{apdxfig:voting_v3_v4}
 \end{figure}
 
-We plotted all actions against the time to complete them. Revisiting the KDE curve in the second row in Figure~\ref{fig:voting_all} and the curve of the second row in Figure~\ref{fig:voting_v3_v4} show a stronger bimodal distribution for small vote adjustments across interfaces. In fact, the bimodal distribution is more pronounced in the two-phase interface. This suggests that participants make small adjustments both at the beginning and toward the end of the QS. However, the two-phase interface shows more frequent and faster edits towards the end. Visually, dots are more clustered in the long two-phase interface for small vote adjustments compared to the long text interface. The Mann-Whitney U Test on the time spent on small vote adjustments showed significant differences ($U=13037$, $p<0.001$), with a small effect size (Rank-biserial: $0.227$, Cohen's d: $0.195$) and a power of $0.381$. Based on the KDE plots in the first row of Figure~\ref{fig:voting_v3_v4}, participants also made more large vote adjustments early on that spread more equally compared to the text interface. This indicates that participants had a clearer idea of how to distribute their credits across the options.
-
-In interviews, five participants highlighted the importance of the interface's flexibility and their use of an incremental, iterative approach. All these participants used the two-phase interface. While this doesn't mean participants using the text interface didn't take an iterative approach, it highlights that the two-phase interface encouraged iterative and incremental updates. As one participant pointed out:
-
-\begin{displayquote}
-I like the fact that it remembers everything that you know.~\bracketellipsis that's very important is that it's an iterative process.\hfill\quoteby{S019 (LI)}
-\end{displayquote}
+In addition to the small adjustment plots presented in Figure~\ref{fig:small_clicks}, Figure~\ref{apdxfig:voting_v3_v4} presents the comparison between when participants make small or large vote adjustments at different budget levels. Revisiting the KDE curve in the second row in Figure~\ref{apdxfig:voting_all} and the curve of the second row in Figure~\ref{apdxfig:voting_v3_v4} show a stronger bimodal distribution for small vote adjustments across interfaces. In fact, the bimodal distribution is more pronounced in the two-phase interface. This suggests that participants make small adjustments both at the beginning and toward the end of the QS. However, the two-phase interface shows more frequent and faster edits towards the end. In comparison, participants also made more large vote adjustments early on that spread more equally compared to the text interface. This indicates that participants had a clearer idea of how to distribute their credits across the options.

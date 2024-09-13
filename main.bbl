@@ -1228,68 +1228,6 @@
       \field{year}{2023}
       \field{urldateera}{ce}
     \endentry
-    \entry{RadicalxChangeQuadraticvoting2024}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{RadicalxChange}
-      \field{month}{5}
-      \field{title}{{{RadicalxChange}}/Quadratic-Voting}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{ReadWhitepaperGitcoin}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://www.gitcoin.co/whitepaper/read}
-      \field{langid}{english}
-      \field{title}{Read the {{Whitepaper}} {|} {{Gitcoin}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{RxC}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://www.radicalxchange.org/wiki/about/}
-      \field{journaltitle}{RadicalxChange}
-      \field{langid}{english}
-      \field{title}{About {{RxC}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{yehjxraymondYehjxraymondQvapp2024}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8a57b93291a54e6a4eb951f355bf1c46}{%
-           family={{yehjxraymond}},
-           familyi={y\bibinitperiod}}}%
-      }
-      \strng{namehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{fullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{bibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorbibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authornamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorfullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{3}
-      \field{title}{Yehjxraymond/Qv-App}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-    \endentry
     \entry{nobarany2012design}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=545d0c2d26a7dc873f6224ecc7f2137d}{%
@@ -1329,8 +1267,8 @@
       \strng{authorbibnamehash}{fe695e7c8f816a372ff54d096a28f077}
       \strng{authornamehash}{a7db75129e43d951c8e772425c96b4bc}
       \strng{authorfullhash}{fe695e7c8f816a372ff54d096a28f077}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{SIGCHI}} Conference on Human Factors in Computing Systems}
@@ -1361,8 +1299,8 @@
       \strng{authorbibnamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authornamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authorfullhash}{662c251c2289172168b979b12fef3e22}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Transactions on Computer-Human Interaction (TOCHI)}
@@ -1423,8 +1361,8 @@
       \strng{authorbibnamehash}{7c47961f31d343992f415e52a8330ab0}
       \strng{authornamehash}{181e51f9e82d6be8b5a4d1fe2d4e1ad9}
       \strng{authorfullhash}{7c47961f31d343992f415e52a8330ab0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proc. ACM Hum.-Comput. Interact.}
@@ -1507,8 +1445,8 @@
       \strng{authorbibnamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authornamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authorfullhash}{d86e6ce4a92f85250e75ef46cae09c1d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 4th {{ACM SIGCAS}} Conference on Computing and Sustainable Societies}
@@ -1552,8 +1490,8 @@
       \strng{authornamehash}{01d9cd8df71481ba3f8c4f339fa42a95}
       \strng{authorfullhash}{e6418a2baa0ac27f93f6fc209bba3e0a}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the 2019 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -1601,8 +1539,8 @@
       \strng{authorbibnamehash}{207f31c6854fd70127798b7ace1bbdd7}
       \strng{authornamehash}{747340d185fcc983cdfccf7a00baa4a8}
       \strng{authorfullhash}{207f31c6854fd70127798b7ace1bbdd7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Adjunct Proceedings of the 33rd Annual {{ACM}} Symposium on User Interface Software and Technology}
@@ -1636,8 +1574,8 @@
       \strng{authornamehash}{921795a38792b131dba08579b0292210}
       \strng{authorfullhash}{409f866cadd35ef0aecb4abf9cc27b9f}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01678116}
@@ -1677,8 +1615,8 @@
       \strng{authorbibnamehash}{57dcb1c57837c5807dc37e88ed4c3493}
       \strng{authornamehash}{57dcb1c57837c5807dc37e88ed4c3493}
       \strng{authorfullhash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0889-8480, 1547-724X}
@@ -1742,8 +1680,8 @@
       \strng{authorbibnamehash}{6f57ac59baaced17e525ab41d806d3dd}
       \strng{authornamehash}{c4981e56ce11e6172de4785556d78eb6}
       \strng{authorfullhash}{6f57ac59baaced17e525ab41d806d3dd}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{eprinttype}{jstor}
@@ -1778,8 +1716,8 @@
       \strng{authorbibnamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
       \strng{authornamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
       \strng{authorfullhash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -1789,8 +1727,8 @@
       \field{year}{2016}
     \endentry
     \entry{DesigningUsableBallots2015}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://civicdesign.org/fieldguides/designing-usable-ballots/}
       \field{langid}{american}
@@ -1816,8 +1754,8 @@
       \strng{authorbibnamehash}{7ad2cd10409fa82fd911a2a9862137e8}
       \strng{authornamehash}{7ad2cd10409fa82fd911a2a9862137e8}
       \strng{authorfullhash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{chapter}{Opinion}
@@ -1882,8 +1820,8 @@
       \strng{authorbibnamehash}{751776827bda89e703558e023c0fdcbd}
       \strng{authornamehash}{889151a8548e5e904fe879b7c2e3635c}
       \strng{authorfullhash}{751776827bda89e703558e023c0fdcbd}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the {{SIGCHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -1937,8 +1875,8 @@
       \strng{authorbibnamehash}{8be3632434ab96162370d5b4dab893b0}
       \strng{authornamehash}{ab1f3f254e696e117effb4f6a2ac3ecb}
       \strng{authorfullhash}{8be3632434ab96162370d5b4dab893b0}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2016 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -1990,8 +1928,8 @@
       \strng{authorbibnamehash}{113ea0ce93e16bccf438be5841c90874}
       \strng{authornamehash}{5dc7e9e50e7c67cbc16f7db2cdfd9cb0}
       \strng{authorfullhash}{113ea0ce93e16bccf438be5841c90874}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2014 Electronic Voting Technology {{Workshop}}/{{Workshop}} on Trustworthy Elections ({{EVT}}/{{WOTE}} 14)}
@@ -2043,8 +1981,8 @@
       \strng{authorbibnamehash}{4e7b3a8f1505502ffaf23899e8f88979}
       \strng{authornamehash}{439ef01c3a2a2ac1d0681b539815972b}
       \strng{authorfullhash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the 14th International Conference on {{Intelligent}} User Interfaces}
@@ -2092,8 +2030,8 @@
       \strng{authorbibnamehash}{6b24bc2d3726d6356d686c926a7632f7}
       \strng{authornamehash}{d7b6ec8fb696dc21d177ba1a9f8d7f53}
       \strng{authorfullhash}{6b24bc2d3726d6356d686c926a7632f7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01425471}
@@ -2158,8 +2096,8 @@
       \strng{authorbibnamehash}{06ce4b5641df8b728209f205d45163e3}
       \strng{authornamehash}{28f87851a3bbc06b390846588662ef43}
       \strng{authorfullhash}{06ce4b5641df8b728209f205d45163e3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1071-5819}
@@ -2178,6 +2116,68 @@
       \verb{doi}
       \verb 10.1016/j.ijhcs.2008.09.010
       \endverb
+    \endentry
+    \entry{RadicalxChangeQuadraticvoting2024}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{RadicalxChange}
+      \field{month}{5}
+      \field{title}{{{RadicalxChange}}/Quadratic-Voting}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{ReadWhitepaperGitcoin}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.gitcoin.co/whitepaper/read}
+      \field{langid}{english}
+      \field{title}{Read the {{Whitepaper}} {|} {{Gitcoin}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{RxC}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.radicalxchange.org/wiki/about/}
+      \field{journaltitle}{RadicalxChange}
+      \field{langid}{english}
+      \field{title}{About {{RxC}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{yehjxraymondYehjxraymondQvapp2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8a57b93291a54e6a4eb951f355bf1c46}{%
+           family={{yehjxraymond}},
+           familyi={y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{fullhash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{bibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authorbibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authornamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authorfullhash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Yehjxraymond/Qv-App}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
     \endentry
     \entry{daniel2017thinking}{book}{}
       \name{author}{1}{}{%
@@ -2256,8 +2256,8 @@
       \strng{authorbibnamehash}{e1c32cab99a6797371b2024bc89d2944}
       \strng{authornamehash}{e1c32cab99a6797371b2024bc89d2944}
       \strng{authorfullhash}{e1c32cab99a6797371b2024bc89d2944}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Public Opinion Quarterly}
@@ -2689,8 +2689,8 @@
       \strng{authorbibnamehash}{f6cb6a0254e8728ae70245b289d0822a}
       \strng{authornamehash}{f6cb6a0254e8728ae70245b289d0822a}
       \strng{authorfullhash}{f6cb6a0254e8728ae70245b289d0822a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Comparison of a Traditional Ranking Format to a Drag-and-Drop Format with Stacking}
@@ -2759,53 +2759,6 @@
       \range{pages}{26}
       \verb{doi}
       \verb 10.1145/3375629
-      \endverb
-    \endentry
-    \entry{huangMeasuringEffectivenessGraph2009a}{article}{}
-      \name{author}{3}{}{%
-        {{hash=44fb374c447d3b13b4f4b4f78187a583}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Weidong},
-           giveni={W\bibinitperiod}}}%
-        {{hash=fae722db5adb8b8f106abce55dd6b794}{%
-           family={Eades},
-           familyi={E\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=484e9478b7c89285835c71d08a73b52a}{%
-           family={Hong},
-           familyi={H\bibinitperiod},
-           given={Seok-Hee},
-           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{cddcb33df010907efac717b8b62fb3e2}
-      \strng{fullhash}{164e7c7c7babeed25221fed73ae71e8c}
-      \strng{bibnamehash}{164e7c7c7babeed25221fed73ae71e8c}
-      \strng{authorbibnamehash}{164e7c7c7babeed25221fed73ae71e8c}
-      \strng{authornamehash}{cddcb33df010907efac717b8b62fb3e2}
-      \strng{authorfullhash}{164e7c7c7babeed25221fed73ae71e8c}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{1473-8716, 1473-8724}
-      \field{journaltitle}{Information Visualization}
-      \field{langid}{english}
-      \field{month}{9}
-      \field{number}{3}
-      \field{shorttitle}{Measuring {{Effectiveness}} of {{Graph Visualizations}}}
-      \field{title}{Measuring {{Effectiveness}} of {{Graph Visualizations}}: {{A Cognitive Load Perspective}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{volume}{8}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{139\bibrangedash 152}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1057/ivs.2009.10
       \endverb
     \endentry
     \entry{ferberOrderBiasMail1952}{article}{}
@@ -3038,8 +2991,8 @@
       \strng{authorbibnamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
       \strng{authornamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
       \strng{authorfullhash}{52cf88006a41a8cd9aab3bcb5e428b80}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1939-1471}
@@ -3319,8 +3272,8 @@
       \strng{authorbibnamehash}{7b565ce980693b6cf1bc0e6209ab4722}
       \strng{authornamehash}{7c203c789562bf187ff63035f7b01036}
       \strng{authorfullhash}{7b565ce980693b6cf1bc0e6209ab4722}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1464-0597}
@@ -3380,6 +3333,27 @@
       \verb{doi}
       \verb 10.1007/978-1-4939-0378-8
       \endverb
+    \endentry
+    \entry{nielsen1997users}{article}{}
+      \name{author}{1}{}{%
+        {{hash=753054f71283d85f82cda8e35daf6bac}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{fullhash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{bibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorbibnamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
+      \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How Users Read on the Web}
+      \field{year}{1997}
     \endentry
     \entry{polmanWhyAreMaximizers2010}{article}{}
       \name{author}{1}{}{%
@@ -3765,6 +3739,9 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{cooper1998research}
+  \missing{drommi2001interface}
+  \missing{paas2003cognitive}
 \endrefsection
 \endinput
 

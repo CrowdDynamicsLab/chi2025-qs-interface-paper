@@ -19,63 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{xiaoLetMeAsk2021}{article}{}
-      \name{author}{5}{}{%
-        {{hash=3f8ee261a8e138bd7a2e765c919aff52}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Ziang},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=d5833ea539baffa8a7b345b255a74436}{%
-           family={Mennicken},
-           familyi={M\bibinitperiod},
-           given={Sarah},
-           giveni={S\bibinitperiod}}}%
-        {{hash=1e1dad7f59f4f41230d49c38ad26af5c}{%
-           family={Huber},
-           familyi={H\bibinitperiod},
-           given={Bernd},
-           giveni={B\bibinitperiod}}}%
-        {{hash=85bed916aa6217302276cce1721489b8}{%
-           family={Shonkoff},
-           familyi={S\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod}}}%
-        {{hash=ed9378123379af983b081e473b2a75bd}{%
-           family={Thom},
-           familyi={T\bibinitperiod},
-           given={Jennifer},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{9d2f599ab4c8c78f0212caa3f48bacd7}
-      \strng{fullhash}{b346b6d4145f00740be3bf59f4260c52}
-      \strng{bibnamehash}{b346b6d4145f00740be3bf59f4260c52}
-      \strng{authorbibnamehash}{b346b6d4145f00740be3bf59f4260c52}
-      \strng{authornamehash}{9d2f599ab4c8c78f0212caa3f48bacd7}
-      \strng{authorfullhash}{b346b6d4145f00740be3bf59f4260c52}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{2573-0142}
-      \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{CSCW2}
-      \field{shorttitle}{Let {{Me Ask You This}}}
-      \field{title}{Let {{Me Ask You This}}: {{How Can}} a {{Voice Assistant Elicit Explicit User Feedback}}?}
-      \field{urlday}{2}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{volume}{5}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 24}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1145/3479532
-      \endverb
-    \endentry
     \entry{pielotDidYouMisclick2024}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=d05f45e42fe0a52a458fdc82a17cb8a4}{%
@@ -101,8 +44,8 @@
       \strng{authorbibnamehash}{6d9855bfee5f71017cf3edd0a08f9213}
       \strng{authornamehash}{6d9855bfee5f71017cf3edd0a08f9213}
       \strng{authorfullhash}{6d9855bfee5f71017cf3edd0a08f9213}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -120,6 +63,111 @@
       \verb{doi}
       \verb 10.1145/3613904.3642397
       \endverb
+    \endentry
+    \entry{kimComparingDataChatbot2019}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e310e2fef8826ac052bbd4bc301532b3}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Soomin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ab516c666a2a1dbe9031ecd38f182c16}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Joonhwan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b6c521cbe0bc9764d6fcf213fe3f9a52}{%
+           family={Gweon},
+           familyi={G\bibinitperiod},
+           given={Gahgene},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Glasgow Scotland Uk}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{01d9cd8df71481ba3f8c4f339fa42a95}
+      \strng{fullhash}{e6418a2baa0ac27f93f6fc209bba3e0a}
+      \strng{bibnamehash}{e6418a2baa0ac27f93f6fc209bba3e0a}
+      \strng{authorbibnamehash}{e6418a2baa0ac27f93f6fc209bba3e0a}
+      \strng{authornamehash}{01d9cd8df71481ba3f8c4f339fa42a95}
+      \strng{authorfullhash}{e6418a2baa0ac27f93f6fc209bba3e0a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Proceedings of the 2019 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{shorttitle}{Comparing {{Data}} from {{Chatbot}} and {{Web Surveys}}}
+      \field{title}{Comparing {{Data}} from {{Chatbot}} and {{Web Surveys}}: {{Effects}} of {{Platform}} and {{Conversational Style}} on {{Survey Response Quality}}}
+      \field{urlday}{31}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3290605.3300316
+      \endverb
+    \endentry
+    \entry{ugur2015evaluating}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=bce5357f5e5f0fce58eed1f293ec93d9}{%
+           family={Ugur},
+           familyi={U\bibinitperiod},
+           given={Muhsin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=90748511143412ea31546c49bcb7385b}{%
+           family={Shastri},
+           familyi={S\bibinitperiod},
+           given={Dvijesh},
+           giveni={D\bibinitperiod}}}%
+        {{hash=12826da9ad7b2506715b3e7edd5f9daa}{%
+           family={Tsiamyrtzis},
+           familyi={T\bibinitperiod},
+           given={Panagiotis},
+           giveni={P\bibinitperiod}}}%
+        {{hash=299b238d6ddbd97b0142f52b0004f42b}{%
+           family={Dcosta},
+           familyi={D\bibinitperiod},
+           given={Malcolm},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d81a5cece584b5174b29df92dddd52f6}{%
+           family={Kalpakci},
+           familyi={K\bibinitperiod},
+           given={Allison},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e63588628d3f912b8977dc0fac121f1e}{%
+           family={Sharp},
+           familyi={S\bibinitperiod},
+           given={Carla},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0805908b5832549adc7ae259cdd82720}{%
+           family={Pavlidis},
+           familyi={P\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{643bccd51e04f198ac8190234543415b}
+      \strng{fullhash}{556446bd1a72310ed1fb24b6c274bd36}
+      \strng{bibnamehash}{556446bd1a72310ed1fb24b6c274bd36}
+      \strng{authorbibnamehash}{556446bd1a72310ed1fb24b6c274bd36}
+      \strng{authornamehash}{643bccd51e04f198ac8190234543415b}
+      \strng{authorfullhash}{556446bd1a72310ed1fb24b6c274bd36}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2015 {{ACM}} International Joint Conference on Pervasive and Ubiquitous Computing}
+      \field{title}{Evaluating Smartphone-Based User Interface Designs for a 2d Psychological Questionnaire}
+      \field{year}{2015}
+      \field{pages}{275\bibrangedash 282}
+      \range{pages}{8}
     \endentry
     \entry{chengCanShowWhat2021}{article}{}
       \name{author}{5}{}{%
@@ -752,29 +800,29 @@
       \verb https://doi.org/10.1080/10447318.2022.2041882
       \endverb
     \endentry
-    \entry{norman2013design}{book}{}
+    \entry{oviatt2006human}{inproceedings}{}
       \name{author}{1}{}{%
-        {{hash=6c785cec3b28d28af91696b6a6db5b78}{%
-           family={Norman\bibnamedelima Donald},
-           familyi={N\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
+        {{hash=2e89ee52fbb71b4c8b36c85fb9f78386}{%
+           family={Oviatt},
+           familyi={O\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {MIT Press}%
-      }
-      \strng{namehash}{6c785cec3b28d28af91696b6a6db5b78}
-      \strng{fullhash}{6c785cec3b28d28af91696b6a6db5b78}
-      \strng{bibnamehash}{6c785cec3b28d28af91696b6a6db5b78}
-      \strng{authorbibnamehash}{6c785cec3b28d28af91696b6a6db5b78}
-      \strng{authornamehash}{6c785cec3b28d28af91696b6a6db5b78}
-      \strng{authorfullhash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{namehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{fullhash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{bibnamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authorbibnamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authornamehash}{2e89ee52fbb71b4c8b36c85fb9f78386}
+      \strng{authorfullhash}{2e89ee52fbb71b4c8b36c85fb9f78386}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{The Design of Everyday Things}
-      \field{year}{2013}
+      \field{booktitle}{Proceedings of the 14th {{ACM}} International Conference on Multimedia}
+      \field{title}{Human-Centered Design Meets Cognitive Load Theory: Designing Interfaces That Help People Think}
+      \field{year}{2006}
+      \field{pages}{871\bibrangedash 880}
+      \range{pages}{10}
     \endentry
     \entry{softwareBrad2021}{article}{}
       \name{author}{3}{}{%
@@ -819,6 +867,78 @@
       \verb{doi}
       \verb 10.1145/3449240
       \endverb
+    \endentry
+    \entry{reis2012towards}{inproceedings}{}
+      \name{author}{10}{}{%
+        {{hash=cd5f8d188c4090c171093eadfe8f5f62}{%
+           family={Reis},
+           familyi={R\bibinitperiod},
+           given={Helena\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=845c6d94e5ce1400832c10dd3746b422}{%
+           family={Borges},
+           familyi={B\bibinitperiod},
+           given={Simone\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4932fb2c50ca5acfeb727158aea86da5}{%
+           family={Durelli},
+           familyi={D\bibinitperiod},
+           given={Vinicius\bibnamedelima HS},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=8ef2b76d68abb83c4be5f7c95e663668}{%
+           family={Moro},
+           familyi={M\bibinitperiod},
+           given={Luis\bibnamedelimb Fernando\bibnamedelimb de\bibnamedelima S},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=9fdd2212003472436fdff6cce0dd50d8}{%
+           family={Brandao},
+           familyi={B\bibinitperiod},
+           given={Anarosa\bibnamedelima AF},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d4347312a5ad8dc0584dba3394900f82}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Ellen\bibnamedelima F},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=fb2f60d7888eab6cbc68d8bf472c8ab3}{%
+           family={Brandao},
+           familyi={B\bibinitperiod},
+           given={Leônidas\bibnamedelima O},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=ddbd4420293c6679bec91464f2e01b87}{%
+           family={Isotani},
+           familyi={I\bibinitperiod},
+           given={Seiji},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2d8589ee66d8790840f74d0e8beac9a3}{%
+           family={Jaques},
+           familyi={J\bibinitperiod},
+           given={Patricia\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c41b60155658fe5f9fc81b63037d6ba6}{%
+           family={Bittencourt},
+           familyi={B\bibinitperiod},
+           given={Ig\bibnamedelima I},
+           giveni={I\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{27a6c4c35ddabdd181f3d0c71340f71d}
+      \strng{fullhash}{a05a4d75fb2f1d471368e8b189ed1f08}
+      \strng{bibnamehash}{27a6c4c35ddabdd181f3d0c71340f71d}
+      \strng{authorbibnamehash}{27a6c4c35ddabdd181f3d0c71340f71d}
+      \strng{authornamehash}{27a6c4c35ddabdd181f3d0c71340f71d}
+      \strng{authorfullhash}{a05a4d75fb2f1d471368e8b189ed1f08}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 {{IEEE}} International Symposium on Multimedia}
+      \field{title}{Towards Reducing Cognitive Load and Enhancing Usability through a Reduced Graphical User Interface for a Dynamic Geometry System: {{An}} Experimental Study}
+      \field{year}{2012}
+      \field{pages}{445\bibrangedash 450}
+      \range{pages}{6}
     \endentry
     \entry{task2014}{inproceedings}{}
       \name{author}{3}{}{%
@@ -899,7 +1019,7 @@
       \strng{authorbibnamehash}{45d925ba3b924ea55daf8e95c93937de}
       \strng{authornamehash}{01d9cd8df71481ba3f8c4f339fa42a95}
       \strng{authorfullhash}{45d925ba3b924ea55daf8e95c93937de}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -913,6 +1033,35 @@
       \verb{doi}
       \verb 10.1145/3449161
       \endverb
+    \endentry
+    \entry{ibili2019effect}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c8e874297c78c02c1304fc1eb427d5a0}{%
+           family={İbili},
+           familyi={İ\bibinitperiod},
+           given={Emin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ERIC}%
+      }
+      \strng{namehash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \strng{fullhash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \strng{bibnamehash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \strng{authorbibnamehash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \strng{authornamehash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \strng{authorfullhash}{c8e874297c78c02c1304fc1eb427d5a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Progressive Education}
+      \field{number}{5}
+      \field{title}{Effect of Augmented Reality Environments on Cognitive Load: Pedagogical Effect, Instructional Design, Motivation and Interaction Interfaces.}
+      \field{volume}{15}
+      \field{year}{2019}
+      \field{pages}{42\bibrangedash 57}
+      \range{pages}{16}
     \endentry
     \entry{amyChatSensing2018}{article}{}
       \name{author}{2}{}{%
@@ -1228,6 +1377,68 @@
       \field{year}{2023}
       \field{urldateera}{ce}
     \endentry
+    \entry{RadicalxChangeQuadraticvoting2024}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{RadicalxChange}
+      \field{month}{5}
+      \field{title}{{{RadicalxChange}}/Quadratic-Voting}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{ReadWhitepaperGitcoin}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.gitcoin.co/whitepaper/read}
+      \field{langid}{english}
+      \field{title}{Read the {{Whitepaper}} {|} {{Gitcoin}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{RxC}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.radicalxchange.org/wiki/about/}
+      \field{journaltitle}{RadicalxChange}
+      \field{langid}{english}
+      \field{title}{About {{RxC}}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{yehjxraymondYehjxraymondQvapp2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8a57b93291a54e6a4eb951f355bf1c46}{%
+           family={{yehjxraymond}},
+           familyi={y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{fullhash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{bibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authorbibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authornamehash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \strng{authorfullhash}{8a57b93291a54e6a4eb951f355bf1c46}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{Yehjxraymond/Qv-App}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+    \endentry
     \entry{nobarany2012design}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=545d0c2d26a7dc873f6224ecc7f2137d}{%
@@ -1267,8 +1478,8 @@
       \strng{authorbibnamehash}{fe695e7c8f816a372ff54d096a28f077}
       \strng{authornamehash}{a7db75129e43d951c8e772425c96b4bc}
       \strng{authorfullhash}{fe695e7c8f816a372ff54d096a28f077}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{SIGCHI}} Conference on Human Factors in Computing Systems}
@@ -1299,8 +1510,8 @@
       \strng{authorbibnamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authornamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authorfullhash}{662c251c2289172168b979b12fef3e22}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Transactions on Computer-Human Interaction (TOCHI)}
@@ -1361,8 +1572,8 @@
       \strng{authorbibnamehash}{7c47961f31d343992f415e52a8330ab0}
       \strng{authornamehash}{181e51f9e82d6be8b5a4d1fe2d4e1ad9}
       \strng{authorfullhash}{7c47961f31d343992f415e52a8330ab0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proc. ACM Hum.-Comput. Interact.}
@@ -1445,8 +1656,8 @@
       \strng{authorbibnamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authornamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authorfullhash}{d86e6ce4a92f85250e75ef46cae09c1d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 4th {{ACM SIGCAS}} Conference on Computing and Sustainable Societies}
@@ -1457,57 +1668,6 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1145/3460112.3471963
-      \endverb
-    \endentry
-    \entry{kimComparingDataChatbot2019}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=e310e2fef8826ac052bbd4bc301532b3}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Soomin},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ab516c666a2a1dbe9031ecd38f182c16}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Joonhwan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=b6c521cbe0bc9764d6fcf213fe3f9a52}{%
-           family={Gweon},
-           familyi={G\bibinitperiod},
-           given={Gahgene},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Glasgow Scotland Uk}%
-      }
-      \list{publisher}{1}{%
-        {ACM}%
-      }
-      \strng{namehash}{01d9cd8df71481ba3f8c4f339fa42a95}
-      \strng{fullhash}{e6418a2baa0ac27f93f6fc209bba3e0a}
-      \strng{bibnamehash}{e6418a2baa0ac27f93f6fc209bba3e0a}
-      \strng{authorbibnamehash}{e6418a2baa0ac27f93f6fc209bba3e0a}
-      \strng{authornamehash}{01d9cd8df71481ba3f8c4f339fa42a95}
-      \strng{authorfullhash}{e6418a2baa0ac27f93f6fc209bba3e0a}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{booktitle}{Proceedings of the 2019 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{shorttitle}{Comparing {{Data}} from {{Chatbot}} and {{Web Surveys}}}
-      \field{title}{Comparing {{Data}} from {{Chatbot}} and {{Web Surveys}}: {{Effects}} of {{Platform}} and {{Conversational Style}} on {{Survey Response Quality}}}
-      \field{urlday}{31}
-      \field{urlmonth}{5}
-      \field{urlyear}{2022}
-      \field{year}{2019}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 12}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1145/3290605.3300316
       \endverb
     \endentry
     \entry{feick2020virtual}{inproceedings}{}
@@ -1539,8 +1699,8 @@
       \strng{authorbibnamehash}{207f31c6854fd70127798b7ace1bbdd7}
       \strng{authornamehash}{747340d185fcc983cdfccf7a00baa4a8}
       \strng{authorfullhash}{207f31c6854fd70127798b7ace1bbdd7}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Adjunct Proceedings of the 33rd Annual {{ACM}} Symposium on User Interface Software and Technology}
@@ -1574,8 +1734,8 @@
       \strng{authornamehash}{921795a38792b131dba08579b0292210}
       \strng{authorfullhash}{409f866cadd35ef0aecb4abf9cc27b9f}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01678116}
@@ -1615,8 +1775,8 @@
       \strng{authorbibnamehash}{57dcb1c57837c5807dc37e88ed4c3493}
       \strng{authornamehash}{57dcb1c57837c5807dc37e88ed4c3493}
       \strng{authorfullhash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0889-8480, 1547-724X}
@@ -1680,8 +1840,8 @@
       \strng{authorbibnamehash}{6f57ac59baaced17e525ab41d806d3dd}
       \strng{authornamehash}{c4981e56ce11e6172de4785556d78eb6}
       \strng{authorfullhash}{6f57ac59baaced17e525ab41d806d3dd}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{eprinttype}{jstor}
@@ -1716,8 +1876,8 @@
       \strng{authorbibnamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
       \strng{authornamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
       \strng{authorfullhash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -1727,8 +1887,8 @@
       \field{year}{2016}
     \endentry
     \entry{DesigningUsableBallots2015}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://civicdesign.org/fieldguides/designing-usable-ballots/}
       \field{langid}{american}
@@ -1754,8 +1914,8 @@
       \strng{authorbibnamehash}{7ad2cd10409fa82fd911a2a9862137e8}
       \strng{authornamehash}{7ad2cd10409fa82fd911a2a9862137e8}
       \strng{authorfullhash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{chapter}{Opinion}
@@ -1820,8 +1980,8 @@
       \strng{authorbibnamehash}{751776827bda89e703558e023c0fdcbd}
       \strng{authornamehash}{889151a8548e5e904fe879b7c2e3635c}
       \strng{authorfullhash}{751776827bda89e703558e023c0fdcbd}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the {{SIGCHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -1875,8 +2035,8 @@
       \strng{authorbibnamehash}{8be3632434ab96162370d5b4dab893b0}
       \strng{authornamehash}{ab1f3f254e696e117effb4f6a2ac3ecb}
       \strng{authorfullhash}{8be3632434ab96162370d5b4dab893b0}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2016 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
@@ -1928,8 +2088,8 @@
       \strng{authorbibnamehash}{113ea0ce93e16bccf438be5841c90874}
       \strng{authornamehash}{5dc7e9e50e7c67cbc16f7db2cdfd9cb0}
       \strng{authorfullhash}{113ea0ce93e16bccf438be5841c90874}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2014 Electronic Voting Technology {{Workshop}}/{{Workshop}} on Trustworthy Elections ({{EVT}}/{{WOTE}} 14)}
@@ -1981,8 +2141,8 @@
       \strng{authorbibnamehash}{4e7b3a8f1505502ffaf23899e8f88979}
       \strng{authornamehash}{439ef01c3a2a2ac1d0681b539815972b}
       \strng{authorfullhash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Proceedings of the 14th International Conference on {{Intelligent}} User Interfaces}
@@ -2030,8 +2190,8 @@
       \strng{authorbibnamehash}{6b24bc2d3726d6356d686c926a7632f7}
       \strng{authornamehash}{d7b6ec8fb696dc21d177ba1a9f8d7f53}
       \strng{authorfullhash}{6b24bc2d3726d6356d686c926a7632f7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{01425471}
@@ -2096,8 +2256,8 @@
       \strng{authorbibnamehash}{06ce4b5641df8b728209f205d45163e3}
       \strng{authornamehash}{28f87851a3bbc06b390846588662ef43}
       \strng{authorfullhash}{06ce4b5641df8b728209f205d45163e3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1071-5819}
@@ -2117,67 +2277,119 @@
       \verb 10.1016/j.ijhcs.2008.09.010
       \endverb
     \endentry
-    \entry{RadicalxChangeQuadraticvoting2024}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{RadicalxChange}
-      \field{month}{5}
-      \field{title}{{{RadicalxChange}}/Quadratic-Voting}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{ReadWhitepaperGitcoin}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://www.gitcoin.co/whitepaper/read}
-      \field{langid}{english}
-      \field{title}{Read the {{Whitepaper}} {|} {{Gitcoin}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{RxC}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://www.radicalxchange.org/wiki/about/}
-      \field{journaltitle}{RadicalxChange}
-      \field{langid}{english}
-      \field{title}{About {{RxC}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{yehjxraymondYehjxraymondQvapp2024}{misc}{}
+    \entry{cooper1998research}{misc}{}
       \name{author}{1}{}{%
-        {{hash=8a57b93291a54e6a4eb951f355bf1c46}{%
-           family={{yehjxraymond}},
-           familyi={y\bibinitperiod}}}%
+        {{hash=022711faff8e004cafbd130e99f677de}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{fullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{bibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorbibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authornamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorfullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{022711faff8e004cafbd130e99f677de}
+      \strng{fullhash}{022711faff8e004cafbd130e99f677de}
+      \strng{bibnamehash}{022711faff8e004cafbd130e99f677de}
+      \strng{authorbibnamehash}{022711faff8e004cafbd130e99f677de}
+      \strng{authornamehash}{022711faff8e004cafbd130e99f677de}
+      \strng{authorfullhash}{022711faff8e004cafbd130e99f677de}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{3}
-      \field{title}{Yehjxraymond/Qv-App}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2024}
+      \field{title}{Research into Cognitive Load Theory and Instructional Design at {{UNSW}}}
+      \field{year}{1998}
+    \endentry
+    \entry{seppCognitiveLoadTheory2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f77651ddf4185eff5f1920298a1bc8d4}{%
+           family={Sepp},
+           familyi={S\bibinitperiod},
+           given={Stoo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3f5496f973255a9b3a53140ff5d0fb27}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=e8d7a8da0f02fc036e203e31bf6875bb}{%
+           family={{Tindall-Ford}},
+           familyi={T\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0a301dfd711af6a9b063b82d4910f729}{%
+           family={Agostinho},
+           familyi={A\bibinitperiod},
+           given={Shirley},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7b59fe7fc7aeae995737b9ab15f6fe2f}{%
+           family={Paas},
+           familyi={P\bibinitperiod},
+           given={Fred},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad8b22c9b34c9ac5d35e858fac85f076}
+      \strng{fullhash}{e1ee29661f056fbd748873e533099ce8}
+      \strng{bibnamehash}{e1ee29661f056fbd748873e533099ce8}
+      \strng{authorbibnamehash}{e1ee29661f056fbd748873e533099ce8}
+      \strng{authornamehash}{ad8b22c9b34c9ac5d35e858fac85f076}
+      \strng{authorfullhash}{e1ee29661f056fbd748873e533099ce8}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1573-336X}
+      \field{journaltitle}{Educational Psychology Review}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shorttitle}{Cognitive {{Load Theory}} and {{Human Movement}}}
+      \field{title}{Cognitive {{Load Theory}} and {{Human Movement}}: {{Towards}} an {{Integrated Model}} of {{Working Memory}}}
+      \field{urlday}{7}
+      \field{urlmonth}{8}
+      \field{urlyear}{2022}
+      \field{volume}{31}
+      \field{year}{2019}
       \field{urldateera}{ce}
+      \field{pages}{293\bibrangedash 317}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/s10648-019-09461-9
+      \endverb
+    \endentry
+    \entry{drommi2001interface}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ea892c05303e49420ab4ec42ba514df4}{%
+           family={Drommi},
+           familyi={D\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9d9db1dd557b0c5e2ee96428c188408}{%
+           family={Ulferts},
+           familyi={U\bibinitperiod},
+           given={Gregory\bibnamedelima W},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=af57558636d6666cb5e2f9c7a82ff292}{%
+           family={Shoemaker},
+           familyi={S\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4c6f41cc02ddd7e329052ba6c49acef}
+      \strng{fullhash}{31d9d17cf4d5849926754c3e5331fa1e}
+      \strng{bibnamehash}{31d9d17cf4d5849926754c3e5331fa1e}
+      \strng{authorbibnamehash}{31d9d17cf4d5849926754c3e5331fa1e}
+      \strng{authornamehash}{b4c6f41cc02ddd7e329052ba6c49acef}
+      \strng{authorfullhash}{31d9d17cf4d5849926754c3e5331fa1e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Proceedings of {{ISECON}} 2001}
+      \field{title}{Interface Design: {{A}} Focus on Cognitive Science}
+      \field{volume}{18}
+      \field{year}{2001}
     \endentry
     \entry{daniel2017thinking}{book}{}
       \name{author}{1}{}{%
@@ -2600,6 +2812,30 @@
       \field{year}{2008}
       \field{pages}{x\bibrangessep 293}
       \range{pages}{2}
+    \endentry
+    \entry{norman2013design}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6c785cec3b28d28af91696b6a6db5b78}{%
+           family={Norman\bibnamedelima Donald},
+           familyi={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{fullhash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{bibnamehash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{authorbibnamehash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{authornamehash}{6c785cec3b28d28af91696b6a6db5b78}
+      \strng{authorfullhash}{6c785cec3b28d28af91696b6a6db5b78}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Design of Everyday Things}
+      \field{year}{2013}
     \endentry
     \entry{wickens1990proximity}{article}{}
       \name{author}{2}{}{%
@@ -3739,9 +3975,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{cooper1998research}
-  \missing{drommi2001interface}
-  \missing{paas2003cognitive}
 \endrefsection
 \endinput
 

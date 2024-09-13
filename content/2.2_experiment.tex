@@ -1,45 +1,38 @@
 \begin{figure}[ht!]
     \centering
     % Top figure (full-width)
-    \adjustbox{valign=t}{
-        \begin{minipage}{\textwidth} % Full width for the first figure
-            \centering
-            \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/demo/demo_age_group_vertical.pdf}
-            \caption{Age distribution of the study participants were similar to the locale's demographic profile.}
-            \Description{A bar chart comparing the age distribution between study participants and the local population. The x-axis represents age groups from 15-19 to 85+, and the y-axis shows count/percentage values ranging from 0 to 30. Each age group has two bars: one for the total population (in peach) and one for participant count (in light blue). Some key differences are visible, such as the 20-24 age group, where the total population is 33,051 (19\%) and participants are 11 (27\%). The 25-29 group shows 14,949 (9\%) for the population and 7 (17\%) for participants. Percentage and count data are displayed above each bar. Other age groups had similar bars. The chart title reads "Comparison between study participant and local population age distribution," and the legend distinguishes the two categories (Total Population and Participant Count).}
-
-            \label{fig:demoAge}
-        \end{minipage}
-    }
+    \begin{subfigure}{\textwidth} % Full width for the first subfigure
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/demo/demo_age_group_vertical.pdf}
+        \caption{Age distribution of the study participants were similar to the locale's demographic profile.}
+        \Description{A bar chart comparing the age distribution between study participants and the local population. The x-axis represents age groups from 15-19 to 85+, and the y-axis shows count/percentage values ranging from 0 to 30. Each age group has two bars: one for the total population (in peach) and one for participant count (in light blue). Some key differences are visible, such as the 20-24 age group, where the total population is 33,051 (19\%) and participants are 11 (27\%). The 25-29 group shows 14,949 (9\%) for the population and 7 (17\%) for participants. Percentage and count data are displayed above each bar. Other age groups had similar bars. The chart title reads "Comparison between study participant and local population age distribution," and the legend distinguishes the two categories (Total Population and Participant Count).}
+        \label{fig:demoAge}
+    \end{subfigure}
     
-    \vspace{0.25cm} % Add some vertical space between the rows
+    \vspace{0.25cm} % Add some vertical space between the subfigures
 
-    % Bottom figures (two figures side by side)
-    \adjustbox{valign=t}{
-        \begin{minipage}{0.45\textwidth} % First figure on the second row
-            \centering
-            \includegraphics[width=\textwidth]{content/image/demo/demo_gender.pdf}
-            \caption{Gender distribution of our participants skewed towards female participants.}
-            \Description{A pie chart displaying the gender distribution of study participants. The chart is divided into three sections: 68.3\% (28 participants) are labeled as female and shown in blue, 29.3\% (12 participants) are labeled as male and shown in peach, and 2.4\% (1 participant) are labeled as non-binary, represented by a small gray slice. The title reads "Participant Gender Distribution," and the y-axis on the left is labeled "\% of Participant (Count)."}
-
-            \label{fig:demoGender}
-        \end{minipage}
-    }
+    % Bottom figures (two subfigures side by side)
+    \begin{subfigure}{0.45\textwidth} % First subfigure on the second row
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_gender.pdf}
+        \caption{Gender distribution of our participants skewed towards female participants.}
+        \Description{A pie chart displaying the gender distribution of study participants. The chart is divided into three sections: 68.3\% (28 participants) are labeled as female and shown in blue, 29.3\% (12 participants) are labeled as male and shown in peach, and 2.4\% (1 participant) are labeled as non-binary, represented by a small gray slice. The title reads "Participant Gender Distribution," and the y-axis on the left is labeled "\% of Participant (Count)."}
+        \label{fig:demoGender}
+    \end{subfigure}
     \hfill
-    \adjustbox{valign=t}{
-        \begin{minipage}{0.45\textwidth} % Second figure on the second row
-            \centering
-            \includegraphics[width=\textwidth]{content/image/demo/demo_ethnicity.pdf}
-            \caption{Ethnicity distribution remains diverse with fewer Hispanic and African American participants.}
-            \Description{A pie chart showing the ethnicity distribution of participants. The largest segment, representing 51.2\% (21 participants), is labeled White and shown in light blue. Other segments include 26.8\% (11 participants) for Asian, 9.8\% (4 participants) for Multiple Ethnicities, 7.3\% (3 participants) for African American, and 4.9\% (2 participants) for Hispanic. The percentages and counts are displayed within each section. The y-axis on the left is labeled "\% of Participants (Count)," and the title reads "Participant Ethnicity Distribution."}
-
-            \label{fig:demoEthnicity}
-        \end{minipage}
-    }
+    \begin{subfigure}{0.45\textwidth} % Second subfigure on the second row
+        \centering
+        \includegraphics[width=\textwidth]{content/image/demo/demo_ethnicity.pdf}
+        \caption{Ethnicity distribution remains diverse with fewer Hispanic and African American participants.}
+        \Description{A pie chart showing the ethnicity distribution of participants. The largest segment, representing 51.2\% (21 participants), is labeled White and shown in light blue. Other segments include 26.8\% (11 participants) for Asian, 9.8\% (4 participants) for Multiple Ethnicities, 7.3\% (3 participants) for African American, and 4.9\% (2 participants) for Hispanic. The percentages and counts are displayed within each section. The y-axis on the left is labeled "\% of Participants (Count)," and the title reads "Participant Ethnicity Distribution."}
+        \label{fig:demoEthnicity}
+    \end{subfigure}
 
     \caption{Demographic distributions: Age, Gender, and Ethnicity}
+    \Description{A collection of three demographic graphs demonstrating age, gender and ethnicity distribution.}
     \label{fig:Demographics}
 \end{figure}
+
 
 \begin{figure}[ht!]
     \centering

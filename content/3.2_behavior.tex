@@ -12,7 +12,9 @@ To understand how interfaces and options influenced survey response behaviors~(\
                 \centering
                 \includegraphics[width=\textwidth]{content/image/results/total_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
-                \caption{Total Time per option: We identified that the two-phase interface skewed slightly higher than the text interface, as expected. This discrepancy can be attributed to the extra organization step required in the two-phase interface, leading to slightly longer overall completion time per option.}
+                \caption{Total Time per option: We identified that the two-phase interface skewed slightly higher than the text interface, as expected. This discrepancy can be attributed to the extra organization step required in the two-phase interface, leading to a slightly longer overall completion time per option.}
+                \Description{Violin plot showing total time spent per option in seconds across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis ranges from 0 to 60 seconds. Each violin plot has scattered dots representing individual data points. The shape of the Short Text plot is widest between 10 and 20 seconds, tapering at the top and bottom. The Short 2-Phase plot is the narrowest, with most dots concentrated between 10 and 20 seconds. The Long Text plot is narrow and widest near the bottom, between 5 and 15 seconds. The Long 2-Phase plot is widest near the top, between 20 and 40 seconds.}
+
                 \label{fig:total_time}
             \end{subfigure}
             % \hfill
@@ -21,6 +23,8 @@ To understand how interfaces and options influenced survey response behaviors~(\
                 \includegraphics[width=\textwidth]{content/image/results/org_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
                 \caption{Organization Time per option: Only the two-phase interface includes an organization phase, hence the other experimental conditions do not exhibit any accumulated organization time. This figure reinforces that organization time was isolated to the two-phase design.}
+                \Description{Violin plot showing time spent on organizing per option in seconds for two interface versions: Short 2-Phase and Long 2-Phase. The y-axis ranges from 0 to 60 seconds. The plot for Short 2-Phase is widest between 5 and 10 seconds, with scattered dots mostly concentrated between 4.3 and 9.9 seconds. The Long 2-Phase plot is narrower and taller, with most dots concentrated between 3.6 and 14.6 seconds, and a few outliers near the top. The Short 2-Phase plot has a rounded shape with a larger base, while the Long 2-Phase plot tapers sharply near the top.}
+
                 \label{fig:org_time}
             \end{subfigure}
             % \hfill
@@ -29,6 +33,7 @@ To understand how interfaces and options influenced survey response behaviors~(\
                 \includegraphics[width=\textwidth]{content/image/results/voting_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
                 \caption{Voting Time per option: We observe statistically significant faster voting times for the long QS in the two-phase interface. This suggests that the two-step design improves voting efficiency, especially for longer surveys.\vspace{1em}}
+                \Description{Violin plot showing time spent on voting per option in seconds across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis ranges from 0 to 60 seconds. Each plot contains scattered dots representing individual data points. The Short Text plot is widest between 10 and 20 seconds, with most dots concentrated around 17.8 seconds. The Short 2-Phase plot has a narrow shape, with dots concentrated between 9.7 and 17.5 seconds. The Long Text plot is wider, with dots spread between 7.6 and 23.8 seconds. The Long 2-Phase plot has a wider shape near the top, with most dots between 10.6 and 19.8 seconds, and a few scattered near the top.}
                 \label{fig:vote_time}
             \end{subfigure}
         \end{minipage}
@@ -39,6 +44,8 @@ To understand how interfaces and options influenced survey response behaviors~(\
             \usebox{\savefig}
              \captionsetup{width=0.67\pdfpageheight}
             \caption{Time per option across all experiment conditions. The violin plots visualize time spent per option across the experimental conditions, with dots representing total time per option and horizontal lines indicating the median and interquartile ranges. While total time was slightly higher for the two-phase interface, the distinct phases (organization and voting) allowed for a more structured approach, particularly benefiting longer surveys.}
+            \Description{A large figure containing three subfigures, all violin plots with scatterplots overlayed. From left to right, the subfigures are Time per option, organize time per option, and voting time per option across all experiment conditions }
+
             \label{fig:time_per_option_full}
         \end{minipage}
     }
@@ -57,14 +64,13 @@ We further break down the total time spent into organization time and voting tim
 
 \paragraph{Voting time} Voting time strictly refers to the time participants took to update vote values for each option. As shown in Figure~\ref{fig:vote_time}, participants spent significantly less time voting on the two-phase interface than on the text interface with a small effect size in the long QS ($U=24053$, $p<0.005$, Rank-biserial: $0.167$, Cohen's d: $0.017$), but not in the short survey ($p>0.4$, Power=$0.051$). This supports our hypothesis that the two-step design in the two-phase interface facilitates more efficient decision-making, especially in longer surveys.
 
-% 
-
 \begin{figure}[h]
     \centering
     \begin{subfigure}[b]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/results/new_clickstream_action_distribution_lower_row.pdf}
         \caption{This plot counts the number of voting actions when there are $x$ percentages of credits remaining. A KDE plot is provided to help better understand the action distribution.}
+        \Description{A dual-panel histogram with overlaid KDE curves showing the distribution of voting actions based on remaining credit percentages for two interfaces: Long Text and Long 2-Phase. The x-axis shows the remaining credit as a percentage, ranging from -10\% to 100\%, and the y-axis on the right shows density for the KDE curves. In the left panel for the Long Text interface, the KDE curve rises sharply to a peak around 10\%, gradually declines, and then rises again toward 100\%, with a moderate dip in the middle. In the right panel for the Long 2-Phase interface, the KDE curve shows more pronounced changes: it rises steadily from 10\% to 30\%, then dips more sharply than the left panel, before rising to a prominent peak near 100\%. The right curve has a deeper dip and a broader rise compared to the left.}
         \label{fig:all_clicks}
     \end{subfigure}
     
@@ -74,6 +80,8 @@ We further break down the total time spent into organization time and voting tim
         \centering
         \includegraphics[width=\textwidth]{content/image/results/small_adjustments_plot.pdf}
         \caption{This plot further separates participants' interaction behavior based on the number of votes participants adjusted. We observed a bimodal interaction pattern across long QS when small vote adjustments are made.}
+        \Description{A dual-panel plot comparing time to take action in seconds over remaining credit percentages for small vote adjustments in two interfaces: Long Text and Long 2-Phase. The x-axis shows remaining credit as a percentage, from 0\% to 100\%, and the y-axis on the left shows the time to take action in seconds, ranging from 0 to 60. Both panels feature scatter plots with colored dots representing vote changes from -2 to +2. The left panel shows the Long Text interface, with an orange density line rising sharply, peaking around 20\% remaining credit, then dipping around 50\%, and rising again near 100\%. The right panel shows the Long 2-Phase interface with a similar pattern, but the peaks and dips are more pronounced, especially with a sharper dip near 50\%. A box plot on the far right summarizes action time, showing the spread and median time for each interface.}
+
         \label{fig:small_clicks}
     \end{subfigure}
     

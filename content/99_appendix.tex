@@ -1,6 +1,7 @@
 \appendix
 
 \section{Cognitive Load remaining}
+\label{apdx:cog_qual}
 \subsection{Sources of Physical Demand} 
 \label{sec:physical}
 
@@ -133,6 +134,16 @@ Performance refers to a person's perception of their success in completing a tas
 \subsubsection{Operational Actions}
 Operational actions, like the theme presented in temporal demand, refer to specific, executable procedures participants perform in the survey. This could involve: pressure to spend all credits or stay within budget~($N=6$), fears that final vote choices did not reflect true preferences($N=5$), or concerns that they had finished the task inefficiently~($N=6$).
 
+\begin{wrapfigure}{l}{0.45\textwidth} % Wrap figure on the left
+    \centering
+    \adjustbox{valign=t}{
+        \includegraphics[width=\linewidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
+    }
+    \captionsetup{width=0.9\linewidth, justification=justified}
+    \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
+    \label{fig:performance_cog_score}
+\end{wrapfigure}
+
 \subsubsection{Social Responsibility}
 Social responsibility-based concerns around performance came up when participants reflected on how their final vote counts would be perceived by others~(\smallquote{S041}{I don't want people to think that I just like don't care about <ethnicity> people at all}) or influence real-world decision-making~(\smallquote{S027}{Some of these things might \ldots have outcomes that I didn't foresee}).
 
@@ -162,7 +173,7 @@ To dig deeper, we also analyzed participants' language when they described their
 
 \section{Additional behavioral results}
 \label{apdx:additional_results_behavior}
-To further analyze participant behaviors, we break down the aggregated time from the previous analysis and examine fine-grain interactions. Specifically, we examine if there are differences among behavior across interfaces. As we outlined, credit scarcity might influence decision making.  Figure~\ref{fig:voting_all} plots the time of voting actions over the remainder of the participant's budget across the text and two-phase interface across all four groups. Each bar shows the number of actions accumulated across participants at specific percentages of remaining credits. A kernel density estimate (KDE) plot is provided to visualize the trends. We did not follow ~\textcite{quarfoot2017quadratic} in counting accumulated votes over time due to varying total times across individuals.
+To further analyze participant behaviors, we break down the aggregated time from the previous analysis and examine fine-grain interactions. Specifically, we examine if there are differences among behavior across interfaces. As we outlined, credit scarcity might influence decision-making.  Figure~\ref{fig:voting_all} plots the time of voting actions over the remainder of the participant's budget across the text and two-phase interface across all four groups. Each bar shows the number of actions accumulated across participants at specific percentages of remaining credits. A kernel density estimate (KDE) plot is provided to visualize the trends. We did not follow ~\textcite{quarfoot2017quadratic} in counting accumulated votes over time due to varying total times across individuals.
 
 Comparing experiment groups, we see fewer differences in the short QS but different interaction distributions between the two interfaces in the long QS. Given the significant differences in voting time between the text and two-phase interface for the long QS, we focus on deciphering the voting action changes between these two conditions in this subsection.
 
@@ -256,7 +267,7 @@ Based on feedback from Prototype 1, instead of \textit{allowing} individuals to 
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/prototypes/4.1_grouping.png}
-        \caption{The Organization Interface: Options are shown initially in the first bin labeled as `I don't know.' Survey respondents can then drag and drop these options into the latter bins: Positive, Neutral, or Negative. Only the details of each option are shown on this interface.}
+        \caption{The Organization Interface: Options are shown initially in the first bin labeled as `I don't know.' Survey respondents can then drag and drop these options into the latter bins: Lean Positive, Lean Neutral, or Lean Negative. Only the details of each option are shown on this interface.}
         \label{fig:qv_org_p1}
     \end{subfigure}
     \hfill
@@ -271,7 +282,7 @@ Based on feedback from Prototype 1, instead of \textit{allowing} individuals to 
 \end{figure}
 
 \subsubsection{Prototype 3: Organize-then-Vote}
-Figure~\ref{fig:qv_org} shows the last prototype where we built on the previous takeaway by providing finer-grain groupings and creating a clear connection between option organization and voting position. Specifically, we provided three categories: Positive, Negative, and Neutral. Initially, respondents see all options under the section labeled 'I don't know,' which includes only the option descriptions. We ask respondents to move these options into the categories below. Voting controls and information appear on each option once respondents move to the subsequent page, forming a clear connection between option groups, positions, and voting controls.
+Figure~\ref{fig:qv_org} shows the last prototype where we built on the previous takeaway by providing finer-grain groupings and creating a clear connection between option organization and voting position. Specifically, we provided three categories: Lean Positive, Lean Negative, and Lean Neutral. Initially, respondents see all options under the section labeled 'I don't know,' which includes only the option descriptions. We ask respondents to move these options into the categories below. Voting controls and information appear on each option once respondents move to the subsequent page, forming a clear connection between option groups, positions, and voting controls.
 
 Feedback indicated that survey respondents are comfortable with the two-phase organize-then-vote design, demonstrating it as a central strategy for our interface development. However, several areas for enhancement were identified: First, the dragging and dropping mechanism in the organization phase is cumbersome and may inadvertently suggest a ranking process, contrary to our intentions. Second, placing unorganized options at the top of the voting list is counterintuitive. Third, the voting controls are disconnected from the option summaries, dividing attention between the left and right sides of the screen. These insights guided refinements in the final two-phase interface, adhering to the two-phase organize-then-vote design framework.
 

@@ -1,6 +1,6 @@
 \section{Behavior Results}
 \label{sec:behave_result}
-To answer RQ3, we investigate time-to-action and remaining credit differences across experiment conditions. Time-to-action is a widely used metric in decision sciences, where longer decision time often indicates more complex cognitive processing~\cite{payneAdaptiveDecisionMaker1993}. Additionally, resource allocation strongly influences decision making. \textcite{chengCanShowWhat2021} showed that the number of given credits influences the validity of QV. Decision science studies like \textcite{Shah2015a} and \cite{debruijnPovertyEconomicDecision2022} showed how scarcity influences decisions, increases risk aversion, and adds cognitive load. These measures serve as proxies for participant behavior, and all analyzed data is publicly available\footnote{link-to-github} for transparency and to facilitate further research.
+To answer RQ3, we investigate time-to-action and remaining credit differences across experiment conditions. Time-to-action is a widely used metric in decision sciences, where longer decision time often indicates more complex cognitive processing~\cite{payneAdaptiveDecisionMaker1993}. Additionally, resource allocation strongly influences decision-making. \textcite{chengCanShowWhat2021} showed that the number of given credits influences the validity of QV. Decision science studies like \textcite{Shah2015a} and \cite{debruijnPovertyEconomicDecision2022} showed how scarcity influences decisions, increases risk aversion, and adds cognitive load. These measures serve as proxies for participant behavior, and all analyzed data is publicly available\footnote{link-to-github} for transparency and to facilitate further research.
 
 \newsavebox{\savefig}
 
@@ -12,7 +12,7 @@ To answer RQ3, we investigate time-to-action and remaining credit differences ac
                 \centering
                 \includegraphics[width=\textwidth]{content/image/results/total_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
-                \caption{Total Time per option: We identified that two-phase interface skewed slightly higher than the text interface. This is reasonable since participants in these two conditions requires additional time to complete the organizing steps.}
+                \caption{Total Time per option: We identified that the two-phase interface skewed slightly higher than the text interface, as expected. This discrepancy can be attributed to the extra organization step required in the two-phase interface, leading to slightly longer overall completion time per option.}
                 \label{fig:total_time}
             \end{subfigure}
             % \hfill
@@ -20,7 +20,7 @@ To answer RQ3, we investigate time-to-action and remaining credit differences ac
                 \centering
                 \includegraphics[width=\textwidth]{content/image/results/org_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
-                \caption{Organization Time per option: Since only two-phase interfaces has an organization phase, the other two experiment groups does not have any accumulated time.\vspace{25pt}}
+                \caption{Organization Time per option: Only the two-phase interface includes an organization phase, hence the other experimental conditions do not exhibit any accumulated organization time. This figure reinforces that organization time was isolated to the two-phase design.}
                 \label{fig:org_time}
             \end{subfigure}
             % \hfill
@@ -28,7 +28,7 @@ To answer RQ3, we investigate time-to-action and remaining credit differences ac
                 \centering
                 \includegraphics[width=\textwidth]{content/image/results/voting_time_per_option.pdf}
                 \captionsetup{width=0.87\textwidth}
-                \caption{Voting Time per option: We see a slight downward trend between the short QS, and a statistical faster voting time for the long two-phase interface.\vspace{25pt}}
+                \caption{Voting Time per option: We observe statistically significant faster voting times for the long QS in the two-phase interface. This suggests that the two-step design improves voting efficiency, especially for longer surveys.\vspace{1em}}
                 \label{fig:vote_time}
             \end{subfigure}
         \end{minipage}
@@ -38,7 +38,7 @@ To answer RQ3, we investigate time-to-action and remaining credit differences ac
             
             \usebox{\savefig}
              \captionsetup{width=0.67\pdfpageheight}
-            \caption{Time per option across all experiment conditions. In each of these violin plots, a dot represents the total time a participant spent on that option. Fig~\ref{fig:total_time} one dot represents the total time a person spent for one option. Figure~\ref{fig:org_time} and Figure~\ref{fig:vote_time} are decomposition of the total time.}
+            \caption{Time per option across all experiment conditions. The violin plots visualize time spent per option across the experimental conditions, with dots representing total time per option and horizontal lines indicating the median and interquartile ranges. While total time was slightly higher for the two-phase interface, the distinct phases (organization and voting) allowed for a more structured approach, particularly benefiting longer surveys.}
             \label{fig:time_per_option_full}
         \end{minipage}
     }
@@ -47,16 +47,17 @@ To answer RQ3, we investigate time-to-action and remaining credit differences ac
 
 \subsection{Time Spent per Option}
 \label{sec:time_per_option}
-Our first analysis focuses on understanding how much time participants spent per option across different stages and experiment conditions. Based on the QS system log, we can derive the following detailed logs of participant actions:~\textit{the option}  involved in the interaction,~\textit{the type of interaction} (such as updating a certain number of votes), and~\textit{the time} between this interaction and the previous one.
+Our first analysis focuses on understanding how much time participants spent per option across different stages and experiment conditions. Based on the QS system log, we can derive the following detailed logs of participant actions:~\textit{the option}  involved in the interaction,~\textit{the type of interaction} (such as updating a certain number of votes), and~\textit{the time} between this interaction and the previous one. Each dot on Figure~\ref{fig:time_per_option_full} a specific type of time a participant spent for one option. 
 
-We aggregate all the time spent on each option as the total time spent for that option. Organization time covers both placing options into categories and the drag-and-drop time during the organization phase. Voting time strictly refers to the time participants took to update vote values for each option. To minimize noise, we intentionally drop all the time participants spent on the first option in the organization phase or voting phase. The goal is to exclude time spent on reading the prompt, forming their preference, or understanding the interface.
+\paragraph{Total time} Total time is the aggregate of all time spent on each option across both phases. Each dot on Figure~\ref{fig:total_time} visualizes the total time. Participants spent slightly more time per option on the two-phase interface than the text interface. A non-parametric Mann-Whitney U test showed a small effect size (long QS: $p<0.0000001$, Rank-biserial: $-0.304$, Cohen's d: $0.030$; short QS: $p=0.01$, Rank-biserial: $-0.37$, Cohen's d: $0.082$). This is expected as the two-phase interface has an additional step of organizing the options. 
 
-Figure~\ref{fig:time_per_option_full} each dot represents one option for one participant. Figure~\ref{fig:total_time} shows total time, figure~\ref{fig:org_time} shows organization time, and figure~\ref{fig:vote_time} shows voting time. The violin plot shows the distribution of the dots and the three horizontal lines represent the median, 25th percentile, and 75th percentile of the time spent for that interface. We limited the y-axis to 1 minute to improve visualization clarity.
+We further break down the total time spent into organization time and voting time. To minimize noise, we intentionally dropped all the time participants spent on the first option in the organization phase or voting phase. The goal is to exclude time spent on reading the prompt, forming their preference, or understanding the interface.
 
-Participants spent slightly more time per option on the two-phase interface than the text interface. A non-parametric Mann-Whitney U test showed a small effect size (long QS: $p<0.0000001$, Rank-biserial: $-0.304$, Cohen's d: $-0.030$; short QS: $p=0.01$, Rank-biserial: $-0.37$, Cohen's d: $-0.082$). This is expected as the two-phase interface has an additional step of organizing the options. We break down the total time spent into organization time and voting time in Figure~\ref{fig:org_time} and Figure~\ref{fig:vote_time}.
+\paragraph{Organization time} Organization time covers both placing options into categories and the drag-and-drop time during the organization phase. Illustrated in Figure~\ref{fig:org_time}, we observed minimal difference in organization time per option between short and long surveys, as the interface shows options one at a time for categorization. It also suggests that even for longer surveys, the organization functionalities did not significantly impact the time participants needed for an option.
 
-We observed minimal difference in organization time per option (Figure~\ref{fig:org_time}) between short and long surveys, as options are shown one at a time for drag-and-drop. In terms of the voting time (Figure~\ref{fig:vote_time}), participants spent significantly less time voting on the two-phase interface than on the text interface with a small effect size in the long QS ($U=24053$, $p<0.005$, Rank-biserial: $0.167$, Cohen's d: $0.017$), but not in the short survey ($p>0.4$, Power=$0.051$). This supports our hypothesis that the two-step design in the two-phase interface facilitates more efficient decision-making, especially in longer surveys.
+\paragraph{Voting time} Voting time strictly refers to the time participants took to update vote values for each option. As shown in Figure~\ref{fig:vote_time}, participants spent significantly less time voting on the two-phase interface than on the text interface with a small effect size in the long QS ($U=24053$, $p<0.005$, Rank-biserial: $0.167$, Cohen's d: $0.017$), but not in the short survey ($p>0.4$, Power=$0.051$). This supports our hypothesis that the two-step design in the two-phase interface facilitates more efficient decision-making, especially in longer surveys.
 
+% 
 
 \begin{figure}[h]
     \centering
@@ -82,7 +83,7 @@ We observed minimal difference in organization time per option (Figure~\ref{fig:
 
 
 \subsection{Budget and Voting Behaviors}
-We further breakdown and highlight key differences of how long QS participant's voting behaviors when credits changed their voting behaviors with detailed analysis in Appendix~\ref{apdx:additional_results_behavior}. Figure~\ref{fig:all_clicks} first shows the number of vote adjustments at a given remaining budget across the two interface. We then plotted the vote adjustments of two or fewer votes, which is $10\%$ of the possible values one can choose among the maximum of 21 votes in Figure~\ref{fig:small_clicks}. A kernel density estimate (KDE) plot is provided to visualize the trends and compared how it changed when we plotted only small vote adjustments.
+We further breakdown and highlight key differences of how long QS participant's voting behaviors when credits changed their voting behaviors with detailed analysis in Appendix~\ref{apdx:additional_results_behavior}. Figure~\ref{fig:all_clicks} first shows the number of vote adjustments at a given remaining budget across the two interfaces. We then plotted the vote adjustments of two or fewer votes, which is $10\%$ of the possible values one can choose among the maximum of 21 votes in Figure~\ref{fig:small_clicks}. A kernel density estimate (KDE) plot is provided to visualize the trends and compare how it changed when we plotted only small vote adjustments.
 
 In long surveys, participants exhibited more actions both when the budget was abundant and when it began to run out This pattern was more pronounced with the long two-phase interface. In fact, the bimodal distribution is more pronounced in the two-phase interface. This suggests that participants make small adjustments both at the beginning and toward the end of the QS. However, the two-phase interface shows more frequent and faster edits towards the end. Visually, dots are more clustered in the long two-phase interface for small vote adjustments compared to the long text interface. The Mann-Whitney U Test on the time spent on small vote adjustments showed significant differences ($U=13037$, $p<0.001$), with a small effect size (Rank-biserial: $0.227$, Cohen's d: $0.195$) and a power of $0.381$. This indicates that participants had a clearer idea of how to distribute their credits across the options.
 

@@ -516,7 +516,6 @@
       \strng{authorbibnamehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
       \strng{authornamehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
       \strng{authorfullhash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \field{extraname}{1}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -577,7 +576,6 @@
       \strng{authorbibnamehash}{4a6eecdc3d0d5c5268a694cf147f8737}
       \strng{authornamehash}{921795a38792b131dba08579b0292210}
       \strng{authorfullhash}{4a6eecdc3d0d5c5268a694cf147f8737}
-      \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
@@ -1415,30 +1413,6 @@
       \field{urlyear}{2024}
       \field{urldateera}{ce}
     \endentry
-    \entry{yehjxraymondYehjxraymondQvapp2024}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8a57b93291a54e6a4eb951f355bf1c46}{%
-           family={{yehjxraymond}},
-           familyi={y\bibinitperiod}}}%
-      }
-      \strng{namehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{fullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{bibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorbibnamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authornamehash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \strng{authorfullhash}{8a57b93291a54e6a4eb951f355bf1c46}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{3}
-      \field{title}{Yehjxraymond/Qv-App}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{urldateera}{ce}
-    \endentry
     \entry{nobarany2012design}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=545d0c2d26a7dc873f6224ecc7f2137d}{%
@@ -1478,8 +1452,8 @@
       \strng{authorbibnamehash}{fe695e7c8f816a372ff54d096a28f077}
       \strng{authornamehash}{a7db75129e43d951c8e772425c96b4bc}
       \strng{authorfullhash}{fe695e7c8f816a372ff54d096a28f077}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the {{SIGCHI}} Conference on Human Factors in Computing Systems}
@@ -1510,8 +1484,8 @@
       \strng{authorbibnamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authornamehash}{662c251c2289172168b979b12fef3e22}
       \strng{authorfullhash}{662c251c2289172168b979b12fef3e22}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Transactions on Computer-Human Interaction (TOCHI)}
@@ -1572,8 +1546,8 @@
       \strng{authorbibnamehash}{7c47961f31d343992f415e52a8330ab0}
       \strng{authornamehash}{181e51f9e82d6be8b5a4d1fe2d4e1ad9}
       \strng{authorfullhash}{7c47961f31d343992f415e52a8330ab0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proc. ACM Hum.-Comput. Interact.}
@@ -1656,8 +1630,8 @@
       \strng{authorbibnamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authornamehash}{e5d99f499d8e05b0acf4595cfc584505}
       \strng{authorfullhash}{d86e6ce4a92f85250e75ef46cae09c1d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 4th {{ACM SIGCAS}} Conference on Computing and Sustainable Societies}
@@ -1699,8 +1673,8 @@
       \strng{authorbibnamehash}{207f31c6854fd70127798b7ace1bbdd7}
       \strng{authornamehash}{747340d185fcc983cdfccf7a00baa4a8}
       \strng{authorfullhash}{207f31c6854fd70127798b7ace1bbdd7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Adjunct Proceedings of the 33rd Annual {{ACM}} Symposium on User Interface Software and Technology}
@@ -1708,574 +1682,6 @@
       \field{year}{2020}
       \field{pages}{68\bibrangedash 69}
       \range{pages}{2}
-    \endentry
-    \entry{weijtersExtremityHorizontalVertical2021}{article}{}
-      \name{author}{3}{}{%
-        {{hash=f563237feb2eb512e79fa1f74cc15e5e}{%
-           family={Weijters},
-           familyi={W\bibinitperiod},
-           given={Bert},
-           giveni={B\bibinitperiod}}}%
-        {{hash=cd8c14d8d051372aa0c8d4ca5eb51362}{%
-           family={Millet},
-           familyi={M\bibinitperiod},
-           given={Kobe},
-           giveni={K\bibinitperiod}}}%
-        {{hash=af8e7a456a77cb9510c70a104053ef4f}{%
-           family={Cabooter},
-           familyi={C\bibinitperiod},
-           given={Elke},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{921795a38792b131dba08579b0292210}
-      \strng{fullhash}{409f866cadd35ef0aecb4abf9cc27b9f}
-      \strng{bibnamehash}{409f866cadd35ef0aecb4abf9cc27b9f}
-      \strng{authorbibnamehash}{409f866cadd35ef0aecb4abf9cc27b9f}
-      \strng{authornamehash}{921795a38792b131dba08579b0292210}
-      \strng{authorfullhash}{409f866cadd35ef0aecb4abf9cc27b9f}
-      \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{01678116}
-      \field{journaltitle}{International Journal of Research in Marketing}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{1}
-      \field{title}{Extremity in Horizontal and Vertical {{Likert}} Scale Format Responses. {{Some}} Evidence on How Visual Distance between Response Categories Influences Extreme Responding}
-      \field{urlday}{14}
-      \field{urlmonth}{1}
-      \field{urlyear}{2022}
-      \field{volume}{38}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \field{pages}{85\bibrangedash 103}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1016/j.ijresmar.2020.04.002
-      \endverb
-    \endentry
-    \entry{toepoelSlidersVisualAnalogue2018}{article}{}
-      \name{author}{2}{}{%
-        {{hash=e3f5e433b2579621fe96e8671e647408}{%
-           family={Toepoel},
-           familyi={T\bibinitperiod},
-           given={Vera},
-           giveni={V\bibinitperiod}}}%
-        {{hash=c3108ea23633d49bcfe2299a854a641d}{%
-           family={Funke},
-           familyi={F\bibinitperiod},
-           given={Frederik},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \strng{fullhash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \strng{bibnamehash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \strng{authorbibnamehash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \strng{authornamehash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \strng{authorfullhash}{57dcb1c57837c5807dc37e88ed4c3493}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{0889-8480, 1547-724X}
-      \field{journaltitle}{Mathematical Population Studies}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{number}{2}
-      \field{shorttitle}{Sliders, Visual Analogue Scales, or Buttons}
-      \field{title}{Sliders, Visual Analogue Scales, or Buttons: {{Influence}} of Formats and Scales in Mobile and Desktop Surveys}
-      \field{urlday}{1}
-      \field{urlmonth}{8}
-      \field{urlyear}{2022}
-      \field{volume}{25}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \field{pages}{112\bibrangedash 122}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1080/08898480.2018.1439245
-      \endverb
-    \endentry
-    \entry{wandButterflyDidIt2001}{article}{}
-      \name{author}{6}{}{%
-        {{hash=b2cfb7425d6891d10cebed4232d054fe}{%
-           family={Wand},
-           familyi={W\bibinitperiod},
-           given={Jonathan\bibnamedelima N.},
-           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=dfb1480d18330fb7be242ba61e6cbf57}{%
-           family={Shotts},
-           familyi={S\bibinitperiod},
-           given={Kenneth\bibnamedelima W.},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=f1dc8b9aca88537a0b58fcfd4a563c5f}{%
-           family={Sekhon},
-           familyi={S\bibinitperiod},
-           given={Jasjeet\bibnamedelima S.},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=22f9c30089f1d4dcd16d2e80e16495b1}{%
-           family={Mebane},
-           familyi={M\bibinitperiod},
-           given={Walter\bibnamedelima R.},
-           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=71794241979e741050b5fa5409c6d62e}{%
-           family={Herron},
-           familyi={H\bibinitperiod},
-           given={Michael\bibnamedelima C.},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=3a276c9e7fc46ad92d6a3029effff365}{%
-           family={Brady},
-           familyi={B\bibinitperiod},
-           given={Henry\bibnamedelima E.},
-           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {[American Political Science Association, Cambridge University Press]}%
-      }
-      \strng{namehash}{c4981e56ce11e6172de4785556d78eb6}
-      \strng{fullhash}{6f57ac59baaced17e525ab41d806d3dd}
-      \strng{bibnamehash}{6f57ac59baaced17e525ab41d806d3dd}
-      \strng{authorbibnamehash}{6f57ac59baaced17e525ab41d806d3dd}
-      \strng{authornamehash}{c4981e56ce11e6172de4785556d78eb6}
-      \strng{authorfullhash}{6f57ac59baaced17e525ab41d806d3dd}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{eprinttype}{jstor}
-      \field{issn}{0003-0554}
-      \field{journaltitle}{The American Political Science Review}
-      \field{number}{4}
-      \field{shorttitle}{The {{Butterfly Did It}}}
-      \field{title}{The {{Butterfly Did It}}: {{The Aberrant Vote}} for {{Buchanan}} in {{Palm Beach County}}, {{Florida}}}
-      \field{urlday}{16}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{volume}{95}
-      \field{year}{2001}
-      \field{urldateera}{ce}
-      \field{pages}{793\bibrangedash 810}
-      \range{pages}{18}
-      \verb{eprint}
-      \verb 3117714
-      \endverb
-    \endentry
-    \entry{chisnellDemocracyDesignProblem2016}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3b6d7bc6810b6ae6a928358ccacbc59b}{%
-           family={Chisnell},
-           familyi={C\bibinitperiod},
-           given={Dana},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \strng{fullhash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \strng{bibnamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \strng{authorbibnamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \strng{authornamehash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \strng{authorfullhash}{3b6d7bc6810b6ae6a928358ccacbc59b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{number}{4}
-      \field{title}{Democracy {{Is}} a {{Design Problem}}}
-      \field{volume}{11}
-      \field{year}{2016}
-    \endentry
-    \entry{DesigningUsableBallots2015}{misc}{}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://civicdesign.org/fieldguides/designing-usable-ballots/}
-      \field{langid}{american}
-      \field{month}{6}
-      \field{title}{Designing Usable Ballots {|} {{Center}} for Civic Design}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2015}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{quesenberyOpinionGoodDesign2020}{article}{}
-      \name{author}{1}{}{%
-        {{hash=7ad2cd10409fa82fd911a2a9862137e8}{%
-           family={Quesenbery},
-           familyi={Q\bibinitperiod},
-           given={Whitney},
-           giveni={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \strng{fullhash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \strng{bibnamehash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \strng{authorbibnamehash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \strng{authornamehash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \strng{authorfullhash}{7ad2cd10409fa82fd911a2a9862137e8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{Opinion}
-      \field{issn}{0362-4331}
-      \field{journaltitle}{The New York Times}
-      \field{langid}{american}
-      \field{month}{10}
-      \field{title}{Opinion {|} {{Good Design Is}} the {{Secret}} to {{Better Democracy}}}
-      \field{urlday}{17}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{year}{2020}
-      \field{urldateera}{ce}
-    \endentry
-    \entry{everettElectronicVotingMachines2008}{inproceedings}{}
-      \name{author}{7}{}{%
-        {{hash=c3ace26c8739e66c3d467f09c030751d}{%
-           family={Everett},
-           familyi={E\bibinitperiod},
-           given={Sarah\bibnamedelima P.},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=2946507f0891224fb7358826ac99bf0d}{%
-           family={Greene},
-           familyi={G\bibinitperiod},
-           given={Kristen\bibnamedelima K.},
-           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=3008f9f4d2052febaa44bfcdaeeb6370}{%
-           family={Byrne},
-           familyi={B\bibinitperiod},
-           given={Michael\bibnamedelima D.},
-           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=ccdabeaeaea069c5504cc19de9e374ba}{%
-           family={Wallach},
-           familyi={W\bibinitperiod},
-           given={Dan\bibnamedelima S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=e7ee98ef3c5547b7deae3e3341b2f4fd}{%
-           family={Derr},
-           familyi={D\bibinitperiod},
-           given={Kyle},
-           giveni={K\bibinitperiod}}}%
-        {{hash=802a659203c949db92cbbf53c034b02f}{%
-           family={Sandler},
-           familyi={S\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=52070ce58eb91296810c0006b6cd57de}{%
-           family={Torous},
-           familyi={T\bibinitperiod},
-           given={Ted},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{889151a8548e5e904fe879b7c2e3635c}
-      \strng{fullhash}{751776827bda89e703558e023c0fdcbd}
-      \strng{bibnamehash}{751776827bda89e703558e023c0fdcbd}
-      \strng{authorbibnamehash}{751776827bda89e703558e023c0fdcbd}
-      \strng{authornamehash}{889151a8548e5e904fe879b7c2e3635c}
-      \strng{authorfullhash}{751776827bda89e703558e023c0fdcbd}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{booktitle}{Proceedings of the {{SIGCHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
-      \field{month}{4}
-      \field{series}{{{CHI}} '08}
-      \field{shorttitle}{Electronic Voting Machines versus Traditional Methods}
-      \field{title}{Electronic Voting Machines versus Traditional Methods: Improved Preference, Similar Performance}
-      \field{urlday}{13}
-      \field{urlmonth}{10}
-      \field{urlyear}{2022}
-      \field{year}{2008}
-      \field{urldateera}{ce}
-      \field{pages}{883\bibrangedash 892}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1145/1357054.1357195
-      \endverb
-    \endentry
-    \entry{leeUniversalDesignBallot2016}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=4d3a85f527be694d9bc9a638f134b171}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Seunghyun\bibnamedelima "Tina"},
-           giveni={S\bibinitperiod\bibinitdelim "\bibinitperiod}}}%
-        {{hash=edcd64a5a2b341ceb0ce2497e34ac9ec}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Yilin\bibnamedelima Elaine},
-           giveni={Y\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=966653f4b76c074a916a83d15227d050}{%
-           family={Ruzic},
-           familyi={R\bibinitperiod},
-           given={Ljilja},
-           giveni={L\bibinitperiod}}}%
-        {{hash=35486ecfe0f7603fb2b52d4904074744}{%
-           family={Sanford},
-           familyi={S\bibinitperiod},
-           given={Jon},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{ab1f3f254e696e117effb4f6a2ac3ecb}
-      \strng{fullhash}{8be3632434ab96162370d5b4dab893b0}
-      \strng{bibnamehash}{8be3632434ab96162370d5b4dab893b0}
-      \strng{authorbibnamehash}{8be3632434ab96162370d5b4dab893b0}
-      \strng{authornamehash}{ab1f3f254e696e117effb4f6a2ac3ecb}
-      \strng{authorfullhash}{8be3632434ab96162370d5b4dab893b0}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2016 {{CHI Conference}} on {{Human Factors}} in {{Computing Systems}}}
-      \field{month}{5}
-      \field{series}{{{CHI}} '16}
-      \field{title}{Universal {{Design Ballot Interfaces}} on {{Voting Performance}} and {{Satisfaction}} of {{Voters}} with and without {{Vision Loss}}}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{year}{2016}
-      \field{urldateera}{ce}
-      \field{pages}{4861\bibrangedash 4871}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1145/2858036.2858567
-      \endverb
-    \endentry
-    \entry{summers2014making}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=93949e0cfbc3134289c8ad1929013a6f}{%
-           family={Summers},
-           familyi={S\bibinitperiod},
-           given={Kathryn},
-           giveni={K\bibinitperiod}}}%
-        {{hash=3b6d7bc6810b6ae6a928358ccacbc59b}{%
-           family={Chisnell},
-           familyi={C\bibinitperiod},
-           given={Dana},
-           giveni={D\bibinitperiod}}}%
-        {{hash=3543cbbced113c31d12c3103e38d0718}{%
-           family={Davies},
-           familyi={D\bibinitperiod},
-           given={Drew},
-           giveni={D\bibinitperiod}}}%
-        {{hash=05a38ecc2c9adbfbfb2dadef52a0e457}{%
-           family={Alton},
-           familyi={A\bibinitperiod},
-           given={Noel},
-           giveni={N\bibinitperiod}}}%
-        {{hash=fabc287c59fc3975450a5dea1cedf2d0}{%
-           family={McKeever},
-           familyi={M\bibinitperiod},
-           given={Megan},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{5dc7e9e50e7c67cbc16f7db2cdfd9cb0}
-      \strng{fullhash}{113ea0ce93e16bccf438be5841c90874}
-      \strng{bibnamehash}{113ea0ce93e16bccf438be5841c90874}
-      \strng{authorbibnamehash}{113ea0ce93e16bccf438be5841c90874}
-      \strng{authornamehash}{5dc7e9e50e7c67cbc16f7db2cdfd9cb0}
-      \strng{authorfullhash}{113ea0ce93e16bccf438be5841c90874}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2014 Electronic Voting Technology {{Workshop}}/{{Workshop}} on Trustworthy Elections ({{EVT}}/{{WOTE}} 14)}
-      \field{title}{Making Voting Accessible: Designing Digital Ballot Marking for People with Low Literacy and Mild Cognitive Disabilities}
-      \field{year}{2014}
-    \endentry
-    \entry{dawkinsPrimeIIIInnovative2009}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=ffea316786a4023abe4828d3f3fc5572}{%
-           family={Dawkins},
-           familyi={D\bibinitperiod},
-           given={Shaneé},
-           giveni={S\bibinitperiod}}}%
-        {{hash=90071b3a3b1e3f69d604c1d6043a54c6}{%
-           family={Sullivan},
-           familyi={S\bibinitperiod},
-           given={Tony},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ef1d7e69c38fd54de1cc94c06e049d1c}{%
-           family={Rogers},
-           familyi={R\bibinitperiod},
-           given={Greg},
-           giveni={G\bibinitperiod}}}%
-        {{hash=98fa72734f561b03eb1ca5ccc39542b0}{%
-           family={Cross},
-           familyi={C\bibinitperiod},
-           given={E.\bibnamedelimi Vincent},
-           giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-        {{hash=406ad8d00d7e8b021991fc7257a61d6c}{%
-           family={Hamilton},
-           familyi={H\bibinitperiod},
-           given={Lauren},
-           giveni={L\bibinitperiod}}}%
-        {{hash=b31b2aed0bebc85f9150d9ced61aeb9b}{%
-           family={Gilbert},
-           familyi={G\bibinitperiod},
-           given={Juan\bibnamedelima E.},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{439ef01c3a2a2ac1d0681b539815972b}
-      \strng{fullhash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \strng{bibnamehash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \strng{authorbibnamehash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \strng{authornamehash}{439ef01c3a2a2ac1d0681b539815972b}
-      \strng{authorfullhash}{4e7b3a8f1505502ffaf23899e8f88979}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{booktitle}{Proceedings of the 14th International Conference on {{Intelligent}} User Interfaces}
-      \field{month}{2}
-      \field{series}{{{IUI}} '09}
-      \field{shorttitle}{Prime {{III}}}
-      \field{title}{Prime {{III}}: An Innovative Electronic Voting Interface}
-      \field{urlday}{27}
-      \field{urlmonth}{4}
-      \field{urlyear}{2023}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{485\bibrangedash 486}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1145/1502650.1502727
-      \endverb
-    \endentry
-    \entry{gilbertAnomalyDetectionElectronic2013}{article}{}
-      \name{author}{4}{}{%
-        {{hash=b31b2aed0bebc85f9150d9ced61aeb9b}{%
-           family={Gilbert},
-           familyi={G\bibinitperiod},
-           given={Juan\bibnamedelima E.},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=aba573077eb9c86ab5a70dfe1598387a}{%
-           family={Dunbar},
-           familyi={D\bibinitperiod},
-           given={Jerone},
-           giveni={J\bibinitperiod}}}%
-        {{hash=264f4ddfa4ae813f6e3a2e69e24988f1}{%
-           family={Ottley},
-           familyi={O\bibinitperiod},
-           given={Alvitta},
-           giveni={A\bibinitperiod}}}%
-        {{hash=a5258fd86191e3e0579242f0cf1d308d}{%
-           family={Smotherman},
-           familyi={S\bibinitperiod},
-           given={John\bibnamedelima Mark},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \strng{namehash}{d7b6ec8fb696dc21d177ba1a9f8d7f53}
-      \strng{fullhash}{6b24bc2d3726d6356d686c926a7632f7}
-      \strng{bibnamehash}{6b24bc2d3726d6356d686c926a7632f7}
-      \strng{authorbibnamehash}{6b24bc2d3726d6356d686c926a7632f7}
-      \strng{authornamehash}{d7b6ec8fb696dc21d177ba1a9f8d7f53}
-      \strng{authorfullhash}{6b24bc2d3726d6356d686c926a7632f7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{01425471}
-      \field{journaltitle}{Information Design Journal (IDJ)}
-      \field{month}{9}
-      \field{number}{3}
-      \field{title}{Anomaly Detection in Electronic Voting Systems}
-      \field{volume}{20}
-      \field{year}{2013}
-      \field{pages}{194\bibrangedash 206}
-      \range{pages}{13}
-      \verb{doi}
-      \verb 10.1075/idj.20.3.01gil
-      \endverb
-    \endentry
-    \entry{conradElectronicVotingEliminates2009}{article}{}
-      \name{author}{8}{}{%
-        {{hash=8db5b1c851f33ece0f8e94ad51ba4d4c}{%
-           family={Conrad},
-           familyi={C\bibinitperiod},
-           given={Frederick\bibnamedelima G.},
-           giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=3246e33011deaef84d8f74067058c726}{%
-           family={Bederson},
-           familyi={B\bibinitperiod},
-           given={Benjamin\bibnamedelima B.},
-           giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-        {{hash=38a06c9653dee55b6eee7c9fc39fe334}{%
-           family={Lewis},
-           familyi={L\bibinitperiod},
-           given={Brian},
-           giveni={B\bibinitperiod}}}%
-        {{hash=cba0c6db71edd489eef5946a6ed430f3}{%
-           family={Peytcheva},
-           familyi={P\bibinitperiod},
-           given={Emilia},
-           giveni={E\bibinitperiod}}}%
-        {{hash=bebf89e7dd6d11a526af7fac47c70f8f}{%
-           family={Traugott},
-           familyi={T\bibinitperiod},
-           given={Michael\bibnamedelima W.},
-           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=ac6917736431c80d59703b8cb16bea1b}{%
-           family={Hanmer},
-           familyi={H\bibinitperiod},
-           given={Michael\bibnamedelima J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=90227074297877797a2c7f3c17373043}{%
-           family={Herrnson},
-           familyi={H\bibinitperiod},
-           given={Paul\bibnamedelima S.},
-           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=fac1d9c9a990c5a2e28103d96e03c23a}{%
-           family={Niemi},
-           familyi={N\bibinitperiod},
-           given={Richard\bibnamedelima G.},
-           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \strng{namehash}{28f87851a3bbc06b390846588662ef43}
-      \strng{fullhash}{06ce4b5641df8b728209f205d45163e3}
-      \strng{bibnamehash}{06ce4b5641df8b728209f205d45163e3}
-      \strng{authorbibnamehash}{06ce4b5641df8b728209f205d45163e3}
-      \strng{authornamehash}{28f87851a3bbc06b390846588662ef43}
-      \strng{authorfullhash}{06ce4b5641df8b728209f205d45163e3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1071-5819}
-      \field{journaltitle}{International Journal of Human-Computer Studies}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{Electronic Voting Eliminates Hanging Chads but Introduces New Usability Challenges}
-      \field{urlday}{16}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{volume}{67}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{111\bibrangedash 124}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.1016/j.ijhcs.2008.09.010
-      \endverb
     \endentry
     \entry{cooper1998research}{misc}{}
       \name{author}{1}{}{%
@@ -2294,8 +1700,8 @@
       \strng{authorbibnamehash}{022711faff8e004cafbd130e99f677de}
       \strng{authornamehash}{022711faff8e004cafbd130e99f677de}
       \strng{authorfullhash}{022711faff8e004cafbd130e99f677de}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Research into Cognitive Load Theory and Instructional Design at {{UNSW}}}
@@ -2335,8 +1741,8 @@
       \strng{authorbibnamehash}{e1ee29661f056fbd748873e533099ce8}
       \strng{authornamehash}{ad8b22c9b34c9ac5d35e858fac85f076}
       \strng{authorfullhash}{e1ee29661f056fbd748873e533099ce8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1573-336X}
@@ -2382,8 +1788,8 @@
       \strng{authorbibnamehash}{31d9d17cf4d5849926754c3e5331fa1e}
       \strng{authornamehash}{b4c6f41cc02ddd7e329052ba6c49acef}
       \strng{authorfullhash}{31d9d17cf4d5849926754c3e5331fa1e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Proceedings of {{ISECON}} 2001}
@@ -2405,8 +1811,8 @@
       \strng{authorbibnamehash}{9ffc88d07c64c4b2897b8c557ecfceee}
       \strng{authornamehash}{9ffc88d07c64c4b2897b8c557ecfceee}
       \strng{authorfullhash}{9ffc88d07c64c4b2897b8c557ecfceee}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Thinking, Fast and Slow}
@@ -2434,8 +1840,8 @@
       \strng{authorbibnamehash}{4ed538e15259addc968e77033e0ee604}
       \strng{authornamehash}{4ed538e15259addc968e77033e0ee604}
       \strng{authorfullhash}{4ed538e15259addc968e77033e0ee604}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of personality and social psychology}
@@ -2468,8 +1874,8 @@
       \strng{authorbibnamehash}{e1c32cab99a6797371b2024bc89d2944}
       \strng{authornamehash}{e1c32cab99a6797371b2024bc89d2944}
       \strng{authorfullhash}{e1c32cab99a6797371b2024bc89d2944}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Public Opinion Quarterly}
@@ -2494,8 +1900,8 @@
       \strng{authorbibnamehash}{e0b081936561165e02d02c799658ebe4}
       \strng{authornamehash}{e0b081936561165e02d02c799658ebe4}
       \strng{authorfullhash}{e0b081936561165e02d02c799658ebe4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0004-9530, 1742-9536}
@@ -2531,8 +1937,8 @@
       \strng{authorbibnamehash}{136ae46442efee21eae2375d9ee66e3f}
       \strng{authornamehash}{136ae46442efee21eae2375d9ee66e3f}
       \strng{authorfullhash}{136ae46442efee21eae2375d9ee66e3f}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Bloomberg}
@@ -2545,8 +1951,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{QuadraticVotingFrontend2022}{misc}{}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{howpublished}{Public Digital Innovation Space}
       \field{month}{1}
@@ -2574,8 +1980,8 @@
       \strng{authorbibnamehash}{3f00d94df0b8ddacc3161ea2eead9484}
       \strng{authornamehash}{3f00d94df0b8ddacc3161ea2eead9484}
       \strng{authorfullhash}{3f00d94df0b8ddacc3161ea2eead9484}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Advances in {{Psychology}}}
@@ -2608,8 +2014,8 @@
       \strng{authorbibnamehash}{1923ce609c2c4a8a5b708da9d6db0dde}
       \strng{authornamehash}{1923ce609c2c4a8a5b708da9d6db0dde}
       \strng{authorfullhash}{1923ce609c2c4a8a5b708da9d6db0dde}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{00016918}
@@ -2676,8 +2082,8 @@
       \strng{editorbibnamehash}{e0d29ac8df1b973e915107656d5dfb6f}
       \strng{editornamehash}{8533303a5055c936398d3bd61dc3d46f}
       \strng{editorfullhash}{e0d29ac8df1b973e915107656d5dfb6f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Social {{Information Processing}} and {{Survey Methodology}}}
@@ -2713,8 +2119,8 @@
       \strng{authorbibnamehash}{9612a12907a8ce45293ceed61ce5e09b}
       \strng{authornamehash}{9612a12907a8ce45293ceed61ce5e09b}
       \strng{authorfullhash}{9612a12907a8ce45293ceed61ce5e09b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Psychology of {{Learning}} and {{Motivation}}}
@@ -2756,8 +2162,8 @@
       \strng{authorbibnamehash}{a9e470587b12aa2af8e7332db5535bcf}
       \strng{authornamehash}{8a1ecaf112e96e7ca3d0a63f3eae0748}
       \strng{authorfullhash}{a9e470587b12aa2af8e7332db5535bcf}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1099-0771}
@@ -2802,8 +2208,8 @@
       \strng{authorbibnamehash}{b2d8c57270467b2f3b7883d9403984be}
       \strng{authornamehash}{b2d8c57270467b2f3b7883d9403984be}
       \strng{authorfullhash}{b2d8c57270467b2f3b7883d9403984be}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{series}{Nudge: {{Improving}} Decisions about Health, Wealth, and Happiness}
@@ -2830,8 +2236,8 @@
       \strng{authorbibnamehash}{6c785cec3b28d28af91696b6a6db5b78}
       \strng{authornamehash}{6c785cec3b28d28af91696b6a6db5b78}
       \strng{authorfullhash}{6c785cec3b28d28af91696b6a6db5b78}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The Design of Everyday Things}
@@ -2859,8 +2265,8 @@
       \strng{authorbibnamehash}{4e280c2b5b8a3aaf77feaa8fceb34935}
       \strng{authornamehash}{4e280c2b5b8a3aaf77feaa8fceb34935}
       \strng{authorfullhash}{4e280c2b5b8a3aaf77feaa8fceb34935}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Human factors}
@@ -2898,8 +2304,8 @@
       \strng{authorbibnamehash}{eb7ac829659c109c1bbfab0f35ad1620}
       \strng{authornamehash}{c439933c6e5b7caee50d15419d44570c}
       \strng{authorfullhash}{eb7ac829659c109c1bbfab0f35ad1620}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Handbook of Attitudes}
@@ -2925,8 +2331,8 @@
       \strng{authorbibnamehash}{f6cb6a0254e8728ae70245b289d0822a}
       \strng{authornamehash}{f6cb6a0254e8728ae70245b289d0822a}
       \strng{authorfullhash}{f6cb6a0254e8728ae70245b289d0822a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{A Comparison of a Traditional Ranking Format to a Drag-and-Drop Format with Stacking}
@@ -2947,8 +2353,8 @@
       \strng{authorbibnamehash}{104bc1073bdfd1efef3d3a2d208a2664}
       \strng{authornamehash}{104bc1073bdfd1efef3d3a2d208a2664}
       \strng{authorfullhash}{104bc1073bdfd1efef3d3a2d208a2664}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -2975,8 +2381,8 @@
       \strng{authorbibnamehash}{004924bd751ba0e150eaae27ac0eaacb}
       \strng{authornamehash}{004924bd751ba0e150eaae27ac0eaacb}
       \strng{authorfullhash}{004924bd751ba0e150eaae27ac0eaacb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2469-7818, 2469-7826}
@@ -3014,8 +2420,8 @@
       \strng{authorbibnamehash}{2572e608874ae047edb4898364da2c3a}
       \strng{authornamehash}{2572e608874ae047edb4898364da2c3a}
       \strng{authorfullhash}{2572e608874ae047edb4898364da2c3a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{jstor}
@@ -3052,8 +2458,8 @@
       \strng{authorbibnamehash}{c6cb95a4efa1223c3b983fe96388c90b}
       \strng{authornamehash}{c6cb95a4efa1223c3b983fe96388c90b}
       \strng{authorfullhash}{c6cb95a4efa1223c3b983fe96388c90b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0033-362X}
@@ -3070,8 +2476,8 @@
       \endverb
     \endentry
     \entry{CharityNavigator2023}{misc}{}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{shorttitle}
       \field{annotation}{Retrieved from https://web.archive.org/web/20230513224030/}
       \field{howpublished}{https://www.charitynavigator.org/index.cfm?bay=search.categories}
@@ -3106,8 +2512,8 @@
       \strng{authorbibnamehash}{8dfff24be862d912b4ce966ff33b7da6}
       \strng{authornamehash}{8dfff24be862d912b4ce966ff33b7da6}
       \strng{authorfullhash}{8dfff24be862d912b4ce966ff33b7da6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{langid}{english}
@@ -3138,8 +2544,8 @@
       \strng{authorbibnamehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
       \strng{authornamehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
       \strng{authorfullhash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{langid}{english}
@@ -3193,8 +2599,8 @@
       \strng{editorbibnamehash}{301328bd759015d6a92f19a058a38c0f}
       \strng{editornamehash}{4cd083ffe928c58d1a0f8c4cc8ced804}
       \strng{editorfullhash}{301328bd759015d6a92f19a058a38c0f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Expert {{Judgment}} and {{Expert Systems}}}
@@ -3227,8 +2633,8 @@
       \strng{authorbibnamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
       \strng{authornamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
       \strng{authorfullhash}{52cf88006a41a8cd9aab3bcb5e428b80}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1939-1471}
@@ -3266,8 +2672,8 @@
       \strng{authorbibnamehash}{83ecd3ec981613d9b2679cf9e466bd14}
       \strng{authornamehash}{83ecd3ec981613d9b2679cf9e466bd14}
       \strng{authorfullhash}{83ecd3ec981613d9b2679cf9e466bd14}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Mathematical and computer modelling}
@@ -3302,8 +2708,8 @@
       \strng{authorbibnamehash}{a0f5326f7652b4ce81b80da849eee9cc}
       \strng{authornamehash}{13edcd45f916cf358bdc1ac4d53aa94e}
       \strng{authorfullhash}{a0f5326f7652b4ce81b80da849eee9cc}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{10577408}
@@ -3347,8 +2753,8 @@
       \strng{authorbibnamehash}{469efa314baa32a3f4d461e0dce2d6ea}
       \strng{authornamehash}{469efa314baa32a3f4d461e0dce2d6ea}
       \strng{authorfullhash}{469efa314baa32a3f4d461e0dce2d6ea}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Psychology}
@@ -3375,8 +2781,8 @@
       \strng{authorbibnamehash}{3c980fec4ba43d342b9a70395a28e428}
       \strng{authornamehash}{3c980fec4ba43d342b9a70395a28e428}
       \strng{authorfullhash}{3c980fec4ba43d342b9a70395a28e428}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2169-5067}
@@ -3413,8 +2819,8 @@
       \strng{authorbibnamehash}{c5fd3c750d9a2a451308fe3ccab1afa6}
       \strng{authornamehash}{c5fd3c750d9a2a451308fe3ccab1afa6}
       \strng{authorfullhash}{c5fd3c750d9a2a451308fe3ccab1afa6}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DTIC Document}
@@ -3458,8 +2864,8 @@
       \strng{authorbibnamehash}{146f7fb93c9cd3bbba1662aed2dcff4a}
       \strng{authornamehash}{c0764344147c8b938d5eabf4ef7cf190}
       \strng{authorfullhash}{146f7fb93c9cd3bbba1662aed2dcff4a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-0139}
@@ -3508,8 +2914,8 @@
       \strng{authorbibnamehash}{7b565ce980693b6cf1bc0e6209ab4722}
       \strng{authornamehash}{7c203c789562bf187ff63035f7b01036}
       \strng{authorfullhash}{7b565ce980693b6cf1bc0e6209ab4722}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1464-0597}
@@ -3528,6 +2934,113 @@
       \range{pages}{26}
       \verb{doi}
       \verb 10.1111/j.1464-0597.2004.00161.x
+      \endverb
+    \endentry
+    \entry{palinkoEstimatingCognitiveLoad2010}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=07719b39f88d5668cebc75bd3b21644f}{%
+           family={Palinko},
+           familyi={P\bibinitperiod},
+           given={Oskar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=67b1047c33219503cf0d0b3511150405}{%
+           family={Kun},
+           familyi={K\bibinitperiod},
+           given={Andrew\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=b6c54f95348652a1c15b2327521e2833}{%
+           family={Shyrokov},
+           familyi={S\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=075eb96720c77e9fbd5924a8f732617b}{%
+           family={Heeman},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Austin, Texas}%
+      }
+      \list{publisher}{1}{%
+        {ACM Press}%
+      }
+      \strng{namehash}{c66b3d173456dbf7de5d669560715109}
+      \strng{fullhash}{8eef178262da9ea310257a824f4a0344}
+      \strng{bibnamehash}{8eef178262da9ea310257a824f4a0344}
+      \strng{authorbibnamehash}{8eef178262da9ea310257a824f4a0344}
+      \strng{authornamehash}{c66b3d173456dbf7de5d669560715109}
+      \strng{authorfullhash}{8eef178262da9ea310257a824f4a0344}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2010 {{Symposium}} on {{Eye-Tracking Research}} \& {{Applications}} - {{ETRA}} '10}
+      \field{langid}{english}
+      \field{title}{Estimating Cognitive Load Using Remote Eye Tracking in a Driving Simulator}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{141}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1145/1743666.1743701
+      \endverb
+    \endentry
+    \entry{haapalainenPsychophysiologicalMeasuresAssessing2010}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=842b27b9158de9fec694a61b92d0d7f6}{%
+           family={Haapalainen},
+           familyi={H\bibinitperiod},
+           given={Eija},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c32fbd61ebbd2bf956354210f5ac25e3}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={SeungJun},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ffad389b1c9239a03076bd1e03e8de5f}{%
+           family={Forlizzi},
+           familyi={F\bibinitperiod},
+           given={Jodi\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=383a958e7dc63d5a57bbeec2a4e3ac93}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Anind\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Copenhagen Denmark}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{3cd04771970394cd79e76520fac008c8}
+      \strng{fullhash}{b1ef29921b69d8e49aac8d33b16cf165}
+      \strng{bibnamehash}{b1ef29921b69d8e49aac8d33b16cf165}
+      \strng{authorbibnamehash}{b1ef29921b69d8e49aac8d33b16cf165}
+      \strng{authornamehash}{3cd04771970394cd79e76520fac008c8}
+      \strng{authorfullhash}{b1ef29921b69d8e49aac8d33b16cf165}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 12th {{ACM}} International Conference on {{Ubiquitous}} Computing}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{Psycho-Physiological Measures for Assessing Cognitive Load}
+      \field{urlday}{16}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{301\bibrangedash 310}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/1864349.1864395
       \endverb
     \endentry
     \entry{olsonWaysKnowingHCI2014}{book}{}
@@ -3555,8 +3068,8 @@
       \strng{editorbibnamehash}{5df2a4e1db6770d982479f0399af42ff}
       \strng{editornamehash}{5df2a4e1db6770d982479f0399af42ff}
       \strng{editorfullhash}{5df2a4e1db6770d982479f0399af42ff}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -3570,124 +3083,63 @@
       \verb 10.1007/978-1-4939-0378-8
       \endverb
     \endentry
-    \entry{nielsen1997users}{article}{}
-      \name{author}{1}{}{%
-        {{hash=753054f71283d85f82cda8e35daf6bac}{%
-           family={Nielsen},
+    \entry{kay2016researcher}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=62ee66d0503a0d594daf8e77fec37f8f}{%
+           family={Kay},
+           familyi={K\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b6492a73131a0d53e29263e5ce7ff537}{%
+           family={Nelson},
            familyi={N\bibinitperiod},
-           given={Jakob},
-           giveni={J\bibinitperiod}}}%
+           given={Gregory\bibnamedelima L},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3f16ffdc0c38e5467ca38620f0256edf}{%
+           family={Hekler},
+           familyi={H\bibinitperiod},
+           given={Eric\bibnamedelima B},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{fullhash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{bibnamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authorbibnamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authornamehash}{753054f71283d85f82cda8e35daf6bac}
-      \strng{authorfullhash}{753054f71283d85f82cda8e35daf6bac}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \strng{namehash}{284935a6d05e696fa3b10b541f39e072}
+      \strng{fullhash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{bibnamehash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{authorbibnamehash}{6f3e2f03e66fb14674dc375643af96d9}
+      \strng{authornamehash}{284935a6d05e696fa3b10b541f39e072}
+      \strng{authorfullhash}{6f3e2f03e66fb14674dc375643af96d9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{How Users Read on the Web}
-      \field{year}{1997}
-    \endentry
-    \entry{polmanWhyAreMaximizers2010}{article}{}
-      \name{author}{1}{}{%
-        {{hash=2187e80f1618e5007ad8dcfdab9164ed}{%
-           family={Polman},
-           familyi={P\bibinitperiod},
-           given={Evan},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \strng{fullhash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \strng{bibnamehash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \strng{authorbibnamehash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \strng{authornamehash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \strng{authorfullhash}{2187e80f1618e5007ad8dcfdab9164ed}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{1099-0771}
-      \field{journaltitle}{Journal of Behavioral Decision Making}
-      \field{langid}{english}
-      \field{number}{2}
-      \field{shorttitle}{Why Are Maximizers Less Happy than Satisficers?}
-      \field{title}{Why Are Maximizers Less Happy than Satisficers? {{Because}} They Maximize Positive and Negative Outcomes}
-      \field{urlday}{1}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{volume}{23}
-      \field{year}{2010}
-      \field{urldateera}{ce}
-      \field{pages}{179\bibrangedash 190}
+      \field{booktitle}{Proceedings of the 2016 {{CHI}} Conference on Human Factors in Computing Systems}
+      \field{title}{Researcher-Centered Design of Statistics: {{Why Bayesian}} Statistics Better Fit the Culture and Incentives of {{HCI}}}
+      \field{year}{2016}
+      \field{pages}{4521\bibrangedash 4532}
       \range{pages}{12}
-      \verb{doi}
-      \verb 10.1002/bdm.647
-      \endverb
     \endentry
-    \entry{schwartzMaximizingSatisficingHappiness2002}{article}{}
-      \name{author}{6}{}{%
-        {{hash=5f22299c31ac35283104a867ea99f18a}{%
-           family={Schwartz},
-           familyi={S\bibinitperiod},
-           given={Barry},
-           giveni={B\bibinitperiod}}}%
-        {{hash=2221998ec3c0f0b68c4349fec5e7ca52}{%
-           family={Ward},
-           familyi={W\bibinitperiod},
-           given={Andrew},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f4993d530125aa5ac942c5b6a9a5a103}{%
-           family={Monterosso},
+    \entry{mcelreath2018statistical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=51204ab1ac6fd3aa8b649ff12ae89bf1}{%
+           family={McElreath},
            familyi={M\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8c236d043e3fc9933fa2e29542fea7cc}{%
-           family={Lyubomirsky},
-           familyi={L\bibinitperiod},
-           given={Sonja},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ebce707dfe00d747c52edacd98fb582a}{%
-           family={White},
-           familyi={W\bibinitperiod},
-           given={Katherine},
-           giveni={K\bibinitperiod}}}%
-        {{hash=f107c747588bdd749767d885c276b6f3}{%
-           family={Lehman},
-           familyi={L\bibinitperiod},
-           given={Darrin\bibnamedelima R.},
-           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {US}%
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {American Psychological Association}%
+        {Chapman and Hall/CRC}%
       }
-      \strng{namehash}{dd57aa6c45f42f0dcb3dcf061461430d}
-      \strng{fullhash}{adeeaee8313ad607e33984a0c6edbef7}
-      \strng{bibnamehash}{adeeaee8313ad607e33984a0c6edbef7}
-      \strng{authorbibnamehash}{adeeaee8313ad607e33984a0c6edbef7}
-      \strng{authornamehash}{dd57aa6c45f42f0dcb3dcf061461430d}
-      \strng{authorfullhash}{adeeaee8313ad607e33984a0c6edbef7}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \strng{namehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{fullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{bibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorbibnamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authornamehash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \strng{authorfullhash}{51204ab1ac6fd3aa8b649ff12ae89bf1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{1939-1315}
-      \field{journaltitle}{Journal of Personality and Social Psychology}
-      \field{number}{5}
-      \field{shorttitle}{Maximizing versus Satisficing}
-      \field{title}{Maximizing versus Satisficing: {{Happiness}} Is a Matter of Choice}
-      \field{volume}{83}
-      \field{year}{2002}
-      \field{pages}{1178\bibrangedash 1197}
-      \range{pages}{20}
-      \verb{doi}
-      \verb 10.1037/0022-3514.83.5.1178
-      \endverb
+      \field{labeltitlesource}{title}
+      \field{title}{Statistical Rethinking: {{A Bayesian}} Course with Examples in {{R}} and {{Stan}}}
+      \field{year}{2018}
     \endentry
     \entry{payneAdaptiveDecisionMaker1993}{book}{}
       \name{author}{3}{}{%
@@ -3720,8 +3172,8 @@
       \strng{authornamehash}{ec51658d876ede7a1afef78c59821b2b}
       \strng{authorfullhash}{c0e0eb82902c7e2bd3b54277f88bdde4}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The {{Adaptive Decision Maker}}}
@@ -3758,8 +3210,8 @@
       \strng{authorbibnamehash}{c15822f639d8aa0481867fef6c12452a}
       \strng{authornamehash}{a7057bae2583a145a3862e264f345a2d}
       \strng{authorfullhash}{c15822f639d8aa0481867fef6c12452a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Psychological Science}
@@ -3789,8 +3241,8 @@
       \strng{authorbibnamehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
       \strng{authornamehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
       \strng{authorfullhash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1573-7187}
@@ -3852,51 +3304,6 @@
       \range{pages}{20}
       \verb{doi}
       \verb 10.1037/0033-295X.103.4.650
-      \endverb
-    \endentry
-    \entry{tverskyJudgmentUncertaintyHeuristics1974}{article}{}
-      \name{author}{2}{}{%
-        {{hash=031d0d5f9391d970f6f089af958f701d}{%
-           family={Tversky},
-           familyi={T\bibinitperiod},
-           given={Amos},
-           giveni={A\bibinitperiod}}}%
-        {{hash=d0dcea81f8587e7d56bb5dbe34a39d6c}{%
-           family={Kahneman},
-           familyi={K\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Association for the Advancement of Science}%
-      }
-      \strng{namehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \strng{fullhash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \strng{bibnamehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \strng{authorbibnamehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \strng{authornamehash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \strng{authorfullhash}{e03b8c64a28ec0d8081c6f4ded219ba3}
-      \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{eprinttype}{jstor}
-      \field{issn}{0036-8075}
-      \field{journaltitle}{Science}
-      \field{number}{4157}
-      \field{shorttitle}{Judgment under {{Uncertainty}}}
-      \field{title}{Judgment under {{Uncertainty}}: {{Heuristics}} and {{Biases}}}
-      \field{urlday}{21}
-      \field{urlmonth}{6}
-      \field{urlyear}{2024}
-      \field{volume}{185}
-      \field{year}{1974}
-      \field{urldateera}{ce}
-      \field{pages}{1124\bibrangedash 1131}
-      \range{pages}{8}
-      \verb{eprint}
-      \verb 1738360
       \endverb
     \endentry
     \entry{simonSciencesArtificial1996}{book}{}

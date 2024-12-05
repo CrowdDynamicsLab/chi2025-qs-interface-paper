@@ -1,63 +1,66 @@
 \section{Discussion and Future Works}
 \label{sec:discussion}
-In the discussion section, we interpret results related to cognitive load and survey respondent behaviors. Specifically, we aim to understand why results in Section~\ref{sec:cog_result} revealed that long text interface participants did not experience higher cognitive load, contrary to expectations referencing prior literature and insights from Section~\ref{sec:behave_result}.
 
-We focus on three key topics: what two-phase interface elements influenced behavior, how these elements supported preference construction, and the remaining design challenges. Additionally, we provide recommendations for using QS and suggest design improvements. We concluded that the two-phase interface prevented satisficing behaviors and promoted strategic, holistic thinking, unlike the text-based interface, which leaned toward operational tasks. Behavioral analysis showed that long two-phase interface participants made frequent, small updates, shifting their cognitive focus.
+In this section, we interpret the results related to cognitive load and survey respondent behaviors, emphasizing why the interactive interface did not uniformly reduce cognitive load in the long text interface while offering practical recommendations for practitioners deploying QS.
 
-% ========================================%
-\subsection{Interpretation of results: Two-phase interface limits satisficing during cognitive overload} \label{sec:satisficing}
+Our discussion centers on three key topics: elements of the two-phase interface that supported preference construction, design recommendations for practitioners, and future challenges. Ultimately, we conclude that the two-phase interface had differential effects on the short and long surveys. While trends suggest a reduction in cognitive load with the two-phase interface compared to the text interface, we observed evidence of deeper engagement with options and enhanced preference construction, particularly in the long survey condition.
 
-Participants using the long two-phase interface reported slightly higher cognitive load compared to those using the long text interface. In comparison, the short two-phase interface resulted in a lower cognitive load. This suggests that the two-phase interface alone does not inherently increase cognitive load.
+\subsection{Result Interpretation}
+\subsubsection{Deeper engagements through preference construction in two-phase interfaces}
+Our main findings indicate that the survey results, qualitative data, and observed behavioral differences revealed shifts in the types of cognitive load experienced by participants, especially for those completing the long survey. Cognitive load theory~\cite{swellerCognitiveLoadTheory2011}, when applied to the context of QS, maps the three components of cognitive load: intrinsic load (the cognitive demand required to understand questions and response options), germane load (associated with deeper processing and evaluation of preferences), and extraneous load (stemming from navigating and operating the survey interface).
 
-One explanation is that the two-phase interface reduces cognitive load in the short QS but not in the longer one. In longer surveys, the interactive nature of the two-phase interface may require participants to perform more operations without significantly altering their decision-making processes. However, our findings suggest that participants using the two-phase interface in longer surveys responded more efficiently. Across both short and long surveys, participants using the two-phase interface demonstrated iterative and efficient fine-tuning preferences, indicating deeper survey engagement. Therefore, we reject the claim that the two-phase interface increases cognitive load in the long survey.
+Participants were randomly assigned to experimental conditions, with both survey lengths containing options randomly drawn from a common pool to control intrinsic load within the same group.
 
-An alternative explanation is that while the two-phase interface limits satisficing during cognitive overload, the complexity of the long QS may have counteracted this effect, preventing a full reduction in cognitive load. This suggests that long QS participants resorted to satisficing behaviors to manage their cognitive overload. Qualitative results support this explanation: participants using the two-phase interface engaged in broader, more strategic considerations, while those using the text interface focused on operational tasks. For instance, participants using the long two-phase interface experienced less cognitive burden from precise voting and managed their time better. Overall, the two-phase interface participants demonstrated deeper and more critical thinking, as they engaged in more strategic decision-making.
+In the short survey condition, participants engaged with all options simultaneously. The two-phase interface reduced some extraneous load associated with navigating the interface during voting, though it required participants to complete the grouping phase. Despite this additional task, participants across both interface types reported minimal or no physical demand. The two-phase interface likely facilitated easier engagement with preference construction due to its lower-trended cognitive load, as reflected in the increased likelihood of perceived lower cognitive load.
 
-In contrast, participants using the long text interface satisficed due to cognitive overload from having to decide and allocate more credits for more options. However, fewer participants in this group reported high cognitive load compared to those in the short-text interface. This group also experienced the least temporal demand and frustration with operational tasks, despite spending a similar amount of time per option as participants using the text interface. These counterintuitive findings pointed to the remaining plausible explanation that long-text interface participants used satisficing to manage the overload.
+In the long survey condition, participants could not engage with all options simultaneously, resulting in a higher intrinsic load at the start of the survey. The organization phase in the two-phase interface shaped participant behavior during the voting phase. While it streamlined the process of locating options, as exemplified by the reduction of edit distance, this benefit may have been offset by the additional physical effort required to complete the grouping phase, as reflected by the slightly increased physical demand.
 
-~\textbf{In summary}, the interactive components of the two-phase interface likely prevented mental shortcuts~\cite{daniel2017thinking, simonBehavioralModelRational1955, payneAdaptiveStrategySelection1988, tverskyJudgmentsRepresentativeness}, resulting in a cognitive~\textit{shift} towards deeper reflection and decision-making. Thus, while QS with many options might lead to satisficing, the two-phase interface redirects participants' attention, facilitating the decision-making process that promotes comprehensive preference construction. In the following section, we examine these specific elements that guided participants to achieve this.
+However, qualitative data regarding the voting task suggested that participants maintained their ability to invoke deeper engagement with options. Quantitative data revealed that participants made no fewer overall edits, with a bimodal distribution suggesting continued revision even at low budgets. Additionally, participants strategically considered broader options as they deliberated on nearby ones. These findings indicate a cognitive shift toward germane load, particularly during the voting phase.
 
-% ================================= %
-\subsection{Bounded rationality and interface design}
-Bounded rationality emerged as a core theme in participants' responses, highlighting how cognitive limitations lead to sub-optimal decision-making due to their inability to process all available information~\cite{simonBehavioralModelRational1955}. This often led to ~\textit{\smash{satisficing}} behaviors, where participants settle for ~\textit{good enough} but not~\textit{optimal} decisions~\cite{gigerenzerReasoningFastFrugal1996}.
+In contrast, participants in the long text interface experienced higher extraneous load, evident in shallower reflection and shorter overall voting times, despite exhibiting a greater overall edit distance. While some might argue that the additional grouping phase offered participants more opportunities to familiarize themselves with the options, the long edit distance suggests that participants in the text interface traversed the list frequently, providing ample opportunity to adjust their preferences. Qualitative data indicated that 70\% of long text participants (N=7) scanned the list while voting, with edit distance data reflecting multiple passes across the list.
 
-For instance, \texttt{S036} described making meaningful choices while acknowledging the limits of their effort:
-
-\begin{displayquote}
-~\bracketellipsis you thought of enough things, you know, and so it wasn't the most effort I could put in because again, that would have been diminishing returns. I tried to think of enough things~\bracketellipsis and then move on.~\bracketellipsis 
-% I think that that's just not a realistic expectation (to be perfect), but I felt satisfied.~\bracketellipsis 
-I felt like that (the response) was satisfied, but not perfect. Cause perfect is not a reality. \hfill\quoteby{S036 (ST)}
-\end{displayquote}
-
-This illustrates typical satisficing decision-making, where participants settle for suboptimal choices. In long QS, the significant increase in decision points—due to the numerous vote and credit options—was so overwhelming to some that even features like pre-calculated vote-credit values in drop-down menus provided relief, as they helped avoid the cognitively demanding task of searching for bounds.
-
-Participants often relied on~\textit{\smash{heuristics}}~\cite{tverskyJudgmentUncertaintyHeuristics1974} and~\textit{\smash{defaults}}~\cite{thalerNudgeImprovingDecisions2008a}, behaviors less common among two-phase interface participants. Presenting one option at a time reduced reliance on defaults and encouraged deeper reflection, as illustrated by~\texttt{S013}, who highlighted how the organization phase supported their option preferences construction: 
+The deliberate one-option-at-a-time presentation during the voting task in the two-phase interface reduced reliance on defaults and encouraged deeper reflection. This is best illustrated by~\texttt{S013}, who emphasized how the organization phase supported their preference construction:
 
 \begin{displayquote}
 \bracketellipsis it (organization phase) gives you time to just focus on that single thing and rank it based on how you feel at that moment. \hfill\quoteby{S013 (SI)}
 \end{displayquote}
 
-Conversely, text interface participants, like \texttt{S003}, described how default placements influenced their decisions:
+Thus, based on this evidence, we argue that a text-based interface is not an optimal solution for long QS where deeper engagement and preference construction are desired. A two-phase interface enables participants to effectively exercise germane load, fostering deeper engagement with the content.
+
+% Conversely, participants using the text interface, like \texttt{S003}, described how default placements influenced their decisions:
+
+% \begin{displayquote}
+%     Honestly, if medical research~\bracketellipsis was the first one I saw, I think it would automatically give it a lot more. \hfill\quoteby{S003 (ST)}
+% \end{displayquote}
+
+% possiblity from the overall reduction of extraneous load. This additional benifit from added time and slightly higher cognitive load, at the minimum, prevented cognitive overload, , fostering reflection and deliberation which is relatively important when completing surveys.
+
+% Based on the current evidence,  The two-phase interface, by supporting reflection and minimizing reliance on defaults, demonstrates the potential for more effective design strategies in similar contexts.
+
+\subsubsection{Plausible satisficing behaviors in long QS}
+In addition, the observed lower overall cognitive load in the long text interface may partly reflect~\textit{satisficing behaviors}. Satisficing refers to participants settling for \textit{good enough} rather than\textit{optimal} decisions~\cite{gigerenzerReasoningFastFrugal1996} when unable to process all available information. Interviews revealed that 40\% of participants (N=4) in this condition described using satisficing strategies, while none from the long two-phase interface reported such behaviors. 
+
+These strategies were exemplified by participants prioritizing minimal effort over thorough evaluation, as illustrated by:
 
 \begin{displayquote}
-    Honestly, if medical research~\bracketellipsis was the first one I saw, I think it would automatically give it a lot more. \hfill\quoteby{S003 (ST)}
+    ~\bracketellipsis you thought of enough things, you know, and so it wasn't the most effort I could put in because again, that would have been diminishing returns. I tried to think of enough things~\bracketellipsis and then move on.~\bracketellipsis 
+    
+    I felt like that (the response) was satisfied, but not perfect. Cause perfect is not a reality. \hfill\quoteby{S036 (ST)}
 \end{displayquote}
 
-The three key elements of the organization phase—presenting options one at a time, grouping them into categories, and enabling drag-and-drop—worked together to structure participant preferences. These elements aligned with cognitive strategies like~\textit{\smash{problem decomposition}}~\cite{simonSciencesArtificial1996} and~\textit{\smash{dimension reduction}} which reduces cognitive overload. Bounded rationality illuminates the importance of decision-making support interfaces rather than being a critique of human behaviors. One participant explained how the organization phase broke down complex decisions into manageable steps:
+This quote illustrates satisficing decision-making, where participants settle for suboptimal choices. Additional participants described similar strategies when deciding on votes:
 
 \begin{displayquote}
-\bracketellipsis being able to have a preliminary categorization of all the topics. First, it introduced me to all the topics,~\bracketellipsis to think about and process~\bracketellipsis being able to digest all the information prior to actually allocating the budget or completing the quadratic survey. \hfill\quoteby{S009 (LI)}
+    ~\bracketellipsis Because that was what was left. [Laughter] I probably wouldn't use that on <optionA> instead of <optionB>.~\bracketellipsis \hfill\quoteby{S015 (LT)}
+
+    I tried to use them~\bracketellipsis it went negative, and then I just settled for just \$6 remaining. ~\bracketellipsis I don't think it's perfect. But I think I'm satisfied. Yeah, I'm satisfied.  \hfill\quoteby{S033 (LT)}
+
+    ~\bracketellipsis when I had first started like looking at the first few, I was just doing it kinda like willy nilly, I'm not really paying that much attention to necessarily how many credits I had, or how many categories there were. \hfill\quoteby{S041 (LT)}
 \end{displayquote}
 
-Participants using the two-phase interface, especially in the long version, organized options along dimensions such as topics (e.g., health vs. humanitarian) and preferences (positive vs. negative) before voting. Others expressed that the upfront introduction of all options and the ability to rank and group them helped manage their cognitive load effectively. In contrast, almost half of the participants using the long text interface, like~\texttt{S028}, expressed a desire for features that can help reduce the decision space when responding to the QS, further supporting the importance of these organizational design elements:
+These quotes highlight how participants in the long text interface adjusted to external constraints rather than carefully weighing internal preferences. This behavior suggests that cognitive overload may have led participants to adopt less effortful strategies. However, further research is needed to fully understand the prevalence and impact of satisficing in long QS surveys.
 
-\begin{displayquote}
-Because with this many (options), especially when I'm thinking \ldots\ Ok, where was (the option) \ldots\ Where was (the option) you know? Oh, that's right. Maybe I could give another up another upvote to the, you know whatever~\bracketellipsis \hfill\quoteby{S028 (LT)}
-\end{displayquote}
-
-This quote reflected participants' need to manually track and revisit options, which occupies cognitive load, without a more structured interface.
-
-~\textbf{In summary}, individual's bounded rationality encouraged participants to exhibit~\textit{\smash{satisficing}} behaviors,~\textit{\smash{heuristics}}, and~\textit{\smash{defaults}} when responding to QS. Showing all options upfront, one at a time, and repositioning options based on participants' rough preferences prevented participants from using defaults and heuristics. The two-phase organization actively scaffolds participants' decision-making process, supporting efficiency \textit{\smash{problem decomposition}} and~\textit{\smash{dimension reduction}}. Together, these elements in the two-phase interface design prevented~\textit{\smash{satisficing}} behaviors and supported participants in making more informed decisions through a more strategic planning and holistic thinking process.
+\textbf{In summary}, the two-phase interface likely reduced extraneous load, particularly in the long survey condition, facilitating a cognitive \textit{shift} toward deeper reflection and more deliberate decision-making. While the extent to which long QS surveys induce cognitive overload or satisficing remains unclear, the interactive interface shows promise in promoting deeper engagement with options and supporting comprehensive preference construction. The following section explores the specific elements that guided participants toward these outcomes.
 
 % ============================== %
 \subsection{Construction of Preference on Quadratic Survey}
@@ -87,36 +90,41 @@ The bi-modal behavior observed in the long interactive interface participants pr
     I only start from the positive one~\bracketellipsis I finish everything~\ldots and then I move to the second part (the neutral box).~\bracketellipsis I want to focus on these and make sure that resources are at least they get the attention they want. And if there's surplus and they can move to the second part. \hfill\quoteby{S037 (LI)}
 \end{displayquote}
 
-These evidences explain how the organization phase and the drag-and-drop features supported differentiation and consolidation, scaffolding a decision-making framework enabling deeper engagement.
+In addition, the three key elements of the organization phase—presenting options one at a time, grouping them into categories, and enabling drag-and-drop—worked together to structure participant preferences. These elements aligned with cognitive strategies like~\textit{\smash{problem decomposition}}~\cite{simonSciencesArtificial1996} and~\textit{\smash{dimension reduction}} which reduces cognitive overload. Bounded rationality, highlighting how cognitive limitations lead to sub-optimal decision-making due to their inability to process all available information~\cite{simonBehavioralModelRational1955}. It illuminates the importance of decision-making support interfaces rather than being a critique of human behaviors. One participant explained how the organization phase broke down complex decisions into manageable steps:
 
-\textbf{In summary}, participants construct their preferences as they complete QS. We observed behaviors and qualitative insights that align with the differentiation and consolidation theory in decision-making. Our interface scaffolded many of the differentiation stages through pre-voting organization and some consolidation phases through drag-and-drop, explaining how the two-phase approach supports preference construction to yield effective QS responses.
+\begin{displayquote}
+\bracketellipsis being able to have a preliminary categorization of all the topics. First, it introduced me to all the topics,~\bracketellipsis to think about and process~\bracketellipsis being able to digest all the information prior to actually allocating the budget or completing the quadratic survey. \hfill\quoteby{S009 (LI)}
+\end{displayquote}
+
+Participants using the two-phase interface, especially in the long version, organized options along dimensions such as topics (e.g., health vs. humanitarian) and preferences (positive vs. negative) before voting. Others expressed that the upfront introduction of all options and the ability to rank and group them helped manage their cognitive load effectively. In contrast, almost half of the participants using the long text interface, like~\texttt{S028}, expressed a desire for features that can help reduce the decision space when responding to the QS, further supporting the importance of these organizational design elements:
+
+\begin{displayquote}
+Because with this many (options), especially when I'm thinking \ldots\ Ok, where was (the option) \ldots\ Where was (the option) you know? Oh, that's right. Maybe I could give another up another upvote to the, you know whatever~\bracketellipsis \hfill\quoteby{S028 (LT)}
+\end{displayquote}
+
+This quote reflected participants' need to manually track and revisit options, which occupies extrannous load, without a more structured interface.
+
+These evidences explain how the organization phase and the drag-and-drop features supported differentiation and consolidation, and scaffolded a decision-making framework that enables deeper engagement.
+
+\textbf{In summary}, participants construct their preferences as they complete QS. We observed behaviors and qualitative insights that align with the differentiation and consolidation theory in decision-making. Our interface scaffolded many of the differentiation stages through pre-voting organization and some consolidation phases through drag-and-drop, explaining how the two-phase approach supports preference construction to yield deeper engagement with QS options.
 
 % ========================= %
-\subsection{Opportunities for better budget management}
+\subsection{Future Work: Opportunities for better budget management}
 Budget management is a recurring theme in participant interviews. While they appreciated the automatic calculation feature in modern QV interfaces, we identified three challenges for future QS interfaces: ~\textit{cognitive load},~\textit{the cold-start problem}, and~\textit{navigating between budget, votes, and outcome}.
 
 \subsubsection{Automatic calculation is critical}
 Over one-third of participants ($N=14$) from all four experiment conditions emphasized the importance of automated calculation for deriving costs and tracking expenditures. For example:
 
-% \begin{displayquote}
-% I really like having the costs of all the votes displayed. When you select the dropdown menu and ranked in order. \hfill\quoteby{S002 (SI, deriving cost)}
-% \end{displayquote}
-
 \begin{displayquote}
-I thought I have \bracketellipsis (to) do all the numbers or calculations myself as a part of checking my ability of doing mathematics. \bracketellipsis I said that credit summary to be very specific. The credit summary section was really wonderful in doing all the calculations on that end. \hfill\quoteby{S005 (LT, keeping track of spent)}
+I thought I have \bracketellipsis (to) do all the numbers or calculations myself \bracketellipsis The credit summary section was really wonderful in doing all the calculations on that end. \hfill\quoteby{S005 (LT)}
 \end{displayquote}
 
 The quotes marked the importance that QS must be facilitated by computer-supported interfaces.
-
-% \subsubsection{Cognitive load from budget management}
-% Cognitive load results revealed participants suffered from budget management. Behavioral economists like~\textcite{Shah2015a} believe that values and careful decision-making are derived from limited resources, which introduce a higher cognitive load. Prospect theory~\cite{kahnemanProspectTheoryAnalysis1979} highlights the higher negative value of \textit{perceived} utility when cuts must be made. This evidence underscores the heightened cognitive load participants experience when managing their budgets. Our interface lacks tools to mitigate this, making it a crucial area for future work.
 
 \subsubsection{The coldstart problem}
 We notice from the study that one of the biggest challenges for participants is deciding 'how many votes' to start with. This challenge pertains to the initial vote, not the relative vote. Some participants began by equally distributing their credits to all options and then made adjustments. Others established $1$, $2$, and $3$ votes as starting points. A small handful surprisingly used the tutorial's example of 4 upvotes as their anchor.
 
 This arbitrary voting decision echoes discussions in prior literature about the existence of an absolute value for individuals. Coherent arbitrariness~\cite{arielyCoherentArbitrarinessStable2003}, similar to the anchoring effect in marketing, refers to participants' willingness to allocate votes, which can be influenced by an arbitrary value. However, the ordinal utility remains intact among the set of preferences.
-
-% This challenge remains an open question, and future research can explore possibilities to scale ordinal utility to map it to individual preferences without biasing participants.
 
 \subsubsection{Navigating Between Budget, Votes, and Actual Impact}
 The third challenge is participants' confusion between budget, votes, and outcomes, despite understanding their definitions. One participant stated:
@@ -129,6 +137,7 @@ Interviewer: ~\bracketellipsis Do you feel that the more votes you're giving to 
 
 Yeah. \hfill\quoteby{S003 (ST)}
 \end{displayquote}
+
 Participants like \texttt{S003} bypassed the quadratic formulation, directly translating votes to resource allocation. While this does not invalidate the power of the quadratic mechanism, it causes frustration and friction for participants to construct a clear picture of how to make voting decisions. Future interfaces should better communicate these relationships to facilitate respondents' trade-offs.
 
 \textbf{In summary}, while the interface supports budget management through automated cost calculation, participants still face cognitive load from managing the budget. The cold-start problem and the confusion between budget, votes, and actual impact are open questions for future research. These challenges highlight the need for better budget management support to complete the QS interface.
@@ -137,7 +146,7 @@ Participants like \texttt{S003} bypassed the quadratic formulation, directly tra
 With a deeper understanding of how survey respondents interact with QS and the sources of cognitive load, we recognize that while this current interface may not significantly reduce cognitive load, it represents a crucial step toward constructing better interfaces to support individuals responding to QS. In this subsection, we outline usage and design recommendations applicable to all applications using the quadratic mechanism and highlight directions for future work.
 
 \subsubsection{Usage Recommendation: QS for Critical Evaluations}
-Our study highlighted the complex cognitive challenges and in-depth consideration required when ranking and rating options using QS, even in a short survey. Similar to survey respondents needing to make trade-offs across options, researchers and agencies seeking additional insights and alignment with respondent preferences must ensure that survey respondents have the cognitive capacity to complete such surveys rigorously. QS should be designed for critical evaluations, such as investment decisions, or situations where participants have ample time to think and process the survey. For instance, revealing the options ahead of time can aid in preference construction.
+Our study highlighted the complex cognitive challenges and in-depth consideration required when ranking and rating options using QS, even in a short survey. Similar to survey respondents needing to make trade-offs across options, researchers and agencies seeking additional insights and alignment with respondent preferences must ensure that survey respondents have the cognitive capacity to complete such surveys rigorously. QS should be designed for critical evaluations, such as investment decisions, or situations where participants have ample time to think and process the survey. Pactioners should also caution the use of long QS. If long QS is not avoidable, considering allowing participants to deliberate on each option prior to deploying QS without the organizing phase. For instance, revealing the options ahead of time can aid in preference construction.
 
 \subsubsection{Design Recommendations}
 \paragraph{Use Organization Phases for Quadratic Mechanism Applications}

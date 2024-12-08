@@ -1,42 +1,78 @@
 \section{Clickstream data: Interface reduces edit distance in long surveys}
 \label[SSE]{dist}
-To address the research question of whether interfaces and options influenced survey response behaviors~(\textbf{RQ3}) and to explore possible reasons why participants in the long text interface exhibited lower cognitive load, we investigated differences in voting behaviors. All analyzed data are publicly available\footnote{link-to-github} for transparency and to facilitate further research. In this section, we focus on how far apart participants moved between vote updates, we call this edit distance. For example, if a participant updated their vote on the second option and then skipped three options before making their next update on the fifth option, this is an edit distance of 3. This measure helps us understand ~\textit{how} participants engaged with the survey options. We modeled three aspects of this measure: the edit distance per option, the edit distance per action, and the cumulative edit distance throughout the survey.
+
+Following our findings on cognitive load, we analyzed voting behaviors to identify differences in how participants cope with survey lengths, how interfaces influenced their behavior, and why the long text interface might exhibit lower cognitive load. All data are publicly available\footnote{link-to-github} to ensure transparency and support further research. This measure reveals trends in participants' navigation and engagement with survey options. We examined three dimensions of this measure: edit distance per option, edit distance per action, and cumulative edit distance throughout the survey.
+
+\textbf{Edit distance per option:} We sum up all the distances a participant moved while adjusting values for a single option. Each of these totals is referred to as the edit distance per option. Figure~\ref{fig:dist_per_option} illustrates differences across the four experimental conditions, with the long text interface showing the largest variance in the distance traveled and the highest mean. We implemented a hierarchical Bayesian framework to model edit distance differences across experimental conditions. The observed distance differences were modeled using an exponential distribution, where the scale parameter was linked to survey length (treated as an ordinal variable), interface type (treated as a categorical variable), interaction effects between length and interface, and controlling for individual user variabilities. The linear predictor included a global intercept and slope for length, random effects for each interface condition with an LKJ prior that captures the correlations among interface categories, and user-specific random effects to account for individual heterogeneity. Detailed mathematical formulations of the model are provided in Appendix XX. 
+
+Figure~\ref{fig:dist_per_option_bayesian} illustrates the pairwise posterior distributions for differences in edit distances across experimental conditions. For example, the difference in edit distances between the short and long static interfaces has a mode of 9.1, with a 94\%highest density interval (HDI) of [6, 13]. This indicates that participants in the long text interface moved approximately 9.1 steps more than those in the short text interface, with a high degree of confidence. The effect size is large (mode = 5.1, 94\%HDI = [3.3, 7.1]), suggesting a statistically significant difference, which is expected due to the greater number of options in the long text interface.
+
+Similarly, participants using the two-phase interface made approximately 8.9 fewer steps per option (mode = 8.9, 94\% HDI = [6.4, 12]) compared to those in the long text interface, with a large effect size (mode = 5.7, 94\% HDI = [4.2, 7.9]). Comparatively, the increase in edit distances between the short and long two-phase interfaces is substantially smaller (mode = 1.7, 94\% HDI = [-0.01, 3.1]) compared to their static counterparts discussed above. The comparison between the short text and short two-phase interfaces shows weak evidence for a difference, with a mode of 1.3 and a 94\% HDI of [-0.78, 3.8]. While the interval includes zero, the posterior distribution slightly favors (with 89.3\% probability) the two-phase interface requiring fewer steps. Results from this model suggest that the organization phase in the two-phase interface reduced participants' edit distance per option on average, especially for the long QS.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.65\textwidth]{content/image/distance/edit_dist_per_option.png}
+    \includegraphics[width=0.5\textwidth]{content/image/distance/distance_diff_by_version.pdf}
     \caption{Edit Distance Per Option}
     \label{fig:dist_per_option}
 \end{figure}
 
-Edit distance per option refers to the total distance a participant moved to complete all vote adjustments for each option (Fig~\ref{fig:dist_per_option}). The figure showed that the long text interface on average had an higher edit distance with a larger spread. We constructed a hierarchical regression bayesian model that estimated a linear predictor of voting distances with the length, interface, their interaction effect and individual users as experiment variables. We present details of the model with pairwise results for brevity in Appendix XX. Our model showed significant differences, in Bayesian terms referring to a 94\% HDI not including zero, between the short and long static interfaces (mode difference of 8.5 with a 94\% HDI of [5.4, 12.0] and a large effect size of 0.94) and between the long text and long two-phase interfaces (mode difference of 8.5 with a 94\% HDI of [6.0, 12.5] and a large effect size of 0.94). Our results also show that within the short survey, there is a trend in reduction in steps between two phase interface and the text interface (75.4\% probability with a mode of 1.9 and a small effect size of 0.18), as well as a small increase between short and long two-phase versions (84.2\% probability with a mode of 1.8 and a small effect size of 0.2). While it is not surprising that the length of the survey adds to edit distances, the organizational phase reduces the need for participants to move as much to complete their votes. It also demonstrates that the two-phase interface mitigated the increase in edit distance required by participants.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version.pdf}
+    \caption{Step-over Distance}
+    \label{fig:dist_per_option_bayesian}
+\end{figure}
+
+\textbf{Edit distance per action:} Building on the statistical disparities observed in the previous analysis and the unique patterns exhibited by long text interface participants, we present analyses focusing on edit distance per action and cumulative edit distance throughout the survey between the long text and long two-phase interfaces. Edit distance per action measures how far participants moved during each adjustment while completing the survey.  Figure~\ref{fig:step-over-distance} illustrates how, at each step, the number of participants moving a given distance (represented by the size of the dots) varies across experimental conditions. Visually, participants moved less on average per option within the two-phase interface, with lower variance at smaller scales. This indicates that participants are making local edits, meaning their adjustments tend to occur near their previous edits in terms of edit distance. This also highlighted that the organization phase effectively adjusted nearby options for easier access, despite participants still having the freedom to move across the interface as all options were presented to them.
+
+In contrast to earlier analyses, we used a hierarchical Bayesian model (detailed in Appendix XX) to jointly estimate the mean and variance of edit distances across experimental conditions. The model assumes that edit distances are continuous and follows a Normal likelihood. This approach accounts for both central tendencies and variability, using separate predictors for the mean and variance. The model includes hierarchical effects for survey length, interface type, their interactions, and user-level random effects. Non-centered parametrization were used for survey length and interface type to improve convergence, while interaction effects were modeled with an LKJ prior that capture the correlations between factors. User-level random effects reflect individual differences in behavior, incorporating variability into the model.
+
+Figure XX illustrates the posterior variance distributions, confirming our hypothesis. Participants in the long text interface exhibit greater variance in movement, frequently navigating across the interface, compared to those in the long two-phase interface. This is evidenced by a variance difference mode of 76 (95\% HDI:[59, 99]) and a large effect size (mode = 7.1, 95\% HDI:[5.5, 9.2]).
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.75\textwidth]{content/image/distance/tmp_step-over-distance.png}
+    \includegraphics[width=0.8\textwidth]{content/image/distance/edit_distance_per_action_by_version.pdf}
     \caption{Step-over Distance}
     \label{fig:step-over-distance}
 \end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{content/image/distance/distance_diff_per_step_effect_size_by_version.pdf}
+    \caption{Step-over Distance}
+    \label{fig:step-over-distance_bayesian}
+\end{figure}
 
-We focus our other two analysis given the statistical difference in the long survey. First, we examined whether participants moved more across the survey. Figure~\ref{fig:step-over-distance} visualizes the number of edits (radius) at each edit distance across all participants within the same experimental condition. The visualization highlights distinct participant behaviors: participants in the long text interface moved up and down with edit distances scatter with distinct values, whereas participants using the two-phase interface moved locally, making most edits nearby. Our hierarchical regression bayesian model (detailed in Appendix XX) that estimated a linear predictor of voting distances with the interface and individual users showed a statistical difference (report stats here) in variance with a large effect size confirming our belief. This indicates that participants, over the course of the survey, is making adjustments within close proximity of their previous edits in the long two phase interface compared to the static interface where participants are moving up-and-down. 
+\textbf{Cumulative edit distance for a participant:} This reduction in per action distance of the two-phase interface's effect on edit distance adds up, as Figure~\ref{fig:sum-distance} shows the cumulative edit distance over time. Some long text participants traversed double the amount of distance to complete the task compared to the long two-phase participants. We modeled this growth rate using a hierarchical Bayesian regression model, with cumulative distance as the predictive variable. The experimental variables included interface type as a categorical variable, individual users modeled with random effects, and steps taken as a continuous variable. The model incorporated a shared global intercept, version-specific intercepts and slopes with partial pooling to balance data across conditions, and user-specific random effects to capture variability. A truncated normal likelihood constrained cumulative distances to positive values and varied these distances across steps for each participant while masking incomplete data. 
+
+Figure~\ref{fig:slope-diff-effect} showed that the slope for the long text interface is approximately 4.7, meaning each step by the text interface would add 4.7 edit distance (94\% HDI [4.2, 5.4]), compared to the long two-phase interface, which shows a statistically significant difference with a mode of 1.4 (94\% HDI [1.3, 1.7]). These results explain that the variance in edit distance per action and the increase in per option edit distance is consistent across participants between the two groups, showing that the organization phase allowed participants to constantly focus on adjusting options within proximity not having to navigate the interface and locate adjustments to make adjustments during the voting phase.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.75\textwidth]{content/image/distance/sum_dist.png}
-    \caption{Cumulative Edit Distance}
-    \label{fig:sum-distance}
+    % First subplot
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/distance/cumulative_edit_distance_per_option_long_qs_v3v4.pdf}
+        \caption{Cumulative Edit Distance (Long QS v3/v4)}
+        \label{fig:cumulative-distance}
+    \end{subfigure}
+    % Second subplot
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/image/distance/slope_diff_and_effect_size.pdf}
+        \caption{Slope Difference and Effect Size}
+        \label{fig:slope-diff-effect}
+    \end{subfigure}
+    % Main caption for the figure
+    \caption{Comparison of Cumulative Edit Distance and Slope Difference/Effect Size.}
+    \label{fig:comparison}
 \end{figure}
 
-This reduction of the two-phase interface's effect on edit distance adds up, as Figure~\ref{fig:sum-distance} shows the cumulative edit distance over time, the slop of the two-phase interface is under the text interface. Our hierarchical regression bayesian model (detailed in Appendix XX) that estimated a linear predictor of cumulative distances with the interface, step, and individual users showed a statistical difference (posterior distribution has a mean difference of 4.8 in slope with a 94\% HDI of [4.1, 5.3] and a large effect size of XX) our belief.
+\textbf{Evidence from qualitative analysis}
 
-These results provide evidence that the initial pass through the survey items, combined with the organizational phase, helped participants construct preliminary preferences, thereby reducing the need for large traversals between options. However, making nearby edits does not necessarily imply a narrow preference construction. 
+Recall the differences in sources of cognitive load between the two experimental conditions: while two-phase interface participants made adjustments with nearby options, they experienced cognitive demand from preference construction due to broader considerations involving more options and higher-order values. Similarly, the qualitative results highlighted that long text interface participants constructed narrower preferences, yet their edit distance indicated that their movements covered more options.
 
-Recall the differences in sources of cognitive load between the two experimental conditions: while two-phase interface participants made adjustments with nearby options, they experienced cognitive demand from preference construction due to broader considerations involving more options and higher-order values. Similarly, the qualitative results highlighted that long text interface participants constructed narrower preferences, yet their edit distance indicated that their movements covered more options. 
+Notably, fewer participants (60\%, N=6) reported precise resource allocation in the long two-phase interface compared to 90\% in the long text interface. These results make it evident that two-phase interface participants were more focused on deliberating preferences than simply completing the survey. Furthermore, the ability to make localized adjustments while considering broader decisions suggests that participants constructed preliminary preferences during the grouping phase, allowing them to focus on deciding their votes.
 
-Notably, fewer participants (60\%, N=6) reported precise resource allocation in the long two-phase interface compared to 90\% in the long text interface. These results make it evident that two-phase interface participants were more focused on deliberating preferences than simply completing the survey. Furthermore, the ability to make localized adjustments while considering broader decisions suggests that participants constructed preliminary preferences during the grouping phase, allowing them to focus on deciding their votes. 
-
-Thus, the difference in edit distance not only demonstrated that the interface reduced the need for participants to move across the survey but also highlighted that the two-phase interface enabled participants to stay more deeply engaged with the survey options and the preference construction task, particularly in the long survey.
-
-
+These results provide evidence that the initial pass through the survey items, combined with the organizational phase, helped participants construct preliminary preferences, thereby reducing the need for large traversals between options. This could examplify that participants in the long text interface are more concerned about operating to 'complete' the task, (i.e., looking for an option to adjust votes) rather than continuing to stay engaged with the survey options and the preference construction task, particularly in the long survey.
 
 % Physical demand refers to the physical effort required to complete a task, such as physical exertion or movement. The two-phase interface experienced higher physical demand from increased mouse usage.

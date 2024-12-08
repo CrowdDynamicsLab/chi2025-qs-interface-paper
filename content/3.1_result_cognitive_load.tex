@@ -1,4 +1,6 @@
 \section{NASA-TLX Cognitive Load}
+\label{sec:cog}
+
 In this section, we present the results of NASA-TLX cognitive load across experiment groups using descriptive statistics, a Bayesian model, and qualitative findings from post-survey interviews to address how the number of options in Quadratic Surveys (QS) (\textbf{RQ1}) and the interface design (\textbf{RQ2a}) impact cognitive load.
 
 For the qualitative analysis, the first author conducts an inductive thematic analysis~\cite{olsonWaysKnowingHCI2014} after transcribing the interviews. Snippets are initially coded based on the research questions and topics of interest, with similar codes merged to form overarching themes. When differences emerges across experiment conditions and hypotheses are identified, a deductive coding process is applied to refine and validate the findings.
@@ -36,16 +38,23 @@ For quantitative analysis, we employ a Bayesian approach to enhance transparency
 \end{figure}
 
 \subsection{Overall Cognitive Load}
-\label{sec:cog}
+\label{sec:cog_overall}
 Weighted NASA-TLX uses a continuous $0$-$100$ score, with higher values denoting greater cognitive load. We use predefined mappings of NASA-TLX scores to cognitive levels: low, medium, somewhat high, high, and very high, as described by~\textcite{hart1988development}. Results are shown in Figure~\ref{fig:nasatlx-final}, with value interpretations presented in Figure~\ref{fig:nasatlx-final2}.
 
-We design a hierarchical ordinal regression Bayesian model that estimates a linear predictor incorporating length, interface, and their interaction effect, accounting for the data's sparsity. The interaction terms are modeled using an LKJ prior to regularize the correlations between length and interface levels. We present details of the model in Appendix XX.
+Given the sparsity of the data, we modeled the weighted NASA-TLX scores using cognitive levels as ordinal outcomes. Then, we developed a hierarchical Bayesian ordinal regression model to analyze ordinal response data. The model includes length as an ordinal predictor, and interface type as a categorical predictor modeled with hierarchical priors to allow partial pooling across categories. Interaction effects between length and interface are captured using a non-centered parameterization constrained by an LKJ prior to account for correlations. An intercept term establishes the baseline, and ordered cutpoints define the boundaries between ordinal outcome categories. We use the same model for the NASA-TLX subscales. Given that subscales do not have cognitive level interpretations, we constructed weighted bins to facilitate the ordinal regression model. We present details of this model and results in Appendix XX.
 
-While results (Figure X) are not statistically significant in Bayesian terms, as 0 does not lie outside the high-density interval, the interval reflects the 94\% probability that the true parameter lies within it. This provides quantifiable evidence of trends while transparently accounting for uncertainties:
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{content/image/cog/weighted_cog_version.pdf}
+    \caption{Edit Distance Per Option}
+    \label{fig:weighted_cog_version}
+\end{figure}
+
+While results (Figure~\ref{fig:weighted_cog_version}) are not statistically significant in Bayesian terms, as 0 does not lie outside the high-density interval, the interval reflects the 94\% probability that the true parameter lies within it. This provides quantifiable evidence of trends while transparently accounting for uncertainties:
 \begin{itemize}
-    \item Increased option length trends to reduced cognitive load with a posterior probability of approximately $69.4\%$, corresponding to a medium-to-large effect size ($d = 0.61$). This reflects a median cognitive load of $33.85$ (mean = $34.60$, SD = $17.69$) compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$).
-    \item Within short QS, the interactive interface trends to reduced cognitive load, with a posterior probability of $64.5\%$ supporting the reduction and a small-to-medium effect size ($d = 0.49$). Participants report a median cognitive load of $29.85$ (mean = $35.36$, SD = $18.17$) under the two-phase interface compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$) under the text interface.
-    \item For the long QS, there trends a small increase in cognitive load with a posterior probability of $61.7\%$ and a small effect size ($d = 0.18$). The median cognitive load is $42.70$ (mean = $42.02$, SD = $18.48$) under the two-phase interface compared to $33.85$ (mean = $34.60$, SD = $17.69$) in the text interface.
+    \item Increased option length with text interface trends to~\textit{reduced} cognitive load with a posterior probability of approximately $69.8\%$, corresponding to a medium-to-large effect size ($d = 0.5$). This reflects a median cognitive load of $33.85$ (mean = $34.60$, SD = $17.69$) compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$).
+    \item Within short QS, the interactive interface trends to~\textit{reduced} cognitive load, with a posterior probability of $71.7\%$ supporting the reduction and a small-to-medium effect size ($d = 0.36$). Participants report a median cognitive load of $29.85$ (mean = $35.36$, SD = $18.17$) under the two-phase interface compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$) under the text interface.
+    \item For the long QS, there trends an~\textit{increase} in cognitive load with a posterior probability of $61.9\%$ and a small effect size ($d = 0.14$). The median cognitive load is $42.70$ (mean = $42.02$, SD = $18.48$) under the two-phase interface compared to $33.85$ (mean = $34.60$, SD = $17.69$) in the text interface.
 \end{itemize}
 
 This result contradicts our hypothesis that more options would increase cognitive load and that interfaces can reduce it. Thus, we explore qualitative results to identify possible explanations. To understand the similarities and differences in sources of cognitive load (\textbf{RQ2b}), we analyze qualitative results across the six NASA-TLX subscales: mental demand, physical demand, temporal demand, effort, frustration, and performance. Detailed analyses are provided in Appendix XX.

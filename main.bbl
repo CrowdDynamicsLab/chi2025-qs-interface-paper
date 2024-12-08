@@ -2522,38 +2522,6 @@
       \field{title}{Questionnaire {{Design}}: {{How}} to {{Ask}} the {{Right Questions}} of the {{Right People}} at the {{Right Time}} to {{Get}} the {{Information You Need}}}
       \field{year}{2019}
     \endentry
-    \entry{saatyGroupDecisionMaking2013}{book}{}
-      \name{author}{2}{}{%
-        {{hash=8d8e5331ceb6bdfae0cfaed9a7690800}{%
-           family={Saaty},
-           familyi={S\bibinitperiod},
-           given={Thomas\bibnamedelima L.},
-           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=c5a43781e2d8ea5863a428359c347223}{%
-           family={Peniwati},
-           familyi={P\bibinitperiod},
-           given={Kirti},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {RWS Publications}%
-      }
-      \strng{namehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \strng{fullhash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \strng{bibnamehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \strng{authorbibnamehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \strng{authornamehash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \strng{authorfullhash}{7c1c3dd10d5da0e18e22c5b3e78bdbd2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{langid}{english}
-      \field{month}{11}
-      \field{shorttitle}{Group {{Decision Making}}}
-      \field{title}{Group {{Decision Making}}: {{Drawing Out}} and {{Reconciling Differences}}}
-      \field{year}{2013}
-    \endentry
     \entry{saatyPrinciplesAnalyticHierarchy1987}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=8d8e5331ceb6bdfae0cfaed9a7690800}{%
@@ -2753,8 +2721,8 @@
       \strng{authorbibnamehash}{469efa314baa32a3f4d461e0dce2d6ea}
       \strng{authornamehash}{469efa314baa32a3f4d461e0dce2d6ea}
       \strng{authorfullhash}{469efa314baa32a3f4d461e0dce2d6ea}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Psychology}
@@ -2781,8 +2749,8 @@
       \strng{authorbibnamehash}{3c980fec4ba43d342b9a70395a28e428}
       \strng{authornamehash}{3c980fec4ba43d342b9a70395a28e428}
       \strng{authorfullhash}{3c980fec4ba43d342b9a70395a28e428}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2169-5067}
@@ -2819,8 +2787,8 @@
       \strng{authorbibnamehash}{c5fd3c750d9a2a451308fe3ccab1afa6}
       \strng{authornamehash}{c5fd3c750d9a2a451308fe3ccab1afa6}
       \strng{authorfullhash}{c5fd3c750d9a2a451308fe3ccab1afa6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DTIC Document}
@@ -2864,8 +2832,8 @@
       \strng{authorbibnamehash}{146f7fb93c9cd3bbba1662aed2dcff4a}
       \strng{authornamehash}{c0764344147c8b938d5eabf4ef7cf190}
       \strng{authorfullhash}{146f7fb93c9cd3bbba1662aed2dcff4a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0014-0139}
@@ -3281,8 +3249,8 @@
       \strng{authorbibnamehash}{7d3c189ac8538fa4eab146492a4e88f0}
       \strng{authornamehash}{ecd8ef5d0c0a352f40c5aaeadfd00ec4}
       \strng{authorfullhash}{7d3c189ac8538fa4eab146492a4e88f0}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{0033-5533}

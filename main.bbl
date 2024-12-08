@@ -1342,8 +1342,8 @@
       \strng{authorbibnamehash}{3844507db63aecd32de931e532eb940a}
       \strng{authornamehash}{b8f450e6e91ad37de9e9f4d90d052905}
       \strng{authorfullhash}{3844507db63aecd32de931e532eb940a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -1389,8 +1389,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{ReadWhitepaperGitcoin}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.gitcoin.co/whitepaper/read}
       \field{langid}{english}
@@ -1401,8 +1401,8 @@
       \field{urldateera}{ce}
     \endentry
     \entry{RxC}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.radicalxchange.org/wiki/about/}
       \field{journaltitle}{RadicalxChange}
@@ -1788,8 +1788,8 @@
       \strng{authorbibnamehash}{31d9d17cf4d5849926754c3e5331fa1e}
       \strng{authornamehash}{b4c6f41cc02ddd7e329052ba6c49acef}
       \strng{authorfullhash}{31d9d17cf4d5849926754c3e5331fa1e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The Proceedings of {{ISECON}} 2001}
@@ -1980,8 +1980,8 @@
       \strng{authorbibnamehash}{3f00d94df0b8ddacc3161ea2eead9484}
       \strng{authornamehash}{3f00d94df0b8ddacc3161ea2eead9484}
       \strng{authorfullhash}{3f00d94df0b8ddacc3161ea2eead9484}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{booktitle}{Advances in {{Psychology}}}
@@ -3186,84 +3186,6 @@
       \verb 10.1017/CBO9781139173933
       \endverb
     \endentry
-    \entry{Shah2015a}{article}{}
-      \name{author}{3}{}{%
-        {{hash=44455106198f85e92a3d8ecce8a3ffc9}{%
-           family={Shah},
-           familyi={S\bibinitperiod},
-           given={Anuj\bibnamedelima K.},
-           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=95914e1fa470b15a1f841b7b75fcc9f0}{%
-           family={Shafir},
-           familyi={S\bibinitperiod},
-           given={Eldar},
-           giveni={E\bibinitperiod}}}%
-        {{hash=0ad4a50fedec7f3fb2ce43f3f64e62d6}{%
-           family={Mullainathan},
-           familyi={M\bibinitperiod},
-           given={Sendhil},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{a7057bae2583a145a3862e264f345a2d}
-      \strng{fullhash}{c15822f639d8aa0481867fef6c12452a}
-      \strng{bibnamehash}{c15822f639d8aa0481867fef6c12452a}
-      \strng{authorbibnamehash}{c15822f639d8aa0481867fef6c12452a}
-      \strng{authornamehash}{a7057bae2583a145a3862e264f345a2d}
-      \strng{authorfullhash}{c15822f639d8aa0481867fef6c12452a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Psychological Science}
-      \field{number}{4}
-      \field{title}{Scarcity Frames Value}
-      \field{volume}{26}
-      \field{year}{2015}
-      \field{pages}{402\bibrangedash 412}
-      \range{pages}{11}
-    \endentry
-    \entry{debruijnPovertyEconomicDecision2022}{article}{}
-      \name{author}{2}{}{%
-        {{hash=097a81e9cdfd6c55b4a7668c621cc7fd}{%
-           family={{de Bruijn}},
-           familyi={d\bibinitperiod},
-           given={Ernst-Jan},
-           giveni={E\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=f084b224c680b3a99ed50486a1e2193b}{%
-           family={Antonides},
-           familyi={A\bibinitperiod},
-           given={Gerrit},
-           giveni={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \strng{fullhash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \strng{bibnamehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \strng{authorbibnamehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \strng{authornamehash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \strng{authorfullhash}{704f603bc5d82b8fc5805b77d6c2a1f5}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{issn}{1573-7187}
-      \field{journaltitle}{Theory and Decision}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{number}{1}
-      \field{shorttitle}{Poverty and Economic Decision Making}
-      \field{title}{Poverty and Economic Decision Making: A Review of Scarcity Theory}
-      \field{urlday}{1}
-      \field{urlmonth}{7}
-      \field{urlyear}{2024}
-      \field{volume}{92}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \field{pages}{5\bibrangedash 37}
-      \range{pages}{33}
-      \verb{doi}
-      \verb 10.1007/s11238-021-09802-7
-      \endverb
-    \endentry
     \entry{gigerenzerReasoningFastFrugal1996}{article}{}
       \name{author}{2}{}{%
         {{hash=b48d2c7ac3f28cdcd52b92c3c2953a61}{%
@@ -3289,8 +3211,8 @@
       \strng{authorbibnamehash}{d6964439343f3303726d824a9198bcf3}
       \strng{authornamehash}{d6964439343f3303726d824a9198bcf3}
       \strng{authorfullhash}{d6964439343f3303726d824a9198bcf3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1939-1471}
@@ -3327,8 +3249,8 @@
       \strng{authornamehash}{09c462602325128c408aa39c70c6ae62}
       \strng{authorfullhash}{09c462602325128c408aa39c70c6ae62}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd ed}

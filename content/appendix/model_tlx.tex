@@ -1,0 +1,36 @@
+\section{Modeling NASA-TLX Weighted Scores and Subscales}
+In this section, we first describe the modeling approach for the NASA-TLX weighted scores and subscales. We then present the full result.
+
+\subsection{Modeling Approach}
+We modeled the NASA-TLX weighted scores and subscales using a hierarchical Bayesian ordinal regression model. 
+
+\subsubsection{Dependent variables}
+\paragraph{NASA-TLX weighted scores} are transforemed from a continuous $0$-$100$ score to cognitive levels: low, medium, somewhat high, high, and very high, as described by~\textcite{hart1988development}. This transformation helps the model adopt to the sparse data. In our study, there are no participants who expressed low or very high, thus, we modeled the predictive variables as low or medium, somewhat high, high and very high. 
+
+\paragraph{NASA-TLX subscale ratings} are transforemed into ordinal groups using weighted bins. Subscale is a 21-point likert scales making the ordinal data very sparse, thus we applied weighted bins across all participants within the same subscale. Each bin should have least 10 participants.
+
+\subsubsection{Independent variables}
+For this model, we have three independent variables: length($\gamma_i$), interface type($\beta_I$), and the interaction between the two($\phi_{ij}$). Length, low and short, are moded as ordinal variables, as shown in Equation~\ref{eq:cog_ordinal}. Since there is only two categories, this allows us to model the baseline length effect and the added effect of the longer length. Priors are described in Equation~\ref{eq:cog_prior_1} and~\ref{eq:cog_prior_2}. Interface are setup with hyper priors which either interfaces are drawn from. The interaction effect uses a non-centered parameterization constrained by an LKJ prior to account for correlations described in Equation~\ref{eq:cog_lkj}.
+
+\subsubsection{Overall model}
+We modeled the dependent variables using an Ordered Logistic (Equation~\ref{eq:cog_main}). The observed outcome variable $y_i$, represents the response for the $i$-th observation parameterized by the latent predictor $\eta_i$ and thresholds $\tau$. An intuitive way to think of this is that the model is trying to learn $\eta_i$ through a regression and the cutpoints $\tau$ to transform it into ordinal outcomes, similiar to how we created the ordinal outcome variables. $\eta_i$ is described in Equation~\ref{eq:cog_regression}
+
+
+\begin{align}
+    y_i &\sim \text{OrderedLogistic}(\eta_i, \boldsymbol{\tau}) \label{eq:cog_main}\\
+    \eta_i &= \alpha + \gamma_i + \beta_I[I_i] + \phi_{ij} \label{eq:cog_regression}\\
+    \boldsymbol{\tau} &\sim \text{OrderedTransform}(\mathcal{N}(0, 1)^{K-1}) \\
+    \gamma_i &= \mu_L + \beta_L \cdot L_i \label{eq:cog_ordinal} \\
+    \phi_{ij} &= L_{\Omega} \cdot (\sigma_{\phi} \odot z_{\phi}) \label{eq:cog_lkj}
+\end{align}
+
+
+\paragraph{We describe the priors used:}
+\begin{align}
+    \mu_{L}, \mu_{\beta_L}, \mu_{\beta_I} &\sim \mathcal{N}(0, 1), \quad \sigma_{\beta_L}, \sigma_{\beta_I} \sim \text{Exponential}(1) \label{eq:cog_prior_1} \\
+    \beta_L &\sim \mathcal{N}(\mu_{\beta_L}, \sigma_{\beta_L}), \quad \beta_I \sim \mathcal{N}(\mu_{\beta_I}, \sigma_{\beta_I}) \label{eq:cog_prior_2} \\
+    L_{\Omega} &\sim \text{LKJ}(2), \quad \sigma_{\phi} \sim \text{Exponential}(1), \quad z_{\phi} \sim \mathcal{N}(0, 1) \label{eq:cog_prior_3} 
+\end{align}
+
+\subsubsection{Model Results}
+We conducted the Bayesian analysis using NumPyro, a widely used framework for Bayesian inference. We use Markov Chain Monte Carlo (MCMC) to complete the stochastic sampling method commonly used in Bayesian inference. All the models showed an the Gelman-Rubin statistic (rhat) paramteres was 1 over 2 chains, indicating that the multiple sampling chains converged. We present each subscale results and a short description of these results.

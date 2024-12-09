@@ -43,9 +43,9 @@ Weighted NASA-TLX uses a continuous $0$-$100$ score, with higher values denoting
 
 Given the sparsity of the data, we modeled the weighted NASA-TLX scores using cognitive levels as ordinal outcomes. Then, we developed a hierarchical Bayesian ordinal regression model to analyze ordinal response data. The model includes length as an ordinal predictor, and interface type as a categorical predictor modeled with hierarchical priors to allow partial pooling across categories. Interaction effects between length and interface are captured using a non-centered parameterization constrained by an LKJ prior to account for correlations. An intercept term establishes the baseline, and ordered cutpoints define the boundaries between ordinal outcome categories. We use the same model for the NASA-TLX subscales. Given that subscales do not have cognitive level interpretations, we constructed weighted bins to facilitate the ordinal regression model. We present details of this model and results in Appendix XX.
 
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{content/image/cog/weighted_cog_version.pdf}
+    \includegraphics[width=0.8\textwidth]{content/image/cog/weighted_cog_version.pdf}
     \caption{Edit Distance Per Option}
     \label{fig:weighted_cog_version}
 \end{figure}
@@ -60,6 +60,7 @@ While results (Figure~\ref{fig:weighted_cog_version}) are not statistically sign
 This result contradicts our hypothesis that more options would increase cognitive load and that interfaces can reduce it. Thus, we explore qualitative results to identify possible explanations. To understand the similarities and differences in sources of cognitive load (\textbf{RQ2b}), we analyze qualitative results across the six NASA-TLX subscales: mental demand, physical demand, temporal demand, effort, frustration, and performance. Detailed analyses are provided in Appendix XX.
 
 \subsection{Common Sources of Cognitive Load}
+\label{sec:cog_common}
 Our analysis reveals several themes across different cognitive load subscales. We identify four themes common to all experimental conditions.
 
 \textbf{Preference Construction} is cited by 97.5\% (N=39) of participants as a significant source of mental demand, consistent with prior literature suggesting that preferences are often constructed in context rather than fixed~\cite{lichtensteinConstructionPreference2006}. Specific tasks contributing to this demand include evaluating the relative importance between options (e.g.,\smallquote{S002}{Figuring out\bracketellipsis how much I prioritize option 1 over option 2}, 40\% ($N=16$)), making trade-offs due to limited resources (e.g.,\smallquote{S005}{\bracketellipsis very hard to take decisions~\ldots I felt that multiple options deserve equal amounts of credit~\ldots but you have given very limited credit.}, 42.5\% ($N=17$)), and deciding the exact number of votes (e.g.,\smallquote{S023}{\bracketellipsis having to pick how many upvotes would go to each one}, 70\% ($N=30$)).

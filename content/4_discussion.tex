@@ -108,44 +108,26 @@ These evidence explain how the organization phase and the drag-and-drop features
 \textbf{In summary}, participants construct their preferences as they complete QS. We observe behaviors and qualitative insights that align with the differentiation and consolidation theory in decision-making. Our interface scaffolds many of the differentiation stages through pre-voting organization and some consolidation phases through drag-and-drop, explaining how the two-phase approach supports preference construction to yield deeper engagement with QS options.  
 
 % ========================= %
-\subsection{Future Work: Opportunities for better budget management}
-Budget management is a recurring theme in participant interviews. While they appreciated the automatic calculation feature in modern QV interfaces, we identified three challenges for future QS interfaces: ~\textit{cognitive load},~\textit{the cold-start problem}, and~\textit{navigating between budget, votes, and outcome}.
+\subsection{Opportunities for Better Budget Management}
+The current QS interface did not fully address the cognitive challenges of budget management outlined in Section~\ref{sec:cog_common}. We identified three key issues:
 
-\subsubsection{Automatic calculation is critical}
-Over one-third of participants ($N=14$) from all four experiment conditions emphasized the importance of automated calculation for deriving costs and tracking expenditures. For example:
+First, 35\% of participants ($N=14$) emphasized the importance of automated calculation for deriving costs and tracking expenditures, highlighting the necessity of computer-supported interfaces for QS.
 
-\begin{displayquote}
-I thought I have \bracketellipsis (to) do all the numbers or calculations myself \bracketellipsis The credit summary section was really wonderful in doing all the calculations on that end. \hfill\quoteby{S005 (LT)}
-\end{displayquote}
+Second, participants struggled with deciding on an initial vote allocation. Some distributed credits equally across options, while others used $1$, $2$, or $3$ votes as starting points. A few anchored their decisions on the tutorial’s example of four upvotes. This suggests a need for better understanding of whether individuals possess absolute value preferences among options. Research on coherent arbitrariness~\cite{arielyCoherentArbitrarinessStable2003} indicates that such preferences can be influenced by arbitrary anchors, similar to marketing’s anchoring effects.
 
-The quotes marked the importance that QS must be facilitated by computer-supported interfaces.
-
-\subsubsection{The coldstart problem}
-We notice from the study that one of the biggest challenges for participants is deciding 'how many votes' to start with. This challenge pertains to the initial vote, not the relative vote. Some participants began by equally distributing their credits to all options and then made adjustments. Others established $1$, $2$, and $3$ votes as starting points. A small handful surprisingly used the tutorial's example of 4 upvotes as their anchor.
-
-This arbitrary voting decision echoes discussions in prior literature about the existence of an absolute value for individuals. Coherent arbitrariness~\cite{arielyCoherentArbitrarinessStable2003}, similar to the anchoring effect in marketing, refers to participants' willingness to allocate votes, which can be influenced by an arbitrary value. However, the ordinal utility remains intact among the set of preferences.
-
-\subsubsection{Navigating Between Budget, Votes, and Actual Impact}
-The third challenge is participants' confusion between budget, votes, and outcomes, despite understanding their definitions. One participant stated:
+Finally, 12.5\% of participants ($N=5$) expressed confusion about the relationship between budget, votes, and outcomes, despite understanding their definitions. One participant stated:
 
 \begin{displayquote}
-
-~\bracketellipsis get rid of the upvote column or just get rid of the word upvote and just really focus on the money column. Listen. You're an organization or your participant. You have X amount of dollars you need to. You can only distribute X amount of dollars to these causes. So you have to figure out which ones get the most, which ones don't get as much.~\bracketellipsis 
-
-Interviewer: ~\bracketellipsis Do you feel that the more votes you're giving to a cause you're actually spending more on it?
-
-Yeah. \hfill\quoteby{S003 (ST)}
+~\bracketellipsis get rid of the upvote column or just get rid of the word upvote and just really focus on the money column.~\bracketellipsis \hfill\quoteby{S003 (ST)}
 \end{displayquote}
 
-Participants like \texttt{S003} bypassed the quadratic formulation, directly translating votes to resource allocation. While this does not invalidate the power of the quadratic mechanism, it causes frustration and friction for participants to construct a clear picture of how to make voting decisions. Future interfaces should better communicate these relationships to facilitate respondents' trade-offs.
+Participants like \texttt{S003} bypassed the quadratic mechanism, directly equating votes to resource allocation. While this does not invalidate the mechanism’s power, it creates frustration and hampers decision-making. Future interfaces must better communicate these relationships to facilitate respondents’ trade-offs.
 
-\textbf{In summary}, while the interface supports budget management through automated cost calculation, participants still face cognitive load from managing the budget. The cold-start problem and the confusion between budget, votes, and actual impact are open questions for future research. These challenges highlight the need for better budget management support to complete the QS interface.
-
-\subsection{Quadratic Survey Usage, Design Recommendations and Future Work}
+\subsection{Quadratic Survey Usage, Design Recommendations, and Future Work}
 With a deeper understanding of how survey respondents interact with QS and the sources of cognitive load, we recognize that while this current interface may not significantly reduce cognitive load, it represents a crucial step toward constructing better interfaces to support individuals responding to QS. In this subsection, we outline usage and design recommendations applicable to all applications using the quadratic mechanism and highlight directions for future work.
 
 \subsubsection{Usage Recommendation: QS for Critical Evaluations}
-Our study highlighted the complex cognitive challenges and in-depth consideration required when ranking and rating options using QS, even in a short survey. Similar to survey respondents needing to make trade-offs across options, researchers and agencies seeking additional insights and alignment with respondent preferences must ensure that survey respondents have the cognitive capacity to complete such surveys rigorously. QS should be designed for critical evaluations, such as investment decisions, or situations where participants have ample time to think and process the survey. Pactioners should also caution the use of long QS. If long QS is not avoidable, considering allowing participants to deliberate on each option prior to deploying QS without the organizing phase. For instance, revealing the options ahead of time can aid in preference construction.
+Our study highlighted the complex cognitive challenges and in-depth consideration required when ranking and rating options using QS, even in a short survey. Similar to survey respondents needing to make trade-offs across options, researchers and agencies seeking additional insights and alignment with respondent preferences must ensure that survey respondents have the cognitive capacity to complete such surveys rigorously. QS should be designed for critical evaluations, such as investment decisions, or situations where participants have ample time to think and process the survey. Practitioners should also caution against the use of long QS. If long QS is not avoidable, consider allowing participants to deliberate on each option prior to deploying QS without the organizing phase. For instance, revealing the options ahead of time can aid in preference construction.
 
 \subsubsection{Design Recommendations}
 \paragraph{Use Organization Phases for Quadratic Mechanism Applications}
@@ -175,7 +157,6 @@ Participants had no prior experience with the QS interface. Following a tutorial
 \paragraph{Duration between clicks to represent decision-making}
 Click duration may include time spent considering other options, so it must be treated as an approximate measure of decision-making time. For instance, deciding between two options may take longer for the first option and less time for the second. Despite its limitations, this approach provides valuable insights into decision-making within our experimental constraints.
 
-% 
 
 % Recall that this survey aims to assist community organizers in distributing resources to a societal cause. This participant decided to `skip' over the quadratic formulation and the concept that their votes are governed by the quadratic formulation, drawing a direct translation between votes and the resources to which community organizers ought to contribute. 
 % \begin{displayquote} I guess to see what my ranking looks like~\ldots and see if I could give more money or not. \hfill\quoteby{S021 (LI)} \end{displayquote}

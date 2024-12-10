@@ -1,6 +1,6 @@
 \section{Result: Self-Reported Cognitive Load in Quadratic Surveys}
 \label{sec:cog}
-This section presents findings on cognitive load in QS, focusing on how the number of options and different interfaces influence it (\textbf{RQ1}, \textbf{RQ2a}). We also analyze similarities and differences in cognitive load sources across conditions (\textbf{RQ2b}).
+This section presents findings on cognitive load in QS, focusing on how the number of options and different interfaces influence it (\textbf{RQ1}, \textbf{RQ2a}). We analyze similarities and differences in cognitive load sources across conditions (\textbf{RQ2b}).
 
 Qualitative findings are based on an inductive thematic analysis~\cite{olsonWaysKnowingHCI2014}, conducted after transcribing the interviews. Snippets were coded according to the research questions and merged into overarching themes. Differences across conditions were refined and validated using a deductive coding process.
 
@@ -40,7 +40,7 @@ Quantitative findings are derived from a Bayesian approach, which enhances trans
 \label{sec:cog_overall}
 Weighted NASA-TLX uses a continuous $0$-$100$ score, with higher values denoting greater cognitive load. We use predefined mappings of NASA-TLX scores to cognitive levels: low, medium, somewhat high, high, and very high, as described by~\textcite{hart1988development}. Results are shown in Figure~\ref{fig:nasatlx-final}, with value interpretations presented in Figure~\ref{fig:nasatlx-final2}.
 
-Given the sparsity of the data, we modeled the weighted NASA-TLX scores using cognitive levels as ordinal outcomes. Then, we developed a hierarchical Bayesian ordinal regression model to analyze ordinal response data. The model includes length as an ordinal predictor, and interface type as a categorical predictor modeled with hierarchical priors to allow partial pooling across categories. Interaction effects between length and interface are captured using a non-centered parameterization constrained by an LKJ prior to account for correlations. We use the same model for the NASA-TLX subscales. Given that subscales do not have cognitive level interpretations, we constructed weighted bins to facilitate the ordinal regression model. We present details of this model and results in Appendix~\ref{apdx:model_tlx}.
+Given the sparsity of the data, we modeled the weighted NASA-TLX scores using cognitive levels as ordinal outcome variables. Then, we developed a hierarchical Bayesian ordinal regression model to analyze ordinal response data. The model includes length as an ordinal predictor, and interface type as a categorical predictor modeled with hierarchical priors to allow partial pooling across categories. Interaction effects between length and interface are captured using a non-centered parameterization constrained by an LKJ prior to account for correlations~\cite{mcelreath2018statistical}. We use the same model for the NASA-TLX subscales. Given that subscales do not have cognitive level interpretations, we constructed weighted bins to facilitate the ordinal regression model. We present details of this model and additional subscale results in Appendix~\ref{apdx:model_tlx}.
 
 \begin{figure}[h]
     \centering
@@ -49,7 +49,7 @@ Given the sparsity of the data, we modeled the weighted NASA-TLX scores using co
     \label{fig:weighted_cog_version}
 \end{figure}
 
-While results (Figure~\ref{fig:weighted_cog_version}) are not statistically significant in Bayesian terms, as 0 does not lie outside the high-density interval, the interval reflects the 94\% probability that the true parameter lies within it. This provides quantifiable evidence of trends while transparently accounting for uncertainties:
+In Bayesian analysis, the 94\% high-density interval (HDI) represents the range where the true parameter is most likely to lie. While the results (Figure~\ref{fig:weighted_cog_version}) are not statistically significant because 0 is within this range, the HDI quantifies probabilistic trends and accounts for uncertainty in a transparent manner.
 \begin{itemize}
     \item Increased option length with text interface trends to~\textit{reduced} cognitive load with a posterior probability of approximately $69.8\%$. This reflects a median cognitive load of $33.85$ (mean = $34.60$, SD = $17.69$) compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$).
     \item Within short QS, the interactive interface trends to~\textit{reduced} cognitive load, with a posterior probability of $71.7\%$ supporting the reduction. Participants report a median cognitive load of $29.85$ (mean = $35.36$, SD = $18.17$) under the two-phase interface compared to a median of $39.00$ (mean = $43.23$, SD = $17.65$) under the text interface.

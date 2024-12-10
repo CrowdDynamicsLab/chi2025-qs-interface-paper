@@ -1,19 +1,28 @@
 \section{Detailed Qualitative Cognitive Load Breakdown}
 \label{apdx:cog_qual}
 
-In addition to the discussion on cognitive load sources presented in the main text, we provide additional details on the six cognitive dimensions. Among all dimensions, we also provide the codes representing different types of demand in a table form. The shaded cells represent the percentage of participants citing each source of mental demand, allowing for comparison within columns. The abbreviations in the columns: ST (Short Text Interface), SP (Short Two-phase Interface), LT (Long Text Interface), and LP (Long Two-phase Interface). Short and Long refer to the sum across both interfaces; Text and Inter refer to the sum across both survey lengths. We include Sparklines for comparisons across these experiment groups.
+In addition to the discussion on cognitive load sources presented in the main text, we provide additional details on the six cognitive dimensions. Among all dimensions, we also provide the codes representing different types of demand in a table form. The shaded cells represent the percentage of participants citing each source of mental demand, allowing for comparison within columns. The abbreviations in the columns: ST (Short Text Interface), S2P (Short Two-phase Interface), LT (Long Text Interface), and L2P (Long Two-phase Interface). Short and Long refer to the sum across both interfaces; Text and Inter refer to the sum across both survey lengths. We include Sparklines for comparisons across these experiment groups. Future studies can use these as initial codebooks to conduct interface studiues on preference construction.
 
 \section{Sources of Mental Demand}
 \label{apdx:mental}
-Table~\ref{apdx:mental_table} lists all the mental demand codes.
+Mental demand refers to the amount of mental and perceptual activity required to complete a task. Table~\ref{apdx:mental_table} lists all the mental demand codes. Figure~\ref{fig:mental_cog_score} shows the boxplot of participant's subscale response.
 
 \label{apdx:mental_table}
-\begin{table}[ht!]
+\begin{table}[h!]
    \caption{This table lists all the causes participants mentioned as contributing to their Mental Demand.}
-   \Description{A table presenting mental demand across categories such as Budget Management (track credits, maximize usage), Preference Construction (prioritization, resource allocation), and Demand from Experiment Setup. Sparklines and percentage bars are used to visually represent the data across four interface versions (ST, SI, LT, LI) and experiment conditions (Short, Long, Text, Inter). The bars show higher mental demand in areas like Budget Management and Preference Construction, with trends highlighted by sparklines. Additional categories, such as External Factors and Demand due to Interface, are also represented with percentage bars.}
+   \Description{A table presenting mental demand across categories such as Budget Management (track credits, maximize usage), Preference Construction (prioritization, resource allocation), and Demand from Experiment Setup. Sparklines and percentage bars are used to visually represent the data across four interface versions (ST, S2P, LT, L2P) and experiment conditions (Short, Long, Text, Inter). The bars show higher mental demand in areas like Budget Management and Preference Construction, with trends highlighted by sparklines. Additional categories, such as External Factors and Demand due to Interface, are also represented with percentage bars.}
     \label{tbl:mental}
     \includegraphics[width=\linewidth]{content/image/cog/mental_table.png}
 \end{table}
+
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.48\textwidth, trim=0 13 0 13, clip]{content/image/cog/Mental_scores.pdf}
+    \caption{Mental Demand Raw Score: Across all four experiment groups, participants' reported mental demand is spread across a wide range with many participants experiencing high mental demand.}
+    \Description{Box plot showing mental raw scores with 95\% confidence intervals across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis represents raw scores from 0 to 100. Each box plot includes individual data points. The Short Text and Short 2-Phase versions display wider score distributions, with medians around 60 and 40. The Long Text and Long 2-Phase versions have similar distributions but with slightly lower medians, 40 and 60, respectively. The plot shows a considerable spread in scores, with overlapping confidence intervals, indicating variability in mental demand across all groups.}
+    \label{fig:mental_cog_score}
+\end{figure}
+
 
 \subsection{Sources of Physical Demand} 
 \label{apdx:physical}
@@ -132,22 +141,35 @@ And really the bulk of the effort was how to rank order these~(options) and allo
     \includegraphics[width=0.95\linewidth]{content/image/cog/perf_table.png}
 \end{table}
 
+
+
+\begin{figure}[h]
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Frustration_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified}
+        \caption{Frustration Raw Score: Participants other than the long text interface highlighted several operational tasks that led to frustration. All groups share causes from strategic planning.}
+        \Description{Box plot showing frustration raw scores with 95\% confidence intervals across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis represents raw scores from 0 to 100. The Short Text interface has a wide range of scores, with several participants reporting high frustration. The Short 2-Phase interface shows lower median frustration with a narrower distribution. The Long Text interface displays the lowest frustration scores, while the Long 2-Phase interface shows a wide range, with some participants reporting high frustration. Individual data points are included, indicating variability across participants.}
+    
+        \label{fig:frustration_cog_score}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
+        \captionsetup{width=0.9\textwidth, justification=justified} % Adjust the width to match the image width
+        \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
+        \Description{A box plot displaying the distribution of performance raw scores across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis represents raw scores ranging from 0 to 100. Each box plot includes individual data points, a central line for the median, and whiskers representing the 95\% confidence interval. The performance scores appear relatively low across all conditions, with medians hovering between 20 and 40.}
+    
+        \label{fig:performance_cog_score}
+    \end{minipage}
+\end{figure}
+
+
 \subsection{Source from Performance}
 \label{apdx:performance}
 
 Performance refers to a person's perception of their success in completing a task. Lower values mean good perceived performance; higher values mean poor perceived performance. We found minimal qualitative differences between experiment groups regarding factors influencing perceived performance. Two influencing factors emerged: \textit{Operational Actions} and \textit{Social Responsibility}. Despite most participants reporting positively on their performance, nuances exist in how different groups interpret their performance.
-
-\begin{wrapfigure}{r}{0.45\textwidth} % Wrap figure on the right
-    \centering
-    \adjustbox{valign=t}{
-        \includegraphics[width=\linewidth, trim=0 13 0 13, clip]{content/image/cog/Performance_scores.pdf}
-    }
-    \captionsetup{width=0.9\linewidth, justification=justified}
-    \caption{Performance Demand Raw Score: Participants showed indifferent performance raw scores across experiment conditions, all trending toward satisfactory.}
-    \Description{A box plot displaying the distribution of performance raw scores across four interface versions: Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The y-axis represents raw scores ranging from 0 to 100. Each box plot includes individual data points, a central line for the median, and whiskers representing the 95\% confidence interval. The performance scores appear relatively low across all conditions, with medians hovering between 20 and 40.}
-
-    \label{fig:performance_cog_score}
-\end{wrapfigure}
 
 \subsubsection{Operational Actions}
 Operational actions, like the theme presented in temporal demand, refer to specific, executable procedures participants perform in the survey. This could involve: pressure to spend all credits or stay within budget~($N=6$), fears that final vote choices did not reflect true preferences($N=5$), or concerns that they had finished the task inefficiently~($N=6$).

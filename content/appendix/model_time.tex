@@ -1,0 +1,15 @@
+\section{Modeling Total Time} \label{sec:apdx:model_time}
+
+In this section, we discuss how we modeled the total time per option for each experimental condition.
+
+\subsubsection{Dependent Variables} Total time ($T_i$) refers to the time participants spent on each option, including the time allocated to the organization phase, where participants categorized or reordered options before voting.
+
+\subsubsection{Experimental Conditions} We categorize the data into four experimental conditions: Short Text, Short Two-Phase, Long Text, and Long Two-Phase. These conditions are indexed by $k$, and separate submodels are fit for each condition.
+
+\subsection{Modeling Approach} We modeled the total time for each experimental condition using separate Gamma likelihood models. The Gamma distribution is well-suited for modeling positive continuous data, such as time measurements, which are often skewed and strictly positive. Equation~\ref{eq:time_main} shows the model for the total time. The shape parameter $\alpha_k$ and rate parameter $\beta_k$ were each assigned priors drawn from their own Gamma distributions, as described in Equations~\ref{eq:alpha_prior} and \ref{eq:beta_prior}.
+
+\begin{align}
+    T_i &\sim \text{Gamma}(\alpha_k, \beta_k) \label{eq:time_main} \\
+    \alpha_k &\sim \text{Gamma}(2.0, 0.5) \label{eq:alpha_prior} \\
+    \beta_k &\sim \text{Gamma}(1.0, 1.0) \label{eq:beta_prior}
+\end{align}

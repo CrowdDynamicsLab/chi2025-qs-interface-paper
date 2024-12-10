@@ -3152,6 +3152,122 @@
       \verb 10.1037/0033-295X.103.4.650
       \endverb
     \endentry
+    \entry{kundingerReliableGroundTruth2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3eb112039acd7505a7fc3032239e42cf}{%
+           family={Kundinger},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3b495bdbe7912faae4d84c54c1ee6944}{%
+           family={Mayr},
+           familyi={M\bibinitperiod},
+           given={Celena},
+           giveni={C\bibinitperiod}}}%
+        {{hash=46506a558ca5db239d944a960d60453d}{%
+           family={Riener},
+           familyi={R\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b25ae98e76fb6c1a504dfb3900d1e750}
+      \strng{fullhash}{3a797a2d962de8d67d10e3972a2d6d56}
+      \strng{bibnamehash}{3a797a2d962de8d67d10e3972a2d6d56}
+      \strng{authorbibnamehash}{3a797a2d962de8d67d10e3972a2d6d56}
+      \strng{authornamehash}{b25ae98e76fb6c1a504dfb3900d1e750}
+      \strng{authorfullhash}{3a797a2d962de8d67d10e3972a2d6d56}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{2573-0142}
+      \field{journaltitle}{Proceedings of the ACM on Human-Computer Interaction}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{EICS}
+      \field{shorttitle}{Towards a {{Reliable Ground Truth}} for {{Drowsiness}}}
+      \field{title}{Towards a {{Reliable Ground Truth}} for {{Drowsiness}}: {{A Complexity Analysis}} on the {{Example}} of {{Driver Fatigue}}}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 18}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1145/3394980
+      \endverb
+    \endentry
+    \entry{karim2024examining}{article}{}
+      \name{author}{9}{}{%
+        {{hash=134e5124d62e24afdcd5cfd4d9a75129}{%
+           family={Karim},
+           familyi={K\bibinitperiod},
+           given={Enamul},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8eb6ef74e2bfe8cae2bcdcaa1c3b72a3}{%
+           family={Pavel},
+           familyi={P\bibinitperiod},
+           given={Hamza\bibnamedelima Reza},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8bd7e51008cb09e81866a21b1eb93edf}{%
+           family={Nikanfar},
+           familyi={N\bibinitperiod},
+           given={Sama},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ff2abbe1d14ab0e5c4ce0a6685292544}{%
+           family={Hebri},
+           familyi={H\bibinitperiod},
+           given={Aref},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f316b43f7b64a8d2492b1c9e57104a7d}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Ayon},
+           giveni={A\bibinitperiod}}}%
+        {{hash=82c4572ee820fd290451e78dacc4836b}{%
+           family={Nambiappan},
+           familyi={N\bibinitperiod},
+           given={Harish\bibnamedelima Ram},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=6c8016f4b9bcd2dc635e92e8abdce48e}{%
+           family={Jaiswal},
+           familyi={J\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ebd751b923f186ad113719b3e2d6fa5f}{%
+           family={Wylie},
+           familyi={W\bibinitperiod},
+           given={Glenn\bibnamedelima R},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=de254dfde1af42d577f871cd6b140fd5}{%
+           family={Makedon},
+           familyi={M\bibinitperiod},
+           given={Fillia},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{645f99d9e1352c7d7913808a92362df2}
+      \strng{fullhash}{f3040eb0e42618bf8987d93ea199bf99}
+      \strng{bibnamehash}{f3040eb0e42618bf8987d93ea199bf99}
+      \strng{authorbibnamehash}{f3040eb0e42618bf8987d93ea199bf99}
+      \strng{authornamehash}{645f99d9e1352c7d7913808a92362df2}
+      \strng{authorfullhash}{f3040eb0e42618bf8987d93ea199bf99}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Technologies}
+      \field{number}{3}
+      \field{title}{Examining the Landscape of Cognitive Fatigue Detection: A Comprehensive Survey}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{38}
+      \range{pages}{1}
+    \endentry
     \entry{payneAdaptiveDecisionMaker1993}{book}{}
       \name{author}{3}{}{%
         {{hash=dcfa76e26fef1aa7758ec7d579a35a2e}{%

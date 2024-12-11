@@ -1,3 +1,4 @@
+\change{
 \section{Discussion and Future Work}
 \label{sec:discussion}
 
@@ -82,12 +83,14 @@ We recommend deploying a QS with smaller sets of options or for critical evaluat
 \subsubsection{Facilitate Quadratic Mechanism Applications through Categorization, Not Ranking}
 In a QS, the final ranking of preferences is typically a byproduct of vote allocation rather than a deliberate ranking effort. Participants did not explicitly rank options; instead, their preferences emerged dynamically through the voting process. To better support this preference construction, future quadratic mechanism interface designs should focus on helping participants categorize options effectively rather than ranking them directly. Facilitating differentiation among options is more critical than enabling precise manipulation for fine-tuning. We believe this approach extends beyond QSs to other ranking-based survey tools, such as ranked-choice voting and constant-sum surveys. Further research should examine how implementing such functionality influences survey respondents' mental models.
 
+
 \subsection{Future work: Opportunities for Better Budget Management}
 Budget management emerged as one of the most prominent issues in our study, which the two-phase interface did not address. 35\% of participants ($N=14$) emphasized the ability of current quadratic mechanism applications to perform automated calculations, but noted that this is not sufficient.  We identified three key challenges for future work:
 
 First, participants struggled to decide on an initial vote allocation. Some distributed credits equally across options, while others used $1$, $2$, or $3$ votes as starting points. A few anchored their decisions to the tutorial's example of four upvotes. This suggests a need to better understand whether individuals have absolute value preferences among options. Second, 12.5\% of participants ($N=5$) expressed confusion about the relationship between budget, votes, and outcomes, despite understanding their definitions. They struggled to make trade-offs between votes and budget, leading to frustration and hampered decision-making. Third, determining the absolute amount of credits in a QS is highly demanding. Designing interfaces and interactions to address the cold start challenge and help participants decide on the absolute vote value, while also considering ways to limit direct influences, remains an open question.
 
 We believe that, with well-designed interface backed by real-time computing and a better understanding of how individuals calculate trade-offs, we can provide innovative solutions to help participants more easily express their preferences using QSs.
+}
 
 \section{Limitations}
 \label{sec:limitations}
@@ -99,8 +102,9 @@ Variations in individual cognitive capacity influenced participants' performance
 \paragraph{Limited experience with QSs}
 Participants lacked prior experience with the QS interface. After completing a tutorial and quiz, participants proceeded to perform tasks using the QS interface. While participants understood the mechanics of QSs, their familiarity with the interface likely influenced their strategies and cognitive load. As quadratic mechanisms become more prevalent, future research could compare the performance of novices and experts.
 
-\paragraph{Duration between clicks and edit distance as proxies for decision-making effort}
-While time and distance are common metrics for quantifying decision-making effort, it is likely that participants considered other options simultaneously. We acknowledge that these metrics are approximate indicators of decision-making effort. Despite these limitations, this approach provides valuable insights into decision-making within our experimental constraints.
+\change{
+\paragraph{Limitations of Time and Distance as Proxies for Decision-Making Effort}
+While time and distance are common metrics for quantifying the effort involved in decision-making, they do not capture without noise. Participants may considered multiple options simultaneously. We acknowledge that these metrics are approximate indicators of decision-making effort. Despite these limitations, this approach provides valuable insights into decision-making within our experimental constraints.}
 
 
 

@@ -6,7 +6,8 @@ Following our findings on cognitive load, we analyze voting behaviors to identif
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.5\textwidth]{content/image/distance/distance_diff_by_version.pdf}
-    \caption{Edit Distance Per Option: We sum the total number of edit distances for each option, with the figure using the radius to indicate how often a specific edit distance occurred within an experimental condition. Interpretation: Participants in the two-phase interface completed their votes for more options with fewer edit distances, whereas the Long Text interface shows a long tail of options requiring a wider range of edit distances.}
+    \caption{Edit Distance Per Option: We sum the total number of edit distances for each option, with the figure using the radius to indicate how often a specific edit distance occurred within an experimental condition.~\textbf{The main takeaway:} Participants in the two-phase interface completed their votes for more options with fewer edit distances, whereas the Long Text interface shows a long tail of options requiring a wider range of edit distances.}
+    \Description{A bubble plot titled "Distance per Option by Version" showing the distribution of distance differences (y-axis, measured as the number of options away) across four experimental versions (x-axis): Short Text, Short 2-Phase, Long Text, and Long 2-Phase. The size of the bubbles range from 8 counts (smallest bubble) to 88 counts (largest bubble). Trends: The largest bubbles (highest frequency) occur closer to zero distance difference, particularly in Short Text and Short 2-Phase. Higher distance differences appear more frequent in the Long Text and Long 2-Phase conditions. The visualization emphasizes the variability and frequency of distance differences for each version, with bubble size providing a visual cue for occurrences.}
     \label{fig:dist_per_option}
 \end{figure}
 
@@ -15,7 +16,8 @@ Following our findings on cognitive load, we analyze voting behaviors to identif
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.9\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version.pdf}
-    \caption{The figure shows the contrast distributions of the mean edit distance per option between pairwise experimental conditions, with the first row representing absolute differences and the second row depicting effect sizes. The main finding is that participants in the long text estimated more edit distance per option compared to those in the short text and the long two-phase condition. Notably, the long two-phase interface required estimated only slightly more edit distances despite the longer survey length.}
+    \caption{The figure shows the contrast distributions of the mean edit distance per option between pairwise experimental conditions, with the first row representing absolute differences and the second row depicting effect sizes.~\textbf{The main takeaway:} is that participants in the long text estimated more edit distance per option compared to those in the short text and the long two-phase condition. Notably, the long two-phase interface required estimated only slightly more edit distances despite the longer survey length.}
+    \Description{A grid of histograms titled "Difference and Effect Size of Distance per Option by Version," showing posterior distributions for differences (top row) and effect sizes (bottom row) across four experimental comparisons. Each plot includes density (y-axis) against either difference or effect size (x-axis). Key values are annotated in orange above each histogram. The vertical line at zero serves as a reference point for interpreting the directionality of the differences and effect sizes. In this plot, the orange line lies outside of the ROPE for differences between long and short text; long 2-phase and short 2-phase; and long text and long 2 phase, signifying statistical differences among these comparisons.}
     \label{fig:dist_per_option_bayesian}
 \end{figure}
 
@@ -27,7 +29,8 @@ Similarly, participants using the two-phase interface make approximately 8.9 few
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/distance/edit_distance_per_action_by_version.pdf}
-    \caption{Edit Distance Per Action: This plot shows the frequency of specific edit distances at each step across the text interface and two-phase interface. Interpretation: Participants in the long two-phase interface tend to make adjustments closer to their previous actions, resulting in visually less variance in edit distances throughout the entire survey.}
+    \caption{Edit Distance Per Action: This plot shows the frequency of specific edit distances at each step across the text interface and two-phase interface.~\textbf{Main takeaway:} Participants in the long two-phase interface tend to make adjustments closer to their previous actions, resulting in visually less variance in edit distances throughout the entire survey.}
+    \Description{A two-panel scatter plot titled "Edit Distance per Action by Version," comparing edit distances across task steps for two conditions: Long Text (top panel) and Long 2-Phase (bottom panel). The Y-Axis represents the Edit Distance, ranging from -20 to 20, representing the magnitude of deviations in task execution. the X-Axis: Nth Step of the Task contains values increasing up to 60, indicating progression through task steps. Top Panel (Long Text): Shows a dispersed pattern of points with no clear trend, indicating variability in edit distances throughout the task steps. Bottom Panel (Long 2-Phase): Displays a more compressed spread of points closer to zero, suggesting reduced variability in edit distances compared to the Long Text condition. The scatter plot highlights differences in task execution consistency between the two versions, with denser clusters near zero indicating closer adherence to expected task paths.}
     \label{fig:step-over-distance}
 \end{figure}
 
@@ -38,30 +41,47 @@ In contrast to earlier analyses, we use a hierarchical Bayesian model (detailed 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/distance/distance_diff_per_step_effect_size_by_version.pdf}
-    \caption{The figure shows the contrast distributions of the mean edit distance per step between the two-phase interface and text interface for different survey lengths. The left two subplots represent absolute differences, while the right two depict effect sizes. The main finding is that participants in the long text condition exhibited greater variance in edit distance per step compared to those in the long two-phase interface. Similarly, the short text condition showed higher differences, although these were not statistically significant in Bayesian terms.}
+    \caption{The figure shows the contrast distributions of the mean edit distance per step between the two-phase interface and text interface for different survey lengths. The left two subplots represent absolute differences, while the right two depict effect sizes.~\textbf{Main takeaway:} is that participants in the long text condition exhibited greater variance in edit distance per step compared to those in the long two-phase interface. Similarly, the short text condition showed higher differences, although these were not statistically significant in Bayesian terms.}
     \label{fig:step-over-distance_bayesian}
+    \Description{ A grid of histograms titled "Variance Differences and Effect Size of Distance per Step by Version," displaying posterior distributions of variance differences (left) and effect sizes (right) for two experimental comparisons. Each plot includes density (y-axis) against variance differences or effect sizes (x-axis) with key statistics. Each histogram features annotated key values in orange and a vertical reference line at zero for interpretation. The distributions emphasize significant differences in variance and effect sizes across conditions, particularly for the Long Text vs. Long 2-Phase comparison, which shows consistently large and significant values.}
 \end{figure}
 
 Figure~\ref{fig:step-over-distance_bayesian} illustrates the posterior variance distributions, confirming our hypothesis. Participants in the long text interface exhibit greater variance in movement, frequently navigating across the interface, compared to those in the long two-phase interface. This is evidenced by a variance difference mode of 76 (95\% HDI = [59, 99]) and a large effect size (mode = 7.1, 95\% HDI = [5.5, 9.2]).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{content/image/distance/cumulative_edit_distance_per_option_long_qs_v3v4.pdf}
+    \caption{This plot shows how the cumulative edit distances gained over the course of the survey between long text and long two-phase groups.~\textbf{Main takeaway:} Participants in the long two-phase interface tend to make smaller, more incremental adjustments, resulting in a visually flatter slope compared to the text interface.}
+    \label{fig:cumulative-distance}
+    \Description{A two-panel line plot titled "Cumulative Edit Distance per Option for Long QS," comparing cumulative edit distances across task steps for two conditions: Long Text (left panel) and Long 2-Phase (right panel). Y-Axis: Cumulative Distance (# of Options), ranging from 0 to 500, indicating the accumulated edit distances over task steps. X-Axis: Nth Step of the Task, ranging from 0 to 60, representing task progression. Left Panel (Long Text): Shows multiple trajectories of cumulative edit distances with a wider spread, reaching up to 500, indicating higher variability and more significant cumulative distances across task steps. Right Panel (Long 2-Phase): Displays tighter trajectories with cumulative distances reaching approximately 300, suggesting more consistent and lower cumulative edit distances compared to the Long Text condition. The plot highlights differences in task completion consistency and edit distance accumulation between the two conditions, with the Long 2-Phase condition demonstrating more controlled and efficient task execution.}
+\end{figure}
 
 \textbf{Cumulative edit distance for a participant:} Figure~\ref{fig:cumulative-distance} illustrates how the two-phase interface reduces per-action distance, accumulating over time. Some long text participants traverse double the amount of distance to complete the task compared to the long two-phase participants. We model this growth rate using a hierarchical Bayesian regression model (Detailed in Appendix~\ref{sec:apdx:model_cum_distance}), with cumulative distance as the predictive variable. The experimental variables include interface type as a categorical variable, individual users modeled with random effects, and steps taken as a continuous variable. A truncated normal likelihood constrains cumulative distances to positive values and varies these distances across steps for each participant while masking incomplete data.
 
 \begin{figure}[h]
     \centering
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{content/image/distance/cumulative_edit_distance_per_option_long_qs_v3v4.pdf}
-        \caption{This plot shows how the cumulative edit distances gained over the course of the survey between long text and long two-phase groups. Interpretation: Participants in the long two-phase interface tend to make smaller, more incremental adjustments, resulting in a visually flatter slope compared to the text interface.}
-        \label{fig:cumulative-distance}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{content/image/distance/slope_diff_and_effect_size.pdf}
-        \caption{The figure shows the contrast distributions of slope differences in cumulative edit distance between the two-phase interface and text interface for long QSs. The left subplots show absolute differences, while the right depict effect sizes. Main Finding: Participants in the long text interface exhibited a steeper slope, indicating a faster increase in cumulative edit distance compared to the long two-phase interface.}
-        \label{fig:slope-diff-effect}
-    \end{minipage}
+    \includegraphics[width=0.6\textwidth]{content/image/distance/slope_diff_and_effect_size.pdf}
+    \caption{The figure shows the contrast distributions of slope differences in cumulative edit distance between the two-phase interface and text interface for long QSs. The left subplots show absolute differences, while the right depict effect sizes.~\textbf{Main takeaway:} Participants in the long text interface exhibited a steeper slope, indicating a faster increase in cumulative edit distance compared to the long two-phase interface.}
+    \Description{ A two-panel histogram titled "Posterior Distribution of Slope Difference and Effect Size Between Long QS Interfaces," showing the posterior distributions for slope differences (left) and effect sizes (right) between the Interactive and 2-Phase interfaces.Key values are annotated in orange above each distribution. Vertical reference lines at zero emphasize the directionality and significance of the differences. These results indicate that the Interactive interface has a higher slope than the 2-Phase interface and effect size measures.}
+    \label{fig:slope-diff-effect}
 \end{figure}
+
+% \begin{figure}[h]
+%     \centering
+%     \begin{minipage}[t]{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{content/image/distance/cumulative_edit_distance_per_option_long_qs_v3v4.pdf}
+%         \caption{This plot shows how the cumulative edit distances gained over the course of the survey between long text and long two-phase groups.~\textbf{Main takeaway:} Participants in the long two-phase interface tend to make smaller, more incremental adjustments, resulting in a visually flatter slope compared to the text interface.}
+%         \label{fig:cumulative-distance}
+%     \end{minipage}
+%     \hfill
+%     \begin{minipage}[t]{0.48\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{content/image/distance/slope_diff_and_effect_size.pdf}
+%         \caption{The figure shows the contrast distributions of slope differences in cumulative edit distance between the two-phase interface and text interface for long QSs. The left subplots show absolute differences, while the right depict effect sizes.~\textbf{Main takeaway:} Participants in the long text interface exhibited a steeper slope, indicating a faster increase in cumulative edit distance compared to the long two-phase interface.}
+%         \label{fig:slope-diff-effect}
+%     \end{minipage}
+% \end{figure}
 
 Figure~\ref{fig:slope-diff-effect} shows that the slope for the long text interface is approximately 4.7, meaning each step by the text interface would add 4.7 edit distance (94\% HDI = [4.2, 5.4]), compared to the long two-phase interface, which shows a statistically significant difference with a mode of 1.4 (94\% HDI = [1.3, 1.7]). These results explain that the variance in edit distance per action and the increase in per option edit distance are consistent across participants between the two groups, showing that the organization phase allows participants to focus on adjusting options within proximity without having to navigate the interface to locate and make adjustments during the voting phase.
 

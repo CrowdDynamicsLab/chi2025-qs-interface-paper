@@ -36,6 +36,7 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/distance/ppc_distance_m1.pdf}
     \caption{Posterier Predictions vs. observed data for edit distance per option. Each blue line represents a draw from the posterior distribution, while the black line represents the observed data. Dotted line represents the mean of the posterier data. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the distribution.}
+    \Description{ A line plot titled "Posterior Predictive Check: Observed Edit Distances," comparing observed edit distances with model predictions. Multiple thin blue lines indicating individual model simulations. A solid black line representing actual observed data. A dashed orange line showing the average of posterior predictions. The plot illustrates strong alignment between observed data and the posterior predictive mean, with deviations primarily at higher edit distances. This indicates a well-calibrated model fit for most of the distribution.}
     \label{fig:ppc_distance_m1}
 \end{figure}
 
@@ -92,6 +93,10 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
     \caption{Posterier Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterier predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-modle them with a student-t distribution.}
+    \Description{
+        A grid of eight density plots comparing observed and posterior predictive distributions across four model versions (ST, S2P, LT, L2P). The top row displays observed distributions, and the bottom row displays posterior predictive distributions. Each plot has "Distance" on the x-axis ranging from -50 to 50 and "Density" on the y-axis. Observed distributions are more sparse, while posterior predictive distributions are tightly centered around zero for all model versions. Differences in spread and shape are noticeable, particularly between the LT and L2P models, which show wider and more peaked distributions compared to ST and S2P.
+    }
+
     \label{fig:observed_vs_posterior_predictive_histogram_m2}
 \end{figure}
 
@@ -101,11 +106,14 @@ Here we provide all pairwise comparisons for the variance which the main text on
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version_all.pdf}
-    \caption{Differences in the variance of edit distance by version.}
+    \caption{Differences in the variance of edit distance by version.~\textbf{The main takeaway: } In addition to the takaway from the main text, this plot shows that with two-phase interface, there is a reduction is edit distance when the number of option grows.}
+    \Description{
+    A grid of eight density plots showing the differences and effect sizes of distances per option by version. The top row depicts variance differences, and the bottom row depicts effect sizes, both represented as density distributions. Each column corresponds to a comparison: Short Text vs. Short 2-Phase, Long Text vs. Long 2-Phase, Long Text vs. Short Text, and Long 2-Phase vs. Short 2-Phase. Each plot includes a mode value, a 94\% Highest Density Interval (HDI), and the proportion of the distribution below and above zero. Variance difference distributions on the top row show modes ranging from 1.8 to 90, with varying HDI ranges. Effect size distributions on the bottom row have modes between 0.68 and 8.4, with all 94\% HDIs above zero except for Short Text vs. Short 2-Phase.
+    }
+
     \label{fig:bayesian_distance_variance}
 \end{figure}
 
-\newpage
 \subsection{Model 3: Cumulative Edit Distance for long QS} \label{sec:apdx:model_cum_distance}
 
 \subsubsection{Dependent Variables}
@@ -147,5 +155,6 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
     \centering
     \includegraphics[width=0.6\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
     \caption{Posterier Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterier predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
+    \Description{ A line plot titled "Observed and Predicted Cumulative Distances by Version," showing cumulative distances across task steps for two conditions. Solid lines in varying shades of red and orange, representing actual cumulative distances for individual participants. Dashed lines, showing the model's predicted cumulative distances for each condition. The plot indicates alignment between observed and predicted trends, with some variability at higher cumulative distances. Predictions closely follow observed trajectories, demonstrating the model's accuracy in capturing cumulative distance patterns.}
     \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
 \end{figure}

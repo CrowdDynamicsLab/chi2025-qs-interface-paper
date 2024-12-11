@@ -29,6 +29,17 @@ Priors are defined as:
     L_{\Omega} \sim \text{LKJ}(3) \label{eq:priors_L_Omega}
 \end{align}
 
+\subsubsection{Posterier predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:ppc_distance_m1}. This figure compares the models posterier predictive distribution with the observed data. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{content/image/distance/ppc_distance_m1.pdf}
+    \caption{Posterier Predictions vs. observed data for edit distance per option. Each blue line represents a draw from the posterior distribution, while the black line represents the observed data. Dotted line represents the mean of the posterier data. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the distribution.}
+    \label{fig:ppc_distance_m1}
+\end{figure}
+
+
 \subsection{Model 2: Edit Distance with Separate Mean and Variance Predictors} \label{sec:apdx:model_distance_variance}
 
 \subsubsection{Dependent Variables}
@@ -74,6 +85,16 @@ Priors are defined as:
     L_{\Omega,\mu}, L_{\Omega,\sigma} &\sim \text{LKJ}(3) \label{eq:priors_L_Omega_distance_model_2}
 \end{align}
 
+\subsubsection{Posterier predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:observed_vs_posterior_predictive_histogram_m2}. This figure compares the models posterier predictive distribution with the observed data.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
+    \caption{Posterier Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterier predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-modle them with a student-t distribution.}
+    \label{fig:observed_vs_posterior_predictive_histogram_m2}
+\end{figure}
+
 \subsubsection{Model Results}
 Here we provide all pairwise comparisons for the variance which the main text only provided the comparison within the same survey length. Figure~\ref{fig:bayesian_distance_variance} shows the pairwise comparison of the variance of edit distance in the first row followed by the effect size in the second row. An notable result that we omit from the main text is that if we compare the variance between the long and short text, and the variance between the long and short two-phase, we see that the text group had three times the standard deviation compared to the two-phase group. This indicates that the organization phase minimize the added length of the survey.
 
@@ -118,3 +139,13 @@ Priors used in this model are listed.
     \mu_{\beta} &\sim \mathcal{N}(0.05, 0.05) \label{eq:model3_prior_beta_mu}\\
     \sigma_{\beta} &\sim \text{HalfNormal}(0.1) \label{eq:model3_prior_beta_sigma}
 \end{align}
+
+\subsubsection{Posterier predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the cumulative edit distance in Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3}. This figure compares the models posterier predictive distribution with the observed data.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
+    \caption{Posterier Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterier predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
+    \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
+\end{figure}

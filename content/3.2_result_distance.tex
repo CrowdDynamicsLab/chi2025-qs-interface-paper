@@ -44,12 +44,14 @@ In contrast to earlier analyses, we use a hierarchical Bayesian model (detailed 
 
 Figure~\ref{fig:step-over-distance_bayesian} illustrates the posterior variance distributions, confirming our hypothesis. Participants in the long text interface exhibit greater variance in movement, frequently navigating across the interface, compared to those in the long two-phase interface. This is evidenced by a variance difference mode of 76 (95\% HDI = [59, 99]) and a large effect size (mode = 7.1, 95\% HDI = [5.5, 9.2]).
 
+\textbf{Cumulative edit distance for a participant:} This reduction in per action distance due to the two-phase interface's effect on edit distance adds up, as Figure~\ref{fig:cumulative-distance} shows the cumulative edit distance over time. Some long text participants traverse double the amount of distance to complete the task compared to the long two-phase participants. We model this growth rate using a hierarchical Bayesian regression model (Detailed in Appendix~\ref{sec:apdx:model_cum_distance}), with cumulative distance as the predictive variable. The experimental variables include interface type as a categorical variable, individual users modeled with random effects, and steps taken as a continuous variable. The model incorporates a shared global intercept, version-specific intercepts and slopes with partial pooling to balance data across conditions, and user-specific random effects to capture variability. A truncated normal likelihood constrains cumulative distances to positive values and varies these distances across steps for each participant while masking incomplete data.
+
 \begin{figure}[h]
     \centering
     \begin{minipage}[t]{0.48\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/distance/cumulative_edit_distance_per_option_long_qs_v3v4.pdf}
-        \caption{This plot shows how the cumulative edit distances gained over the course of the survey between long text and long interactive groups. Interpretation: Participants in the long two-phase interface tend to make smaller, more incremental adjustments, resulting in a visually flatter slope compared to the text interface.}
+        \caption{This plot shows how the cumulative edit distances gained over the course of the survey between long text and long two-phase groups. Interpretation: Participants in the long two-phase interface tend to make smaller, more incremental adjustments, resulting in a visually flatter slope compared to the text interface.}
         \label{fig:cumulative-distance}
     \end{minipage}
     \hfill
@@ -60,9 +62,6 @@ Figure~\ref{fig:step-over-distance_bayesian} illustrates the posterior variance 
         \label{fig:slope-diff-effect}
     \end{minipage}
 \end{figure}
-
-
-\textbf{Cumulative edit distance for a participant:} This reduction in per action distance due to the two-phase interface's effect on edit distance adds up, as Figure~\ref{fig:cumulative-distance} shows the cumulative edit distance over time. Some long text participants traverse double the amount of distance to complete the task compared to the long two-phase participants. We model this growth rate using a hierarchical Bayesian regression model (Detailed in Appendix~\ref{sec:apdx:model_cum_distance}), with cumulative distance as the predictive variable. The experimental variables include interface type as a categorical variable, individual users modeled with random effects, and steps taken as a continuous variable. The model incorporates a shared global intercept, version-specific intercepts and slopes with partial pooling to balance data across conditions, and user-specific random effects to capture variability. A truncated normal likelihood constrains cumulative distances to positive values and varies these distances across steps for each participant while masking incomplete data.
 
 Figure~\ref{fig:slope-diff-effect} shows that the slope for the long text interface is approximately 4.7, meaning each step by the text interface would add 4.7 edit distance (94\% HDI = [4.2, 5.4]), compared to the long two-phase interface, which shows a statistically significant difference with a mode of 1.4 (94\% HDI = [1.3, 1.7]). These results explain that the variance in edit distance per action and the increase in per option edit distance are consistent across participants between the two groups, showing that the organization phase allows participants to focus on adjusting options within proximity without having to navigate the interface to locate and make adjustments during the voting phase.
 

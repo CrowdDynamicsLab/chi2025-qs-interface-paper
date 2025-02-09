@@ -1,4 +1,4 @@
-\documentclass[sigconf, natbib=false]{acmart}
+\documentclass[sigconf]{acmart}
 \settopmatter{authorsperrow=4} % not sure if this is allowed but this looks much better
 
 \usepackage{enumitem}
@@ -6,27 +6,24 @@
 \usepackage{booktabs} % For formal tables
 \usepackage{cleveref} % for better references
 \usepackage{caption,subcaption}
-\usepackage[english]{babel}% Recommended
+% \usepackage[english]{babel}% already included
 \usepackage{csquotes}% Recommended
 \usepackage{siunitx}
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{rotating}
-\usepackage{pdflscape}
+\usepackage{lscape}
 \usepackage{afterpage}
 \usepackage{hyperref}
-\usepackage{lscape}
+\hypersetup{breaklinks=true}
 \usepackage{wrapfig}
-\usepackage{sidecap}
-\usepackage{rotating}
-\usepackage{adjustbox} 
+% \usepackage{sidecap}
+% \usepackage{adjustbox} 
 
-\usepackage{mdframed}
+\usepackage{framed} % replacing \usepackage{mdframed}
 \usepackage{fontawesome} % for the icon
-\usepackage{amsthm}
-\usepackage{tcolorbox}
+% \usepackage{tcolorbox}
 
-\RequirePackage{rotating}
 \usepackage[ruled]{algorithm2e} % For algorithms
 \renewcommand{\algorithmcfname}{ALGORITHM}
 \SetAlFnt{\small}
@@ -35,17 +32,30 @@
 \SetAlCapHSkip{0pt}
 \IncMargin{-\parindent}
 
-%references
-\usepackage[backend=biber, style=acmnumeric,sorting=none]{biblatex}
-\let\citename\relax
-\addbibresource{tcheng.bib}
-\renewcommand{\bibfont}{\Small}
+% Bibliography
+\bibliographystyle{ACM-Reference-Format}
 \usepackage{url}
-\setcounter{biburllcpenalty}{7000}
-\setcounter{biburlucpenalty}{8000}
+% \setcounter{biburllcpenalty}{7000}
+% \setcounter{biburlucpenalty}{8000}
 
 % macros
-\newtcolorbox{tldrbox}[1][]{colback=gray!10, colframe=darkgray, left=5pt, right=5pt, top=3pt, bottom=3pt, arc=0pt, outer arc=0pt, toprule=0pt, bottomrule=0pt, leftrule=1.5pt, rightrule=0pt, #1}
+% \newtcolorbox{tldrbox}[1][]{colback=gray!10, colframe=darkgray, left=5pt, right=5pt, top=3pt, bottom=3pt, arc=0pt, outer arc=0pt, toprule=0pt, bottomrule=0pt, leftrule=1.5pt, rightrule=0pt, #1}
+\definecolor{lightgray}{gray}{0.9}
+\definecolor{darkgray}{gray}{0.4}
+
+\newenvironment{tldrbox}{
+    \def\FrameCommand{%
+        {\color{darkgray}\vrule width 1.5pt} % Left rule
+        \colorbox{lightgray}                 % Background color
+    }
+    \MakeFramed{\advance\hsize-\width \FrameRestore}
+    \vspace{3pt} % Top padding
+    \hspace{5pt} % Left padding
+}{
+    \hspace{5pt} % Right padding
+    \vspace{3pt} % Bottom padding
+    \endMakeFramed
+}
 \newcommand{\bracketellipsis}{[\ldots]\xspace}
 
 \renewenvironment{displayquote}
@@ -161,8 +171,8 @@
 %% Main Text
 \maketitle
 \input{content/0_Introduction.tex}
-% \input{content/1_related_works.tex}
-% \input{content/2.1_interface_design.tex}
+\input{content/1_related_works.tex}
+\input{content/2.1_interface_design.tex}
 
 % \input{content/2.2_experiment.tex}
 
@@ -176,7 +186,9 @@
 % \input{content/98_acks.tex}
 
 
-\printbibliography
+% \printbibliography
+\bibliography{tcheng}
+
 
 
 %TC:ignore

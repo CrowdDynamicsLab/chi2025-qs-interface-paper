@@ -1,5 +1,5 @@
-% \documentclass[format=acmsmall, natbib=false, review=false, authordraft=false, anonymous=true, screen=true]{acmart}
-\documentclass[manuscript, review, anonymous, natbib=false]{acmart}
+\documentclass[sigconf, natbib=false]{acmart}
+\settopmatter{authorsperrow=4} % not sure if this is allowed but this looks much better
 
 \usepackage{enumitem}
 \usepackage{graphicx}  % another package that works for figures
@@ -15,8 +15,6 @@
 \usepackage{pdflscape}
 \usepackage{afterpage}
 \usepackage{hyperref}
-% \usepackage{rerunfilecheck}
-% \usepackage{epstopdf}
 \usepackage{lscape}
 \usepackage{wrapfig}
 \usepackage{sidecap}
@@ -28,8 +26,14 @@
 \usepackage{amsthm}
 \usepackage{tcolorbox}
 
-\newtcolorbox{tldrbox}[1][]{colback=gray!10, colframe=darkgray, left=5pt, right=5pt, top=3pt, bottom=3pt, arc=0pt, outer arc=0pt, toprule=0pt, bottomrule=0pt, leftrule=1.5pt, rightrule=0pt, #1}
-
+\RequirePackage{rotating}
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
 
 %references
 \usepackage[backend=biber, style=acmnumeric,sorting=none]{biblatex}
@@ -40,21 +44,9 @@
 \setcounter{biburllcpenalty}{7000}
 \setcounter{biburlucpenalty}{8000}
 
-% %  Comment this out to fix all citation
-% \renewcommand{\cite}[1]{[??]}
-% \renewcommand{\textcite}[1]{Mark et al.}
-
+% macros
+\newtcolorbox{tldrbox}[1][]{colback=gray!10, colframe=darkgray, left=5pt, right=5pt, top=3pt, bottom=3pt, arc=0pt, outer arc=0pt, toprule=0pt, bottomrule=0pt, leftrule=1.5pt, rightrule=0pt, #1}
 \newcommand{\bracketellipsis}{[\ldots]\xspace}
-
-% other required packages
-\RequirePackage{rotating}
-\usepackage[ruled]{algorithm2e} % For algorithms
-\renewcommand{\algorithmcfname}{ALGORITHM}
-\SetAlFnt{\small}
-\SetAlCapFnt{\small}
-\SetAlCapNameFnt{\small}
-\SetAlCapHSkip{0pt}
-\IncMargin{-\parindent}
 
 \renewenvironment{displayquote}
   {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\itshape\color{darkgray}}
@@ -78,42 +70,20 @@
 \newcommand{\kk}[1]{{\color{violet}{KK: #1}}}
 \newcommand{\vk}[1]{{\color{blue}{VK: #1}}}
 \newcommand{\yhc}[1]{{\color{orange}{YHC: #1}}}
-\newcommand{\change}[1]{{\color{darkred}{#1}}}
+\newcommand{\change}[1]{{\color{black}{#1}}}
 
 %% Rights management information.  This information is sent to you
 %% when you complete the rights form.  These commands have SAMPLE
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-% \setcopyright{acmcopyright}
-% \copyrightyear{2021}
-% \acmYear{2021}
-% \acmDOI{10.1145/1122445.1122456}
-
-\setcopyright{acmlicensed}
-\acmJournal{PACMHCI}
-% \acmYear{2021} \acmVolume{5} \acmNumber{CSCW1} \acmArticle{182} \acmMonth{4} \acmPrice{15.00}\acmDOI{10.1145/3449281}
-
-% For Articles 180-195:
-% \received{October 2020}
-% \received[revised]{January 2021}
-% \received[accepted]{January 2021}
-
-
-% %% These commands are for a PROCEEDINGS abstract or paper.
-% \acmConference[CSCW '21]{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing}{Nov 03 -- 07, 2021}{Toronto, Canada}
-% \acmBooktitle{CSCW '21: The 24rd ACM Conference on Computer-Supported Cooperative Work and Social Computing,
-% Nov 03 -- 07, 2021, Toronto, Canada}
-% \acmPrice{15.00}
-% \acmISBN{978-1-4503-9999-9/18/06}
-
-
-%%
-%% Submission ID.
-%% Use this when submitting an article to a sponsored event. You'll
-%% receive a unique submission ID from the organizers
-%% of the event, and this ID should be used as the parameter to this command.
-% \acmSubmissionID{V5cscw182}
+\copyrightyear{2025}
+\acmYear{2025}
+\setcopyright{cc}
+\setcctype{by-nc}
+\acmConference[CHI '25]{CHI Conference on Human Factors in Computing Systems}{April 26-May 1, 2025}{Yokohama, Japan}
+\acmBooktitle{CHI Conference on Human Factors in Computing Systems (CHI '25), April 26-May 1, 2025, Yokohama, Japan}\acmDOI{10.1145/3706598.3714193}
+\acmISBN{979-8-4007-1394-1/25/04}
 
 %%
 %% The majority of ACM publications use numbered citations and
@@ -191,28 +161,26 @@
 %% Main Text
 \maketitle
 \input{content/0_Introduction.tex}
-\input{content/1_related_works.tex}
-\input{content/2.1_interface_design.tex}
+% \input{content/1_related_works.tex}
+% \input{content/2.1_interface_design.tex}
 
-\input{content/2.2_experiment.tex}
+% \input{content/2.2_experiment.tex}
 
-\change{
-\input{content/3.1_result_cognitive_load.tex}
-\input{content/3.2_result_distance.tex}
-\input{content/3.3_result_time.tex}
-}
+% \input{content/3.1_result_cognitive_load.tex}
+% \input{content/3.2_result_distance.tex}
+% \input{content/3.3_result_time.tex}
 
-\input{content/4_discussion.tex}
+% \input{content/4_discussion.tex}
 
-\input{content/5_conclusion.tex}
-\input{content/98_acks.tex}
+% \input{content/5_conclusion.tex}
+% \input{content/98_acks.tex}
 
 
 \printbibliography
 
 
 %TC:ignore
-\input{content/99_appendix}
+% \input{content/99_appendix}
 %TC:endignore
 
 \end{document}

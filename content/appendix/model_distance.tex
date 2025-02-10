@@ -89,9 +89,9 @@ Priors are defined as:
 \subsubsection{Posterior predictive plots}
 Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:observed_vs_posterior_predictive_histogram_m2}. This figure compares the models posterior predictive distribution with the observed data.
 
-\begin{figure*}[h!]
+\begin{figure*}[p]
     \centering
-    \includegraphics[width=\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
+    \includegraphics[width=0.85\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
     \caption{Posterior Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterior predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-model them with a student-t distribution.}
     \Description{
         A grid of eight density plots comparing observed and posterior predictive distributions across four model versions (ST, S2P, LT, L2P). The top row displays observed distributions, and the bottom row displays posterior predictive distributions. Each plot has "Distance" on the x-axis ranging from -50 to 50 and "Density" on the y-axis. Observed distributions are more sparse, while posterior predictive distributions are tightly centered around zero for all model versions. Differences in spread and shape are noticeable, particularly between the LT and L2P models, which show wider and more peaked distributions compared to ST and S2P.
@@ -103,7 +103,7 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
 \subsubsection{Model Results}
 Here we provide all pairwise comparisons for the variance which the main text only provided the comparison within the same survey length. Figure~\ref{fig:bayesian_distance_variance} shows the pairwise comparison of the variance of edit distance in the first row followed by the effect size in the second row. An notable result that we omit from the main text is that if we compare the variance between the long and short text, and the variance between the long and short two-phase, we see that the text group had three times the standard deviation compared to the two-phase group. This indicates that the organization phase minimize the added length of the survey.
 
-\begin{figure*}[h!]
+\begin{figure*}[p]
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version_all.pdf}
     \caption{Differences in the variance of edit distance by version.~\textbf{The main takeaway: } In addition to the takaway from the main text, this plot shows that with two-phase interface, there is a reduction is edit distance when the number of option grows.}
@@ -130,7 +130,6 @@ Instead of directly sampling $U_i$ from a hyper distribution, we reparametrized 
 \subsubsection{Overall Model and Likelihood Function}
 We modeled the dependent variable $D_i$ using a Truncated Normal distribution (Equation~\ref{eq:model3_likelihood}). The observation-specific standard deviation, drawn from a Half-Normal distribution as described in Equation~\ref{eq:model3_prior_sigma}. The latent predictors $\mu_i$ is modeled as a regression equation (Equation~\ref{eq:model3_mu}). This equation reflects our intuition that the effects from versions and user differences are amplified by steps as the participants complete the survey. The intercept $\alpha_{\text{shared}}$ is assigned a prior described in Equation~\ref{eq:model3_prior_shared}. The effect of users $\sigma_{U}$ and version $\beta_v[V_i]$ are amplified by the step number $S_i$.
 
-
 \begin{align}
     D_i &\sim \text{TruncatedNormal}(\mu_i, \sigma_{\text{obs},i}, \text{lower}=0) \label{eq:model3_likelihood} \\
     \mu_i &= \alpha_{\text{shared}} + \beta_v[V_i] \cdot S_i + U_i \cdot S_i \label{eq:model3_mu} \\
@@ -148,13 +147,15 @@ Priors used in this model are listed.
     \sigma_{\beta} &\sim \text{HalfNormal}(0.1) \label{eq:model3_prior_beta_sigma}
 \end{align}
 
+
 \subsubsection{Posterior predictive plots}
 Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the cumulative edit distance in Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3}. This figure compares the models posterior predictive distribution with the observed data.
 
-\begin{figure*}[h!]
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
+    \includegraphics[width=0.45\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
     \caption{Posterior Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterior predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
     \Description{ A line plot titled "Observed and Predicted Cumulative Distances by Version," showing cumulative distances across task steps for two conditions. Solid lines in varying shades of red and orange, representing actual cumulative distances for individual participants. Dashed lines, showing the model's predicted cumulative distances for each condition. The plot indicates alignment between observed and predicted trends, with some variability at higher cumulative distances. Predictions closely follow observed trajectories, demonstrating the model's accuracy in capturing cumulative distance patterns.}
     \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
-\end{figure*}
+\end{figure}

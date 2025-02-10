@@ -3,25 +3,31 @@ In this section, we outline the design process leading to our final interface. A
 
 \begin{figure}[ht]
     \centering
-    \begin{subfigure}[b]{0.54\textwidth}
+    % First subfigure
+    \begin{subfigure}[b]{0.9\linewidth}
         \centering
-        \includegraphics[width=\textwidth]{content/image/prototypes/1.2_paper_qv_single.png}
+        \includegraphics[width=\linewidth]{content/image/prototypes/1.2_paper_qv_single.png}
         \caption{In this paper prototype, issues are denoted by different numbers that appear on mouseover. Pretest respondents can move options anywhere in the two sections of the interface, one denoting positive and one negative. The blocks represent the cost for each option, with no indication of the number of current votes. The credits are shown in the yellow box on the left.}
         \Description{An image of a paper prototype showing different sections for respondents to interact with. On the left side, a yellow grid contains small white squares, some of which are stacked and scattered outside the grid. The middle section labeled "Positive Zone" contains a large white square with a grid, labeled "Opt 1". The right section, labeled "Negative Zone," contains two white squares, each with grids, labeled with numbers 7 and 4. Additional small white squares labeled with numbers 2, 3, 5, 6, and 8 are positioned around the prototype. The yellow box on the left represents available credits.}
         \label{fig:horizontal_paper}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.42\textwidth}
+
+    \vspace{1em} % Adjusts vertical spacing between figures
+
+    % Second subfigure
+    \begin{subfigure}[b]{0.9\linewidth}
         \centering
-        \includegraphics[width=\textwidth]{content/image/prototypes/1_paper_qv_single.png}
+        \includegraphics[width=\linewidth]{content/image/prototypes/1_paper_qv_single.png}
         \caption{This paper prototype separates the positive and negative areas with a 'band' at the center. Undecided options are placed inside this band. The cost and the votes on both sides of the interface are denoted by small blocks. The budget is shown in the yellow box below the interface with a numerical counter.}
         \Description{A paper prototype interface where a person's hand is interacting with blocks. The prototype separates positive and negative areas using a wide horizontal band in the center, which holds undecided options. On the left side of the band, a column labeled "Dollar" shows a block marked with the number 16. On the right side, under a column labeled "Point," several rows have small blocks with plus and minus signs, indicating positive and negative areas. At the bottom left, a yellow box with a grid shows the available budget, marked with the number 16. A smartphone in the bottom right corner displays the number 58.}
         \label{fig:vertical_paper}
     \end{subfigure}
-    \caption{Initial paper prototypes designed for QS interface}
+
+    \caption{Initial paper prototypes designed for QS interface.}
     \Description{This figure contains two subfigures showing two different paper prototypes.}
     \label{fig:qv_paper}
 \end{figure}
+
 
 \subsection{Prototype 1: Ranking-Vote}
 Considering that relative preference is often through ranking items, we tested whether ranking options before voting would help establish an individual's relative preference in our prototype 1. This prototype allowed respondents to reposition options before voting. Pretests revealed that respondents rarely moved the options and questioned the necessity of full ranking, as it did not influence their QS submission. Additionally, many were unaware that options were draggable until shown. This insight indicates that full ranking is unnecessary for establishing relative preferences. Therefore, we decided to ask respondents to select a subset of options instead of requiring a full rank among all options.
@@ -34,11 +40,11 @@ Considering that relative preference is often through ranking items, we tested w
     \label{fig:qv_rank}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure*}[p]
     \centering
     \begin{subfigure}[b]{0.47\textwidth}
         \centering
-        \includegraphics[width=0.9\textwidth]{content/image/prototypes/3.1_selecting.png}
+        \includegraphics[width=0.95\textwidth]{content/image/prototypes/3.1_selecting.png}
         \caption{Options are dragged and dropped to the 'Option You Care About' box.}
         \Description{A web interface showing the first step of a quadratic voting prototype. The screen is titled "What is important to you?" On the left, under "All Options," a list of food types is displayed, including American, Japanese, and Mexican. One option, "Chinese," is being dragged to the right column labeled "Options You Care About," which already includes "Italian." A "Next" button appears at the bottom of the interface.}
 
@@ -53,16 +59,13 @@ Considering that relative preference is often through ranking items, we tested w
 
         \label{fig:qv_select_vote}
     \end{subfigure}
-    \caption{A Select-then-Vote Prototype: The goal of this prototype is to nudge participants to focus on a subset of options to vote, rather than ranking all of them. This prototype introduces a two-step voting process. As shown in Fig.~\ref{fig:qv_select_selection}, the first step involves selecting options for further consideration. Important options are placed at the top of the list for voting shown in Fig.~\ref{fig:qv_select_vote}, but options can be placed anywhere on the list if desired. The rest of the controls remain the same as the previous prototype.}
+    \caption{A Select-then-Vote Prototype: The goal of this prototype is to nudge participants to focus on a subset of options to vote, rather than ranking all of them. This prototype introduces a two-step voting process. As shown in Fig.~\ref{fig:qv_select_selection}, the first step involves selecting options for further consideration. Important options are placed at the top of the list for voting shown in Fig.~\ref{fig:qv_select_vote}, but options can be placed anywhere on the list if desired. The rest of the controls follows the previous prototype.}
     \Description{A two-step quadratic voting prototype interface. In the first step (Subfigure 1), users drag and drop food options from a list on the left, such as American and Mexican, to the "Options You Care About" box on the right. In the second step (Subfigure 2), users vote on their selected options by adjusting the ratings using "+1 rating" and "-1 rating" buttons. A summary at the bottom shows the total amount spent and remaining balance.}
 
     \label{fig:qv_select}
-\end{figure}
+\end{figure*}
 
-\subsection{Prototype 2: Select-then-Vote}
-Based on feedback from Prototype 1, instead of \textit{allowing} individuals to rank options, Prototype 2 implemented a two-phase process that \textit{intentionally} asks respondents to select options to express opinions before voting. As shown in Figure~\ref{fig:qv_select}, survey respondents selected their preferred options (Figure~\ref{fig:qv_select_selection}), and the interface positioned these options at the top of the list for voting (Figure~\ref{fig:qv_select_vote}). We identified several issues during the prototype 2 pretest: many respondents marked most options as 'options they care about,' which undermined the design's purpose. Additionally, the lack of clear distinction between selected and unselected options confused respondents about the necessity of Step 1. Thus, we need a clearer distinction and connection between the two phases to effectively construct relative preferences.
-
-\begin{figure}[ht]
+\begin{figure*}[p]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
@@ -75,17 +78,18 @@ Based on feedback from Prototype 1, instead of \textit{allowing} individuals to 
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/image/prototypes/4.2_grouping_vote.png}
-        \caption{The Voting Interface: Voting controls appear on the left side of each option, showing the current votes and associated costs on the right. A budget summary is stuck at the bottom of the screen.}
+        \caption{The Voting Interface: Voting controls appear on the left side of each option, showing the current votes and associated costs on the right. A budget summary sticks to the bottom of the screen.}
         \Description{A web interface displaying a survey titled "What societal issues need more support?" Each option in the list has voting controls, with "+1 rating" and "-1 rating" buttons appearing on the left side of each issue. The issues are grouped into categories such as "I don't know," "Positive," "Negative," and "Neutral." To the right of each issue, the cost of the rating is shown along with the number of votes cast. For example, "Pets and Animals" has a rating cost of \$4 with a +2 rating, while "Health" has a rating cost of \$49 with a +7 rating. At the bottom of the page, a summary box shows the total amount spent (\$117) and the remaining balance (\$207), with a "Submit" button below it.}
 
         \label{fig:qv_org_p2}
     \end{subfigure}
     \caption{Organize-then-Vote Prototype: The goal of this prototype is to encourage participants to derive finer grain categories among options before voting. Survey respondents first organize their thoughts into categories and then vote on the options.}
     \Description{The figure shows an Organize-then-Vote prototype with two main steps. In the first step, the left figure, users organize options by dragging and dropping them into different categories: "I don't know," "Positive," "Neutral," or "Negative." In the second step, the right figure, users vote on these organized options using "+1 rating" and "-1 rating" buttons, with voting costs and current ratings displayed. A summary section shows the total spent and remaining budget.}
-
-
     \label{fig:qv_org}
-\end{figure}
+\end{figure*}
+
+\subsection{Prototype 2: Select-then-Vote}
+Based on feedback from Prototype 1, instead of \textit{allowing} individuals to rank options, Prototype 2 implemented a two-phase process that \textit{intentionally} asks respondents to select options to express opinions before voting. As shown in Figure~\ref{fig:qv_select}, survey respondents selected their preferred options (Figure~\ref{fig:qv_select_selection}), and the interface positioned these options at the top of the list for voting (Figure~\ref{fig:qv_select_vote}). We identified several issues during the prototype 2 pretest: many respondents marked most options as 'options they care about,' which undermined the design's purpose. Additionally, the lack of clear distinction between selected and unselected options confused respondents about the necessity of Step 1. Thus, we need a clearer distinction and connection between the two phases to effectively construct relative preferences.
 
 \subsection{Prototype 3: Organize-then-Vote}
 Figure~\ref{fig:qv_org} shows the last prototype where we built on the previous takeaway by providing finer-grain groupings and creating a clear connection between option organization and voting position. Specifically, we provided three categories: Lean Positive, Lean Negative, and Lean Neutral. Initially, respondents see all options under the section labeled 'I don't know,' which includes only the option descriptions. We ask respondents to move these options into the categories below. Voting controls and information appear on each option once respondents move to the subsequent page, forming a clear connection between option groups, positions, and voting controls.

@@ -7,7 +7,7 @@ In this section, we describe the details for the three models we used to analyze
 The dependent variable for this model is the edit total distance accumulated for an option $D_i$. Distance is a positive continuous variable.
 
 \subsubsection{Independent variables}
-The independent variables for this model are the length of the option $L_i$, modeled as a ordinal variable (Equation~\ref{eq:distance_model_1_eta_ordinal}); interface type $I_i$, modeled as a categorical variable; user effect $U_i$ as categorical variables. The ordinal variable $L_i$ consists of a intercept $\mu_L$ and added effect $\beta_L$, given the interface ordinal value. Since we only have two interfaces, we do not have to worry about the interval between two or more interfaces. Priors are weakly informed in Equation~\ref{eq:priors_global_mean}. We reparamtereized $U_i$ given the sparser sample from each participant. This is written in Equations~\ref{eq:distance_model_1_user_effect}. Both reparameterization contains an intercept and scaling of the effect due to this user. This will imporve sampling efficiency and help the model converge. Relavent priors are written in Equations~\ref{eq:priors_global_mean} and~\ref{eq:priors_sigma_U}. We added an interaction effect between length and interface type $\phi_{ij}$ described in Equation~\ref{eq:distance_model_1_lkj}. Similiar to cognitive load model, the interaction effect used a non-centered parameterization constrained by an LKJ prior to account for correlations. Priors for the interaction effect is listed in Equations~\ref{eq:priors_sigma_phi} and~\ref{eq:priors_L_Omega}. Detailed description can be found in Appendix~\ref{apdx:model_tlx}.
+The independent variables for this model are the length of the option $L_i$, modeled as a ordinal variable (Equation~\ref{eq:distance_model_1_eta_ordinal}); interface type $I_i$, modeled as a categorical variable; user effect $U_i$ as categorical variables. The ordinal variable $L_i$ consists of a intercept $\mu_L$ and added effect $\beta_L$, given the interface ordinal value. Since we only have two interfaces, we do not have to worry about the interval between two or more interfaces. Priors are weakly informed in Equation~\ref{eq:priors_global_mean}. We reparametrized $U_i$ given the sparser sample from each participant. This is written in Equations~\ref{eq:distance_model_1_user_effect}. Both reparametrization contains an intercept and scaling of the effect due to this user. This will improve sampling efficiency and help the model converge. Relevant priors are written in Equations~\ref{eq:priors_global_mean} and~\ref{eq:priors_sigma_U}. We added an interaction effect between length and interface type $\phi_{ij}$ described in Equation~\ref{eq:distance_model_1_lkj}. Similar to cognitive load model, the interaction effect used a non-centered parametrization constrained by an LKJ prior to account for correlations. Priors for the interaction effect is listed in Equations~\ref{eq:priors_sigma_phi} and~\ref{eq:priors_L_Omega}. Detailed description can be found in Appendix~\ref{apdx:model_tlx}.
 
 \subsubsection{Overall model and Likelihood function}
 We modeled the dependent variable using an Exponential distribution (Equation~\ref{eq:distance_model_1}). Since Exponential distribution takes in a positive value, we transformed it as Equation~\ref{eq:transformation_model_1}. The observed outcome variable $D_i$ represents the response for the $i$-th observation parameterized by the latent predictor $\eta_i$. $\eta_i$ is described in Equation~\ref{eq:distance_model_1_eta} as the regression with length, interface, the interaction effect and the interface.
@@ -29,13 +29,13 @@ Priors are defined as:
     L_{\Omega} \sim \text{LKJ}(3) \label{eq:priors_L_Omega}
 \end{align}
 
-\subsubsection{Posterier predictive plots}
-Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:ppc_distance_m1}. This figure compares the models posterier predictive distribution with the observed data. 
+\subsubsection{Posterior predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:ppc_distance_m1}. This figure compares the models posterior predictive distribution with the observed data. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{content/image/distance/ppc_distance_m1.pdf}
-    \caption{Posterier Predictions vs. observed data for edit distance per option. Each blue line represents a draw from the posterior distribution, while the black line represents the observed data. Dotted line represents the mean of the posterier data. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the distribution.}
+    \includegraphics[width=0.45\textwidth]{content/image/distance/ppc_distance_m1.pdf}
+    \caption{Posterior Predictions vs. observed data for edit distance per option. Each blue line represents a draw from the posterior distribution, while the black line represents the observed data. Dotted line represents the mean of the posterior data. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the distribution.}
     \Description{ A line plot titled "Posterior Predictive Check: Observed Edit Distances," comparing observed edit distances with model predictions. Multiple thin blue lines indicating individual model simulations. A solid black line representing actual observed data. A dashed orange line showing the average of posterior predictions. The plot illustrates strong alignment between observed data and the posterior predictive mean, with deviations primarily at higher edit distances. This indicates a well-calibrated model fit for most of the distribution.}
     \label{fig:ppc_distance_m1}
 \end{figure}
@@ -44,18 +44,18 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
 \subsection{Model 2: Edit Distance with Separate Mean and Variance Predictors} \label{sec:apdx:model_distance_variance}
 
 \subsubsection{Dependent Variables}
-The dependent variable for this model is the edit distance (with directions) $D_i$, a positive edit distance refers to participants moving downward. A negtaitve edit distrance refers to a upward movement.
+The dependent variable for this model is the edit distance (with directions) $D_i$, a positive edit distance refers to participants moving downward. A negative edit distance refers to a upward movement.
 
 \subsubsection{Overall Model}
-We modeled the dependent variable $D_i$ using a Normal distribution (Equation~\ref{eq:distance_model_2_likelihood}). Since the goal of this model, unlike some, aims to model the variance since we believe participants in two-phase interface would exhibit less oscillation then the text interface. Hence, we model independent variables effecting both $\mu$ and $\sigma$ independently for this analysis to exaime this hypothesis.
+We modeled the dependent variable $D_i$ using a Normal distribution (Equation~\ref{eq:distance_model_2_likelihood}). Since the goal of this model, unlike some, aims to model the variance since we believe participants in two-phase interface would exhibit less oscillation then the text interface. Hence, we model independent variables effecting both $\mu$ and $\sigma$ independently for this analysis to examine this hypothesis.
 
 \subsubsection{Independent Variables}
 The independent variables for this model are:
 \begin{itemize}
     \item \textbf{Length of the option $L_i$}: Modeled as an ordinal variable. Since we will be modeling both $\mu_i$ and $\sigma$ of a Normal distribution, Equation~\ref{eq:distance_model_2_gamma_mu} and ~\ref{eq:distance_model_2_gamma_sigma} reflects the ordinal variable. Both formula consists of a intercept $\mu_{L,\mu}, \mu_{L,\sigma}$ and added effect $\beta_{L,\mu}, \beta_{L,\sigma}$, given the interface ordinal value. Since we only have two interfaces, we do not have to worry about the interval between two or more interfaces. Priors of both ordinal relationship are weakly informed in Equation~\ref{eq:priors_distance_model_2_mean} and~\ref{eq:priors_distance_model_2_variance}
-    \item \textbf{Interface type $I_i$}: Modeled as a categorical variable. Following the previous discussion, they are drawn from a hyperprior. We reparamtereized this independent variable given the added complexity of this model. This is written in Equations~\ref{eq:distance_model_2_beta_I_mu} and~\ref{eq:distance_model_2_beta_I_sigma}. Both reparameterization contains an intercept and scaling of the effect due to this interface. Relavent priors are written in Equations~\ref{eq:priors_distance_model_2_mean},~\ref{eq:priors_distance_model_2_variance}, and~\ref{eq:priors_interface_distance_model_2}.
-    \item \textbf{User effect $U_i$}: Users are modeled as categorical variables. Following the interface, it is also reparamtereized as Equations~\ref{eq:distance_model_2_user_mu} and~\ref{eq:distance_model_2_user_sigma}. Priors are defined in Equations~\ref{eq:priors_distance_model_2_mean},~\ref{eq:priors_distance_model_2_variance}, and~\ref{eq:priors_sigma_U_distance_model_2}
-    \item \textbf{Interaction between length and interface type $\phi_{ij}$}: Similiar to the interaction effect for cognitive load, we used a non-centered parameterization constrained by an LKJ prior to account for correlations. This is described by Equation~\ref{eq:distance_model_2_phi_mu} and~\ref{eq:distance_model_2_phi_sigma}. Refer to Appendix~\ref{apdx:model_tlx} for a more detailed explaination. Relevent priors are described in Equation~\ref{eq:priors_L_Omega_distance_model_2} and~\ref{eq:priors_sigma_phi_distance_model_2}. We relaxed the LKJ priors comapred to the cognitive load model given the complexity of the model allowing a lesser belief in correlation among the two variables.
+    \item \textbf{Interface type $I_i$}: Modeled as a categorical variable. Following the previous discussion, they are drawn from a hyperprior. We reparametrized this independent variable given the added complexity of this model. This is written in Equations~\ref{eq:distance_model_2_beta_I_mu} and~\ref{eq:distance_model_2_beta_I_sigma}. Both reparametrization contains an intercept and scaling of the effect due to this interface. Relevant priors are written in Equations~\ref{eq:priors_distance_model_2_mean},~\ref{eq:priors_distance_model_2_variance}, and~\ref{eq:priors_interface_distance_model_2}.
+    \item \textbf{User effect $U_i$}: Users are modeled as categorical variables. Following the interface, it is also reparametrized as Equations~\ref{eq:distance_model_2_user_mu} and~\ref{eq:distance_model_2_user_sigma}. Priors are defined in Equations~\ref{eq:priors_distance_model_2_mean},~\ref{eq:priors_distance_model_2_variance}, and~\ref{eq:priors_sigma_U_distance_model_2}
+    \item \textbf{Interaction between length and interface type $\phi_{ij}$}: Similar to the interaction effect for cognitive load, we used a non-centered parametrization constrained by an LKJ prior to account for correlations. This is described by Equation~\ref{eq:distance_model_2_phi_mu} and~\ref{eq:distance_model_2_phi_sigma}. Refer to Appendix~\ref{apdx:model_tlx} for a more detailed explanation. Relevant priors are described in Equation~\ref{eq:priors_L_Omega_distance_model_2} and~\ref{eq:priors_sigma_phi_distance_model_2}. We relaxed the LKJ priors compared to the cognitive load model given the complexity of the model allowing a lesser belief in correlation among the two variables.
 \end{itemize}
 
 \subsubsection{Likelihood Function}
@@ -89,7 +89,7 @@ Priors are defined as:
 \subsubsection{Posterier predictive plots}
 Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:observed_vs_posterior_predictive_histogram_m2}. This figure compares the models posterier predictive distribution with the observed data.
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
     \caption{Posterier Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterier predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-modle them with a student-t distribution.}
@@ -98,12 +98,12 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
     }
 
     \label{fig:observed_vs_posterior_predictive_histogram_m2}
-\end{figure}
+\end{figure*}
 
 \subsubsection{Model Results}
 Here we provide all pairwise comparisons for the variance which the main text only provided the comparison within the same survey length. Figure~\ref{fig:bayesian_distance_variance} shows the pairwise comparison of the variance of edit distance in the first row followed by the effect size in the second row. An notable result that we omit from the main text is that if we compare the variance between the long and short text, and the variance between the long and short two-phase, we see that the text group had three times the standard deviation compared to the two-phase group. This indicates that the organization phase minimize the added length of the survey.
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version_all.pdf}
     \caption{Differences in the variance of edit distance by version.~\textbf{The main takeaway: } In addition to the takaway from the main text, this plot shows that with two-phase interface, there is a reduction is edit distance when the number of option grows.}
@@ -112,7 +112,7 @@ Here we provide all pairwise comparisons for the variance which the main text on
     }
 
     \label{fig:bayesian_distance_variance}
-\end{figure}
+\end{figure*}
 
 \subsection{Model 3: Cumulative Edit Distance for long QS} \label{sec:apdx:model_cum_distance}
 
@@ -151,10 +151,10 @@ Priors used in this model are listed.
 \subsubsection{Posterier predictive plots}
 Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the cumulative edit distance in Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3}. This figure compares the models posterier predictive distribution with the observed data.
 
-\begin{figure}[h!]
+\begin{figure*}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
     \caption{Posterier Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterier predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
     \Description{ A line plot titled "Observed and Predicted Cumulative Distances by Version," showing cumulative distances across task steps for two conditions. Solid lines in varying shades of red and orange, representing actual cumulative distances for individual participants. Dashed lines, showing the model's predicted cumulative distances for each condition. The plot indicates alignment between observed and predicted trends, with some variability at higher cumulative distances. Predictions closely follow observed trajectories, demonstrating the model's accuracy in capturing cumulative distance patterns.}
     \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
-\end{figure}
+\end{figure*}

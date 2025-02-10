@@ -58,15 +58,20 @@
 }
 \newcommand{\bracketellipsis}{[\ldots]\xspace}
 
+% \renewenvironment{displayquote}
+%   {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\itshape\color{darkgray}}
+%   {\endlist}
+
 \renewenvironment{displayquote}
-  {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\itshape\color{darkgray}}
+  {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\color{darkgray}}
   {\endlist}
 
+
 \newcommand{\smallquote}[2]{
-    {\color{darkgray}\texttt{#1}~\faCommentsO~\textit{#2}}
+    {\color{darkgray}\texttt{#1}~{\normalfont\faCommentsO}~\textit{#2}}
 }
 \newcommand{\quoteby}[1]{
-    {\color{darkgray}\faCommentsO~\texttt{#1}}
+    {\color{darkgray}{\normalfont\faCommentsO}~\texttt{#1}}
 }
 
 \definecolor{darkred}{rgb}{0.6, 0, 0}
@@ -165,7 +170,7 @@
 \input{content/2.1_interface_design.tex}
 \input{content/2.2_experiment.tex}
 
-% \input{content/3.1_result_cognitive_load.tex}
+\input{content/3.1_result_cognitive_load.tex}
 % \input{content/3.2_result_distance.tex}
 % \input{content/3.3_result_time.tex}
 

@@ -86,13 +86,13 @@ Priors are defined as:
     L_{\Omega,\mu}, L_{\Omega,\sigma} &\sim \text{LKJ}(3) \label{eq:priors_L_Omega_distance_model_2}
 \end{align}
 
-\subsubsection{Posterier predictive plots}
-Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:observed_vs_posterior_predictive_histogram_m2}. This figure compares the models posterier predictive distribution with the observed data.
+\subsubsection{Posterior predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the edit distance per option in Figure~\ref{fig:observed_vs_posterior_predictive_histogram_m2}. This figure compares the models posterior predictive distribution with the observed data.
 
 \begin{figure*}[h!]
     \centering
     \includegraphics[width=\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
-    \caption{Posterier Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterier predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-modle them with a student-t distribution.}
+    \caption{Posterior Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterior predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-model them with a student-t distribution.}
     \Description{
         A grid of eight density plots comparing observed and posterior predictive distributions across four model versions (ST, S2P, LT, L2P). The top row displays observed distributions, and the bottom row displays posterior predictive distributions. Each plot has "Distance" on the x-axis ranging from -50 to 50 and "Density" on the y-axis. Observed distributions are more sparse, while posterior predictive distributions are tightly centered around zero for all model versions. Differences in spread and shape are noticeable, particularly between the LT and L2P models, which show wider and more peaked distributions compared to ST and S2P.
     }
@@ -124,7 +124,7 @@ The independent variables for this model involve the following. Steps refers to 
 
 Equation~\ref{eq:model3_prior_beta}, refers to interface versions, $\beta_v[V_i]$ are drawn from a Normal distribution with hyperparameters defined in Equations~\ref{eq:model3_prior_beta_mu} and~\ref{eq:model3_prior_beta_sigma} corresponding to the mean and variance of this distribution. 
 
-Instead of directly sampling $U_i$ from a hyper distribution, we reparameterize it to account for limited data for each user. This reparameterization is presented in Equation~\ref{eq:model3_user_mu}. $\mu_{U}$ models the overall mean user effect from users, with $\sigma_{U}$ used to capture variability in user effects (Equation~\ref{eq:model3_prior_user}). A standard normal random variable, Equation~\ref{eq:model3_prior_z} introduced individual randomness for each user.
+Instead of directly sampling $U_i$ from a hyper distribution, we reparametrized it to account for limited data for each user. This reparametrization is presented in Equation~\ref{eq:model3_user_mu}. $\mu_{U}$ models the overall mean user effect from users, with $\sigma_{U}$ used to capture variability in user effects (Equation~\ref{eq:model3_prior_user}). A standard normal random variable, Equation~\ref{eq:model3_prior_z} introduced individual randomness for each user.
 
 
 \subsubsection{Overall Model and Likelihood Function}
@@ -148,13 +148,13 @@ Priors used in this model are listed.
     \sigma_{\beta} &\sim \text{HalfNormal}(0.1) \label{eq:model3_prior_beta_sigma}
 \end{align}
 
-\subsubsection{Posterier predictive plots}
-Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the cumulative edit distance in Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3}. This figure compares the models posterier predictive distribution with the observed data.
+\subsubsection{Posterior predictive plots}
+Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of 1 in the model summary. We plotted the posterior predictive distribution for the cumulative edit distance in Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3}. This figure compares the models posterior predictive distribution with the observed data.
 
 \begin{figure*}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
-    \caption{Posterier Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterier predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
+    \caption{Posterior Predictions vs. observed data for cumulative edit distance. The plot showed each observed user's cumulative edit distance in different shades for the two groups of participants. Dotted line represent the posterior predictive mean. \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing slop of the cumulative trends.}
     \Description{ A line plot titled "Observed and Predicted Cumulative Distances by Version," showing cumulative distances across task steps for two conditions. Solid lines in varying shades of red and orange, representing actual cumulative distances for individual participants. Dashed lines, showing the model's predicted cumulative distances for each condition. The plot indicates alignment between observed and predicted trends, with some variability at higher cumulative distances. Predictions closely follow observed trajectories, demonstrating the model's accuracy in capturing cumulative distance patterns.}
     \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
 \end{figure*}

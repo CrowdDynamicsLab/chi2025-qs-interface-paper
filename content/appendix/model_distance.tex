@@ -148,7 +148,7 @@ with priors:
 \begin{figure*}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version_all.pdf}
-    \caption{Differences in the variance of edit distance by version.~\textbf{The main takeaway: } In addition to the takaway from the main text, this plot shows that with two-phase interface, there is a reduction in edit distance variance when the number of option grows.}
+    \caption{Differences in the variance of edit distance by version.~\textbf{The main takeaway: } This plot shows that with two-phase interface, there is a reduction in edit distance variance when the number of option grows.}
     \Description{
     A grid of eight density plots showing the differences and effect sizes of distances per option by version. The top row depicts variance differences, and the bottom row depicts effect sizes, both represented as density distributions. Each column corresponds to a comparison: Short Text vs. Short 2-Phase, Long Text vs. Long 2-Phase, Long Text vs. Short Text, and Long 2-Phase vs. Short 2-Phase. Each plot includes a mode value, a 94\% Highest Density Interval (HDI), and the proportion of the distribution below and above zero. Variance difference distributions on the top row show modes ranging from 1.8 to 90, with varying HDI ranges. Effect size distributions on the bottom row have modes between 0.68 and 8.4, with all 94\% HDIs above zero except for Short Text vs. Short 2-Phase.
     }
@@ -162,14 +162,14 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
 \subsubsection{Model Results}
 Figure~\ref{fig:bayesian_distance_variance} shows the pairwise comparison of the variance of edit distance in the first row followed by the effect size in the second row. In addition to the comparison within the same survey length, we provide all pairwise comparisons. A notable result that we omit from the main text is that if we compare the variance between the long and short text, and the variance between the long and short two-phase, we see that the text group had three times the standard deviation compared to the two-phase group. This indicates that the organization phase minimize the edit distance despite the increase in survey length.
 
-\subsection{Model 3: Cumulative Edit Distance for long QS} \label{sec:apdx:model_cum_distance}
+\subsection{Model 3: Long QS Cumulative Edit Distance} \label{sec:apdx:model_cum_distance}
 
 The dependent variable for this model is the cumulative edit distance $D_i$, a positive continuous variable measured at each step within a version for each user. We modeled this to test our hypothesis that for each participant, the growth rate of the edit distance is consistent. To accommodate its positive nature, we model $D_i$ using a Truncated Normal distribution:
 
 \begin{equation}\label{eq:model3_likelihood}
 D_i \sim \text{TruncatedNormal}(\mu_i, \sigma_{\text{obs},i}, \text{lower}=0),
 \end{equation}
-where the observation-specific standard deviation is given a Half-Normal prior:
+where the observation-specific standard deviation prior is:
 \begin{equation}\label{eq:model3_prior_sigma}
 \sigma_{\text{obs},i} \sim \text{HalfNormal}(0.3).
 \end{equation}
@@ -191,23 +191,15 @@ where $\alpha_{\text{shared}}$ represents the global intercept, $\beta_v[V_i]$ m
     \beta_v[V_i] \sim \mathcal{N}(\mu_{\beta}, \sigma_{\beta}),
 \end{equation}
 where the hyperparameters for the interface effect distribution are:
-\begin{align}
-    \mu_{\beta} &\sim \mathcal{N}(0.05, 0.05), \label{eq:model3_prior_beta_mu}\\
-    \sigma_{\beta} &\sim \text{HalfNormal}(0.1). \label{eq:model3_prior_beta_sigma}
-\end{align}
+\begin{equation}
+    \mu_{\beta} \sim \mathcal{N}(0.05, 0.05), \quad \sigma_{\beta} \sim \text{HalfNormal}(0.1).
+\end{equation}
 
-\paragraph{User Effects ($U_i$).} Instead of directly sampling $U_i$, we use a reparameterization to mitigate limited user data:
+\paragraph{User Effects ($U_i$).} Instead of directly sampling $U_i$, we follow the reparameterization approach:
 \begin{equation}\label{eq:model3_user_mu}
     U_i = \mu_U + \sigma_U \cdot z_{U,i},
 \end{equation}
-where $z_{U,i}$ represents individual user variability:
-\begin{equation}\label{eq:model3_prior_z}
-    z_{U,i} \sim \mathcal{N}(0,1).
-\end{equation}
-The priors for user effects are:
-\begin{equation}\label{eq:model3_prior_user}
-    \mu_U \sim \mathcal{N}(0,1), \quad \sigma_U \sim \text{HalfNormal}(0.1).
-\end{equation}
+where we assign weakly informative priors $\mu_U \sim \mathcal{N}(0,1)$ and $\sigma_U \sim \text{HalfNormal}(0.1)$ to represent the shared mean and scale of the user effects. The term $z_{U,i} \sim \mathcal{N}(0,1)$ captures individual user variability, allowing us to model deviations across users while maintaining a structured prior.
 
 \begin{figure}[h!]
     \centering

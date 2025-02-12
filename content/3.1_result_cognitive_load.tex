@@ -34,7 +34,7 @@ Weighted NASA-TLX uses a continuous $0$-$100$ score, with higher values denoting
 
 Given the sparsity of the data, we modeled the weighted NASA-TLX scores using cognitive levels as ordinal outcome variables. Then, we developed a hierarchical Bayesian ordinal regression model to analyze ordinal response data. The model includes length as an ordinal predictor, and interface type as a categorical predictor modeled with hierarchical priors to allow partial pooling across categories. Interaction effects between length and interface are captured using a non-centered parameterization constrained by an LKJ prior to account for correlations~\cite{mcelreath2018statistical}. We use the same model for the NASA-TLX subscales. Given that subscales do not have cognitive level interpretations, we constructed weighted bins to facilitate the ordinal regression model. We present details of this model and additional subscale results in Appendix~\ref{apdx:model_tlx}.
 
-\begin{figure*}[h]
+\begin{figure*}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/cog/weighted_cog_version_single_row.pdf}
     \caption{The figure shows the contrast distribution of the average posterior ordinal category between experimental conditions.~\textbf{The main takeaway:} while our Bayesian model does not indicate statistically significant differences, longer text interfaces are more likely to reduce cognitive load, and the two-phase interface has a higher probability of lowering cognitive load.}

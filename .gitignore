@@ -3,3 +3,11 @@ main.bbl
 main.synctex.gz
 main.pdf
 *.sh
+comment.cut
+main.pdf
+*.aux 
+*.log 
+*.out 
+*.bbl 
+*.blg 
+*.synctex.gz

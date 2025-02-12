@@ -34,7 +34,7 @@ where $L_i \in \{0,1\}$, making $\gamma_i = \mu_L$ for the short condition and $
 We model the interface effects using a non-centered parameterization to improve numerical stability and encourage partial pooling across the two interface levels. Specifically we let $\mu_{\beta_I} \sim \mathcal{N}(0,1)$ and $\sigma_{\beta_I} \sim \mathrm{HalfNormal}(0.5)$ represent the shared mean and scale of the interface effects. We then sample a raw effect vector $\beta_{I_{\text{raw}}} \sim \mathcal{N}(0,1)^2.$ Combining these, we define:
 \begin{equation}
     \beta_I = \mu_{\beta_I} + \sigma_{\beta_I} \cdot \beta_{I_{\text{raw}}}
-    \label{eq:interface_reparam}
+    \label{eq:distance_interface_reparam}
 \end{equation}
 where $\beta_I \in \mathbb{R}^2$ contains the effect for each of the two interface levels, 
 and $\beta_I[I_i]$ indexes the effect for participant $i$'s interface. 

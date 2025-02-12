@@ -13,46 +13,18 @@
 }
 \newcommand{\bracketellipsis}{[\ldots]\xspace}
 
-% \renewenvironment{displayquote}
-%   {\list{}{\small\leftmargin=1em\rightmargin=1em}\item\relax\itshape\color{darkgray}}
-%   {\endlist}
-
-% Redesigned displayquote environment
-% \renewenvironment{displayquote}
-%   {
-%     \par
-%     \begingroup
-%     \setlength{\parskip}{1ex} % Space above the quote
-%     \small\itshape\color{darkgray}\noindent
-%     \begin{minipage}{\linewidth}
-%   }
-%   {
-%     \end{minipage}
-%     \par
-%     \endgroup
-%     \addvspace{1.5ex} % Space below the quote
-%   }
-
 \renewenvironment{displayquote}
-  {\list{}{\small\leftmargin=0.5em\rightmargin=0em\topsep=0.8ex}\item\relax\itshape\color{darkgray}}
+  {\list{}{\small\leftmargin=0.5em\rightmargin=0em\topsep=0.75ex}\item\relax\itshape\color{darkgray}}
   {\endlist}
 
-% \newcommand{\quoteby}[1]{%
-%     \\[-0.5ex] % Slight negative space to tighten gap with the quote
-%     \makebox[0.95\linewidth][r]{\faCommentsO~\texttt{#1}} % Right-aligns attribution
-% }
-
 \newcommand{\quoteby}[1]{%
-    \\[-0.5ex]
+    \\[-0.7ex]
     \begin{minipage}[t]{\linewidth}
-        \hfill \faCommentsO~\texttt{#1}
+        \hfill \textnormal{\faCommentsO}~\texttt{#1}
     \end{minipage}
 }
 
 
 \newcommand{\smallquote}[2]{
-    {\color{darkgray}\texttt{#1}~\faCommentsO~\textit{#2}}
+    {\color{darkgray}\textup{\texttt{#1}}~\faCommentsO~\textit{#2}}
 }
-% \newcommand{\quoteby}[1]{
-%     {\color{darkgray}\faCommentsO~\texttt{#1}}
-% }

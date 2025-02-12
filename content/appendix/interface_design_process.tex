@@ -1,12 +1,12 @@
 \section{Interface design process}\label{apdx:design}
 In this section, we outline the design process leading to our final interface. As mentioned in the paper, our design iteration began from existing QV applications in the wild.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     % First subfigure
-    \begin{subfigure}[b]{0.9\linewidth}
+    \begin{subfigure}[b]{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{content/image/prototypes/1.2_paper_qv_single.png}
+        \includegraphics[width=0.9\linewidth]{content/image/prototypes/1.2_paper_qv_single.png}
         \caption{In this paper prototype, issues are denoted by different numbers that appear on mouseover. Pretest respondents can move options anywhere in the two sections of the interface, one denoting positive and one negative. The blocks represent the cost for each option, with no indication of the number of current votes. The credits are shown in the yellow box on the left.}
         \Description{An image of a paper prototype showing different sections for respondents to interact with. On the left side, a yellow grid contains small white squares, some of which are stacked and scattered outside the grid. The middle section labeled "Positive Zone" contains a large white square with a grid, labeled "Opt 1". The right section, labeled "Negative Zone," contains two white squares, each with grids, labeled with numbers 7 and 4. Additional small white squares labeled with numbers 2, 3, 5, 6, and 8 are positioned around the prototype. The yellow box on the left represents available credits.}
         \label{fig:horizontal_paper}
@@ -15,9 +15,9 @@ In this section, we outline the design process leading to our final interface. A
     \vspace{1em} % Adjusts vertical spacing between figures
 
     % Second subfigure
-    \begin{subfigure}[b]{0.9\linewidth}
+    \begin{subfigure}[b]{\linewidth}
         \centering
-        \includegraphics[width=\linewidth]{content/image/prototypes/1_paper_qv_single.png}
+        \includegraphics[width=0.77\linewidth]{content/image/prototypes/1_paper_qv_single.png}
         \caption{This paper prototype separates the positive and negative areas with a 'band' at the center. Undecided options are placed inside this band. The cost and the votes on both sides of the interface are denoted by small blocks. The budget is shown in the yellow box below the interface with a numerical counter.}
         \Description{A paper prototype interface where a person's hand is interacting with blocks. The prototype separates positive and negative areas using a wide horizontal band in the center, which holds undecided options. On the left side of the band, a column labeled "Dollar" shows a block marked with the number 16. On the right side, under a column labeled "Point," several rows have small blocks with plus and minus signs, indicating positive and negative areas. At the bottom left, a yellow box with a grid shows the available budget, marked with the number 16. A smartphone in the bottom right corner displays the number 58.}
         \label{fig:vertical_paper}
@@ -28,11 +28,10 @@ In this section, we outline the design process leading to our final interface. A
     \label{fig:qv_paper}
 \end{figure}
 
-
 \subsection{Prototype 1: Ranking-Vote}
 Considering that relative preference provides a ranked item, we tested whether ranking options before voting would help establish an individual's relative preference in Prototype 1. This prototype allowed respondents to reposition options before voting. Pretest respondents rarely moved the options and questioned the necessity of a full ranking, as it did not influence their QS submission. Additionally, many were unaware that options were draggable. This indicates that a full ranking is unnecessary for establishing relative preferences. Therefore, we decided to ask respondents to select a subset of options instead of requiring a full rank among all options.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.43\textwidth]{content/image/prototypes/2_ranking.png}
     \caption{A Ranking-Vote Prototype: The goal of this prototype is to test whether ranking options prior to voting help establish an individual's relative preferences and reduce effort when voting. Each option is draggable to position in a specific location amongst the full list of options. Votes can be updated using the buttons to the right of the interface with vote count and costs to the right of the interface. A summary box is placed sticky to the bottom of the screen.}

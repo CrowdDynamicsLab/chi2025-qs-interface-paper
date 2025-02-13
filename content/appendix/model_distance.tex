@@ -201,6 +201,10 @@ where the hyperparameters for the interface effect distribution are:
 \end{equation}
 where we assign weakly informative priors $\mu_U \sim \mathcal{N}(0,1)$ and $\sigma_U \sim \text{HalfNormal}(0.1)$ to represent the shared mean and scale of the user effects. The term $z_{U,i} \sim \mathcal{N}(0,1)$ captures individual user variability, allowing us to model deviations across users while maintaining a structured prior.
 
+\subsubsection{Posterior Predictive Plots}
+
+Our Bayesian model converged successfully, as indicated by an $\hat{R}$ value of 1 in the model summary. Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3} presents the posterior predictive distribution for cumulative edit distance, demonstrating alignment between the predicted and observed data.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{content/image/distance/observed_and_predicted_cumulative_distances_by_version_m3.pdf}
@@ -208,9 +212,3 @@ where we assign weakly informative priors $\mu_U \sim \mathcal{N}(0,1)$ and $\si
     \Description{ A line plot titled "Observed and Predicted Cumulative Distances by Version," showing cumulative distances across task steps for two conditions. Solid lines in varying shades of red and orange, representing actual cumulative distances for individual participants. Dashed lines, showing the model's predicted cumulative distances for each condition. The plot indicates alignment between observed and predicted trends, with some variability at higher cumulative distances. Predictions closely follow observed trajectories, demonstrating the model's accuracy in capturing cumulative distance patterns.}
     \label{fig:observed_and_predicted_cumulative_distances_by_version_m3}
 \end{figure}
-
-\subsubsection{Posterior Predictive Plots}
-
-Our Bayesian model converged successfully, as indicated by an $\hat{R}$ value of 1 in the model summary. Figure~\ref{fig:observed_and_predicted_cumulative_distances_by_version_m3} presents the posterior predictive distribution for cumulative edit distance, demonstrating alignment between the predicted and observed data.
-
-\clearpage

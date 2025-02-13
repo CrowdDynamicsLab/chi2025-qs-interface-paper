@@ -24,7 +24,7 @@ where $\eta_i$ is the latent predictor, and $\boldsymbol{\tau}$ denotes the cutp
 \end{equation}
 
 \subsubsection{Independent Variables and latent predictor}
-For this model, we used three independent variables: length ($\gamma_i$), interface type ($\beta_I$), and the interaction between the two ($\phi_{i,j}$) to construct the latent predictor $\eta_i$. Specifically, the latent predictor $\eta_i$ is constructed as:
+For this model, we used three independent variables: length ($\gamma_i$, an ordinal variable), interface type ($\beta_I$, an categorical variable), and the interaction between the two ($\phi_{i,j}$) to construct the latent predictor $\eta_i$. Specifically, the latent predictor $\eta_i$ is constructed as:
 
 \begin{equation}
     \eta_i = \alpha + \gamma_i + \beta_I[I_i] + \phi_{i,j},
@@ -33,7 +33,7 @@ For this model, we used three independent variables: length ($\gamma_i$), interf
 
 where: $\alpha$ is a global intercept drawn from $\mathcal{N}(0,1)$, $\gamma_i$ captures the (ordinal) effect of length, $\beta_I[I_i]$ is the effect for interface $I_i$, and $\phi_{i,j}$ is the interaction between length $i$ and interface $j$. 
 
-Since length has two levels (short and long), we define:
+Since length has two levels (short and long), we define the following equation to account for ordinality:
 \begin{equation}
     \gamma_i = \mu_L + \beta_L \cdot L_i
     \label{eq:cog_ordinal}

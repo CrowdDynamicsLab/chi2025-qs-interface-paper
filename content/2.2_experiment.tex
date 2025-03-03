@@ -1,7 +1,7 @@
 \begin{figure*}[ht!]
     \centering
     % Top figure (full-width)
-    \begin{subfigure}{0.9\textwidth} % Full width for the first subfigure
+    \begin{subfigure}{0.83\textwidth} % Full width for the first subfigure
         \centering
         \includegraphics[width=\textwidth, trim=0 13 0 13, clip]{content/image/demo/demo_age_group_vertical.pdf}
         \caption{Age distribution of the study participants were similar to the locale's demographic profile.}
@@ -12,7 +12,7 @@
     \vspace{0.25cm} % Add some vertical space between the subfigures
 
     % Bottom figures (two subfigures side by side)
-    \begin{subfigure}{0.45\textwidth} % First subfigure on the second row
+    \begin{subfigure}{0.43\textwidth} % First subfigure on the second row
         \centering
         \includegraphics[width=\textwidth]{content/image/demo/demo_gender.pdf}
         \caption{Gender distribution of our participants skewed towards female participants.}
@@ -20,7 +20,7 @@
         \label{fig:demoGender}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.45\textwidth} % Second subfigure on the second row
+    \begin{subfigure}{0.43\textwidth} % Second subfigure on the second row
         \centering
         \includegraphics[width=\textwidth]{content/image/demo/demo_ethnicity.pdf}
         \caption{Ethnicity distribution remains diverse with fewer Hispanic and African American participants.}
@@ -33,25 +33,14 @@
     \label{fig:Demographics}
 \end{figure*}
 
-
-\begin{figure*}[ht!]
-    \centering
-    \includegraphics[width=1\textwidth]{content/image/study_flow.pdf}
-    \caption{Study protocol: Participants are asked to learn about the mechanism of QSs after consenting to the study. The researcher explained the study overview and asked participants to complete the QS. A NASA-TLX survey followed by interviews to understand participants' cognitive load. We debriefed participants after the study.}
-    \Description{A flowchart depicting the study protocol, consisting of six stages. Each stage is represented by a rectangular box connected by right-facing arrows. The boxes, from left to right, are labeled: "Participant Consent," "Video Tutorial \& Quiz," "Study Overview," "QS," "NASA-TLX Interview," and "Debrief." The arrows between the boxes indicate the sequence of the study process.}
-
-    \label{fig:studyProtocol}
-\end{figure*}
-
-\change{
 \section{Experiment Design}
 \label{sec:experiment}
 In this section, we describe our experiment design. The study was approved by the university's Institutional Review Board (IRB).
 
 \subsection{Recruitment and Participants}
-We recruited 41 participants from a United States college town using online ads, digital bulletins, social media posts, email newsletters, and physical flyers in public spaces beyond campus. We advertised the study as focusing on societal attitudes to mitigate potential response bias. One participant was excluded due to data quality concerns\footnote{The participant reported not completing the survey seriously, as they believed the experiment was fake.}.}
+We recruited 41 participants from a United States college town using online ads, digital bulletins, social media posts, email newsletters, and physical flyers in public spaces beyond campus. We described the study as exploring societal attitudes to reduce response bias. One participant was excluded due to data quality concerns\footnote{The participant reported not completing the survey seriously, as they believed the experiment was fake.}.
 
-To ensure diversity, we prioritized non-students by selectively accepting them and monitoring demographic distribution. The mean participant age was 34.63 years, with an age distribution similar to the county's demographic profile (Figure~\ref{fig:demoAge}), although there was a slightly higher representation of younger adults. Gender and race demographics are presented in Figures~\ref{fig:demoGender} and~\ref{fig:demoEthnicity}. \change{Demographic differences between groups were reasonably balanced, although participants using the short text interface skewed slightly younger ($\mu$=32.1), and those in the long two-phase interface group had a broader age range ($\mu$=38.8, $\sigma$=19.6). Full details are provided in Appendix \ref{sec:apdx:demo}.}
+To ensure diversity, we prioritized non-students by selectively accepting them and monitoring demographic distribution. The mean participant age was 34.63 years, with an age distribution similar to the county's demographic profile (Figure~\ref{fig:demoAge}), although there was a slightly higher representation of younger adults. Gender and race demographics are presented in Figures~\ref{fig:demoGender} and~\ref{fig:demoEthnicity}. Demographic differences between groups were reasonably balanced, although participants using the short text interface skewed slightly younger ($\mu$=32.1), and those in the long two-phase interface group had a broader age range ($\mu$=38.8, $\sigma$=19.6). Appendix \ref{sec:apdx:demo} contains full details.
 
 \subsection{Experiment Design}
 We implemented a between-subject design to avoid learning effects and minimize participants' fatigue from potential complexity of QSs. The experiment focused on public resource allotment, following the methodology of~\citet{chengCanShowWhat2021}, in which participants expressed preferences across societal issues. These issues are relevant to all citizens and effectively highlight the need to prioritize limited public resources. Participants received a survey with options randomly drawn from the 31 societal topics evaluated by Charity Navigator~\cite{charitynavigatorCharityNavigator2023}, an organization that assesses over 20,000 charities in the United States (see Appendix~\ref{sec:charityList} for the full list).
@@ -68,6 +57,15 @@ Prior research informed the choice of 6 and 24 options, representing short and l
 \subsection{Experiment Procedure}
 Participant's spent on average 40 minutes (range:~27$-$68,~$\sigma$=9) in the lab. Figure~\ref{fig:studyProtocol} visually represents the study protocol detailed in the following subsections.
 
+\begin{figure*}[ht!]
+    \centering
+    \includegraphics[width=\textwidth, trim=13 13 13 13, clip]{content/image/study_flow.pdf}
+    \caption{Study protocol: Participants are asked to learn about the mechanism of QSs after consenting to the study. The researcher explained the study overview and asked participants to complete the QS. A NASA-TLX survey followed by interviews to understand participants' cognitive load. We debriefed participants after the study.}
+    \Description{A flowchart depicting the study protocol, consisting of six stages. Each stage is represented by a rectangular box connected by right-facing arrows. The boxes, from left to right, are labeled: "Participant Consent," "Video Tutorial \& Quiz," "Study Overview," "QS," "NASA-TLX Interview," and "Debrief." The arrows between the boxes indicate the sequence of the study process.}
+
+    \label{fig:studyProtocol}
+\end{figure*}
+
 \subsubsection{Consent, Instructions, and Quiz}
 Participants were invited to the lab to control for external influences and used a 32-inch vertical monitor to display all options. After consenting, participants watched a video explaining the quadratic mechanism without any mention of the interface's operation, followed by a quiz to ensure understanding. Participants rewatched the video or consulted the researcher until they successfully selected the correct answers. Each participant's screen was captured throughout the study.
 
@@ -81,6 +79,8 @@ While cognitive load can be assessed through psychophysiological, performance, s
 
 \subsubsection{Demographic, Debrief, and Compensation}
 After the interview, the researcher collected participant's demographics and debriefed them, explaining that the study's goal was to understand interface design and cognitive load. Participants received a \$15 cash compensation.
+
+\newpage
 
 \subsection{Quantitative Measures: Clickstream Data}
 \label{subsec:measures}

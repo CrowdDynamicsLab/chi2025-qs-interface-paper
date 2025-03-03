@@ -86,6 +86,22 @@
 
 %%
 %% end of the preamble, start of the body of the document source.
+\AtBeginMaketitle{%
+\let\oldAtBeginDocument\AtBeginDocument%
+\renewcommand\AtBeginDocument[1]{#1}
+\setcopyright{cc}
+\setcctype{by-nc}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{10.1145/3706598.3714193}
+\acmISBN{979-8-4007-1394-1/25/04}
+\acmConference[CHI '25]{CHI Conference on Human Factors in Computing Systems}{April 26--May 01, 2025}{Yokohama, Japan}
+\acmBooktitle{CHI Conference on Human Factors in Computing Systems (CHI '25), April 26--May 01, 2025, Yokohama, Japan}
+\let\AtBeginDocument\oldAtBeginDocument%
+}
+
+%%
+%% end of the preamble, start of the body of the document source.
 \begin{document}
 
 %%

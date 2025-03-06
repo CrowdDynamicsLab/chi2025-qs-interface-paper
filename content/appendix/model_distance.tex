@@ -72,9 +72,7 @@ Our Bayesian model converged successfully, as evidenced by an $\hat{R}$ value of
     \centering
     \includegraphics[width=0.75\textwidth]{content/image/distance/observed_vs_posterior_predictive_histogram_m2.pdf}
     \caption{Posterior Predictions vs. Observed Data for Edit Distance per Option. The first row represents the distribution of edit distance per version. The second row shows the posterior predictions after multiple draws \textbf{Takeaway of the plot}: We believe that the model is reasonable at capturing the shape of the distributions though being slightly conservative for extreme values at the center. Future model enhancements could re-model them with a student-t distribution.}
-    \Description{
-        A grid of eight density plots comparing observed and posterior predictive distributions across four model versions (ST, S2P, LT, L2P). The top row displays observed distributions, and the bottom row displays posterior predictive distributions. Each plot has "Distance" on the x-axis ranging from -50 to 50 and "Density" on the y-axis. Observed distributions are more sparse, while posterior predictive distributions are tightly centered around zero for all model versions. Differences in spread and shape are noticeable, particularly between the LT and L2P models, which show wider and more peaked distributions compared to ST and S2P.
-    }
+    \Description{A grid of eight density plots comparing observed and posterior predictive distributions across four model versions (ST, S2P, LT, L2P). The top row displays observed distributions, and the bottom row displays posterior predictive distributions. Each plot has "Distance" on the x-axis ranging from -50 to 50 and "Density" on the y-axis. Observed distributions are more sparse, while posterior predictive distributions are tightly centered around zero for all model versions. Differences in spread and shape are noticeable, particularly between the LT and L2P models, which show wider and more peaked distributions compared to ST and S2P.}
 
     \label{fig:observed_vs_posterior_predictive_histogram_m2}
 \end{figure*}
@@ -149,9 +147,7 @@ with priors:
     \centering
     \includegraphics[width=0.8\textwidth]{content/image/distance/distance_diff_per_option_effect_size_by_version_all.pdf}
     \caption{Differences in the variance of edit distance by version.~\textbf{Main takeaway: } This plot shows that with two-phase interface, there is a reduction in edit distance variance when the number of option grows.}
-    \Description{
-    A grid of eight density plots showing the differences and effect sizes of distances per option by version. The top row depicts variance differences, and the bottom row depicts effect sizes, both represented as density distributions. Each column corresponds to a comparison: Short Text vs. Short 2-Phase, Long Text vs. Long 2-Phase, Long Text vs. Short Text, and Long 2-Phase vs. Short 2-Phase. Each plot includes a mode value, a 94\% Highest Density Interval (HDI), and the proportion of the distribution below and above zero. Variance difference distributions on the top row show modes ranging from 1.8 to 90, with varying HDI ranges. Effect size distributions on the bottom row have modes between 0.68 and 8.4, with all 94\% HDIs above zero except for Short Text vs. Short 2-Phase.
-    }
+    \Description{A grid of eight density plots showing the differences and effect sizes of distances per option by version. The top row depicts variance differences, and the bottom row depicts effect sizes, both represented as density distributions. Each column corresponds to a comparison: Short Text vs. Short 2-Phase, Long Text vs. Long 2-Phase, Long Text vs. Short Text, and Long 2-Phase vs. Short 2-Phase. Each plot includes a mode value, a 94\% Highest Density Interval (HDI), and the proportion of the distribution below and above zero. Variance difference distributions on the top row show modes ranging from 1.8 to 90, with varying HDI ranges. Effect size distributions on the bottom row have modes between 0.68 and 8.4, with all 94\% HDIs above zero except for Short Text vs. Short 2-Phase.}
 
     \label{fig:bayesian_distance_variance}
 \end{figure*}
